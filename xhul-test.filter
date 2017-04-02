@@ -3,20 +3,18 @@
 # variant : test
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
-Show # cards - conflict 2
-	Class Divination
-	BaseType "The Wolf's Shadow"
-Show # cards - conflict 3
-	Class Divination
-	BaseType "The Dragon's Heart"
-Show # cards - 1
-	Class Divination
-	BaseType "Cartographer's Delight"
-Show # cards - 2
-	Class Divination
-	BaseType "A Mother's Parting Gift"
-Show # cards - 3
-	Class Divination
-	BaseType "Abandoned Wealth"
-Show # cards - 4
-	Class Divination
+Show # currency - conflict 2
+	Class Currency
+	BaseType Vaal
+Show # currency - conflict 3
+	Class Currency
+	BaseType Chaos
+Show # currency - 1
+	Class Currency
+	BaseType Chisel
+Show # currency - 2
+	Class Currency
+	BaseType Chromatic
+Show # currency - 3
+	Class Currency
+	BaseType Exalted
