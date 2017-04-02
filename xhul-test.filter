@@ -5,16 +5,13 @@
 
 Show # currency - conflict 1
 	Class Currency
-	BaseType Vaal
-Show # currency - conflict 2
-	Class Currency
 	BaseType Chaos
 Show # currency - 1
 	Class Currency
-	BaseType Chisel
+	BaseType Divine
 Show # currency - 2
 	Class Currency
-	BaseType Chromatic
+	BaseType Exalted
 Show # currency - 3
 	Class Currency
-	BaseType Exalted
+	BaseType Mirror
