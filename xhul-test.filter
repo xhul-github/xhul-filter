@@ -6,10 +6,10 @@
 Show # currency - test
 	Class Currency
 	BaseType Chaos
-Show # currency - 1a1
+Show # currency - 1
 	Class Currency
 	BaseType Divine
-Show # currency - 22
+Show # currency - 2
 	Class Currency
 	BaseType Exalted
 Show # currency - 3
