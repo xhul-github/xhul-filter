@@ -3,27 +3,15 @@
 # variant : test
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
-Show # currency - test1
+Show # currency - test
 	Class Currency
 	BaseType Chaos
 Show # currency - 1
 	Class Currency
 	BaseType Divine
-Show # currency - 2
+Show # currency - 22
 	Class Currency
 	BaseType Exalted
 Show # currency - 3
-	Class Currency
-	BaseType Mirror
-Show # currency - test2
-	Class Currency
-	BaseType Chaos
-Show # currency - 4
-	Class Currency
-	BaseType Divine
-Show # currency - 5
-	Class Currency
-	BaseType Exalted
-Show # currency - 6
 	Class Currency
 	BaseType Mirror
