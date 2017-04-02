@@ -3,84 +3,31 @@
 # variant : test
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
-#
-#
-# Section: CARDS
-#
-#
-
-# car000
-
 Show # cards - conflict 2
 
 	Class Divination
 	BaseType "The Wolf's Shadow"
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 191 255 127 255
-	SetBorderColor 191 255 127 255
-
-# car001
 
 Show # cards - conflict 3
 
 	Class Divination
 	BaseType "The Dragon's Heart"
 
-	SetFontSize 33
-	SetBackgroundColor 191 255 127 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# car002
-
 Show # cards - 1
 
 	Class Divination
 	BaseType "Cartographer's Delight" "Dying Anguish" "Gift of the Gemling Queen" "Lantador's Lost Love" Prosperity "Rain Tempter" "Shard of Fate" "Struck by Lightning" "The Carrion Crow" "The Endurance" "The Flora's Gift" "The Fox" "The Inoculated" "The King's Blade" "The Lord in Black" "The Lover" "The Rabid Rhoa" "The Sigil" "The Surgeon" "The Twins"
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 191 255 127 255
-	SetBorderColor 0 0 0 0
-
-# car003
 
 Show # cards - 2
 
 	Class Divination
 	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" "Boundless Realms" "Chaotic Disposition" "Coveted Possession" Death "Doedre's Madness" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Grave Knowledge" "Her Mask" Heterochromia Hope Hubris "Hunter's Resolve" "Jack in the Box" "Light and Truth" "Lost Worlds" Loyalty "Luck of the Vaal" "Lucky Connections" "Lysah's Respite" Mitts "Rain of Chaos" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Battle Born" "The Betrayal" "The Body" "The Cartographer" "The Catalyst" "The Coming Storm" "The Conduit" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Explorer" "The Feast" "The Fletcher" "The Gambler" "The Garish Power" "The Gemcutter" "The Gentleman" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The Inventor" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Metalsmith's Gift" "The Oath" "The One With All" "The Pack Leader" "The Pact" "The Penitent" "The Polymath" "The Risk" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Siren" "The Soul" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Survivalist" "The Throne" "The Tower" "The Traitor" "The Trial" "The Union" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wind" "The Wolf" "The Wolverine" "The Wrath" "The Wretched" "Three Faces in the Dark" "Thunderous Skies" Tranquillity "Treasure Hunter" "Vinia's Token"
 
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 191 255 127 255
-	SetBorderColor 191 255 127 255
-
-# car004
-
 Show # cards - 3
 
 	Class Divination
 	BaseType "Abandoned Wealth" "Bowyer's Dream" "Call to the First Ones" "Destined to Crumble" "Dialla's Subjugation" "Emperor of Purity" Humility "Hunter's Reward" "Last Hope" "Lingering Remnants" "Lucky Deck" "Merciless Armament" "Might is Right" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Calling" "The Cataclysm" "The Celestial Justicar" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Devastator" "The Ethereal" "The Formless Sea" "The Forsaken" "The Harvester" "The Hoarder" "The Immortal" "The Jester" "The King's Heart" "The Last One Standing" "The Offering" "The Opulent" "The Poet" "The Porcupine" "The Queen" "The Road to Power" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Spoiled Prince" "The Thaumaturgist" "The Tyrant" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Wolven King's Bite" "Time-Lost Relic" "Turn the Other Cheek" "Volatile Power" "Wealth and Power"
 
-	SetFontSize 33
-	SetBackgroundColor 191 255 127 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# car005
-
 Show # cards - 4
 
 	Class Divination
-
-	SetFontSize 39
-	SetBackgroundColor 191 255 127 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# car006
