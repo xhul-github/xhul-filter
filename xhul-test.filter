@@ -3,12 +3,6 @@
 # variant : test
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
-Show # cards - conflict 2
-	Class Divination
-	BaseType "The Wolf's Shadow"
-Show # cards - conflict 3
-	Class Divination
-	BaseType "The Dragon's Heart"
 Show # cards - 1
 	Class Divination
 	BaseType "Cartographer's Delight" "Dying Anguish" "Gift of the Gemling Queen" "Lantador's Lost Love" Prosperity "Rain Tempter" "Shard of Fate" "Struck by Lightning" "The Carrion Crow" "The Endurance" "The Flora's Gift" "The Fox" "The Inoculated" "The King's Blade" "The Lord in Black" "The Lover" "The Rabid Rhoa" "The Sigil" "The Surgeon" "The Twins"
