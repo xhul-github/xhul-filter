@@ -3,7 +3,7 @@
 # variant : test
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
-Show # currency - conflict 1
+Show # currency - test 1
 	Class Currency
 	BaseType Chaos
 Show # currency - 1
