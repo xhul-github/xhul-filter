@@ -3,9 +3,6 @@
 # variant : test
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
-Show # currency - test
-	Class Currency
-	BaseType Chaos
 Show # currency - 1
 	Class Currency
 	BaseType Divine
