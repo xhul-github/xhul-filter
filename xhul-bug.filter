@@ -1,0 +1,20 @@
+# xhul filter
+# version : 2.6.B
+# variant : bug
+# thread : https://www.pathofexile.com/forum/view-thread/1787522
+
+Show # currency - test
+	Class Currency
+	BaseType Chaos
+
+Show # currency - 369
+	Class Currency
+	BaseType Divine
+
+Show # currency - 258
+	Class Currency
+	BaseType Exalted
+
+Show # currency - 147
+	Class Currency
+	BaseType Mirror
