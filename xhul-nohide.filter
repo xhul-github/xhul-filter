@@ -1,5 +1,5 @@
 # xhul filter
-# version : 2.6.A
+# version : 2.6.B
 # variant : nohide
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -1933,7 +1933,7 @@ Show # equipment rare - top claws
 
 	Rarity Rare
 	Class Claws
-	BaseType "Eye Gouger" "Gemini Claw" "Great White Claw" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Vaal Claw"
+	BaseType "Eye Gouger" "Gemini Claw" "Great White Claw" "Hellion's Paw" "Imperial Claw" "Nailed Fist" "Sharktooth Claw" "Terror Claw" "Vaal Claw"
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
@@ -1946,7 +1946,7 @@ Show # equipment rare - top daggers
 
 	Rarity Rare
 	Class Daggers
-	BaseType Ambusher "Copper Kris" "Demon Dagger" "Golden Kris" "Platinum Kris" Sai
+	BaseType Ambusher "Copper Kris" "Demon Dagger" "Golden Kris" "Gutting Knife" "Platinum Kris" Sai
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
@@ -1998,7 +1998,7 @@ Show # equipment rare - top 1H maces
 
 	Rarity Rare
 	Class "One Hand Maces"
-	BaseType "Auric Mace" "Behemoth Mace" Gavel
+	BaseType "Auric Mace" "Behemoth Mace" "Driftwood Club" Gavel
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
