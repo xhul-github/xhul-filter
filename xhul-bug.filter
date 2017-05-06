@@ -4,13 +4,17 @@
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
 # BUG BEHAVIOUR AND UNDERSTANDING
-# In FB block switches browser, your parser seems to internally interpret block switch labels as actual variable values (instead of just character strings), in the case they include only digits.
-# The consequence is that the labels become replaced by an incremental value.
-# Note that in this filter, the buggy variable gets initialized at 0, but that's not always the case.
+# In FB block switches browser, your parser seems to internally interpret block switch labels as variable values (instead of just character strings) if they include only digits.
+# The consequence is that all the digits-only labels in the filter become replaced by an incremental value.
+# It appears that the "buggy variable" is initialized by the very first block in the filter :
+# 1) If the switch label of the first block is not a digits-only string, the variable gets initialized at 0 (like in this filter).
+# 2) If the switch label of the first block is a digits-only string, the variable gets initialized at the label value.
+# So, if you remove the first block in this filter, the 4 incorrect strings will become 782, 783, 784, and 785.
+# Hoping this will help, keep up the good work =]
 
 # example 1 - not only digits - fine - correctly labeled in FB block switches browser
-#Show # test - abc123
-#	BaseType Transmutation
+Show # test - abc123
+	BaseType Transmutation
 
 # example 2 - only digits - bug - incorrectly labeled "0" in FB block switches browser
 Show # test - 782
