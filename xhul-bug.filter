@@ -4,15 +4,15 @@
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
 # BUG BEHAVIOUR AND UNDERSTANDING
-# When your parser first encounters a block with a switch label that includes only digits, it seems to internally interpret it as an actual variable value, instead of just a character string.
-# The consequence is that all the remaining digits-only labels will be replaced by an incremental value in the block switches browser.
+# For some reason, your parser seems to internally interpret block switch labels as actual variable values (instead of just character strings), in the case they include only digits.
+# The consequence is that the labels become replaced by an incremental value in the block switches browser.
+# Note that in this filter, the buggy variable gets initialized at 0, but i've managed to make it start at a higher value during my tests.
 
 # example 1 - not only digits - fine - correctly labeled in FB block switches browser
 Show # test - abc123
 	BaseType Transmutation
 
-# example 2 - only digits - fine - correctly labeled in FB block switches browser
-# However, the fact that the string includes only digits actually triggers the bug for the rest of the filter.
+# example 2 - only digits - bug - incorrectly labeled "0" in FB block switches browser
 Show # test - 782
 	BaseType Augmentation
 
@@ -20,7 +20,7 @@ Show # test - 782
 Show # test - 99k01
 	BaseType Alteration
 
-# example 4 - only digits - bug - incorrectly labeled "783" in FB block switches browser (782+1)
+# example 4 - only digits - bug - incorrectly labeled "1" in FB block switches browser (0+1)
 Show # test - 48634
 	BaseType Alchemy
 
@@ -28,10 +28,10 @@ Show # test - 48634
 Show # test - 654x
 	BaseType Exalted
 
-# example 6 - only digits - bug - incorrectly labeled "784" in FB block switches browser (783+1)
+# example 6 - only digits - bug - incorrectly labeled "2" in FB block switches browser (1+1)
 Show # test - 7
 	BaseType Chaos
 
-# example 7 - only digits - bug - incorrectly labeled "785" in FB block switches browser (784+1)
+# example 7 - only digits - bug - incorrectly labeled "3" in FB block switches browser (2+1)
 Show # test - 888
 	BaseType Regal
