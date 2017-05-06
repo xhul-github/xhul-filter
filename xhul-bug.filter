@@ -3,18 +3,35 @@
 # variant : bug
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
-Show # currency - test
-	Class Currency
-	BaseType Chaos
+# BUG BEHAVIOUR + WHAT I UNDERSTOOD OF IT AFTER MULTIPLE TESTS
+# The first "not only digits" block in a filter actually triggers the bug for all the remaining "only digits" blocks after it.
+# For the bugged blocks, the label will incorrectly be replaced by an incremental digit, starting from "0".
+# I believe what is happening is that for some reason, the string is processed as a variable value, not just characters.
 
-Show # currency - 369
-	Class Currency
-	BaseType Divine
+# only digits - fine - correctly labeled as "123" in FB block switches browser
+Show # bug - 123
+	BaseType Transmutation
 
-Show # currency - 258
-	Class Currency
+# not only digits - fine - correctly labeled as "abc56" in FB block switches browser
+Show # bug - abc56
+	BaseType Augmentation
+
+# bug triggered
+
+# not only digits - fine - correctly labeled as "99k01" in FB block switches browser
+Show # bug - 99k01
+	BaseType Alchemy
+
+# only digits - bug - incorrectly labeled as "0" in FB block switches browser
+Show # bug - 48634
+	BaseType Alteration
+
+# only digits - bug - incorrectly labeled as "1" in FB block switches browser
+Show # bug - 7
 	BaseType Exalted
 
-Show # currency - 147
-	Class Currency
-	BaseType Mirror
+# only digits - bug - incorrectly labeled as "2" in FB block switches browser
+Show # bug - 888
+	BaseType Regal
+
+# and so on...
