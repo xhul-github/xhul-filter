@@ -3,35 +3,35 @@
 # variant : bug
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
-# BUG BEHAVIOUR + WHAT I UNDERSTOOD OF IT AFTER MULTIPLE TESTS
-# The first "not only digits" block in a filter actually triggers the bug for all the remaining "only digits" blocks after it.
-# For the bugged blocks, the label will incorrectly be replaced by an incremental value.
-# I believe what is happening is that for some reason, the string is processed as an actual variable value, not just characters.
+# BUG BEHAVIOUR AND UNDERSTANDING
+# When your parser first encounters a block with a switch label that includes only digits, it seems to internally interpret it as an actual variable value, instead of just a character string.
+# The consequence is that all the remaining digits-only labels will be replaced by an incremental value in the block switches browser.
 
-# only digits - fine - correctly labeled "123" in FB block switches browser
-Show # test - 123
+# example 1 - not only digits - fine - correctly labeled in FB block switches browser
+Show # test - abc123
 	BaseType Transmutation
 
-# not only digits - fine - correctly labeled "abc56" in FB block switches browser
-#Show # test - abc56
-#	BaseType Augmentation
+# example 2 - only digits - fine - correctly labeled in FB block switches browser
+# However, the fact that the string includes only digits actually triggers the bug for the rest of the filter.
+Show # test - 782
+	BaseType Augmentation
 
-# bug triggered
-
-# not only digits - fine - correctly labeled "99k01" in FB block switches browser
-#Show # test - 99k01
-#	BaseType Alchemy
-
-# only digits - bug - incorrectly labeled "124" in FB block switches browser
-Show # test - 48634
+# example 3 - not only digits - fine - correctly labeled in FB block switches browser
+Show # test - 99k01
 	BaseType Alteration
 
-# only digits - bug - incorrectly labeled "125" in FB block switches browser
-Show # test - 7
+# example 4 - only digits - bug - incorrectly labeled "783" in FB block switches browser (782+1)
+Show # test - 48634
+	BaseType Alchemy
+
+# example 5 - not only digits - fine - correctly labeled in FB block switches browser
+Show # test - 654x
 	BaseType Exalted
 
-# only digits - bug - incorrectly labeled "126" in FB block switches browser
+# example 6 - only digits - bug - incorrectly labeled "784" in FB block switches browser (783+1)
+Show # test - 7
+	BaseType Chaos
+
+# example 7 - only digits - bug - incorrectly labeled "785" in FB block switches browser (784+1)
 Show # test - 888
 	BaseType Regal
-
-# and so on...
