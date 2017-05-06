@@ -5,33 +5,33 @@
 
 # BUG BEHAVIOUR + WHAT I UNDERSTOOD OF IT AFTER MULTIPLE TESTS
 # The first "not only digits" block in a filter actually triggers the bug for all the remaining "only digits" blocks after it.
-# For the bugged blocks, the label will incorrectly be replaced by an incremental digit, starting from "0".
-# I believe what is happening is that for some reason, the string is processed as a variable value, not just characters.
+# For the bugged blocks, the label will incorrectly be replaced by an incremental value.
+# I believe what is happening is that for some reason, the string is processed as an actual variable value, not just characters.
 
-# only digits - fine - correctly labeled as "123" in FB block switches browser
-Show # bug - 123
+# only digits - fine - correctly labeled "123" in FB block switches browser
+Show # test - 123
 	BaseType Transmutation
 
-# not only digits - fine - correctly labeled as "abc56" in FB block switches browser
-Show # bug - abc56
-	BaseType Augmentation
+# not only digits - fine - correctly labeled "abc56" in FB block switches browser
+#Show # test - abc56
+#	BaseType Augmentation
 
 # bug triggered
 
-# not only digits - fine - correctly labeled as "99k01" in FB block switches browser
-Show # bug - 99k01
-	BaseType Alchemy
+# not only digits - fine - correctly labeled "99k01" in FB block switches browser
+#Show # test - 99k01
+#	BaseType Alchemy
 
-# only digits - bug - incorrectly labeled as "0" in FB block switches browser
-Show # bug - 48634
+# only digits - bug - incorrectly labeled "124" in FB block switches browser
+Show # test - 48634
 	BaseType Alteration
 
-# only digits - bug - incorrectly labeled as "1" in FB block switches browser
-Show # bug - 7
+# only digits - bug - incorrectly labeled "125" in FB block switches browser
+Show # test - 7
 	BaseType Exalted
 
-# only digits - bug - incorrectly labeled as "2" in FB block switches browser
-Show # bug - 888
+# only digits - bug - incorrectly labeled "126" in FB block switches browser
+Show # test - 888
 	BaseType Regal
 
 # and so on...
