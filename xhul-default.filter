@@ -1,5 +1,5 @@
 # xhul filter
-# version : 2.6.B
+# version : 2.6.C
 # variant : default
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -1096,6 +1096,7 @@ Show # equipment normal - chisel
 	Rarity Normal
 	Class "One Hand Maces"
 	BaseType Gavel "Rock Breaker" "Stone Hammer"
+	Corrupted False
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
@@ -1109,6 +1110,7 @@ Show # equipment normal - chance boots
 	Rarity Normal
 	Class Boots
 	BaseType "Sorcerer Boots"
+	Corrupted False
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
@@ -1122,6 +1124,7 @@ Show # equipment normal - chance belts
 	Rarity Normal
 	Class Belts
 	BaseType "Leather Belt"
+	Corrupted False
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
