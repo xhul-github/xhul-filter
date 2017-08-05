@@ -862,771 +862,6 @@ Show # maps - unknown
 
 #
 #
-# Section: EQUIPMENT NORMAL
-#
-#
-
-# nor000
-
-Show # equipment normal - rods
-
-	Rarity Normal
-	Class Fishing
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor001
-
-Show # equipment normal - old shields
-
-	Rarity Normal
-	Class Shields
-	BaseType "Golden Flame"
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor002
-
-Show # equipment normal - old quivers
-
-	Rarity Normal
-	Class Quivers
-	BaseType "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor003
-
-Show # equipment normal - old chests
-
-	Rarity Normal
-	Class Body
-	BaseType "Golden Mantle"
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor004
-
-Show # equipment normal - old helms
-
-	Rarity Normal
-	Class Helmets
-	BaseType "Golden Wreath"
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor005
-
-Show # equipment normal - old gloves
-
-	Rarity Normal
-	Class Gloves
-	BaseType "Golden Bracers"
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor006
-
-Show # equipment normal - old boots
-
-	Rarity Normal
-	Class Boots
-	BaseType "Golden Caligae"
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor007
-
-Show # equipment normal - old belts
-
-	Rarity Normal
-	Class Belts
-	BaseType "Golden Obi"
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor008
-
-Show # equipment normal - old amulets
-
-	Rarity Normal
-	Class Amulets
-	BaseType "Jet Amulet"
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor009
-
-Show # equipment normal - old rings
-
-	Rarity Normal
-	Class Rings
-	BaseType "Golden Hoop"
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor010
-
-Show # equipment normal - item level 100
-
-	Rarity Normal
-	ItemLevel 100
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# nor011
-
-Show # equipment normal - special 1 chests
-
-	Rarity Normal
-	Class Body
-	BaseType "Sacrificial Garb"
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# nor012
-
-Show # equipment normal - special 1 amulets
-
-	Rarity Normal
-	Class Amulets
-	BaseType "Ruby Amulet"
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# nor013
-
-Show # equipment normal - special 1 jewels
-
-	Rarity Normal
-	Class Jewel
-	BaseType "Prismatic Jewel"
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# nor014
-
-Show # equipment normal - sockets 6 linked
-
-	Rarity Normal
-	LinkedSockets 6
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# nor015
-
-Show # equipment normal - special 2 helms
-
-	Rarity Normal
-	Class Helmets
-	BaseType "Bone Helmet"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# nor016
-
-Show # equipment normal - special 2 gloves
-
-	Rarity Normal
-	Class Gloves
-	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# nor017
-
-Show # equipment normal - special 2 boots
-
-	Rarity Normal
-	Class Boots
-	BaseType "Two-Toned Boots"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# nor018
-
-Show # equipment normal - special 2 belts
-
-	Rarity Normal
-	Class Belts
-	BaseType "Crystal Belt" "Vanguard Belt"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# nor019
-
-Show # equipment normal - special 2 amulets
-
-	Rarity Normal
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet" Talisman
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# nor020
-
-Show # equipment normal - special 2 rings
-
-	Rarity Normal
-	Class Rings
-	BaseType "Breach Ring" "Opal Ring" "Prismatic Ring" "Steel Ring"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# nor021
-
-Show # equipment normal - sockets 6
-
-	Rarity Normal
-	Sockets 6
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# nor022
-
-Show # equipment normal - sockets RGB 1
-
-	Rarity Normal
-	SocketGroup RGB
-	Width 1
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-
-# nor023
-
-Show # equipment normal - sockets RGB 2
-
-	Rarity Normal
-	SocketGroup RGB
-	Height 2
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-
-# nor024
-
-Show # equipment normal - chisel
-
-	Rarity Normal
-	Class "One Hand Maces"
-	BaseType Gavel "Rock Breaker" "Stone Hammer"
-	Corrupted False
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 255 255 255
-	SetBorderColor 0 0 0 0
-
-# nor025
-
-Show # equipment normal - chance boots
-
-	Rarity Normal
-	Class Boots
-	BaseType "Sorcerer Boots"
-	Corrupted False
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 255 255 255
-	SetBorderColor 0 0 0 0
-
-# nor026
-
-Show # equipment normal - chance belts
-
-	Rarity Normal
-	Class Belts
-	BaseType "Leather Belt"
-	Corrupted False
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 255 255 255
-	SetBorderColor 0 0 0 0
-
-# nor027
-
-Show # equipment normal - rest
-
-	Rarity Normal
-
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 255 255 255
-	SetBorderColor 0 0 0 0
-
-# nor028
-
-#
-#
-# Section: EQUIPMENT MAGIC
-#
-#
-
-# mag000
-
-Show # equipment magic - rods
-
-	Rarity Magic
-	Class Fishing
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag001
-
-Show # equipment magic - old shields
-
-	Rarity Magic
-	Class Shields
-	BaseType "Golden Flame"
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag002
-
-Show # equipment magic - old quivers
-
-	Rarity Magic
-	Class Quivers
-	BaseType "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag003
-
-Show # equipment magic - old chests
-
-	Rarity Magic
-	Class Body
-	BaseType "Golden Mantle"
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag004
-
-Show # equipment magic - old helms
-
-	Rarity Magic
-	Class Helmets
-	BaseType "Golden Wreath"
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag005
-
-Show # equipment magic - old gloves
-
-	Rarity Magic
-	Class Gloves
-	BaseType "Golden Bracers"
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag006
-
-Show # equipment magic - old boots
-
-	Rarity Magic
-	Class Boots
-	BaseType "Golden Caligae"
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag007
-
-Show # equipment magic - old belts
-
-	Rarity Magic
-	Class Belts
-	BaseType "Golden Obi"
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag008
-
-Show # equipment magic - old amulets
-
-	Rarity Magic
-	Class Amulets
-	BaseType "Jet Amulet"
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag009
-
-Show # equipment magic - old rings
-
-	Rarity Magic
-	Class Rings
-	BaseType "Golden Hoop"
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag010
-
-Show # equipment magic - item level 100
-
-	Rarity Magic
-	ItemLevel 100
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# mag011
-
-Show # equipment magic - special 1 chests
-
-	Rarity Magic
-	Class Body
-	BaseType "Sacrificial Garb"
-
-	SetFontSize 39
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# mag012
-
-Show # equipment magic - special 1 amulets
-
-	Rarity Magic
-	Class Amulets
-	BaseType "Ruby Amulet"
-
-	SetFontSize 39
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# mag013
-
-Show # equipment magic - special 1 jewels
-
-	Rarity Magic
-	Class Jewel
-	BaseType "Prismatic Jewel"
-
-	SetFontSize 39
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# mag014
-
-Show # equipment magic - sockets 6 linked
-
-	Rarity Magic
-	LinkedSockets 6
-
-	SetFontSize 39
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# mag015
-
-Show # equipment magic - special 2 helms
-
-	Rarity Magic
-	Class Helmets
-	BaseType "Bone Helmet"
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# mag016
-
-Show # equipment magic - special 2 gloves
-
-	Rarity Magic
-	Class Gloves
-	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# mag017
-
-Show # equipment magic - special 2 boots
-
-	Rarity Magic
-	Class Boots
-	BaseType "Two-Toned Boots"
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# mag018
-
-Show # equipment magic - special 2 belts
-
-	Rarity Magic
-	Class Belts
-	BaseType "Crystal Belt" "Vanguard Belt"
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# mag019
-
-Show # equipment magic - special 2 amulets
-
-	Rarity Magic
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet" Talisman
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# mag020
-
-Show # equipment magic - special 2 rings
-
-	Rarity Magic
-	Class Rings
-	BaseType "Breach Ring" "Opal Ring" "Prismatic Ring" "Steel Ring"
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# mag021
-
-Show # equipment magic - sockets 6
-
-	Rarity Magic
-	Sockets 6
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# mag022
-
-Show # equipment magic - warband
-
-	Rarity Magic
-	Class Boots Bows Claws Daggers Gloves Hand Helmets Sceptres Staves Wands
-	Identified True
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 127 127 255 255
-	SetBorderColor 0 255 0 255
-
-# mag023
-
-Show # equipment magic - sockets RGB 1
-
-	Rarity Magic
-	SocketGroup RGB
-	Width 1
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 127 127 255 255
-	SetBorderColor 127 127 255 255
-
-# mag024
-
-Show # equipment magic - sockets RGB 2
-
-	Rarity Magic
-	SocketGroup RGB
-	Height 2
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 127 127 255 255
-	SetBorderColor 127 127 255 255
-
-# mag025
-
-Show # equipment magic - jewels
-
-	Rarity Magic
-	Class Jewel
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 127 127 255 255
-	SetBorderColor 0 0 0 0
-
-# mag026
-
-Show # equipment magic - rest
-
-	Rarity Magic
-
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 127 127 255 255
-	SetBorderColor 0 0 0 0
-
-# mag027
-
-#
-#
 # Section: EQUIPMENT RARE
 #
 #
@@ -2244,6 +1479,771 @@ Show # equipment rare - rest
 	SetBorderColor 0 0 0 0
 
 # rar046
+
+#
+#
+# Section: EQUIPMENT MAGIC
+#
+#
+
+# mag000
+
+Show # equipment magic - rods
+
+	Rarity Magic
+	Class Fishing
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag001
+
+Show # equipment magic - old shields
+
+	Rarity Magic
+	Class Shields
+	BaseType "Golden Flame"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag002
+
+Show # equipment magic - old quivers
+
+	Rarity Magic
+	Class Quivers
+	BaseType "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag003
+
+Show # equipment magic - old chests
+
+	Rarity Magic
+	Class Body
+	BaseType "Golden Mantle"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag004
+
+Show # equipment magic - old helms
+
+	Rarity Magic
+	Class Helmets
+	BaseType "Golden Wreath"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag005
+
+Show # equipment magic - old gloves
+
+	Rarity Magic
+	Class Gloves
+	BaseType "Golden Bracers"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag006
+
+Show # equipment magic - old boots
+
+	Rarity Magic
+	Class Boots
+	BaseType "Golden Caligae"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag007
+
+Show # equipment magic - old belts
+
+	Rarity Magic
+	Class Belts
+	BaseType "Golden Obi"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag008
+
+Show # equipment magic - old amulets
+
+	Rarity Magic
+	Class Amulets
+	BaseType "Jet Amulet"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag009
+
+Show # equipment magic - old rings
+
+	Rarity Magic
+	Class Rings
+	BaseType "Golden Hoop"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag010
+
+Show # equipment magic - item level 100
+
+	Rarity Magic
+	ItemLevel 100
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# mag011
+
+Show # equipment magic - special 1 chests
+
+	Rarity Magic
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# mag012
+
+Show # equipment magic - special 1 amulets
+
+	Rarity Magic
+	Class Amulets
+	BaseType "Ruby Amulet"
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# mag013
+
+Show # equipment magic - special 1 jewels
+
+	Rarity Magic
+	Class Jewel
+	BaseType "Prismatic Jewel"
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# mag014
+
+Show # equipment magic - sockets 6 linked
+
+	Rarity Magic
+	LinkedSockets 6
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# mag015
+
+Show # equipment magic - special 2 helms
+
+	Rarity Magic
+	Class Helmets
+	BaseType "Bone Helmet"
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# mag016
+
+Show # equipment magic - special 2 gloves
+
+	Rarity Magic
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# mag017
+
+Show # equipment magic - special 2 boots
+
+	Rarity Magic
+	Class Boots
+	BaseType "Two-Toned Boots"
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# mag018
+
+Show # equipment magic - special 2 belts
+
+	Rarity Magic
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# mag019
+
+Show # equipment magic - special 2 amulets
+
+	Rarity Magic
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet" Talisman
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# mag020
+
+Show # equipment magic - special 2 rings
+
+	Rarity Magic
+	Class Rings
+	BaseType "Breach Ring" "Opal Ring" "Prismatic Ring" "Steel Ring"
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# mag021
+
+Show # equipment magic - sockets 6
+
+	Rarity Magic
+	Sockets 6
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# mag022
+
+Show # equipment magic - warband
+
+	Rarity Magic
+	Class Boots Bows Claws Daggers Gloves Hand Helmets Sceptres Staves Wands
+	Identified True
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 127 127 255 255
+	SetBorderColor 0 255 0 255
+
+# mag023
+
+Show # equipment magic - sockets RGB 1
+
+	Rarity Magic
+	SocketGroup RGB
+	Width 1
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 127 127 255 255
+	SetBorderColor 127 127 255 255
+
+# mag024
+
+Show # equipment magic - sockets RGB 2
+
+	Rarity Magic
+	SocketGroup RGB
+	Height 2
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 127 127 255 255
+	SetBorderColor 127 127 255 255
+
+# mag025
+
+Show # equipment magic - jewels
+
+	Rarity Magic
+	Class Jewel
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 127 127 255 255
+	SetBorderColor 0 0 0 0
+
+# mag026
+
+Show # equipment magic - rest
+
+	Rarity Magic
+
+	SetFontSize 27
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 127 127 255 255
+	SetBorderColor 0 0 0 0
+
+# mag027
+
+#
+#
+# Section: EQUIPMENT NORMAL
+#
+#
+
+# nor000
+
+Show # equipment normal - rods
+
+	Rarity Normal
+	Class Fishing
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor001
+
+Show # equipment normal - old shields
+
+	Rarity Normal
+	Class Shields
+	BaseType "Golden Flame"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor002
+
+Show # equipment normal - old quivers
+
+	Rarity Normal
+	Class Quivers
+	BaseType "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor003
+
+Show # equipment normal - old chests
+
+	Rarity Normal
+	Class Body
+	BaseType "Golden Mantle"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor004
+
+Show # equipment normal - old helms
+
+	Rarity Normal
+	Class Helmets
+	BaseType "Golden Wreath"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor005
+
+Show # equipment normal - old gloves
+
+	Rarity Normal
+	Class Gloves
+	BaseType "Golden Bracers"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor006
+
+Show # equipment normal - old boots
+
+	Rarity Normal
+	Class Boots
+	BaseType "Golden Caligae"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor007
+
+Show # equipment normal - old belts
+
+	Rarity Normal
+	Class Belts
+	BaseType "Golden Obi"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor008
+
+Show # equipment normal - old amulets
+
+	Rarity Normal
+	Class Amulets
+	BaseType "Jet Amulet"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor009
+
+Show # equipment normal - old rings
+
+	Rarity Normal
+	Class Rings
+	BaseType "Golden Hoop"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor010
+
+Show # equipment normal - item level 100
+
+	Rarity Normal
+	ItemLevel 100
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# nor011
+
+Show # equipment normal - special 1 chests
+
+	Rarity Normal
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# nor012
+
+Show # equipment normal - special 1 amulets
+
+	Rarity Normal
+	Class Amulets
+	BaseType "Ruby Amulet"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# nor013
+
+Show # equipment normal - special 1 jewels
+
+	Rarity Normal
+	Class Jewel
+	BaseType "Prismatic Jewel"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# nor014
+
+Show # equipment normal - sockets 6 linked
+
+	Rarity Normal
+	LinkedSockets 6
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# nor015
+
+Show # equipment normal - special 2 helms
+
+	Rarity Normal
+	Class Helmets
+	BaseType "Bone Helmet"
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# nor016
+
+Show # equipment normal - special 2 gloves
+
+	Rarity Normal
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# nor017
+
+Show # equipment normal - special 2 boots
+
+	Rarity Normal
+	Class Boots
+	BaseType "Two-Toned Boots"
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# nor018
+
+Show # equipment normal - special 2 belts
+
+	Rarity Normal
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# nor019
+
+Show # equipment normal - special 2 amulets
+
+	Rarity Normal
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet" Talisman
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# nor020
+
+Show # equipment normal - special 2 rings
+
+	Rarity Normal
+	Class Rings
+	BaseType "Breach Ring" "Opal Ring" "Prismatic Ring" "Steel Ring"
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# nor021
+
+Show # equipment normal - sockets 6
+
+	Rarity Normal
+	Sockets 6
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# nor022
+
+Show # equipment normal - sockets RGB 1
+
+	Rarity Normal
+	SocketGroup RGB
+	Width 1
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+
+# nor023
+
+Show # equipment normal - sockets RGB 2
+
+	Rarity Normal
+	SocketGroup RGB
+	Height 2
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+
+# nor024
+
+Show # equipment normal - chisel
+
+	Rarity Normal
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
+	Corrupted False
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 0 0 0 0
+
+# nor025
+
+Show # equipment normal - chance boots
+
+	Rarity Normal
+	Class Boots
+	BaseType "Sorcerer Boots"
+	Corrupted False
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 0 0 0 0
+
+# nor026
+
+Show # equipment normal - chance belts
+
+	Rarity Normal
+	Class Belts
+	BaseType "Leather Belt"
+	Corrupted False
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 0 0 0 0
+
+# nor027
+
+Show # equipment normal - rest
+
+	Rarity Normal
+
+	SetFontSize 27
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 0 0 0 0
+
+# nor028
 
 #
 #
