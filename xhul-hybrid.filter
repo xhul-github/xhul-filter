@@ -1,5 +1,5 @@
 # xhul filter
-# version : 2.6.C
+# version : 3.0.A
 # variant : hybrid
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -11,34 +11,36 @@
 
 # cur000
 
-Show # currency - *
+Show # currency - *****
 
 	Class Stackable
-	BaseType Armourer Augmentation Blacksmith Scroll Shard Transmutation
+	BaseType Albino Eternal Imprint "Mirror o"
 
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 191 127 255
-	SetBorderColor 0 0 0 0
+	SetFontSize 45
+	SetBackgroundColor 255 191 127 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
 
 # cur001
 
-Show # currency - **
+Show # currency - ****
 
 	Class Stackable
-	BaseType Alteration Chance Chromatic Glassblower Jeweller Silver
+	BaseType "Ancient O" Blessing Divine "Essence of De" "Essence of Ho" "Essence of Hy" "Essence of I" "Exalted O" "Harbinger's O" Mirror "Orb of An"
 
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 191 127 255
-	SetBorderColor 255 191 127 255
+	SetFontSize 39
+	SetBackgroundColor 255 191 127 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
 
 # cur002
 
 Show # currency - ***
 
 	Class Stackable
-	BaseType " Essence" Alchemy Blessed Cartographer Chaos Fusing Gemcutter Perandus Prophecy Regal Regret Remnant Scouring Splinter Unshaping Vaal
+	BaseType Ancient Annulment Blessed Cartographer "Chaos O" "Engineer's O" Essence Exalted Gemcutter Harbinger "Orb of Alc" "Orb of B" "Orb of F" "Orb of H" "Orb of R" "Orb of S" Perandus Prophecy "Regal O" Remnant Splinter Stacked Unshaping Vaal
 
 	SetFontSize 33
 	SetBackgroundColor 255 191 127 255
@@ -48,30 +50,41 @@ Show # currency - ***
 
 # cur003
 
-Show # currency - ****
+Show # currency - **
 
 	Class Stackable
-	BaseType Blessing Divine Essence Exalted Stacked
+	BaseType Alchemy Binding Chaos Chromatic Engineer Glassblower Horizon Jeweller "Orb of Al" "Orb of C" Regal Silver
 
-	SetFontSize 39
-	SetBackgroundColor 255 191 127 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 191 127 255
+	SetBorderColor 255 191 127 255
 
 # cur004
 
-Show # currency - *****
+Show # currency - *
+
+	Class Stackable
+	BaseType Armourer Blacksmith Orb Scroll Shard
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 191 127 255
+	SetBorderColor 0 0 0 0
+
+# cur005
+
+Show # currency - unknown
 
 	Class Stackable
 
 	SetFontSize 45
-	SetBackgroundColor 255 191 127 255
+	SetBackgroundColor 255 0 255 255
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 1 300
 
-# cur005
+# cur006
 
 #
 #
@@ -80,18 +93,6 @@ Show # currency - *****
 #
 
 # car000
-
-Show # cards - conflict **
-
-	Class Divination
-	BaseType "The Wolf's Shadow"
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 191 255 127 255
-	SetBorderColor 191 255 127 255
-
-# car001
 
 Show # cards - conflict ***
 
@@ -104,31 +105,32 @@ Show # cards - conflict ***
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# car002
+# car001
 
-Show # cards - *
-
-	Class Divination
-	BaseType "Cartographer's Delight" "Dying Anguish" "Gift of the Gemling Queen" "Lantador's Lost Love" Prosperity "Rain Tempter" "Shard of Fate" "Struck by Lightning" "The Carrion Crow" "The Endurance" "The Flora's Gift" "The Fox" "The Inoculated" "The King's Blade" "The Lord in Black" "The Lover" "The Rabid Rhoa" "The Sigil" "The Surgeon" "The Twins"
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 191 255 127 255
-	SetBorderColor 0 0 0 0
-
-# car003
-
-Show # cards - **
+Show # cards - conflict **
 
 	Class Divination
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" "Boundless Realms" "Chaotic Disposition" "Coveted Possession" Death "Doedre's Madness" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Grave Knowledge" "Her Mask" Heterochromia Hope Hubris "Hunter's Resolve" "Jack in the Box" "Light and Truth" "Lost Worlds" Loyalty "Luck of the Vaal" "Lucky Connections" "Lysah's Respite" Mitts "Rain of Chaos" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Battle Born" "The Betrayal" "The Body" "The Cartographer" "The Catalyst" "The Coming Storm" "The Conduit" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Explorer" "The Feast" "The Fletcher" "The Gambler" "The Garish Power" "The Gemcutter" "The Gentleman" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The Inventor" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Metalsmith's Gift" "The Oath" "The One With All" "The Pack Leader" "The Pact" "The Penitent" "The Polymath" "The Risk" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Siren" "The Soul" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Survivalist" "The Throne" "The Tower" "The Traitor" "The Trial" "The Union" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wind" "The Wolf" "The Wolverine" "The Wrath" "The Wretched" "Three Faces in the Dark" "Thunderous Skies" Tranquillity "Treasure Hunter" "Vinia's Token"
+	BaseType "The Wolf's Shadow"
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
 	SetTextColor 191 255 127 255
 	SetBorderColor 191 255 127 255
 
-# car004
+# car002
+
+Show # cards - ****
+
+	Class Divination
+	BaseType "House of Mirrors" "Mawr Blaidd" "The Doctor" "The Fiend"
+
+	SetFontSize 39
+	SetBackgroundColor 191 255 127 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# car003
 
 Show # cards - ***
 
@@ -141,19 +143,43 @@ Show # cards - ***
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
+# car004
+
+Show # cards - **
+
+	Class Divination
+	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" "Boundless Realms" "Chaotic Disposition" "Coveted Possession" Death "Doedre's Madness" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Grave Knowledge" "Her Mask" Heterochromia Hope Hubris "Hunter's Resolve" "Jack in the Box" "Light and Truth" "Lost Worlds" Loyalty "Luck of the Vaal" "Lucky Connections" "Lysah's Respite" Mitts "Rain of Chaos" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Battle Born" "The Betrayal" "The Body" "The Cartographer" "The Catalyst" "The Coming Storm" "The Conduit" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Explorer" "The Feast" "The Fletcher" "The Flora's Gift" "The Gambler" "The Garish Power" "The Gemcutter" "The Gentleman" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The Inventor" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Metalsmith's Gift" "The Oath" "The One With All" "The Pack Leader" "The Pact" "The Penitent" "The Polymath" "The Risk" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Siren" "The Soul" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Survivalist" "The Throne" "The Tower" "The Traitor" "The Trial" "The Union" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wind" "The Wolf" "The Wolverine" "The Wrath" "The Wretched" "Three Faces in the Dark" "Thunderous Skies" Tranquillity "Treasure Hunter" "Vinia's Token"
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 191 255 127 255
+	SetBorderColor 191 255 127 255
+
 # car005
 
-Show # cards - ****
+Show # cards - *
+
+	Class Divination
+	BaseType "Cartographer's Delight" "Dying Anguish" "Gift of the Gemling Queen" "Lantador's Lost Love" Prosperity "Rain Tempter" "Shard of Fate" "Struck by Lightning" "The Carrion Crow" "The Endurance" "The Fox" "The Inoculated" "The King's Blade" "The Lord in Black" "The Lover" "The Rabid Rhoa" "The Sigil" "The Surgeon" "The Twins"
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 191 255 127 255
+	SetBorderColor 0 0 0 0
+
+# car006
+
+Show # cards - unknown
 
 	Class Divination
 
-	SetFontSize 39
-	SetBackgroundColor 191 255 127 255
+	SetFontSize 45
+	SetBackgroundColor 255 0 255 255
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
+	PlayAlertSound 1 300
 
-# car006
+# car007
 
 #
 #
@@ -259,6 +285,43 @@ Show # gems - rest
 
 # spe000
 
+Show # special - old
+
+	Class Leaguestones
+
+	SetFontSize 45
+	SetBackgroundColor 0 255 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# spe001
+
+Show # special - souls
+
+	Class Pantheon
+
+	SetFontSize 39
+	SetBackgroundColor 0 255 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# spe002
+
+Show # special - vessels
+
+	Class Fragments
+	BaseType Divine
+
+	SetFontSize 39
+	SetBackgroundColor 0 255 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# spe003
+
 Show # special - quest | labyrinth
 
 	Class Quest "Labyrinth Item" Trinket
@@ -269,7 +332,7 @@ Show # special - quest | labyrinth
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# spe001
+# spe004
 
 #
 #
@@ -450,6 +513,18 @@ Show # unique - item level 100
 
 # uni011
 
+Show # unique - special 1 pieces
+
+	Class Piece
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# uni012
+
 Show # unique - special 1 chests
 
 	Rarity Unique
@@ -462,7 +537,7 @@ Show # unique - special 1 chests
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# uni012
+# uni013
 
 Show # unique - special 1 amulets
 
@@ -476,7 +551,7 @@ Show # unique - special 1 amulets
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# uni013
+# uni014
 
 Show # unique - special 1 jewels
 
@@ -490,7 +565,7 @@ Show # unique - special 1 jewels
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# uni014
+# uni015
 
 Show # unique - sockets 6 linked
 
@@ -503,7 +578,7 @@ Show # unique - sockets 6 linked
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# uni015
+# uni016
 
 Show # unique - special 2 helms
 
@@ -517,7 +592,7 @@ Show # unique - special 2 helms
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# uni016
+# uni017
 
 Show # unique - special 2 gloves
 
@@ -531,7 +606,7 @@ Show # unique - special 2 gloves
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# uni017
+# uni018
 
 Show # unique - special 2 boots
 
@@ -545,7 +620,7 @@ Show # unique - special 2 boots
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# uni018
+# uni019
 
 Show # unique - special 2 belts
 
@@ -559,7 +634,7 @@ Show # unique - special 2 belts
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# uni019
+# uni020
 
 Show # unique - special 2 amulets
 
@@ -573,7 +648,7 @@ Show # unique - special 2 amulets
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# uni020
+# uni021
 
 Show # unique - special 2 rings
 
@@ -587,7 +662,7 @@ Show # unique - special 2 rings
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# uni021
+# uni022
 
 Show # unique - sockets 6
 
@@ -600,7 +675,7 @@ Show # unique - sockets 6
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# uni022
+# uni023
 
 Show # unique - corrupted
 
@@ -612,7 +687,7 @@ Show # unique - corrupted
 	SetTextColor 255 127 0 255
 	SetBorderColor 255 0 0 255
 
-# uni023
+# uni024
 
 Show # unique - sockets RGB 1
 
@@ -625,7 +700,7 @@ Show # unique - sockets RGB 1
 	SetTextColor 255 127 0 255
 	SetBorderColor 255 127 0 255
 
-# uni024
+# uni025
 
 Show # unique - sockets RGB 2
 
@@ -638,7 +713,7 @@ Show # unique - sockets RGB 2
 	SetTextColor 255 127 0 255
 	SetBorderColor 255 127 0 255
 
-# uni025
+# uni026
 
 Show # unique - rest
 
@@ -649,39 +724,7 @@ Show # unique - rest
 	SetTextColor 255 127 0 255
 	SetBorderColor 0 0 0 0
 
-# uni026
-
-#
-#
-# Section: STONES
-#
-#
-
-# sto000
-
-Show # stones - rarity normal
-
-	Class Leaguestones
-	Rarity Normal
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 127 127 255
-	SetBorderColor 255 127 127 255
-
-# sto001
-
-Show # stones - rarity magic
-
-	Class Leaguestones
-
-	SetFontSize 33
-	SetBackgroundColor 255 127 127 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# sto002
+# uni027
 
 #
 #
@@ -691,59 +734,23 @@ Show # stones - rarity magic
 
 # map000
 
-Show # maps - tier 1>5
+Show # maps - old
 
-	Class Maps
-	DropLevel < 73
+	Class Misc
+	BaseType Ancient
 
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 0 0 255
-	SetBorderColor 0 0 0 0
+	SetFontSize 45
+	SetBackgroundColor 255 0 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
 
 # map001
 
-Show # maps - tier 6>10
-
-	Class Maps
-	DropLevel < 78
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 0 0 255
-	SetBorderColor 255 0 0 255
-
-# map002
-
 Show # maps - special 1
 
-	Class Fragments Labyrinth
-	BaseType Key Offering Sacrifice
-
-	SetFontSize 33
-	SetBackgroundColor 255 0 0 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# map003
-
-Show # maps - tier 11>15
-
-	Class Maps
-	DropLevel < 83
-
-	SetFontSize 33
-	SetBackgroundColor 255 0 0 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# map004
-
-Show # maps - tier 16 | special 2
-
-	Class Map
+	Class Misc
+	BaseType Breachstone
 
 	SetFontSize 39
 	SetBackgroundColor 255 0 0 255
@@ -751,7 +758,107 @@ Show # maps - tier 16 | special 2
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
+# map002
+
+Show # maps - fragments 1
+
+	Class Fragments
+	BaseType Fragment Mortal
+
+	SetFontSize 39
+	SetBackgroundColor 255 0 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# map003
+
+Show # maps - tier 16+
+
+	Class Maps
+	DropLevel > 82
+
+	SetFontSize 39
+	SetBackgroundColor 255 0 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# map004
+
+Show # maps - special 2
+
+	Class Labyrinth
+	BaseType Offering
+
+	SetFontSize 33
+	SetBackgroundColor 255 0 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
 # map005
+
+Show # maps - fragments 2
+
+	Class Fragments
+	BaseType Key Sacrifice
+
+	SetFontSize 33
+	SetBackgroundColor 255 0 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# map006
+
+Show # maps - tier 11>15
+
+	Class Maps
+	DropLevel > 77
+
+	SetFontSize 33
+	SetBackgroundColor 255 0 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# map007
+
+Show # maps - tier 6>10
+
+	Class Maps
+	DropLevel > 72
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+
+# map008
+
+Show # maps - tier 1>5
+
+	Class Maps
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 0 255
+	SetBorderColor 0 0 0 0
+
+# map009
+
+Show # maps - unknown
+
+	Class Map
+
+	SetFontSize 45
+	SetBackgroundColor 255 0 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 1 300
+
+# map010
 
 #
 #
@@ -1456,7 +1563,7 @@ Show # equipment magic - sockets 6
 
 # mag022
 
-Hide # equipment magic - warband
+Show # equipment magic - warband
 
 	Rarity Magic
 	Class Boots Bows Claws Daggers Gloves Hand Helmets Sceptres Staves Wands
