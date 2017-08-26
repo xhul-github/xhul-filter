@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.0.A
+# version : 3.0.B
 # variant : default
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -11,10 +11,10 @@
 
 # cur000
 
-Show # currency - *****
+Show # currency - unreal | fishing | legacy (sound 1)
 
 	Class Stackable
-	BaseType Albino Eternal Imprint "Mirror o"
+	BaseType Albino Eternal Imprint Kalandra
 
 	SetFontSize 45
 	SetBackgroundColor 255 191 127 255
@@ -24,10 +24,10 @@ Show # currency - *****
 
 # cur001
 
-Show # currency - ****
+Show # currency - awesome | undroppable (sound 3)
 
 	Class Stackable
-	BaseType "Ancient O" Blessing Divine "Essence of De" "Essence of Ho" "Essence of Hy" "Essence of I" "Exalted O" "Harbinger's O" Mirror "Orb of An"
+	BaseType " Annulment" " Binding" " Horizons" "Ancient O" Blessing Delirium Divine "Engineer's O" "Exalted O" "Harbinger's O" Horror Hysteria Insanity Mirror Prophecy Seal Unshaping
 
 	SetFontSize 39
 	SetBackgroundColor 255 191 127 255
@@ -37,10 +37,10 @@ Show # currency - ****
 
 # cur002
 
-Show # currency - ***
+Show # currency - high | restricted (sound 2)
 
 	Class Stackable
-	BaseType Ancient Annulment Blessed Cartographer "Chaos O" "Engineer's O" Essence Exalted Gemcutter Harbinger "Orb of Alc" "Orb of B" "Orb of F" "Orb of H" "Orb of R" "Orb of S" Perandus Prophecy "Regal O" Remnant Splinter Stacked Unshaping Vaal
+	BaseType " Alchemy" Ancient Annulment Binding Blessed Cartographer's Chaos Engineer's Essence Exalted Fusing Gemcutter's Harbinger's Horizon Perandus Regal Regret Remnant Scouring Splinter Stacked Vaal
 
 	SetFontSize 33
 	SetBackgroundColor 255 191 127 255
@@ -50,10 +50,10 @@ Show # currency - ***
 
 # cur003
 
-Show # currency - **
+Show # currency - average
 
 	Class Stackable
-	BaseType Alchemy Binding Chaos Chromatic Engineer Glassblower Horizon Jeweller "Orb of Al" "Orb of C" Regal Silver
+	BaseType " Alteration" Alchemy Chance Chromatic Glassblower's Jeweller's Silver
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
@@ -62,10 +62,9 @@ Show # currency - **
 
 # cur004
 
-Show # currency - *
+Show # currency - low
 
 	Class Stackable
-	BaseType Armourer Blacksmith Orb Scroll Shard
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
@@ -73,18 +72,6 @@ Show # currency - *
 	SetBorderColor 0 0 0 0
 
 # cur005
-
-Show # currency - unknown
-
-	Class Stackable
-
-	SetFontSize 45
-	SetBackgroundColor 255 0 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# cur006
 
 #
 #
@@ -94,32 +81,7 @@ Show # currency - unknown
 
 # car000
 
-Show # cards - conflict ***
-
-	Class Divination
-	BaseType "The Dragon's Heart"
-
-	SetFontSize 33
-	SetBackgroundColor 191 255 127 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# car001
-
-Show # cards - conflict **
-
-	Class Divination
-	BaseType "The Wolf's Shadow"
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 191 255 127 255
-	SetBorderColor 191 255 127 255
-
-# car002
-
-Show # cards - ****
+Show # cards - awesome (sound 3)
 
 	Class Divination
 	BaseType "House of Mirrors" "Mawr Blaidd" "The Doctor" "The Fiend"
@@ -130,12 +92,12 @@ Show # cards - ****
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# car003
+# car001
 
-Show # cards - ***
+Show # cards - high (sound 2)
 
 	Class Divination
-	BaseType "Abandoned Wealth" "Bowyer's Dream" "Call to the First Ones" "Destined to Crumble" "Dialla's Subjugation" "Emperor of Purity" Humility "Hunter's Reward" "Last Hope" "Lingering Remnants" "Lucky Deck" "Merciless Armament" "Might is Right" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Calling" "The Cataclysm" "The Celestial Justicar" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Devastator" "The Ethereal" "The Formless Sea" "The Forsaken" "The Harvester" "The Hoarder" "The Immortal" "The Jester" "The King's Heart" "The Last One Standing" "The Offering" "The Opulent" "The Poet" "The Porcupine" "The Queen" "The Road to Power" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Spoiled Prince" "The Thaumaturgist" "The Tyrant" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Wolven King's Bite" "Time-Lost Relic" "Turn the Other Cheek" "Volatile Power" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Bowyer's Dream" "Call to the First Ones" "Destined to Crumble" "Dialla's Subjugation" "Emperor of Purity" Humility "Hunter's Reward" "Last Hope" "Lingering Remnants" "Lucky Deck" "Merciless Armament" "Might is Right" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Calling" "The Cataclysm" "The Celestial Justicar" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Devastator" "The Dragon's Heart" "The Ethereal" "The Formless Sea" "The Forsaken" "The Harvester" "The Hoarder" "The Immortal" "The Jester" "The King's Heart" "The Last One Standing" "The Offering" "The Opulent" "The Poet" "The Porcupine" "The Queen" "The Road to Power" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Spoiled Prince" "The Thaumaturgist" "The Tyrant" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Wolven King's Bite" "Time-Lost Relic" "Turn the Other Cheek" "Volatile Power" "Wealth and Power"
 
 	SetFontSize 33
 	SetBackgroundColor 191 255 127 255
@@ -143,43 +105,30 @@ Show # cards - ***
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# car004
+# car002
 
-Show # cards - **
+Show # cards - average
 
 	Class Divination
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" "Boundless Realms" "Chaotic Disposition" "Coveted Possession" Death "Doedre's Madness" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Grave Knowledge" "Her Mask" Heterochromia Hope Hubris "Hunter's Resolve" "Jack in the Box" "Light and Truth" "Lost Worlds" Loyalty "Luck of the Vaal" "Lucky Connections" "Lysah's Respite" Mitts "Rain of Chaos" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Battle Born" "The Betrayal" "The Body" "The Cartographer" "The Catalyst" "The Coming Storm" "The Conduit" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Explorer" "The Feast" "The Fletcher" "The Flora's Gift" "The Gambler" "The Garish Power" "The Gemcutter" "The Gentleman" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The Inventor" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Metalsmith's Gift" "The Oath" "The One With All" "The Pack Leader" "The Pact" "The Penitent" "The Polymath" "The Risk" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Siren" "The Soul" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Survivalist" "The Throne" "The Tower" "The Traitor" "The Trial" "The Union" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wind" "The Wolf" "The Wolverine" "The Wrath" "The Wretched" "Three Faces in the Dark" "Thunderous Skies" Tranquillity "Treasure Hunter" "Vinia's Token"
+	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" "Boundless Realms" "Chaotic Disposition" "Coveted Possession" Death "Doedre's Madness" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Grave Knowledge" "Her Mask" Heterochromia Hope Hubris "Hunter's Resolve" "Jack in the Box" "Light and Truth" "Lost Worlds" Loyalty "Luck of the Vaal" "Lucky Connections" "Lysah's Respite" Mitts "Rain of Chaos" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Battle Born" "The Betrayal" "The Body" "The Cartographer" "The Catalyst" "The Coming Storm" "The Conduit" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Explorer" "The Feast" "The Fletcher" "The Flora's Gift" "The Gambler" "The Garish Power" "The Gemcutter" "The Gentleman" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The Inventor" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Metalsmith's Gift" "The Oath" "The One With All" "The Pack Leader" "The Pact" "The Penitent" "The Polymath" "The Risk" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Siren" "The Soul" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Survivalist" "The Throne" "The Tower" "The Traitor" "The Trial" "The Union" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wind" "The Wolf" "The Wolf's Shadow" "The Wolverine" "The Wrath" "The Wretched" "Three Faces in the Dark" "Thunderous Skies" Tranquillity "Treasure Hunter" "Vinia's Token"
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
 	SetTextColor 191 255 127 255
 	SetBorderColor 191 255 127 255
 
-# car005
+# car003
 
-Show # cards - *
+Show # cards - low
 
 	Class Divination
-	BaseType "Cartographer's Delight" "Dying Anguish" "Gift of the Gemling Queen" "Lantador's Lost Love" Prosperity "Rain Tempter" "Shard of Fate" "Struck by Lightning" "The Carrion Crow" "The Endurance" "The Fox" "The Inoculated" "The King's Blade" "The Lord in Black" "The Lover" "The Rabid Rhoa" "The Sigil" "The Surgeon" "The Twins"
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
 	SetTextColor 191 255 127 255
 	SetBorderColor 0 0 0 0
 
-# car006
-
-Show # cards - unknown
-
-	Class Divination
-
-	SetFontSize 45
-	SetBackgroundColor 255 0 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# car007
+# car004
 
 #
 #
@@ -189,7 +138,7 @@ Show # cards - unknown
 
 # gem000
 
-Show # gems - old
+Show # gems - legacy (sound 1)
 
 	Class Support
 	BaseType Quantity
@@ -202,10 +151,10 @@ Show # gems - old
 
 # gem001
 
-Show # gems - special 1
+Show # gems - special | undroppable (sound 3)
 
 	Class Skill
-	BaseType Breach Empower Enhance Enlighten Mines Portal
+	BaseType Block Breach Empower Enhance Enlighten Mines Portal
 
 	SetFontSize 39
 	SetBackgroundColor 0 255 255 255
@@ -215,7 +164,7 @@ Show # gems - special 1
 
 # gem002
 
-Show # gems - quality 21>23
+Show # gems - quality 21+ (sound 3)
 
 	Class Skill
 	Quality > 20
@@ -228,10 +177,10 @@ Show # gems - quality 21>23
 
 # gem003
 
-Show # gems - special 2
+Show # gems - restricted (sound 2)
 
-	Class Skill
-	BaseType Block Vaal
+	Class Active
+	BaseType Vaal
 
 	SetFontSize 33
 	SetBackgroundColor 0 255 255 255
@@ -241,7 +190,7 @@ Show # gems - special 2
 
 # gem004
 
-Show # gems - quality 11>20
+Show # gems - quality 11+ (sound 2)
 
 	Class Skill
 	Quality > 10
@@ -254,7 +203,7 @@ Show # gems - quality 11>20
 
 # gem005
 
-Show # gems - quality 1>10
+Show # gems - quality 1+
 
 	Class Skill
 	Quality > 0
@@ -285,7 +234,7 @@ Show # gems - rest
 
 # spe000
 
-Show # special - old
+Show # special - legacy (sound 1)
 
 	Class Leaguestones
 
@@ -297,9 +246,9 @@ Show # special - old
 
 # spe001
 
-Show # special - souls
+Show # special - offerings | souls (sound 3)
 
-	Class Pantheon
+	Class "Labyrinth Map Item" Pantheon
 
 	SetFontSize 39
 	SetBackgroundColor 0 255 0 255
@@ -309,7 +258,7 @@ Show # special - souls
 
 # spe002
 
-Show # special - vessels
+Show # special - vessels (sound 3)
 
 	Class Fragments
 	BaseType Divine
@@ -322,9 +271,9 @@ Show # special - vessels
 
 # spe003
 
-Show # special - quest | labyrinth
+Show # special - quest | labyrinth (sound 2)
 
-	Class Quest "Labyrinth Item" Trinket
+	Class Quest Labyrinth
 
 	SetFontSize 33
 	SetBackgroundColor 0 255 0 255
@@ -336,13 +285,13 @@ Show # special - quest | labyrinth
 
 #
 #
-# Section: UNDROPPABLE
+# Section: SYSTEM
 #
 #
 
-# und000
+# sys000
 
-Show # undroppable - doodads | microtransactions | relics
+Show # system - doodads | microtransactions | relics
 
 	Class Hideout Microtransactions Relics
 
@@ -351,7 +300,7 @@ Show # undroppable - doodads | microtransactions | relics
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 0 0 0
 
-# und001
+# sys001
 
 #
 #
@@ -361,7 +310,7 @@ Show # undroppable - doodads | microtransactions | relics
 
 # uni000
 
-Show # unique - rods
+Show # unique - fishing (sound 1)
 
 	Rarity Unique
 	Class Fishing
@@ -374,7 +323,7 @@ Show # unique - rods
 
 # uni001
 
-Show # unique - old shields
+Show # unique - legacy - shields (sound 1)
 
 	Rarity Unique
 	Class Shields
@@ -388,11 +337,11 @@ Show # unique - old shields
 
 # uni002
 
-Show # unique - old quivers
+Show # unique - legacy - quivers (sound 1)
 
 	Rarity Unique
 	Class Quivers
-	BaseType "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
+	BaseType "Heavy Quiver"
 
 	SetFontSize 45
 	SetBackgroundColor 255 127 0 255
@@ -402,7 +351,7 @@ Show # unique - old quivers
 
 # uni003
 
-Show # unique - old chests
+Show # unique - legacy - chests (sound 1)
 
 	Rarity Unique
 	Class Body
@@ -416,7 +365,7 @@ Show # unique - old chests
 
 # uni004
 
-Show # unique - old helms
+Show # unique - legacy - helms (sound 1)
 
 	Rarity Unique
 	Class Helmets
@@ -430,7 +379,7 @@ Show # unique - old helms
 
 # uni005
 
-Show # unique - old gloves
+Show # unique - legacy - gloves (sound 1)
 
 	Rarity Unique
 	Class Gloves
@@ -444,7 +393,7 @@ Show # unique - old gloves
 
 # uni006
 
-Show # unique - old boots
+Show # unique - legacy - boots (sound 1)
 
 	Rarity Unique
 	Class Boots
@@ -458,7 +407,7 @@ Show # unique - old boots
 
 # uni007
 
-Show # unique - old belts
+Show # unique - legacy - belts (sound 1)
 
 	Rarity Unique
 	Class Belts
@@ -472,7 +421,7 @@ Show # unique - old belts
 
 # uni008
 
-Show # unique - old amulets
+Show # unique - legacy - amulets (sound 1)
 
 	Rarity Unique
 	Class Amulets
@@ -486,7 +435,7 @@ Show # unique - old amulets
 
 # uni009
 
-Show # unique - old rings
+Show # unique - legacy - rings (sound 1)
 
 	Rarity Unique
 	Class Rings
@@ -500,7 +449,7 @@ Show # unique - old rings
 
 # uni010
 
-Show # unique - item level 100
+Show # unique - ilvl 100 (sound 1)
 
 	Rarity Unique
 	ItemLevel 100
@@ -513,7 +462,7 @@ Show # unique - item level 100
 
 # uni011
 
-Show # unique - special 1 pieces
+Show # unique - pieces (sound 3)
 
 	Class Piece
 
@@ -525,11 +474,11 @@ Show # unique - special 1 pieces
 
 # uni012
 
-Show # unique - special 1 chests
+Show # unique - valuable belts (sound 3)
 
 	Rarity Unique
-	Class Body
-	BaseType "Sacrificial Garb"
+	Class Belts
+	BaseType "Leather Belt"
 
 	SetFontSize 39
 	SetBackgroundColor 255 127 0 255
@@ -539,11 +488,11 @@ Show # unique - special 1 chests
 
 # uni013
 
-Show # unique - special 1 amulets
+Show # unique - undroppable - amulets (sound 3)
 
 	Rarity Unique
 	Class Amulets
-	BaseType "Ruby Amulet"
+	BaseType "Black Maw Talisman" "Clutching Talisman" "Greatwolf Talisman" "Rotfeather Talisman" "Ruby Amulet" "Wereclaw Talisman"
 
 	SetFontSize 39
 	SetBackgroundColor 255 127 0 255
@@ -553,7 +502,7 @@ Show # unique - special 1 amulets
 
 # uni014
 
-Show # unique - special 1 jewels
+Show # unique - undroppable - jewels (sound 3)
 
 	Rarity Unique
 	Class Jewel
@@ -567,7 +516,51 @@ Show # unique - special 1 jewels
 
 # uni015
 
-Show # unique - sockets 6 linked
+Show # unique - undroppable - maps (sound 3)
+
+	Rarity Unique
+	Class Maps
+	BaseType "Harbinger Map"
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# uni016
+
+Show # unique - acuity (sound 3)
+
+	Rarity Unique
+	Class Gloves
+	BaseType "Vaal Gauntlets"
+	ItemLevel 82
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# uni017
+
+Show # unique - skyforth (sound 3)
+
+	Rarity Unique
+	Class Boots
+	BaseType "Sorcerer Boots"
+	DropLevel 84
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# uni018
+
+Show # unique - sockets 6 linked (sound 3)
 
 	Rarity Unique
 	LinkedSockets 6
@@ -578,55 +571,13 @@ Show # unique - sockets 6 linked
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# uni016
-
-Show # unique - special 2 helms
-
-	Rarity Unique
-	Class Helmets
-	BaseType "Bone Helmet"
-
-	SetFontSize 33
-	SetBackgroundColor 255 127 0 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# uni017
-
-Show # unique - special 2 gloves
-
-	Rarity Unique
-	Class Gloves
-	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-
-	SetFontSize 33
-	SetBackgroundColor 255 127 0 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# uni018
-
-Show # unique - special 2 boots
-
-	Rarity Unique
-	Class Boots
-	BaseType "Two-Toned Boots"
-
-	SetFontSize 33
-	SetBackgroundColor 255 127 0 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
 # uni019
 
-Show # unique - special 2 belts
+Show # unique - restricted chests (sound 2)
 
 	Rarity Unique
-	Class Belts
-	BaseType "Crystal Belt" "Vanguard Belt"
+	Class Body
+	BaseType "Sacrificial Garb"
 
 	SetFontSize 33
 	SetBackgroundColor 255 127 0 255
@@ -636,35 +587,7 @@ Show # unique - special 2 belts
 
 # uni020
 
-Show # unique - special 2 amulets
-
-	Rarity Unique
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet" Talisman
-
-	SetFontSize 33
-	SetBackgroundColor 255 127 0 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# uni021
-
-Show # unique - special 2 rings
-
-	Rarity Unique
-	Class Rings
-	BaseType "Breach Ring" "Opal Ring" "Prismatic Ring" "Steel Ring"
-
-	SetFontSize 33
-	SetBackgroundColor 255 127 0 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
-# uni022
-
-Show # unique - sockets 6
+Show # unique - sockets 6 (sound 2)
 
 	Rarity Unique
 	Sockets 6
@@ -675,7 +598,7 @@ Show # unique - sockets 6
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# uni023
+# uni021
 
 Show # unique - corrupted
 
@@ -687,9 +610,9 @@ Show # unique - corrupted
 	SetTextColor 255 127 0 255
 	SetBorderColor 255 0 0 255
 
-# uni024
+# uni022
 
-Show # unique - sockets RGB 1
+Show # unique - sockets rgb width 1
 
 	Rarity Unique
 	SocketGroup RGB
@@ -700,9 +623,9 @@ Show # unique - sockets RGB 1
 	SetTextColor 255 127 0 255
 	SetBorderColor 255 127 0 255
 
-# uni025
+# uni023
 
-Show # unique - sockets RGB 2
+Show # unique - sockets rgb width 2
 
 	Rarity Unique
 	SocketGroup RGB
@@ -713,7 +636,7 @@ Show # unique - sockets RGB 2
 	SetTextColor 255 127 0 255
 	SetBorderColor 255 127 0 255
 
-# uni026
+# uni024
 
 Show # unique - rest
 
@@ -724,7 +647,7 @@ Show # unique - rest
 	SetTextColor 255 127 0 255
 	SetBorderColor 0 0 0 0
 
-# uni027
+# uni025
 
 #
 #
@@ -734,7 +657,7 @@ Show # unique - rest
 
 # map000
 
-Show # maps - old
+Show # maps - legacy (sound 1)
 
 	Class Misc
 	BaseType Ancient
@@ -747,10 +670,10 @@ Show # maps - old
 
 # map001
 
-Show # maps - special 1
+Show # maps - undroppable - maps (sound 3)
 
-	Class Misc
-	BaseType Breachstone
+	Class Maps
+	BaseType Harbinger
 
 	SetFontSize 39
 	SetBackgroundColor 255 0 0 255
@@ -760,7 +683,19 @@ Show # maps - special 1
 
 # map002
 
-Show # maps - fragments 1
+Show # maps - undroppable - breachstones (sound 3)
+
+	Class Misc
+
+	SetFontSize 39
+	SetBackgroundColor 255 0 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# map003
+
+Show # maps - fragments high (sound 3)
 
 	Class Fragments
 	BaseType Fragment Mortal
@@ -771,9 +706,9 @@ Show # maps - fragments 1
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# map003
+# map004
 
-Show # maps - tier 16+
+Show # maps - maps tier 16+ (sound 3)
 
 	Class Maps
 	DropLevel > 82
@@ -784,22 +719,9 @@ Show # maps - tier 16+
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# map004
-
-Show # maps - special 2
-
-	Class Labyrinth
-	BaseType Offering
-
-	SetFontSize 33
-	SetBackgroundColor 255 0 0 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 2 300
-
 # map005
 
-Show # maps - fragments 2
+Show # maps - fragments low (sound 2)
 
 	Class Fragments
 	BaseType Key Sacrifice
@@ -812,7 +734,7 @@ Show # maps - fragments 2
 
 # map006
 
-Show # maps - tier 11>15
+Show # maps - maps tier 11+ (sound 2)
 
 	Class Maps
 	DropLevel > 77
@@ -825,7 +747,7 @@ Show # maps - tier 11>15
 
 # map007
 
-Show # maps - tier 6>10
+Show # maps - maps tier 6+
 
 	Class Maps
 	DropLevel > 72
@@ -837,9 +759,9 @@ Show # maps - tier 6>10
 
 # map008
 
-Show # maps - tier 1>5
+Show # maps - maps tier 1+
 
-	Class Maps
+	Class Map
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
@@ -847,18 +769,6 @@ Show # maps - tier 1>5
 	SetBorderColor 0 0 0 0
 
 # map009
-
-Show # maps - unknown
-
-	Class Map
-
-	SetFontSize 45
-	SetBackgroundColor 255 0 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 1 300
-
-# map010
 
 #
 #
@@ -868,7 +778,7 @@ Show # maps - unknown
 
 # rar000
 
-Show # equipment rare - rods
+Show # equipment rare - fishing (sound 1)
 
 	Rarity Rare
 	Class Fishing
@@ -881,7 +791,7 @@ Show # equipment rare - rods
 
 # rar001
 
-Show # equipment rare - old shields
+Show # equipment rare - legacy - shields (sound 1)
 
 	Rarity Rare
 	Class Shields
@@ -895,7 +805,7 @@ Show # equipment rare - old shields
 
 # rar002
 
-Show # equipment rare - old quivers
+Show # equipment rare - legacy - quivers (sound 1)
 
 	Rarity Rare
 	Class Quivers
@@ -909,7 +819,7 @@ Show # equipment rare - old quivers
 
 # rar003
 
-Show # equipment rare - old chests
+Show # equipment rare - legacy - chests (sound 1)
 
 	Rarity Rare
 	Class Body
@@ -923,7 +833,7 @@ Show # equipment rare - old chests
 
 # rar004
 
-Show # equipment rare - old helms
+Show # equipment rare - legacy - helms (sound 1)
 
 	Rarity Rare
 	Class Helmets
@@ -937,7 +847,7 @@ Show # equipment rare - old helms
 
 # rar005
 
-Show # equipment rare - old gloves
+Show # equipment rare - legacy - gloves (sound 1)
 
 	Rarity Rare
 	Class Gloves
@@ -951,7 +861,7 @@ Show # equipment rare - old gloves
 
 # rar006
 
-Show # equipment rare - old boots
+Show # equipment rare - legacy - boots (sound 1)
 
 	Rarity Rare
 	Class Boots
@@ -965,7 +875,7 @@ Show # equipment rare - old boots
 
 # rar007
 
-Show # equipment rare - old belts
+Show # equipment rare - legacy - belts (sound 1)
 
 	Rarity Rare
 	Class Belts
@@ -979,7 +889,7 @@ Show # equipment rare - old belts
 
 # rar008
 
-Show # equipment rare - old amulets
+Show # equipment rare - legacy - amulets (sound 1)
 
 	Rarity Rare
 	Class Amulets
@@ -993,7 +903,7 @@ Show # equipment rare - old amulets
 
 # rar009
 
-Show # equipment rare - old rings
+Show # equipment rare - legacy - rings (sound 1)
 
 	Rarity Rare
 	Class Rings
@@ -1007,7 +917,7 @@ Show # equipment rare - old rings
 
 # rar010
 
-Show # equipment rare - item level 100
+Show # equipment rare - ilvl 100 (sound 1)
 
 	Rarity Rare
 	ItemLevel 100
@@ -1020,11 +930,11 @@ Show # equipment rare - item level 100
 
 # rar011
 
-Show # equipment rare - special 1 chests
+Show # equipment rare - undroppable - amulets (sound 3)
 
 	Rarity Rare
-	Class Body
-	BaseType "Sacrificial Garb"
+	Class Amulets
+	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Ruby Amulet" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255
@@ -1034,21 +944,7 @@ Show # equipment rare - special 1 chests
 
 # rar012
 
-Show # equipment rare - special 1 amulets
-
-	Rarity Rare
-	Class Amulets
-	BaseType "Ruby Amulet"
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 0 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# rar013
-
-Show # equipment rare - special 1 jewels
+Show # equipment rare - undroppable - jewels (sound 3)
 
 	Rarity Rare
 	Class Jewel
@@ -1060,9 +956,99 @@ Show # equipment rare - special 1 jewels
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
+# rar013
+
+Show # equipment rare - restricted ilvl 84+ - helms (sound 3)
+
+	Rarity Rare
+	Class Helmets
+	BaseType "Bone Helmet"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
 # rar014
 
-Show # equipment rare - sockets 6 linked
+Show # equipment rare - restricted ilvl 84+ - gloves (sound 3)
+
+	Rarity Rare
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# rar015
+
+Show # equipment rare - restricted ilvl 84+ - boots (sound 3)
+
+	Rarity Rare
+	Class Boots
+	BaseType "Two-Toned Boots"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# rar016
+
+Show # equipment rare - restricted ilvl 84+ - belts (sound 3)
+
+	Rarity Rare
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# rar017
+
+Show # equipment rare - restricted ilvl 84+ - amulets (sound 3)
+
+	Rarity Rare
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# rar018
+
+Show # equipment rare - restricted ilvl 84+ - rings (sound 3)
+
+	Rarity Rare
+	Class Rings
+	BaseType "Breach Ring" "Opal Ring" "Prismatic Ring" "Steel Ring"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# rar019
+
+Show # equipment rare - sockets 6 linked (sound 3)
 
 	Rarity Rare
 	LinkedSockets 6
@@ -1073,9 +1059,23 @@ Show # equipment rare - sockets 6 linked
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# rar015
+# rar020
 
-Show # equipment rare - special 2 helms
+Show # equipment rare - restricted - chests (sound 2)
+
+	Rarity Rare
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 0 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# rar021
+
+Show # equipment rare - restricted - helms (sound 2)
 
 	Rarity Rare
 	Class Helmets
@@ -1087,9 +1087,9 @@ Show # equipment rare - special 2 helms
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# rar016
+# rar022
 
-Show # equipment rare - special 2 gloves
+Show # equipment rare - restricted - gloves (sound 2)
 
 	Rarity Rare
 	Class Gloves
@@ -1101,9 +1101,9 @@ Show # equipment rare - special 2 gloves
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# rar017
+# rar023
 
-Show # equipment rare - special 2 boots
+Show # equipment rare - restricted - boots (sound 2)
 
 	Rarity Rare
 	Class Boots
@@ -1115,9 +1115,9 @@ Show # equipment rare - special 2 boots
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# rar018
+# rar024
 
-Show # equipment rare - special 2 belts
+Show # equipment rare - restricted - belts (sound 2)
 
 	Rarity Rare
 	Class Belts
@@ -1129,13 +1129,13 @@ Show # equipment rare - special 2 belts
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# rar019
+# rar025
 
-Show # equipment rare - special 2 amulets
+Show # equipment rare - restricted - amulets (sound 2)
 
 	Rarity Rare
 	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet" Talisman
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
 
 	SetFontSize 33
 	SetBackgroundColor 255 255 0 255
@@ -1143,9 +1143,9 @@ Show # equipment rare - special 2 amulets
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# rar020
+# rar026
 
-Show # equipment rare - special 2 rings
+Show # equipment rare - restricted - rings (sound 2)
 
 	Rarity Rare
 	Class Rings
@@ -1157,9 +1157,9 @@ Show # equipment rare - special 2 rings
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# rar021
+# rar027
 
-Show # equipment rare - sockets 6
+Show # equipment rare - sockets 6 (sound 2)
 
 	Rarity Rare
 	Sockets 6
@@ -1170,7 +1170,7 @@ Show # equipment rare - sockets 6
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# rar022
+# rar028
 
 Show # equipment rare - corrupted
 
@@ -1182,9 +1182,9 @@ Show # equipment rare - corrupted
 	SetTextColor 255 255 0 255
 	SetBorderColor 255 0 0 255
 
-# rar023
+# rar029
 
-Show # equipment rare - sockets RGB 1
+Show # equipment rare - sockets rgb width 1
 
 	Rarity Rare
 	SocketGroup RGB
@@ -1195,9 +1195,9 @@ Show # equipment rare - sockets RGB 1
 	SetTextColor 255 255 0 255
 	SetBorderColor 255 255 0 255
 
-# rar024
+# rar030
 
-Show # equipment rare - sockets RGB 2
+Show # equipment rare - sockets rgb width 2
 
 	Rarity Rare
 	SocketGroup RGB
@@ -1208,21 +1208,21 @@ Show # equipment rare - sockets RGB 2
 	SetTextColor 255 255 0 255
 	SetBorderColor 255 255 0 255
 
-# rar025
+# rar031
 
-Show # equipment rare - belts | amulets | rings | jewels
+Show # equipment rare - quivers | belts | amulets | rings | jewels
 
 	Rarity Rare
-	Class Amulets Belts Jewel Rings
+	Class Amulets Belts Jewel Quivers Rings
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar026
+# rar032
 
-Show # equipment rare - top staves
+Show # equipment rare - top - staves
 
 	Rarity Rare
 	Class Staves
@@ -1233,9 +1233,9 @@ Show # equipment rare - top staves
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar027
+# rar033
 
-Show # equipment rare - top 2H axes
+Show # equipment rare - top - 2h axes
 
 	Rarity Rare
 	Class "Two Hand Axes"
@@ -1246,9 +1246,9 @@ Show # equipment rare - top 2H axes
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar028
+# rar034
 
-Show # equipment rare - top 2H maces
+Show # equipment rare - top - 2h maces
 
 	Rarity Rare
 	Class "Two Hand Maces"
@@ -1259,9 +1259,9 @@ Show # equipment rare - top 2H maces
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar029
+# rar035
 
-Show # equipment rare - top 2H swords
+Show # equipment rare - top - 2h swords
 
 	Rarity Rare
 	Class "Two Hand Swords"
@@ -1272,22 +1272,22 @@ Show # equipment rare - top 2H swords
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar030
+# rar036
 
-Show # equipment rare - top claws
+Show # equipment rare - top - claws
 
 	Rarity Rare
 	Class Claws
-	BaseType "Eye Gouger" "Gemini Claw" "Great White Claw" "Hellion's Paw" "Imperial Claw" "Nailed Fist" "Sharktooth Claw" "Terror Claw" "Vaal Claw"
+	BaseType "Eye Gouger" "Gemini Claw" "Great White Claw" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Vaal Claw"
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar031
+# rar037
 
-Show # equipment rare - top daggers
+Show # equipment rare - top - daggers
 
 	Rarity Rare
 	Class Daggers
@@ -1298,9 +1298,9 @@ Show # equipment rare - top daggers
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar032
+# rar038
 
-Show # equipment rare - top sceptres
+Show # equipment rare - top - sceptres
 
 	Rarity Rare
 	Class Sceptres
@@ -1311,9 +1311,9 @@ Show # equipment rare - top sceptres
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar033
+# rar039
 
-Show # equipment rare - top wands
+Show # equipment rare - top - wands
 
 	Rarity Rare
 	Class Wands
@@ -1324,9 +1324,9 @@ Show # equipment rare - top wands
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar034
+# rar040
 
-Show # equipment rare - top 1H axes
+Show # equipment rare - top - 1h axes
 
 	Rarity Rare
 	Class "One Hand Axes"
@@ -1337,22 +1337,22 @@ Show # equipment rare - top 1H axes
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar035
+# rar041
 
-Show # equipment rare - top 1H maces
+Show # equipment rare - top - 1h maces
 
 	Rarity Rare
 	Class "One Hand Maces"
-	BaseType "Auric Mace" "Behemoth Mace" "Driftwood Club" Gavel
+	BaseType "Auric Mace" "Behemoth Mace" Gavel
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar036
+# rar042
 
-Show # equipment rare - top 1H swords
+Show # equipment rare - top - 1h swords
 
 	Rarity Rare
 	Class "One Hand Swords"
@@ -1363,9 +1363,9 @@ Show # equipment rare - top 1H swords
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar037
+# rar043
 
-Show # equipment rare - top thrusting swords
+Show # equipment rare - top - thrusting swords
 
 	Rarity Rare
 	Class Thrusting
@@ -1376,9 +1376,9 @@ Show # equipment rare - top thrusting swords
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar038
+# rar044
 
-Show # equipment rare - top bows
+Show # equipment rare - top - bows
 
 	Rarity Rare
 	Class Bows
@@ -1389,35 +1389,22 @@ Show # equipment rare - top bows
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar039
+# rar045
 
-Show # equipment rare - top shields
+Show # equipment rare - top - shields
 
 	Rarity Rare
 	Class Shields
-	BaseType "Archon Kite Shield" "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Fossilised Spirit Shield" "Lacquered Buckler" "Mirrored Spiked Shield" "Shagreen Tower Shield" "Spiny Round Shield" "Supreme Spiked Shield" "Teak Round Shield" "Titanium Spirit Shield" "Vaal Buckler"
+	BaseType "Archon Kite Shield" "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Lacquered Buckler" "Mirrored Spiked Shield" "Shagreen Tower Shield" "Spiny Round Shield" "Supreme Spiked Shield" "Teak Round Shield" "Titanium Spirit Shield" "Vaal Buckler"
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar040
+# rar046
 
-Show # equipment rare - top quivers
-
-	Rarity Rare
-	Class Quivers
-	BaseType "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255
-	SetTextColor 255 255 0 255
-	SetBorderColor 0 0 0 0
-
-# rar041
-
-Show # equipment rare - top chests
+Show # equipment rare - top - chests
 
 	Rarity Rare
 	Class Body
@@ -1428,9 +1415,9 @@ Show # equipment rare - top chests
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar042
+# rar047
 
-Show # equipment rare - top helms
+Show # equipment rare - top - helms
 
 	Rarity Rare
 	Class Helmets
@@ -1441,22 +1428,22 @@ Show # equipment rare - top helms
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar043
+# rar048
 
-Show # equipment rare - top gloves
+Show # equipment rare - top - gloves
 
 	Rarity Rare
 	Class Gloves
-	BaseType "Crusader Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets"
+	BaseType "Crusader Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets"
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar044
+# rar049
 
-Show # equipment rare - top boots
+Show # equipment rare - top - boots
 
 	Rarity Rare
 	Class Boots
@@ -1467,7 +1454,7 @@ Show # equipment rare - top boots
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar045
+# rar050
 
 Hide # equipment rare - rest
 
@@ -1478,7 +1465,7 @@ Hide # equipment rare - rest
 	SetTextColor 255 255 0 255
 	SetBorderColor 0 0 0 0
 
-# rar046
+# rar051
 
 #
 #
@@ -1488,7 +1475,7 @@ Hide # equipment rare - rest
 
 # mag000
 
-Show # equipment magic - rods
+Show # equipment magic - fishing (sound 1)
 
 	Rarity Magic
 	Class Fishing
@@ -1501,7 +1488,7 @@ Show # equipment magic - rods
 
 # mag001
 
-Show # equipment magic - old shields
+Show # equipment magic - legacy - shields (sound 1)
 
 	Rarity Magic
 	Class Shields
@@ -1515,7 +1502,7 @@ Show # equipment magic - old shields
 
 # mag002
 
-Show # equipment magic - old quivers
+Show # equipment magic - legacy - quivers (sound 1)
 
 	Rarity Magic
 	Class Quivers
@@ -1529,7 +1516,7 @@ Show # equipment magic - old quivers
 
 # mag003
 
-Show # equipment magic - old chests
+Show # equipment magic - legacy - chests (sound 1)
 
 	Rarity Magic
 	Class Body
@@ -1543,7 +1530,7 @@ Show # equipment magic - old chests
 
 # mag004
 
-Show # equipment magic - old helms
+Show # equipment magic - legacy - helms (sound 1)
 
 	Rarity Magic
 	Class Helmets
@@ -1557,7 +1544,7 @@ Show # equipment magic - old helms
 
 # mag005
 
-Show # equipment magic - old gloves
+Show # equipment magic - legacy - gloves (sound 1)
 
 	Rarity Magic
 	Class Gloves
@@ -1571,7 +1558,7 @@ Show # equipment magic - old gloves
 
 # mag006
 
-Show # equipment magic - old boots
+Show # equipment magic - legacy - boots (sound 1)
 
 	Rarity Magic
 	Class Boots
@@ -1585,7 +1572,7 @@ Show # equipment magic - old boots
 
 # mag007
 
-Show # equipment magic - old belts
+Show # equipment magic - legacy - belts (sound 1)
 
 	Rarity Magic
 	Class Belts
@@ -1599,7 +1586,7 @@ Show # equipment magic - old belts
 
 # mag008
 
-Show # equipment magic - old amulets
+Show # equipment magic - legacy - amulets (sound 1)
 
 	Rarity Magic
 	Class Amulets
@@ -1613,7 +1600,7 @@ Show # equipment magic - old amulets
 
 # mag009
 
-Show # equipment magic - old rings
+Show # equipment magic - legacy - rings (sound 1)
 
 	Rarity Magic
 	Class Rings
@@ -1627,7 +1614,7 @@ Show # equipment magic - old rings
 
 # mag010
 
-Show # equipment magic - item level 100
+Show # equipment magic - ilvl 100 (sound 1)
 
 	Rarity Magic
 	ItemLevel 100
@@ -1640,11 +1627,11 @@ Show # equipment magic - item level 100
 
 # mag011
 
-Show # equipment magic - special 1 chests
+Show # equipment magic - undroppable - amulets (sound 3)
 
 	Rarity Magic
-	Class Body
-	BaseType "Sacrificial Garb"
+	Class Amulets
+	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Ruby Amulet" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255
@@ -1654,21 +1641,7 @@ Show # equipment magic - special 1 chests
 
 # mag012
 
-Show # equipment magic - special 1 amulets
-
-	Rarity Magic
-	Class Amulets
-	BaseType "Ruby Amulet"
-
-	SetFontSize 39
-	SetBackgroundColor 127 127 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# mag013
-
-Show # equipment magic - special 1 jewels
+Show # equipment magic - undroppable - jewels (sound 3)
 
 	Rarity Magic
 	Class Jewel
@@ -1680,9 +1653,99 @@ Show # equipment magic - special 1 jewels
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
+# mag013
+
+Show # equipment magic - restricted ilvl 84+ - helms (sound 3)
+
+	Rarity Magic
+	Class Helmets
+	BaseType "Bone Helmet"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
 # mag014
 
-Show # equipment magic - sockets 6 linked
+Show # equipment magic - restricted ilvl 84+ - gloves (sound 3)
+
+	Rarity Magic
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# mag015
+
+Show # equipment magic - restricted ilvl 84+ - boots (sound 3)
+
+	Rarity Magic
+	Class Boots
+	BaseType "Two-Toned Boots"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# mag016
+
+Show # equipment magic - restricted ilvl 84+ - belts (sound 3)
+
+	Rarity Magic
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# mag017
+
+Show # equipment magic - restricted ilvl 84+ - amulets (sound 3)
+
+	Rarity Magic
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# mag018
+
+Show # equipment magic - restricted ilvl 84+ - rings (sound 3)
+
+	Rarity Magic
+	Class Rings
+	BaseType "Breach Ring" "Opal Ring" "Prismatic Ring" "Steel Ring"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# mag019
+
+Show # equipment magic - sockets 6 linked (sound 3)
 
 	Rarity Magic
 	LinkedSockets 6
@@ -1693,9 +1756,23 @@ Show # equipment magic - sockets 6 linked
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# mag015
+# mag020
 
-Show # equipment magic - special 2 helms
+Show # equipment magic - restricted - chests (sound 2)
+
+	Rarity Magic
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# mag021
+
+Show # equipment magic - restricted - helms (sound 2)
 
 	Rarity Magic
 	Class Helmets
@@ -1707,9 +1784,9 @@ Show # equipment magic - special 2 helms
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# mag016
+# mag022
 
-Show # equipment magic - special 2 gloves
+Show # equipment magic - restricted - gloves (sound 2)
 
 	Rarity Magic
 	Class Gloves
@@ -1721,9 +1798,9 @@ Show # equipment magic - special 2 gloves
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# mag017
+# mag023
 
-Show # equipment magic - special 2 boots
+Show # equipment magic - restricted - boots (sound 2)
 
 	Rarity Magic
 	Class Boots
@@ -1735,9 +1812,9 @@ Show # equipment magic - special 2 boots
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# mag018
+# mag024
 
-Show # equipment magic - special 2 belts
+Show # equipment magic - restricted - belts (sound 2)
 
 	Rarity Magic
 	Class Belts
@@ -1749,13 +1826,13 @@ Show # equipment magic - special 2 belts
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# mag019
+# mag025
 
-Show # equipment magic - special 2 amulets
+Show # equipment magic - restricted - amulets (sound 2)
 
 	Rarity Magic
 	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet" Talisman
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
 
 	SetFontSize 33
 	SetBackgroundColor 127 127 255 255
@@ -1763,9 +1840,9 @@ Show # equipment magic - special 2 amulets
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# mag020
+# mag026
 
-Show # equipment magic - special 2 rings
+Show # equipment magic - restricted - rings (sound 2)
 
 	Rarity Magic
 	Class Rings
@@ -1777,9 +1854,9 @@ Show # equipment magic - special 2 rings
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# mag021
+# mag027
 
-Show # equipment magic - sockets 6
+Show # equipment magic - sockets 6 (sound 2)
 
 	Rarity Magic
 	Sockets 6
@@ -1790,7 +1867,7 @@ Show # equipment magic - sockets 6
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# mag022
+# mag028
 
 Hide # equipment magic - warband
 
@@ -1803,9 +1880,9 @@ Hide # equipment magic - warband
 	SetTextColor 127 127 255 255
 	SetBorderColor 0 255 0 255
 
-# mag023
+# mag029
 
-Show # equipment magic - sockets RGB 1
+Show # equipment magic - sockets rgb width 1
 
 	Rarity Magic
 	SocketGroup RGB
@@ -1816,9 +1893,9 @@ Show # equipment magic - sockets RGB 1
 	SetTextColor 127 127 255 255
 	SetBorderColor 127 127 255 255
 
-# mag024
+# mag030
 
-Show # equipment magic - sockets RGB 2
+Show # equipment magic - sockets rgb width 2
 
 	Rarity Magic
 	SocketGroup RGB
@@ -1829,7 +1906,7 @@ Show # equipment magic - sockets RGB 2
 	SetTextColor 127 127 255 255
 	SetBorderColor 127 127 255 255
 
-# mag025
+# mag031
 
 Show # equipment magic - jewels
 
@@ -1841,7 +1918,7 @@ Show # equipment magic - jewels
 	SetTextColor 127 127 255 255
 	SetBorderColor 0 0 0 0
 
-# mag026
+# mag032
 
 Hide # equipment magic - rest
 
@@ -1852,7 +1929,7 @@ Hide # equipment magic - rest
 	SetTextColor 127 127 255 255
 	SetBorderColor 0 0 0 0
 
-# mag027
+# mag033
 
 #
 #
@@ -1862,7 +1939,7 @@ Hide # equipment magic - rest
 
 # nor000
 
-Show # equipment normal - rods
+Show # equipment normal - fishing (sound 1)
 
 	Rarity Normal
 	Class Fishing
@@ -1875,7 +1952,7 @@ Show # equipment normal - rods
 
 # nor001
 
-Show # equipment normal - old shields
+Show # equipment normal - legacy - shields (sound 1)
 
 	Rarity Normal
 	Class Shields
@@ -1889,7 +1966,7 @@ Show # equipment normal - old shields
 
 # nor002
 
-Show # equipment normal - old quivers
+Show # equipment normal - legacy - quivers (sound 1)
 
 	Rarity Normal
 	Class Quivers
@@ -1903,7 +1980,7 @@ Show # equipment normal - old quivers
 
 # nor003
 
-Show # equipment normal - old chests
+Show # equipment normal - legacy - chests (sound 1)
 
 	Rarity Normal
 	Class Body
@@ -1917,7 +1994,7 @@ Show # equipment normal - old chests
 
 # nor004
 
-Show # equipment normal - old helms
+Show # equipment normal - legacy - helms (sound 1)
 
 	Rarity Normal
 	Class Helmets
@@ -1931,7 +2008,7 @@ Show # equipment normal - old helms
 
 # nor005
 
-Show # equipment normal - old gloves
+Show # equipment normal - legacy - gloves (sound 1)
 
 	Rarity Normal
 	Class Gloves
@@ -1945,7 +2022,7 @@ Show # equipment normal - old gloves
 
 # nor006
 
-Show # equipment normal - old boots
+Show # equipment normal - legacy - boots (sound 1)
 
 	Rarity Normal
 	Class Boots
@@ -1959,7 +2036,7 @@ Show # equipment normal - old boots
 
 # nor007
 
-Show # equipment normal - old belts
+Show # equipment normal - legacy - belts (sound 1)
 
 	Rarity Normal
 	Class Belts
@@ -1973,7 +2050,7 @@ Show # equipment normal - old belts
 
 # nor008
 
-Show # equipment normal - old amulets
+Show # equipment normal - legacy - amulets (sound 1)
 
 	Rarity Normal
 	Class Amulets
@@ -1987,7 +2064,7 @@ Show # equipment normal - old amulets
 
 # nor009
 
-Show # equipment normal - old rings
+Show # equipment normal - legacy - rings (sound 1)
 
 	Rarity Normal
 	Class Rings
@@ -2001,7 +2078,7 @@ Show # equipment normal - old rings
 
 # nor010
 
-Show # equipment normal - item level 100
+Show # equipment normal - ilvl 100 (sound 1)
 
 	Rarity Normal
 	ItemLevel 100
@@ -2014,11 +2091,11 @@ Show # equipment normal - item level 100
 
 # nor011
 
-Show # equipment normal - special 1 chests
+Show # equipment normal - undroppable - amulets (sound 3)
 
 	Rarity Normal
-	Class Body
-	BaseType "Sacrificial Garb"
+	Class Amulets
+	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Ruby Amulet" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255
@@ -2028,21 +2105,7 @@ Show # equipment normal - special 1 chests
 
 # nor012
 
-Show # equipment normal - special 1 amulets
-
-	Rarity Normal
-	Class Amulets
-	BaseType "Ruby Amulet"
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 255 255
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	PlayAlertSound 3 300
-
-# nor013
-
-Show # equipment normal - special 1 jewels
+Show # equipment normal - undroppable - jewels (sound 3)
 
 	Rarity Normal
 	Class Jewel
@@ -2054,9 +2117,99 @@ Show # equipment normal - special 1 jewels
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
+# nor013
+
+Show # equipment normal - restricted ilvl 84+ - helms (sound 3)
+
+	Rarity Normal
+	Class Helmets
+	BaseType "Bone Helmet"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
 # nor014
 
-Show # equipment normal - sockets 6 linked
+Show # equipment normal - restricted ilvl 84+ - gloves (sound 3)
+
+	Rarity Normal
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# nor015
+
+Show # equipment normal - restricted ilvl 84+ - boots (sound 3)
+
+	Rarity Normal
+	Class Boots
+	BaseType "Two-Toned Boots"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# nor016
+
+Show # equipment normal - restricted ilvl 84+ - belts (sound 3)
+
+	Rarity Normal
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# nor017
+
+Show # equipment normal - restricted ilvl 84+ - amulets (sound 3)
+
+	Rarity Normal
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# nor018
+
+Show # equipment normal - restricted ilvl 84+ - rings (sound 3)
+
+	Rarity Normal
+	Class Rings
+	BaseType "Breach Ring" "Opal Ring" "Prismatic Ring" "Steel Ring"
+	ItemLevel > 83
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 3 300
+
+# nor019
+
+Show # equipment normal - sockets 6 linked (sound 3)
 
 	Rarity Normal
 	LinkedSockets 6
@@ -2067,9 +2220,23 @@ Show # equipment normal - sockets 6 linked
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
-# nor015
+# nor020
 
-Show # equipment normal - special 2 helms
+Show # equipment normal - restricted - chests (sound 2)
+
+	Rarity Normal
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 255 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 2 300
+
+# nor021
+
+Show # equipment normal - restricted - helms (sound 2)
 
 	Rarity Normal
 	Class Helmets
@@ -2081,9 +2248,9 @@ Show # equipment normal - special 2 helms
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# nor016
+# nor022
 
-Show # equipment normal - special 2 gloves
+Show # equipment normal - restricted - gloves (sound 2)
 
 	Rarity Normal
 	Class Gloves
@@ -2095,9 +2262,9 @@ Show # equipment normal - special 2 gloves
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# nor017
+# nor023
 
-Show # equipment normal - special 2 boots
+Show # equipment normal - restricted - boots (sound 2)
 
 	Rarity Normal
 	Class Boots
@@ -2109,9 +2276,9 @@ Show # equipment normal - special 2 boots
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# nor018
+# nor024
 
-Show # equipment normal - special 2 belts
+Show # equipment normal - restricted - belts (sound 2)
 
 	Rarity Normal
 	Class Belts
@@ -2123,13 +2290,13 @@ Show # equipment normal - special 2 belts
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# nor019
+# nor025
 
-Show # equipment normal - special 2 amulets
+Show # equipment normal - restricted - amulets (sound 2)
 
 	Rarity Normal
 	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet" Talisman
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
 
 	SetFontSize 33
 	SetBackgroundColor 255 255 255 255
@@ -2137,9 +2304,9 @@ Show # equipment normal - special 2 amulets
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# nor020
+# nor026
 
-Show # equipment normal - special 2 rings
+Show # equipment normal - restricted - rings (sound 2)
 
 	Rarity Normal
 	Class Rings
@@ -2151,9 +2318,9 @@ Show # equipment normal - special 2 rings
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# nor021
+# nor027
 
-Show # equipment normal - sockets 6
+Show # equipment normal - sockets 6 (sound 2)
 
 	Rarity Normal
 	Sockets 6
@@ -2164,9 +2331,9 @@ Show # equipment normal - sockets 6
 	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
-# nor022
+# nor028
 
-Show # equipment normal - sockets RGB 1
+Show # equipment normal - sockets rgb width 1
 
 	Rarity Normal
 	SocketGroup RGB
@@ -2177,9 +2344,9 @@ Show # equipment normal - sockets RGB 1
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 
-# nor023
+# nor029
 
-Show # equipment normal - sockets RGB 2
+Show # equipment normal - sockets rgb width 2
 
 	Rarity Normal
 	SocketGroup RGB
@@ -2190,7 +2357,7 @@ Show # equipment normal - sockets RGB 2
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 
-# nor024
+# nor030
 
 Show # equipment normal - chisel
 
@@ -2204,9 +2371,9 @@ Show # equipment normal - chisel
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 0 0 0
 
-# nor025
+# nor031
 
-Show # equipment normal - chance boots
+Show # equipment normal - chance - boots
 
 	Rarity Normal
 	Class Boots
@@ -2218,9 +2385,9 @@ Show # equipment normal - chance boots
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 0 0 0
 
-# nor026
+# nor032
 
-Show # equipment normal - chance belts
+Show # equipment normal - chance - belts
 
 	Rarity Normal
 	Class Belts
@@ -2232,7 +2399,7 @@ Show # equipment normal - chance belts
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 0 0 0
 
-# nor027
+# nor033
 
 Hide # equipment normal - rest
 
@@ -2243,7 +2410,7 @@ Hide # equipment normal - rest
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 0 0 0
 
-# nor028
+# nor034
 
 #
 #
@@ -2253,7 +2420,7 @@ Hide # equipment normal - rest
 
 # unk000
 
-Show # unknown - unknown
+Show # unknown - unknown (sound 1)
 
 	SetFontSize 45
 	SetBackgroundColor 255 0 255 255
