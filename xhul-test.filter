@@ -17,9 +17,9 @@ Show # currency - tier 1 (sound)
 	BaseType Albino Eternal Imprint Kalandra
 
 	SetFontSize 45
-	SetBackgroundColor 255 191 127 255 # currency 1
-	SetTextColor 0 0 0 255 # currency 2
-	SetBorderColor 0 0 0 255 # currency 2
+	SetBackgroundColor 255 191 127 255 # color 1
+	SetTextColor 0 0 0 255 # color 2
+	SetBorderColor 0 0 0 255 # color 2
 	PlayAlertSound 1 300 # currency 1
 
 # cur001
