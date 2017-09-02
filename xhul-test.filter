@@ -20,7 +20,7 @@ Show # currency - tier 1 (sound)
 	SetBackgroundColor 255 191 127 255 # currency 1
 	SetTextColor 0 0 0 255 # currency 2
 	SetBorderColor 0 0 0 255 # currency 2
-	PlayAlertSound 1 300 # sound 1
+	PlayAlertSound 1 300 # currency 1
 
 # cur001
 
@@ -33,7 +33,7 @@ Show # currency - tier 2 (sound)
 	SetBackgroundColor 255 191 127 255 # currency 1
 	SetTextColor 0 0 0 255 # currency 2
 	SetBorderColor 0 0 0 255 # currency 2
-	PlayAlertSound 3 300 # sound 2
+	PlayAlertSound 3 300 # currency 2
 
 # cur002
 
@@ -46,7 +46,7 @@ Show # currency - tier 3 (sound)
 	SetBackgroundColor 255 191 127 255 # currency 1
 	SetTextColor 0 0 0 255 # currency 2
 	SetBorderColor 0 0 0 255 # currency 2
-	PlayAlertSound 2 300 # sound 3
+	PlayAlertSound 2 300 # currency 3
 
 # cur003
 
@@ -90,7 +90,7 @@ Show # cards - tier 1 (sound)
 	SetBackgroundColor 191 255 127 255 # cards 1
 	SetTextColor 0 0 0 255 # cards 2
 	SetBorderColor 0 0 0 255 # cards 2
-	PlayAlertSound 3 300 # sound 2
+	PlayAlertSound 3 300 # cards 2
 
 # car001
 
@@ -103,7 +103,7 @@ Show # cards - tier 2 (sound)
 	SetBackgroundColor 191 255 127 255 # cards 1
 	SetTextColor 0 0 0 255 # cards 2
 	SetBorderColor 0 0 0 255 # cards 2
-	PlayAlertSound 2 300 # sound 3
+	PlayAlertSound 2 300 # cards 3
 
 # car002
 
