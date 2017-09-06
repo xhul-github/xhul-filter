@@ -20,7 +20,7 @@ Show # currency - tier 1 (sound)
 	SetBackgroundColor 255 191 127 255 # currency main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # cur001
 
@@ -33,7 +33,7 @@ Show # currency - tier 2 (sound)
 	SetBackgroundColor 255 191 127 255 # currency main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # cur002
 
@@ -46,7 +46,7 @@ Show # currency - tier 3 (sound)
 	SetBackgroundColor 255 191 127 255 # currency main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # cur003
 
@@ -90,7 +90,7 @@ Show # cards - tier 1 (sound)
 	SetBackgroundColor 191 255 127 255 # cards main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # car001
 
@@ -103,7 +103,7 @@ Show # cards - tier 2 (sound)
 	SetBackgroundColor 191 255 127 255 # cards main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # car002
 
@@ -147,7 +147,7 @@ Show # gems - legacy (sound)
 	SetBackgroundColor 0 255 255 255 # gems main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # gem001
 
@@ -160,7 +160,7 @@ Show # gems - special | undroppable (sound)
 	SetBackgroundColor 0 255 255 255 # gems main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # gem002
 
@@ -173,7 +173,7 @@ Show # gems - quality 21+ (sound)
 	SetBackgroundColor 0 255 255 255 # gems main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # gem003
 
@@ -186,7 +186,7 @@ Show # gems - restricted (sound)
 	SetBackgroundColor 0 255 255 255 # gems main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # gem004
 
@@ -199,7 +199,7 @@ Show # gems - quality 11+ (sound)
 	SetBackgroundColor 0 255 255 255 # gems main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # gem005
 
@@ -242,7 +242,7 @@ Show # special - leaguestones (sound)
 	SetBackgroundColor 0 255 0 255 # special main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # spe001
 
@@ -254,7 +254,7 @@ Show # special - offerings | souls (sound)
 	SetBackgroundColor 0 255 0 255 # special main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # spe002
 
@@ -266,7 +266,7 @@ Show # special - labyrinth | quest (sound)
 	SetBackgroundColor 0 255 0 255 # special main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # spe003
 
@@ -306,7 +306,7 @@ Show # unique - fishing (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni001
 
@@ -320,7 +320,7 @@ Show # unique - legacy - shields (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni002
 
@@ -334,7 +334,7 @@ Show # unique - legacy - quivers (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni003
 
@@ -348,7 +348,7 @@ Show # unique - legacy - chests (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni004
 
@@ -362,7 +362,7 @@ Show # unique - legacy - helms (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni005
 
@@ -376,7 +376,7 @@ Show # unique - legacy - gloves (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni006
 
@@ -390,7 +390,7 @@ Show # unique - legacy - boots (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni007
 
@@ -404,7 +404,7 @@ Show # unique - legacy - belts (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni008
 
@@ -418,7 +418,7 @@ Show # unique - legacy - amulets (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni009
 
@@ -432,7 +432,7 @@ Show # unique - legacy - rings (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni010
 
@@ -445,7 +445,7 @@ Show # unique - ilvl 100 (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # uni011
 
@@ -457,7 +457,7 @@ Show # unique - pieces (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # uni012
 
@@ -471,7 +471,7 @@ Show # unique - valuable belts (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # uni013
 
@@ -485,7 +485,7 @@ Show # unique - undroppable - amulets (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # uni014
 
@@ -499,7 +499,7 @@ Show # unique - undroppable - jewels (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # uni015
 
@@ -513,7 +513,7 @@ Show # unique - undroppable - maps (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # uni016
 
@@ -528,7 +528,7 @@ Show # unique - acuity (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # uni017
 
@@ -543,7 +543,7 @@ Show # unique - skyforth (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # uni018
 
@@ -556,7 +556,7 @@ Show # unique - sockets 6 linked (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # uni019
 
@@ -570,7 +570,7 @@ Show # unique - restricted chests (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # uni020
 
@@ -583,7 +583,7 @@ Show # unique - sockets 6 (sound)
 	SetBackgroundColor 255 127 0 255 # unique main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # uni021
 
@@ -653,7 +653,7 @@ Show # maps - legacy (sound)
 	SetBackgroundColor 255 0 0 255 # maps main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # map001
 
@@ -665,7 +665,7 @@ Show # maps - undroppable - breachstones (sound)
 	SetBackgroundColor 255 0 0 255 # maps main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # map002
 
@@ -678,7 +678,7 @@ Show # maps - undroppable - maps (sound)
 	SetBackgroundColor 255 0 0 255 # maps main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # map003
 
@@ -691,7 +691,7 @@ Show # maps - fragments high (sound)
 	SetBackgroundColor 255 0 0 255 # maps main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # map004
 
@@ -704,7 +704,7 @@ Show # maps - maps tier 16+ (sound)
 	SetBackgroundColor 255 0 0 255 # maps main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # map005
 
@@ -716,7 +716,7 @@ Show # maps - fragments low (sound)
 	SetBackgroundColor 255 0 0 255 # maps main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # map006
 
@@ -729,7 +729,7 @@ Show # maps - maps tier 11+ (sound)
 	SetBackgroundColor 255 0 0 255 # maps main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # map007
 
@@ -773,7 +773,7 @@ Show # rare - fishing (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar001
 
@@ -787,7 +787,7 @@ Show # rare - legacy - shields (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar002
 
@@ -801,7 +801,7 @@ Show # rare - legacy - quivers (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar003
 
@@ -815,7 +815,7 @@ Show # rare - legacy - chests (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar004
 
@@ -829,7 +829,7 @@ Show # rare - legacy - helms (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar005
 
@@ -843,7 +843,7 @@ Show # rare - legacy - gloves (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar006
 
@@ -857,7 +857,7 @@ Show # rare - legacy - boots (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar007
 
@@ -871,7 +871,7 @@ Show # rare - legacy - belts (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar008
 
@@ -885,7 +885,7 @@ Show # rare - legacy - amulets (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar009
 
@@ -899,7 +899,7 @@ Show # rare - legacy - rings (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar010
 
@@ -912,7 +912,7 @@ Show # rare - ilvl 100 (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # rar011
 
@@ -926,7 +926,7 @@ Show # rare - undroppable - amulets (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # rar012
 
@@ -940,7 +940,7 @@ Show # rare - undroppable - jewels (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # rar013
 
@@ -955,7 +955,7 @@ Show # rare - restricted ilvl 84+ - helms (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # rar014
 
@@ -970,7 +970,7 @@ Show # rare - restricted ilvl 84+ - gloves (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # rar015
 
@@ -985,7 +985,7 @@ Show # rare - restricted ilvl 84+ - boots (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # rar016
 
@@ -1000,7 +1000,7 @@ Show # rare - restricted ilvl 84+ - belts (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # rar017
 
@@ -1015,7 +1015,7 @@ Show # rare - restricted ilvl 84+ - amulets (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # rar018
 
@@ -1030,7 +1030,7 @@ Show # rare - restricted ilvl 84+ - rings (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # rar019
 
@@ -1043,7 +1043,7 @@ Show # rare - sockets 6 linked (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # rar020
 
@@ -1057,7 +1057,7 @@ Show # rare - restricted - chests (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # rar021
 
@@ -1071,7 +1071,7 @@ Show # rare - restricted - helms (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # rar022
 
@@ -1085,7 +1085,7 @@ Show # rare - restricted - gloves (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # rar023
 
@@ -1099,7 +1099,7 @@ Show # rare - restricted - boots (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # rar024
 
@@ -1113,7 +1113,7 @@ Show # rare - restricted - belts (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # rar025
 
@@ -1127,7 +1127,7 @@ Show # rare - restricted - amulets (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # rar026
 
@@ -1141,7 +1141,7 @@ Show # rare - restricted - rings (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # rar027
 
@@ -1154,7 +1154,7 @@ Show # rare - sockets 6 (sound)
 	SetBackgroundColor 255 255 0 255 # rare main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # rar028
 
@@ -1470,7 +1470,7 @@ Show # magic - fishing (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag001
 
@@ -1484,7 +1484,7 @@ Show # magic - legacy - shields (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag002
 
@@ -1498,7 +1498,7 @@ Show # magic - legacy - quivers (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag003
 
@@ -1512,7 +1512,7 @@ Show # magic - legacy - chests (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag004
 
@@ -1526,7 +1526,7 @@ Show # magic - legacy - helms (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag005
 
@@ -1540,7 +1540,7 @@ Show # magic - legacy - gloves (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag006
 
@@ -1554,7 +1554,7 @@ Show # magic - legacy - boots (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag007
 
@@ -1568,7 +1568,7 @@ Show # magic - legacy - belts (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag008
 
@@ -1582,7 +1582,7 @@ Show # magic - legacy - amulets (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag009
 
@@ -1596,7 +1596,7 @@ Show # magic - legacy - rings (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag010
 
@@ -1609,7 +1609,7 @@ Show # magic - ilvl 100 (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # mag011
 
@@ -1623,7 +1623,7 @@ Show # magic - undroppable - amulets (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # mag012
 
@@ -1637,7 +1637,7 @@ Show # magic - undroppable - jewels (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # mag013
 
@@ -1652,7 +1652,7 @@ Show # magic - restricted ilvl 84+ - helms (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # mag014
 
@@ -1667,7 +1667,7 @@ Show # magic - restricted ilvl 84+ - gloves (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # mag015
 
@@ -1682,7 +1682,7 @@ Show # magic - restricted ilvl 84+ - boots (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # mag016
 
@@ -1697,7 +1697,7 @@ Show # magic - restricted ilvl 84+ - belts (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # mag017
 
@@ -1712,7 +1712,7 @@ Show # magic - restricted ilvl 84+ - amulets (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # mag018
 
@@ -1727,7 +1727,7 @@ Show # magic - restricted ilvl 84+ - rings (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # mag019
 
@@ -1740,7 +1740,7 @@ Show # magic - sockets 6 linked (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # mag020
 
@@ -1754,7 +1754,7 @@ Show # magic - restricted - chests (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # mag021
 
@@ -1768,7 +1768,7 @@ Show # magic - restricted - helms (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # mag022
 
@@ -1782,7 +1782,7 @@ Show # magic - restricted - gloves (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # mag023
 
@@ -1796,7 +1796,7 @@ Show # magic - restricted - boots (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # mag024
 
@@ -1810,7 +1810,7 @@ Show # magic - restricted - belts (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # mag025
 
@@ -1824,7 +1824,7 @@ Show # magic - restricted - amulets (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # mag026
 
@@ -1838,7 +1838,7 @@ Show # magic - restricted - rings (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # mag027
 
@@ -1851,7 +1851,7 @@ Show # magic - sockets 6 (sound)
 	SetBackgroundColor 127 127 255 255 # magic main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # mag028
 
@@ -1934,7 +1934,7 @@ Show # normal - fishing (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor001
 
@@ -1948,7 +1948,7 @@ Show # normal - legacy - shields (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor002
 
@@ -1962,7 +1962,7 @@ Show # normal - legacy - quivers (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor003
 
@@ -1976,7 +1976,7 @@ Show # normal - legacy - chests (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor004
 
@@ -1990,7 +1990,7 @@ Show # normal - legacy - helms (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor005
 
@@ -2004,7 +2004,7 @@ Show # normal - legacy - gloves (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor006
 
@@ -2018,7 +2018,7 @@ Show # normal - legacy - boots (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor007
 
@@ -2032,7 +2032,7 @@ Show # normal - legacy - belts (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor008
 
@@ -2046,7 +2046,7 @@ Show # normal - legacy - amulets (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor009
 
@@ -2060,7 +2060,7 @@ Show # normal - legacy - rings (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor010
 
@@ -2073,7 +2073,7 @@ Show # normal - ilvl 100 (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # nor011
 
@@ -2087,7 +2087,7 @@ Show # normal - undroppable - amulets (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # nor012
 
@@ -2101,7 +2101,7 @@ Show # normal - undroppable - jewels (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # nor013
 
@@ -2116,7 +2116,7 @@ Show # normal - restricted ilvl 84+ - helms (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # nor014
 
@@ -2131,7 +2131,7 @@ Show # normal - restricted ilvl 84+ - gloves (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # nor015
 
@@ -2146,7 +2146,7 @@ Show # normal - restricted ilvl 84+ - boots (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # nor016
 
@@ -2161,7 +2161,7 @@ Show # normal - restricted ilvl 84+ - belts (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # nor017
 
@@ -2176,7 +2176,7 @@ Show # normal - restricted ilvl 84+ - amulets (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # nor018
 
@@ -2191,7 +2191,7 @@ Show # normal - restricted ilvl 84+ - rings (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # nor019
 
@@ -2204,7 +2204,7 @@ Show # normal - sockets 6 linked (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 3 300
+	PlayAlertSound 3 300 # x 2
 
 # nor020
 
@@ -2218,7 +2218,7 @@ Show # normal - restricted - chests (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # nor021
 
@@ -2232,7 +2232,7 @@ Show # normal - restricted - helms (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # nor022
 
@@ -2246,7 +2246,7 @@ Show # normal - restricted - gloves (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # nor023
 
@@ -2260,7 +2260,7 @@ Show # normal - restricted - boots (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # nor024
 
@@ -2274,7 +2274,7 @@ Show # normal - restricted - belts (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # nor025
 
@@ -2288,7 +2288,7 @@ Show # normal - restricted - amulets (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # nor026
 
@@ -2302,7 +2302,7 @@ Show # normal - restricted - rings (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # nor027
 
@@ -2315,7 +2315,7 @@ Show # normal - sockets 6 (sound)
 	SetBackgroundColor 255 255 255 255 # normal main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 2 300
+	PlayAlertSound 2 300 # x 3
 
 # nor028
 
@@ -2412,6 +2412,6 @@ Show # unknown - unknown (sound)
 	SetBackgroundColor 255 0 255 255 # unknown main
 	SetTextColor 0 0 0 255 # x black
 	SetBorderColor 0 0 0 255 # x black
-	PlayAlertSound 1 300
+	PlayAlertSound 1 300 # x 1
 
 # unk001
