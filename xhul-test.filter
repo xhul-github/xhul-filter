@@ -18,8 +18,8 @@ Show # currency - tier 1 (sound)
 
 	SetFontSize 45
 	SetBackgroundColor 255 191 127 255 # currency primary
-	SetTextColor 0 0 0 255 # currency secondary
-	SetBorderColor 0 0 0 255 # currency secondary
+	SetTextColor 0 0 0 255 # currency primary
+	SetBorderColor 0 0 0 255 # currency primary
 	PlayAlertSound 1 300
 
 # cur001
@@ -30,9 +30,9 @@ Show # currency - tier 2 (sound)
 	BaseType " Annulment" " Binding" " Horizons" "Ancient O" Blessing Delirium Divine "Engineer's O" "Exalted O" "Harbinger's O" Horror Hysteria Insanity Mirror Prophecy Seal Unshaping
 
 	SetFontSize 39
-	SetBackgroundColor 255 191 127 255 # currency primary
-	SetTextColor 0 0 0 255 # currency secondary
-	SetBorderColor 0 0 0 255 # currency secondary
+	SetBackgroundColor 255 191 127 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
 	PlayAlertSound 3 300
 
 # cur002
@@ -43,9 +43,9 @@ Show # currency - tier 3 (sound)
 	BaseType " Alchemy" Ancient Annulment Binding Blessed Cartographer's "Chaos O" Engineer's Essence Exalted Fusing Gemcutter's Harbinger's Horizon Perandus "Regal O" Regret Remnant Scouring Splinter Stacked Vaal
 
 	SetFontSize 33
-	SetBackgroundColor 255 191 127 255 # currency primary
-	SetTextColor 0 0 0 255 # currency secondary
-	SetBorderColor 0 0 0 255 # currency secondary
+	SetBackgroundColor 255 191 127 255
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
 	PlayAlertSound 2 300
 
 # cur003
@@ -56,9 +56,9 @@ Show # currency - tier 4
 	BaseType " Alteration" Alchemy Chance Chaos Chromatic Glassblower's Jeweller's Regal Silver
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # currency secondary
-	SetTextColor 255 191 127 255 # currency primary
-	SetBorderColor 255 191 127 255 # currency primary
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 191 127 255
+	SetBorderColor 255 191 127 255
 
 # cur004
 
@@ -67,9 +67,9 @@ Show # currency - tier 5
 	Class Stackable
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # currency secondary
-	SetTextColor 255 191 127 255 # currency primary
-	SetBorderColor 0 0 0 0 # currency transparent
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 191 127 255
+	SetBorderColor 0 0 0 0
 
 # cur005
 
