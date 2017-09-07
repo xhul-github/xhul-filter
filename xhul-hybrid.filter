@@ -151,7 +151,7 @@ Show # gems - legacy (sound)
 
 # gem001
 
-Show # gems - special | undroppable (sound)
+Show # gems - special max lvl | undroppable (sound)
 
 	Class Skill
 	BaseType Block Breach Empower Enhance Enlighten Mines Portal
@@ -246,7 +246,7 @@ Show # special - leaguestones (sound)
 
 # spe001
 
-Show # special - offerings | souls (sound)
+Show # special - souls | offerings (sound)
 
 	Class "Labyrinth Map Item" Pantheon
 
@@ -258,7 +258,7 @@ Show # special - offerings | souls (sound)
 
 # spe002
 
-Show # special - labyrinth | quest (sound)
+Show # special - quest | labyrinth (sound)
 
 	Class Quest Labyrinth
 
@@ -297,7 +297,7 @@ Show # system - doodads | microtransactions | relics
 
 # uni000
 
-Show # unique - fishing (sound)
+Show # unique - rods (sound)
 
 	Rarity Unique
 	Class Fishing
@@ -764,7 +764,7 @@ Show # maps - maps tier 1+
 
 # rar000
 
-Show # rare - fishing (sound)
+Show # rare - rods (sound)
 
 	Rarity Rare
 	Class Fishing
@@ -1461,7 +1461,7 @@ Show # rare - rest
 
 # mag000
 
-Show # magic - fishing (sound)
+Show # magic - rods (sound)
 
 	Rarity Magic
 	Class Fishing
@@ -1925,7 +1925,7 @@ Hide # magic - rest
 
 # nor000
 
-Show # normal - fishing (sound)
+Show # normal - rods (sound)
 
 	Rarity Normal
 	Class Fishing
