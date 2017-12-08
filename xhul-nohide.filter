@@ -1,15 +1,14 @@
 # xhul filter
-# version : 3.0.D
+# version : 3.1.A
 # variant : nohide
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
+# EnableBlockGroups
 
 #
 #
-# Section: CURRENCY
+# CURRENCY
 #
 #
-
-# cur000
 
 Show # currency - tier 1
 
@@ -17,12 +16,10 @@ Show # currency - tier 1
 	BaseType Albino Eternal Imprint Kalandra
 
 	SetFontSize 45
-	SetBackgroundColor 255 191 127 255 # currency main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# cur001
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # currency - tier 2
 
@@ -30,12 +27,10 @@ Show # currency - tier 2
 	BaseType " Annulment" " Binding" " Horizons" "Ancient O" Blessing Delirium Divine "Engineer's O" "Exalted O" "Harbinger's O" Horror Hysteria Insanity Mirror Stacked
 
 	SetFontSize 39
-	SetBackgroundColor 255 191 127 255 # currency main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# cur002
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # currency - tier 3
 
@@ -43,12 +38,10 @@ Show # currency - tier 3
 	BaseType " Alchemy" Ancient Annulment Binding Blessed Cartographer's "Chaos O" Engineer's Essence Exalted Fusing Gemcutter's Harbinger's Horizon Perandus Prophecy "Regal O" Regret Remnant Scouring Splinter Unshaping Vaal
 
 	SetFontSize 33
-	SetBackgroundColor 255 191 127 255 # currency main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# cur003
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # currency - tier 4
 
@@ -56,87 +49,103 @@ Show # currency - tier 4
 	BaseType " Alteration" Alchemy Chance Chaos Chromatic Glassblower's Jeweller's Regal Silver
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 191 127 255 # currency main
-	SetBorderColor 255 191 127 255 # currency main
-
-# cur004
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 191 127 255 # currency
+	SetBorderColor 255 191 127 255 # currency
 
 Show # currency - tier 5
 
 	Class Stackable
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 191 127 255 # currency main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# cur005
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 191 127 255 # currency
+	SetBorderColor 0 0 0 255 # black
 
 #
 #
-# Section: CARDS
+# CARDS
 #
 #
 
-# car000
+Show # cards - tier 2 security
+
+	Class Divination
+	BaseType "The Dragon's Heart"
+
+	SetFontSize 39
+	SetBackgroundColor 191 255 127 255 # cards
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # cards - tier 4 security
+
+	Class Divination
+	BaseType "The Wolf's Shadow"
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 191 255 127 255 # cards
+	SetBorderColor 191 255 127 255 # cards
 
 Show # cards - tier 1
 
 	Class Divination
-	BaseType "House of Mirrors" "Mawr Blaidd" "The Doctor" "The Fiend"
+	BaseType "House of Mirrors" "Mawr Blaidd" "The Doctor" "The Fiend" "The Vast"
 
-	SetFontSize 39
-	SetBackgroundColor 191 255 127 255 # cards main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# car001
+	SetFontSize 45
+	SetBackgroundColor 191 255 127 255 # cards
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # cards - tier 2
 
 	Class Divination
-	BaseType "Abandoned Wealth" "Bowyer's Dream" "Call to the First Ones" "Destined to Crumble" "Dialla's Subjugation" "Emperor of Purity" Humility "Hunter's Reward" "Last Hope" "Lingering Remnants" "Lucky Deck" "Merciless Armament" "Might is Right" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Calling" "The Cataclysm" "The Celestial Justicar" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Devastator" "The Dragon's Heart" "The Ethereal" "The Formless Sea" "The Forsaken" "The Harvester" "The Hoarder" "The Immortal" "The Jester" "The King's Heart" "The Last One Standing" "The Offering" "The Opulent" "The Poet" "The Porcupine" "The Queen" "The Road to Power" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Spoiled Prince" "The Thaumaturgist" "The Tyrant" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Wolven King's Bite" "Time-Lost Relic" "Turn the Other Cheek" "Volatile Power" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Call to the First Ones" "Hunter's Reward" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Deck" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Cursed King" "The Devastator" "The Formless Sea" "The Hoarder" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Offering" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Wind" "The Wolf" "The Wolven King's Bite" "Time-Lost Relic" "Wealth and Power"
 
-	SetFontSize 33
-	SetBackgroundColor 191 255 127 255 # cards main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# car002
+	SetFontSize 39
+	SetBackgroundColor 191 255 127 255 # cards
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # cards - tier 3
 
 	Class Divination
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" "Boundless Realms" "Chaotic Disposition" "Coveted Possession" Death "Doedre's Madness" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Grave Knowledge" "Her Mask" Heterochromia Hope Hubris "Hunter's Resolve" "Jack in the Box" "Light and Truth" "Lost Worlds" Loyalty "Luck of the Vaal" "Lucky Connections" "Lysah's Respite" Mitts "Rain of Chaos" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Battle Born" "The Betrayal" "The Body" "The Cartographer" "The Catalyst" "The Coming Storm" "The Conduit" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Explorer" "The Feast" "The Fletcher" "The Flora's Gift" "The Gambler" "The Garish Power" "The Gemcutter" "The Gentleman" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The Inventor" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Metalsmith's Gift" "The Oath" "The One With All" "The Pack Leader" "The Pact" "The Penitent" "The Polymath" "The Risk" "The Scarred Meadow" "The Scavenger" "The Scholar" "The Siren" "The Soul" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Survivalist" "The Throne" "The Tower" "The Traitor" "The Trial" "The Union" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wind" "The Wolf" "The Wolf's Shadow" "The Wolverine" "The Wrath" "The Wretched" "Three Faces in the Dark" "Thunderous Skies" Tranquillity "Treasure Hunter" "Vinia's Token"
+	BaseType "Boundless Realms" "Bowyer's Dream" "Chaotic Disposition" "Coveted Possession" "Destined to Crumble" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Grave Knowledge" "Her Mask" Heterochromia Humility "Jack in the Box" "Lost Worlds" Loyalty "Luck of the Vaal" "Lucky Connections" "Merciless Armament" "Might is Right" "No Traces" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Betrayal" "The Calling" "The Cartographer" "The Cataclysm" "The Catalyst" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Doppelganger" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Ethereal" "The Explorer" "The Fletcher" "The Forsaken" "The Gambler" "The Gemcutter" "The Gladiator" "The Harvester" "The Inventor" "The Jester" "The One With All" "The Opulent" "The Poet" "The Polymath" "The Porcupine" "The Risk" "The Road to Power" "The Scavenger" "The Soul" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Throne" "The Trial" "The Tyrant" "The Union" "The Warlord" "The Watcher" "The Wrath" "The Wretched" "Three Faces in the Dark" "Treasure Hunter" "Turn the Other Cheek" "Vinia's Token" "Volatile Power"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 191 255 127 255 # cards main
-	SetBorderColor 191 255 127 255 # cards main
-
-# car003
+	SetBackgroundColor 191 255 127 255 # cards
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # cards - tier 4
 
 	Class Divination
+	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" Death "Doedre's Madness" "Gift of the Gemling Queen" Hope Hubris "Hunter's Resolve" "Light and Truth" "Lysah's Respite" Mitts "Rain of Chaos" "Shard of Fate" "The Battle Born" "The Blazing Fire" "The Body" "The Coming Storm" "The Conduit" "The Demoness" "The Dragon" "The Endurance" "The Eye of the Dragon" "The Feast" "The Flora's Gift" "The Fox" "The Garish Power" "The Gentleman" "The Hermit" "The Incantation" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Oath" "The Pack Leader" "The Pact" "The Penitent" "The Realm" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Siren" "The Sun" "The Tower" "The Traitor" "The Visionary" "The Warden" "The Wolverine" "Thunderous Skies" Tranquillity
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 191 255 127 255 # cards main
-	SetBorderColor 0 0 0 0 # common transparent
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 191 255 127 255 # cards
+	SetBorderColor 191 255 127 255 # cards
 
-# car004
+Show # cards - tier 5
+
+	Class Divination
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 191 255 127 255 # cards
+	SetBorderColor 0 0 0 255 # black
 
 #
 #
-# Section: GEMS
+# GEMS
 #
 #
-
-# gem000
 
 Show # gems - legacy
 
@@ -144,12 +153,10 @@ Show # gems - legacy
 	BaseType Quantity
 
 	SetFontSize 45
-	SetBackgroundColor 0 255 255 255 # gems main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# gem001
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # gems - special max lvl | undroppable
 
@@ -157,12 +164,10 @@ Show # gems - special max lvl | undroppable
 	BaseType Block Breach Empower Enhance Enlighten Mines Portal
 
 	SetFontSize 39
-	SetBackgroundColor 0 255 255 255 # gems main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# gem002
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # gems - quality 21+
 
@@ -170,12 +175,10 @@ Show # gems - quality 21+
 	Quality > 20
 
 	SetFontSize 39
-	SetBackgroundColor 0 255 255 255 # gems main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# gem003
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # gems - restricted
 
@@ -183,12 +186,10 @@ Show # gems - restricted
 	BaseType Vaal
 
 	SetFontSize 33
-	SetBackgroundColor 0 255 255 255 # gems main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# gem004
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # gems - quality 11+
 
@@ -196,12 +197,10 @@ Show # gems - quality 11+
 	Quality > 10
 
 	SetFontSize 33
-	SetBackgroundColor 0 255 255 255 # gems main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# gem005
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # gems - quality 1+
 
@@ -209,93 +208,75 @@ Show # gems - quality 1+
 	Quality > 0
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 0 255 255 255 # gems main
-	SetBorderColor 0 255 255 255 # gems main
-
-# gem006
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 0 255 255 255 # gems
+	SetBorderColor 0 255 255 255 # gems
 
 Show # gems - rest
 
 	Class Skill
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 0 255 255 255 # gems main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# gem007
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 0 255 255 255 # gems
+	SetBorderColor 0 0 0 255 # black
 
 #
 #
-# Section: SPECIAL
+# SPECIAL
 #
 #
 
-# spe000
+Show # special - leaguestones | pieces
 
-Show # special - leaguestones
-
-	Class Leaguestones
+	Class Leaguestones Piece
 
 	SetFontSize 45
-	SetBackgroundColor 0 255 0 255 # special main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# spe001
+	SetBackgroundColor 0 255 0 255 # special
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # special - souls | offerings
 
 	Class "Labyrinth Map Item" Pantheon
 
 	SetFontSize 39
-	SetBackgroundColor 0 255 0 255 # special main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# spe002
+	SetBackgroundColor 0 255 0 255 # special
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # special - quest | labyrinth
 
 	Class Quest Labyrinth
 
 	SetFontSize 33
-	SetBackgroundColor 0 255 0 255 # special main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# spe003
+	SetBackgroundColor 0 255 0 255 # special
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 #
 #
-# Section: SYSTEM
+# MISC
 #
 #
 
-# sys000
-
-Show # system - doodads | microtransactions | relics
+Show # misc - doodads | microtransactions | relics
 
 	Class Hideout Microtransactions Relics
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 255 255 # system main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# sys001
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # misc
+	SetBorderColor 0 0 0 255 # black
 
 #
 #
-# Section: UNIQUE
+# UNIQUE
 #
 #
-
-# uni000
 
 Show # unique - rods
 
@@ -303,12 +284,10 @@ Show # unique - rods
 	Class Fishing
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni001
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - legacy - shields
 
@@ -317,12 +296,10 @@ Show # unique - legacy - shields
 	BaseType "Golden Flame"
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni002
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - legacy - quivers
 
@@ -331,12 +308,10 @@ Show # unique - legacy - quivers
 	BaseType "Heavy Quiver"
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni003
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - legacy - chests
 
@@ -345,12 +320,10 @@ Show # unique - legacy - chests
 	BaseType "Golden Mantle"
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni004
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - legacy - helms
 
@@ -359,12 +332,10 @@ Show # unique - legacy - helms
 	BaseType "Golden Wreath"
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni005
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - legacy - gloves
 
@@ -373,12 +344,10 @@ Show # unique - legacy - gloves
 	BaseType "Golden Bracers"
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni006
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - legacy - boots
 
@@ -387,12 +356,10 @@ Show # unique - legacy - boots
 	BaseType "Golden Caligae"
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni007
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - legacy - belts
 
@@ -401,12 +368,10 @@ Show # unique - legacy - belts
 	BaseType "Golden Obi"
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni008
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - legacy - amulets
 
@@ -415,12 +380,10 @@ Show # unique - legacy - amulets
 	BaseType "Jet Amulet"
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni009
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - legacy - rings
 
@@ -429,12 +392,10 @@ Show # unique - legacy - rings
 	BaseType "Golden Hoop"
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni010
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - ilvl 100
 
@@ -442,207 +403,26 @@ Show # unique - ilvl 100
 	ItemLevel 100
 
 	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# uni011
-
-Show # unique - pieces
-
-	Class Piece
-
-	SetFontSize 39
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# uni012
-
-Show # unique - valuable belts
-
-	Rarity Unique
-	Class Belts
-	BaseType "Leather Belt"
-
-	SetFontSize 39
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# uni013
-
-Show # unique - undroppable - amulets
-
-	Rarity Unique
-	Class Amulets
-	BaseType "Black Maw Talisman" "Clutching Talisman" "Greatwolf Talisman" "Rotfeather Talisman" "Ruby Amulet" "Wereclaw Talisman"
-
-	SetFontSize 39
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# uni014
-
-Show # unique - undroppable - jewels
-
-	Rarity Unique
-	Class Jewel
-	BaseType "Prismatic Jewel"
-
-	SetFontSize 39
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# uni015
-
-Show # unique - undroppable - maps
-
-	Rarity Unique
-	Class Maps
-	BaseType "Harbinger Map"
-
-	SetFontSize 39
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# uni016
-
-Show # unique - acuity
-
-	Rarity Unique
-	Class Gloves
-	BaseType "Vaal Gauntlets"
-	ItemLevel 82
-
-	SetFontSize 39
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# uni017
-
-Show # unique - skyforth
-
-	Rarity Unique
-	Class Boots
-	BaseType "Sorcerer Boots"
-	ItemLevel > 83
-
-	SetFontSize 39
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# uni018
-
-Show # unique - sockets 6 linked
-
-	Rarity Unique
-	LinkedSockets 6
-
-	SetFontSize 39
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# uni019
-
-Show # unique - restricted chests
-
-	Rarity Unique
-	Class Body
-	BaseType "Sacrificial Garb"
-
-	SetFontSize 33
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# uni020
-
-Show # unique - sockets 6
-
-	Rarity Unique
-	Sockets 6
-
-	SetFontSize 33
-	SetBackgroundColor 255 127 0 255 # unique main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# uni021
-
-Show # unique - corrupted
-
-	Rarity Unique
-	Corrupted True
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 127 0 255 # unique main
-	SetBorderColor 255 0 0 255 # unique corrupted
-
-# uni022
-
-Show # unique - sockets rgb linked - width 1
-
-	Rarity Unique
-	SocketGroup RGB
-	Width 1
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 127 0 255 # unique main
-	SetBorderColor 255 127 0 255 # unique main
-
-# uni023
-
-Show # unique - sockets rgb linked - width 2
-
-	Rarity Unique
-	SocketGroup RGB
-	Height 2
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 127 0 255 # unique main
-	SetBorderColor 255 127 0 255 # unique main
-
-# uni024
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # unique - rest
 
 	Rarity Unique
 
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 127 0 255 # unique main
-	SetBorderColor 0 0 0 0 # common transparent
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
-# uni025
-
 #
 #
-# Section: MAPS
+# MAPS
 #
 #
-
-# map000
 
 Show # maps - legacy
 
@@ -650,24 +430,20 @@ Show # maps - legacy
 	BaseType Ancient
 
 	SetFontSize 45
-	SetBackgroundColor 255 0 0 255 # maps main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# map001
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # maps - undroppable - breachstones
 
 	Class Misc
 
 	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# map002
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # maps - undroppable - maps
 
@@ -675,12 +451,10 @@ Show # maps - undroppable - maps
 	BaseType Harbinger "Vaal Temple Map"
 
 	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# map003
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # maps - fragments high
 
@@ -688,12 +462,10 @@ Show # maps - fragments high
 	BaseType Divine Fragment Mortal
 
 	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# map004
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # maps - maps tier 16+
 
@@ -701,24 +473,20 @@ Show # maps - maps tier 16+
 	DropLevel > 82
 
 	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# map005
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # maps - fragments low
 
 	Class Fragments
 
 	SetFontSize 33
-	SetBackgroundColor 255 0 0 255 # maps main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# map006
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # maps - maps tier 11+
 
@@ -726,12 +494,10 @@ Show # maps - maps tier 11+
 	DropLevel > 77
 
 	SetFontSize 33
-	SetBackgroundColor 255 0 0 255 # maps main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# map007
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # maps - maps tier 6+
 
@@ -739,30 +505,24 @@ Show # maps - maps tier 6+
 	DropLevel > 72
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 0 0 255 # maps main
-	SetBorderColor 255 0 0 255 # maps main
-
-# map008
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 0 0 255 # maps
+	SetBorderColor 255 0 0 255 # maps
 
 Show # maps - maps tier 1+
 
 	Class Maps
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 0 0 255 # maps main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# map009
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 0 0 255 # maps
+	SetBorderColor 0 0 0 255 # black
 
 #
 #
-# Section: RARE
+# RARE
 #
 #
-
-# rar000
 
 Show # rare - rods
 
@@ -770,12 +530,10 @@ Show # rare - rods
 	Class Fishing
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# rar001
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # rare - legacy - shields
 
@@ -784,12 +542,10 @@ Show # rare - legacy - shields
 	BaseType "Golden Flame"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# rar002
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # rare - legacy - quivers
 
@@ -798,12 +554,10 @@ Show # rare - legacy - quivers
 	BaseType "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# rar003
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # rare - legacy - chests
 
@@ -812,12 +566,10 @@ Show # rare - legacy - chests
 	BaseType "Golden Mantle"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# rar004
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # rare - legacy - helms
 
@@ -826,12 +578,10 @@ Show # rare - legacy - helms
 	BaseType "Golden Wreath"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# rar005
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # rare - legacy - gloves
 
@@ -840,12 +590,10 @@ Show # rare - legacy - gloves
 	BaseType "Golden Bracers"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# rar006
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # rare - legacy - boots
 
@@ -854,12 +602,10 @@ Show # rare - legacy - boots
 	BaseType "Golden Caligae"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# rar007
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # rare - legacy - belts
 
@@ -868,12 +614,10 @@ Show # rare - legacy - belts
 	BaseType "Golden Obi"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# rar008
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # rare - legacy - amulets
 
@@ -882,12 +626,10 @@ Show # rare - legacy - amulets
 	BaseType "Jet Amulet"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# rar009
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # rare - legacy - rings
 
@@ -896,12 +638,10 @@ Show # rare - legacy - rings
 	BaseType "Golden Hoop"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# rar010
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # rare - ilvl 100
 
@@ -909,12 +649,55 @@ Show # rare - ilvl 100
 	ItemLevel 100
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
-# rar011
+Show # rare - elder
+
+	Rarity Rare
+	ElderItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # rare - shaper
+
+	Rarity Rare
+	ShaperItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # rare - abyss - jewels
+
+	Rarity Rare
+	Class Abyss
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # rare - abyss - belts
+
+	Rarity Rare
+	Class Belts
+	BaseType "Stygian Vise"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - undroppable - amulets
 
@@ -923,12 +706,10 @@ Show # rare - undroppable - amulets
 	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Ruby Amulet" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# rar012
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - undroppable - rings
 
@@ -937,12 +718,10 @@ Show # rare - undroppable - rings
 	BaseType "Prismatic Ring"
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# rar013
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - undroppable - jewels
 
@@ -951,12 +730,10 @@ Show # rare - undroppable - jewels
 	BaseType "Prismatic Jewel"
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# rar014
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - restricted ilvl 84+ - helms
 
@@ -966,12 +743,10 @@ Show # rare - restricted ilvl 84+ - helms
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# rar015
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - restricted ilvl 84+ - gloves
 
@@ -981,12 +756,10 @@ Show # rare - restricted ilvl 84+ - gloves
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# rar016
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - restricted ilvl 84+ - boots
 
@@ -996,12 +769,10 @@ Show # rare - restricted ilvl 84+ - boots
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# rar017
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - restricted ilvl 84+ - belts
 
@@ -1011,12 +782,10 @@ Show # rare - restricted ilvl 84+ - belts
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# rar018
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - restricted ilvl 84+ - amulets
 
@@ -1026,12 +795,10 @@ Show # rare - restricted ilvl 84+ - amulets
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# rar019
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - restricted ilvl 84+ - rings
 
@@ -1041,12 +808,10 @@ Show # rare - restricted ilvl 84+ - rings
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# rar020
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - sockets 6 linked
 
@@ -1054,12 +819,10 @@ Show # rare - sockets 6 linked
 	LinkedSockets 6
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# rar021
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - restricted - chests
 
@@ -1068,12 +831,10 @@ Show # rare - restricted - chests
 	BaseType "Sacrificial Garb"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# rar022
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # rare - restricted - helms
 
@@ -1082,12 +843,10 @@ Show # rare - restricted - helms
 	BaseType "Bone Helmet"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# rar023
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # rare - restricted - gloves
 
@@ -1096,12 +855,10 @@ Show # rare - restricted - gloves
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# rar024
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # rare - restricted - boots
 
@@ -1110,12 +867,10 @@ Show # rare - restricted - boots
 	BaseType "Two-Toned Boots"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# rar025
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # rare - restricted - belts
 
@@ -1124,12 +879,10 @@ Show # rare - restricted - belts
 	BaseType "Crystal Belt" "Vanguard Belt"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# rar026
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # rare - restricted - amulets
 
@@ -1138,12 +891,10 @@ Show # rare - restricted - amulets
 	BaseType "Blue Pearl Amulet" "Marble Amulet"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# rar027
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # rare - restricted - rings
 
@@ -1152,12 +903,10 @@ Show # rare - restricted - rings
 	BaseType "Breach Ring" "Opal Ring" "Steel Ring"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# rar028
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # rare - sockets 6
 
@@ -1165,12 +914,21 @@ Show # rare - sockets 6
 	Sockets 6
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
-# rar029
+Show # rare - sockets 5 linked
+
+	Rarity Rare
+	LinkedSockets 5
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # rare - corrupted
 
@@ -1178,11 +936,19 @@ Show # rare - corrupted
 	Corrupted True
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 255 0 0 255 # rare corrupted
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 0 0 255 # corrupted
 
-# rar030
+Show # rare - belts | amulets | rings | jewels
+
+	Rarity Rare
+	Class Amulets Belts Jewel Rings
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 
 Show # rare - sockets rgb linked - width 1
 
@@ -1191,11 +957,9 @@ Show # rare - sockets rgb linked - width 1
 	Width 1
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 255 255 0 255 # rare main
-
-# rar031
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 
 Show # rare - sockets rgb linked - width 2
 
@@ -1204,23 +968,9 @@ Show # rare - sockets rgb linked - width 2
 	Height 2
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 255 255 0 255 # rare main
-
-# rar032
-
-Show # rare - quivers | belts | amulets | rings | jewels
-
-	Rarity Rare
-	Class Amulets Belts Jewel Quivers Rings
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar033
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 
 Show # rare - top - staves
 
@@ -1229,11 +979,9 @@ Show # rare - top - staves
 	BaseType "Coiled Staff" "Eclipse Staff" "Imperial Staff" Lathi "Maelström Staff" "Serpentine Staff"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar034
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - 2h axes
 
@@ -1242,11 +990,9 @@ Show # rare - top - 2h axes
 	BaseType "Ezomyte Axe" Fleshripper "Vaal Axe"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar035
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - 2h maces
 
@@ -1255,11 +1001,9 @@ Show # rare - top - 2h maces
 	BaseType "Coronal Maul" "Karui Maul" Piledriver
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar036
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - 2h swords
 
@@ -1268,11 +1012,9 @@ Show # rare - top - 2h swords
 	BaseType "Exquisite Blade" "Lion Sword" "Reaver Sword" "Vaal Greatsword"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar037
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - claws
 
@@ -1281,11 +1023,9 @@ Show # rare - top - claws
 	BaseType "Eye Gouger" "Gemini Claw" "Great White Claw" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Vaal Claw"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar038
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - daggers
 
@@ -1294,11 +1034,9 @@ Show # rare - top - daggers
 	BaseType Ambusher "Copper Kris" "Demon Dagger" "Golden Kris" "Gutting Knife" "Platinum Kris" Sai
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar039
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - sceptres
 
@@ -1307,11 +1045,9 @@ Show # rare - top - sceptres
 	BaseType "Carnal Sceptre" "Karui Sceptre" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar040
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - wands
 
@@ -1320,11 +1056,9 @@ Show # rare - top - wands
 	BaseType "Demon's Horn" "Imbued Wand" "Opal Wand" "Profane Wand" "Prophecy Wand"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar041
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - 1h axes
 
@@ -1333,11 +1067,9 @@ Show # rare - top - 1h axes
 	BaseType "Royal Axe" "Runic Hatchet" "Siege Axe"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar042
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - 1h maces
 
@@ -1346,11 +1078,9 @@ Show # rare - top - 1h maces
 	BaseType "Auric Mace" "Behemoth Mace" Gavel
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar043
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - 1h swords
 
@@ -1359,11 +1089,9 @@ Show # rare - top - 1h swords
 	BaseType "Corsair Sword" "Eternal Sword" "Legion Sword" "Tiger Hook"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar044
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - thrusting swords
 
@@ -1372,11 +1100,9 @@ Show # rare - top - thrusting swords
 	BaseType "Dragoon Sword" "Harpy Rapier" "Jewelled Foil" "Vaal Rapier"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar045
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - bows
 
@@ -1385,11 +1111,9 @@ Show # rare - top - bows
 	BaseType "Citadel Bow" "Harbinger Bow" "Imperial Bow" "Maraketh Bow" "Thicket Bow"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar046
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - shields
 
@@ -1398,11 +1122,20 @@ Show # rare - top - shields
 	BaseType "Archon Kite Shield" "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Lacquered Buckler" "Mirrored Spiked Shield" "Shagreen Tower Shield" "Spiny Round Shield" "Supreme Spiked Shield" "Teak Round Shield" "Titanium Spirit Shield" "Vaal Buckler"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
-# rar047
+Show # rare - top - quivers
+
+	Rarity Rare
+	Class Quivers
+	BaseType "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - chests
 
@@ -1411,11 +1144,9 @@ Show # rare - top - chests
 	BaseType "Assassin's Garb" "Astral Plate" "Blood Raiment" "Carnal Armour" "Full Dragonscale" "Glorious Plate" "Occultist's Vestment" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Zodiac Leather"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar048
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - helms
 
@@ -1424,11 +1155,9 @@ Show # rare - top - helms
 	BaseType "Deicide Mask" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Royal Burgonet" "Vaal Mask"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar049
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - gloves
 
@@ -1437,11 +1166,9 @@ Show # rare - top - gloves
 	BaseType "Crusader Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar050
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - top - boots
 
@@ -1450,30 +1177,24 @@ Show # rare - top - boots
 	BaseType "Assassin's Boots" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves"
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar051
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 Show # rare - rest
 
 	Rarity Rare
 
 	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 0 255 # rare main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# rar052
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 0 0 0 255 # black
 
 #
 #
-# Section: MAGIC
+# MAGIC
 #
 #
-
-# mag000
 
 Show # magic - rods
 
@@ -1481,12 +1202,10 @@ Show # magic - rods
 	Class Fishing
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# mag001
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # magic - legacy - shields
 
@@ -1495,12 +1214,10 @@ Show # magic - legacy - shields
 	BaseType "Golden Flame"
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# mag002
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # magic - legacy - quivers
 
@@ -1509,12 +1226,10 @@ Show # magic - legacy - quivers
 	BaseType "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# mag003
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # magic - legacy - chests
 
@@ -1523,12 +1238,10 @@ Show # magic - legacy - chests
 	BaseType "Golden Mantle"
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# mag004
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # magic - legacy - helms
 
@@ -1537,12 +1250,10 @@ Show # magic - legacy - helms
 	BaseType "Golden Wreath"
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# mag005
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # magic - legacy - gloves
 
@@ -1551,12 +1262,10 @@ Show # magic - legacy - gloves
 	BaseType "Golden Bracers"
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# mag006
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # magic - legacy - boots
 
@@ -1565,12 +1274,10 @@ Show # magic - legacy - boots
 	BaseType "Golden Caligae"
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# mag007
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # magic - legacy - belts
 
@@ -1579,12 +1286,10 @@ Show # magic - legacy - belts
 	BaseType "Golden Obi"
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# mag008
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # magic - legacy - amulets
 
@@ -1593,12 +1298,10 @@ Show # magic - legacy - amulets
 	BaseType "Jet Amulet"
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# mag009
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # magic - legacy - rings
 
@@ -1607,12 +1310,10 @@ Show # magic - legacy - rings
 	BaseType "Golden Hoop"
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# mag010
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # magic - ilvl 100
 
@@ -1620,12 +1321,55 @@ Show # magic - ilvl 100
 	ItemLevel 100
 
 	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
-# mag011
+Show # magic - elder
+
+	Rarity Magic
+	ElderItem True
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # magic - shaper
+
+	Rarity Magic
+	ShaperItem True
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # magic - abyss - jewels
+
+	Rarity Magic
+	Class Abyss
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # magic - abyss - belts
+
+	Rarity Magic
+	Class Belts
+	BaseType "Stygian Vise"
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - undroppable - amulets
 
@@ -1634,12 +1378,10 @@ Show # magic - undroppable - amulets
 	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Ruby Amulet" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
 
 	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# mag012
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - undroppable - rings
 
@@ -1648,12 +1390,10 @@ Show # magic - undroppable - rings
 	BaseType "Breach Ring" "Prismatic Ring"
 
 	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# mag013
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - undroppable - jewels
 
@@ -1662,12 +1402,10 @@ Show # magic - undroppable - jewels
 	BaseType "Prismatic Jewel"
 
 	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# mag014
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - restricted ilvl 84+ - helms
 
@@ -1677,12 +1415,10 @@ Show # magic - restricted ilvl 84+ - helms
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# mag015
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - restricted ilvl 84+ - gloves
 
@@ -1692,12 +1428,10 @@ Show # magic - restricted ilvl 84+ - gloves
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# mag016
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - restricted ilvl 84+ - boots
 
@@ -1707,12 +1441,10 @@ Show # magic - restricted ilvl 84+ - boots
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# mag017
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - restricted ilvl 84+ - belts
 
@@ -1722,12 +1454,10 @@ Show # magic - restricted ilvl 84+ - belts
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# mag018
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - restricted ilvl 84+ - amulets
 
@@ -1737,12 +1467,10 @@ Show # magic - restricted ilvl 84+ - amulets
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# mag019
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - restricted ilvl 84+ - rings
 
@@ -1752,12 +1480,10 @@ Show # magic - restricted ilvl 84+ - rings
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# mag020
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - sockets 6 linked
 
@@ -1765,12 +1491,10 @@ Show # magic - sockets 6 linked
 	LinkedSockets 6
 
 	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# mag021
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - restricted - chests
 
@@ -1779,12 +1503,10 @@ Show # magic - restricted - chests
 	BaseType "Sacrificial Garb"
 
 	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# mag022
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # magic - restricted - helms
 
@@ -1793,12 +1515,10 @@ Show # magic - restricted - helms
 	BaseType "Bone Helmet"
 
 	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# mag023
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # magic - restricted - gloves
 
@@ -1807,12 +1527,10 @@ Show # magic - restricted - gloves
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
 
 	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# mag024
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # magic - restricted - boots
 
@@ -1821,12 +1539,10 @@ Show # magic - restricted - boots
 	BaseType "Two-Toned Boots"
 
 	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# mag025
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # magic - restricted - belts
 
@@ -1835,12 +1551,10 @@ Show # magic - restricted - belts
 	BaseType "Crystal Belt" "Vanguard Belt"
 
 	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# mag026
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # magic - restricted - amulets
 
@@ -1849,12 +1563,10 @@ Show # magic - restricted - amulets
 	BaseType "Blue Pearl Amulet" "Marble Amulet"
 
 	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# mag027
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # magic - restricted - rings
 
@@ -1863,12 +1575,10 @@ Show # magic - restricted - rings
 	BaseType "Opal Ring" "Steel Ring"
 
 	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# mag028
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # magic - sockets 6
 
@@ -1876,12 +1586,21 @@ Show # magic - sockets 6
 	Sockets 6
 
 	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
-# mag029
+Show # magic - sockets 5 linked
+
+	Rarity Magic
+	LinkedSockets 5
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # magic - warband
 
@@ -1890,11 +1609,19 @@ Show # magic - warband
 	Identified True
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 127 127 255 255 # magic main
-	SetBorderColor 0 255 0 255 # magic warband
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 0 255 0 255 # identified
 
-# mag030
+Show # magic - jewels
+
+	Rarity Magic
+	Class Jewel
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 127 127 255 255 # magic
 
 Show # magic - sockets rgb linked - width 1
 
@@ -1903,11 +1630,9 @@ Show # magic - sockets rgb linked - width 1
 	Width 1
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 127 127 255 255 # magic main
-	SetBorderColor 127 127 255 255 # magic main
-
-# mag031
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 127 127 255 255 # magic
 
 Show # magic - sockets rgb linked - width 2
 
@@ -1916,42 +1641,67 @@ Show # magic - sockets rgb linked - width 2
 	Height 2
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 127 127 255 255 # magic main
-	SetBorderColor 127 127 255 255 # magic main
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 127 127 255 255 # magic
 
-# mag032
-
-Show # magic - jewels
+Show # magic - flasks - utility
 
 	Rarity Magic
-	Class Jewel
+	Class Utility
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 127 127 255 255 # magic main
-	SetBorderColor 0 0 0 0 # common transparent
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 0 0 0 255 # black
 
-# mag033
+Show # magic - flasks - top life
+
+	Rarity Magic
+	Class Life
+	BaseType "Divine Life Flask" "Eternal Life Flask" "Hallowed Life Flask"
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 0 0 0 255 # black
+
+Show # magic - flasks - top mana
+
+	Rarity Magic
+	Class Mana
+	BaseType "Eternal Mana Flask" "Sanctified Mana Flask"
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 0 0 0 255 # black
+
+Show # magic - flasks - top hybrid
+
+	Rarity Magic
+	Class Hybrid
+	BaseType "Hallowed Hybrid Flask"
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 0 0 0 255 # black
 
 Show # magic - rest
 
 	Rarity Magic
 
 	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 127 127 255 255 # magic main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# mag034
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 0 0 0 255 # black
 
 #
 #
-# Section: NORMAL
+# NORMAL
 #
 #
-
-# nor000
 
 Show # normal - rods
 
@@ -1959,12 +1709,10 @@ Show # normal - rods
 	Class Fishing
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# nor001
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # normal - legacy - shields
 
@@ -1973,12 +1721,10 @@ Show # normal - legacy - shields
 	BaseType "Golden Flame"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# nor002
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # normal - legacy - quivers
 
@@ -1987,12 +1733,10 @@ Show # normal - legacy - quivers
 	BaseType "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# nor003
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # normal - legacy - chests
 
@@ -2001,12 +1745,10 @@ Show # normal - legacy - chests
 	BaseType "Golden Mantle"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# nor004
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # normal - legacy - helms
 
@@ -2015,12 +1757,10 @@ Show # normal - legacy - helms
 	BaseType "Golden Wreath"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# nor005
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # normal - legacy - gloves
 
@@ -2029,12 +1769,10 @@ Show # normal - legacy - gloves
 	BaseType "Golden Bracers"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# nor006
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # normal - legacy - boots
 
@@ -2043,12 +1781,10 @@ Show # normal - legacy - boots
 	BaseType "Golden Caligae"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# nor007
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # normal - legacy - belts
 
@@ -2057,12 +1793,10 @@ Show # normal - legacy - belts
 	BaseType "Golden Obi"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# nor008
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # normal - legacy - amulets
 
@@ -2071,12 +1805,10 @@ Show # normal - legacy - amulets
 	BaseType "Jet Amulet"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# nor009
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # normal - legacy - rings
 
@@ -2085,12 +1817,10 @@ Show # normal - legacy - rings
 	BaseType "Golden Hoop"
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# nor010
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
 Show # normal - ilvl 100
 
@@ -2098,12 +1828,55 @@ Show # normal - ilvl 100
 	ItemLevel 100
 
 	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
 
-# nor011
+Show # normal - elder
+
+	Rarity Normal
+	ElderItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # normal - shaper
+
+	Rarity Normal
+	ShaperItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # normal - abyss - jewels
+
+	Rarity Normal
+	Class Abyss
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # normal - abyss - belts
+
+	Rarity Normal
+	Class Belts
+	BaseType "Stygian Vise"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - undroppable - amulets
 
@@ -2112,12 +1885,10 @@ Show # normal - undroppable - amulets
 	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Ruby Amulet" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# nor012
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - undroppable - rings
 
@@ -2126,12 +1897,10 @@ Show # normal - undroppable - rings
 	BaseType "Breach Ring" "Prismatic Ring"
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# nor013
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - undroppable - jewels
 
@@ -2140,12 +1909,10 @@ Show # normal - undroppable - jewels
 	BaseType "Prismatic Jewel"
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# nor014
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - restricted ilvl 84+ - helms
 
@@ -2155,12 +1922,10 @@ Show # normal - restricted ilvl 84+ - helms
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# nor015
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - restricted ilvl 84+ - gloves
 
@@ -2170,12 +1935,10 @@ Show # normal - restricted ilvl 84+ - gloves
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# nor016
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - restricted ilvl 84+ - boots
 
@@ -2185,12 +1948,10 @@ Show # normal - restricted ilvl 84+ - boots
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# nor017
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - restricted ilvl 84+ - belts
 
@@ -2200,12 +1961,10 @@ Show # normal - restricted ilvl 84+ - belts
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# nor018
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - restricted ilvl 84+ - amulets
 
@@ -2215,12 +1974,10 @@ Show # normal - restricted ilvl 84+ - amulets
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# nor019
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - restricted ilvl 84+ - rings
 
@@ -2230,12 +1987,10 @@ Show # normal - restricted ilvl 84+ - rings
 	ItemLevel > 83
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# nor020
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - sockets 6 linked
 
@@ -2243,12 +1998,10 @@ Show # normal - sockets 6 linked
 	LinkedSockets 6
 
 	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 3 300 # common 2
-
-# nor021
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - restricted - chests
 
@@ -2257,12 +2010,10 @@ Show # normal - restricted - chests
 	BaseType "Sacrificial Garb"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# nor022
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # normal - restricted - helms
 
@@ -2271,12 +2022,10 @@ Show # normal - restricted - helms
 	BaseType "Bone Helmet"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# nor023
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # normal - restricted - gloves
 
@@ -2285,12 +2034,10 @@ Show # normal - restricted - gloves
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# nor024
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # normal - restricted - boots
 
@@ -2299,12 +2046,10 @@ Show # normal - restricted - boots
 	BaseType "Two-Toned Boots"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# nor025
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # normal - restricted - belts
 
@@ -2313,12 +2058,10 @@ Show # normal - restricted - belts
 	BaseType "Crystal Belt" "Vanguard Belt"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# nor026
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # normal - restricted - amulets
 
@@ -2327,12 +2070,10 @@ Show # normal - restricted - amulets
 	BaseType "Blue Pearl Amulet" "Marble Amulet"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# nor027
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # normal - restricted - rings
 
@@ -2341,12 +2082,10 @@ Show # normal - restricted - rings
 	BaseType "Opal Ring" "Steel Ring"
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
-
-# nor028
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # normal - sockets 6
 
@@ -2354,12 +2093,21 @@ Show # normal - sockets 6
 	Sockets 6
 
 	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 2 300 # common 3
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
-# nor029
+Show # normal - sockets 5 linked
+
+	Rarity Normal
+	LinkedSockets 5
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # normal - sockets rgb linked - width 1
 
@@ -2368,11 +2116,9 @@ Show # normal - sockets rgb linked - width 1
 	Width 1
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 255 255 # normal main
-	SetBorderColor 255 255 255 255 # normal main
-
-# nor030
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 255 255 255 255 # normal
 
 Show # normal - sockets rgb linked - width 2
 
@@ -2381,11 +2127,9 @@ Show # normal - sockets rgb linked - width 2
 	Height 2
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 255 255 # normal main
-	SetBorderColor 255 255 255 255 # normal main
-
-# nor031
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 255 255 255 255 # normal
 
 Show # normal - chisel
 
@@ -2395,11 +2139,9 @@ Show # normal - chisel
 	Corrupted False
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 255 255 # normal main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# nor032
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 0 0 0 255 # black
 
 Show # normal - chance - boots
 
@@ -2409,11 +2151,9 @@ Show # normal - chance - boots
 	Corrupted False
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 255 255 # normal main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# nor033
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 0 0 0 255 # black
 
 Show # normal - chance - belts
 
@@ -2423,37 +2163,29 @@ Show # normal - chance - belts
 	Corrupted False
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 255 255 # normal main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# nor034
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 0 0 0 255 # black
 
 Show # normal - rest
 
 	Rarity Normal
 
 	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # common black
-	SetTextColor 255 255 255 255 # normal main
-	SetBorderColor 0 0 0 0 # common transparent
-
-# nor035
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 0 0 0 255 # black
 
 #
 #
-# Section: UNKNOWN
+# UNKNOWN
 #
 #
-
-# unk000
 
 Show # unknown - unknown
 
 	SetFontSize 45
-	SetBackgroundColor 255 0 255 255 # unknown main
-	SetTextColor 0 0 0 255 # common black
-	SetBorderColor 0 0 0 255 # common black
-	PlayAlertSound 1 300 # common 1
-
-# unk001
+	SetBackgroundColor 255 0 255 255 # unknown
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
