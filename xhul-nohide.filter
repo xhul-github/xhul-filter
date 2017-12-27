@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.1.A
+# version : 3.1.B
 # variant : nohide
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 # EnableBlockGroups
@@ -24,7 +24,7 @@ Show # currency - tier 1
 Show # currency - tier 2
 
 	Class Stackable
-	BaseType " Annulment" " Binding" " Horizons" "Ancient O" Blessing Delirium Divine "Engineer's O" "Exalted O" "Harbinger's O" Horror Hysteria Insanity Mirror Stacked
+	BaseType "Ancient Orb" Blessing Delirium Divine "Engineer's Orb" "Exalted Orb" "Harbinger's Orb" Horizons Horror Hysteria Insanity Mirror "Orb of Annulment" "Orb of Binding" Stacked
 
 	SetFontSize 39
 	SetBackgroundColor 255 191 127 255 # currency
@@ -35,7 +35,7 @@ Show # currency - tier 2
 Show # currency - tier 3
 
 	Class Stackable
-	BaseType " Alchemy" Ancient Annulment Binding Blessed Cartographer's "Chaos O" Engineer's Essence Exalted Fusing Gemcutter's Harbinger's Horizon Perandus Prophecy "Regal O" Regret Remnant Scouring Splinter Unshaping Vaal
+	BaseType Ancient Annulment Binding Blessed Cartographer's "Chaos Orb" Engineer's Essence Exalted Fusing Gemcutter's Harbinger's Horizon "Orb of Alchemy" Perandus Prophecy "Regal Orb" Regret Remnant Scouring Splinter Unshaping Vaal
 
 	SetFontSize 33
 	SetBackgroundColor 255 191 127 255 # currency
@@ -46,7 +46,7 @@ Show # currency - tier 3
 Show # currency - tier 4
 
 	Class Stackable
-	BaseType " Alteration" Alchemy Chance Chaos Chromatic Glassblower's Jeweller's Regal Silver
+	BaseType Alchemy Chance Chaos Chromatic Glassblower's Jeweller's "Orb of Alteration" Regal Silver
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
@@ -68,7 +68,7 @@ Show # currency - tier 5
 #
 #
 
-Show # cards - tier 2 security
+Show # cards - the dragon's heart
 
 	Class Divination
 	BaseType "The Dragon's Heart"
@@ -79,7 +79,7 @@ Show # cards - tier 2 security
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # cards - tier 4 security
+Show # cards - the wolf's shadow
 
 	Class Divination
 	BaseType "The Wolf's Shadow"
@@ -103,7 +103,7 @@ Show # cards - tier 1
 Show # cards - tier 2
 
 	Class Divination
-	BaseType "Abandoned Wealth" "Call to the First Ones" "Hunter's Reward" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Deck" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Cursed King" "The Devastator" "The Formless Sea" "The Hoarder" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Offering" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Wind" "The Wolf" "The Wolven King's Bite" "Time-Lost Relic" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Call to the First Ones" "Dialla's Subjugation" "Hunter's Reward" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Deck" "Pride Before the Fall" "The Artist" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Cursed King" "The Devastator" "The Formless Sea" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Offering" "The Polymath" "The Queen" "The Saint's Treasure" "The Sephirot" "The Soul" "The Spark and the Flame" "The Thaumaturgist" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Wind" "The Wolf" "The Wolven King's Bite" "Time-Lost Relic" "Wealth and Power"
 
 	SetFontSize 39
 	SetBackgroundColor 191 255 127 255 # cards
@@ -114,7 +114,7 @@ Show # cards - tier 2
 Show # cards - tier 3
 
 	Class Divination
-	BaseType "Boundless Realms" "Bowyer's Dream" "Chaotic Disposition" "Coveted Possession" "Destined to Crumble" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Grave Knowledge" "Her Mask" Heterochromia Humility "Jack in the Box" "Lost Worlds" Loyalty "Luck of the Vaal" "Lucky Connections" "Merciless Armament" "Might is Right" "No Traces" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Betrayal" "The Calling" "The Cartographer" "The Cataclysm" "The Catalyst" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Doppelganger" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Ethereal" "The Explorer" "The Fletcher" "The Forsaken" "The Gambler" "The Gemcutter" "The Gladiator" "The Harvester" "The Inventor" "The Jester" "The One With All" "The Opulent" "The Poet" "The Polymath" "The Porcupine" "The Risk" "The Road to Power" "The Scavenger" "The Soul" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Throne" "The Trial" "The Tyrant" "The Union" "The Warlord" "The Watcher" "The Wrath" "The Wretched" "Three Faces in the Dark" "Treasure Hunter" "Turn the Other Cheek" "Vinia's Token" "Volatile Power"
+	BaseType "Boundless Realms" "Bowyer's Dream" "Chaotic Disposition" "Coveted Possession" "Destined to Crumble" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Her Mask" Heterochromia Humility "Jack in the Box" "Lost Worlds" Loyalty "Luck of the Vaal" "Lucky Connections" "Merciless Armament" "Might is Right" "No Traces" Rats Rebirth "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Calling" "The Cartographer" "The Catalyst" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Doppelganger" "The Encroaching Darkness" "The Enlightened" "The Ethereal" "The Explorer" "The Fletcher" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gladiator" "The Harvester" "The Hoarder" "The Inventor" "The Jester" "The One With All" "The Opulent" "The Penitent" "The Poet" "The Porcupine" "The Realm" "The Risk" "The Road to Power" "The Scavenger" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Throne" "The Trial" "The Tyrant" "The Union" "The Warlord" "The Watcher" "The Wrath" "The Wretched" "Three Faces in the Dark" "Treasure Hunter" "Turn the Other Cheek" "Vinia's Token" "Volatile Power"
 
 	SetFontSize 33
 	SetBackgroundColor 191 255 127 255 # cards
@@ -125,7 +125,7 @@ Show # cards - tier 3
 Show # cards - tier 4
 
 	Class Divination
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" Death "Doedre's Madness" "Gift of the Gemling Queen" Hope Hubris "Hunter's Resolve" "Light and Truth" "Lysah's Respite" Mitts "Rain of Chaos" "Shard of Fate" "The Battle Born" "The Blazing Fire" "The Body" "The Coming Storm" "The Conduit" "The Demoness" "The Dragon" "The Endurance" "The Eye of the Dragon" "The Feast" "The Flora's Gift" "The Fox" "The Garish Power" "The Gentleman" "The Hermit" "The Incantation" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Oath" "The Pack Leader" "The Pact" "The Penitent" "The Realm" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Siren" "The Sun" "The Tower" "The Traitor" "The Visionary" "The Warden" "The Wolverine" "Thunderous Skies" Tranquillity
+	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" Death "Doedre's Madness" "Dying Anguish" "Glimmer of Hope" Hope Hubris "Hunter's Resolve" "Light and Truth" "Lysah's Respite" Mitts "Rain of Chaos" "Shard of Fate" "The Battle Born" "The Betrayal" "The Blazing Fire" "The Body" "The Coming Storm" "The Conduit" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Endurance" "The Eye of the Dragon" "The Feast" "The Flora's Gift" "The Garish Power" "The Gentleman" "The Hermit" "The Incantation" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Oath" "The Pack Leader" "The Pact" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Siren" "The Sun" "The Tower" "The Traitor" "The Visionary" "The Warden" "The Wolverine" "Thunderous Skies" Tranquillity
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
@@ -227,7 +227,7 @@ Show # gems - rest
 #
 #
 
-Show # special - leaguestones | pieces
+Show # special - pieces | leaguestones
 
 	Class Leaguestones Piece
 
@@ -433,28 +433,7 @@ Show # maps - legacy
 	SetBackgroundColor 255 0 0 255 # maps
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-
-Show # maps - undroppable - breachstones
-
-	Class Misc
-
-	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # maps - undroppable - maps
-
-	Class Maps
-	BaseType Harbinger "Vaal Temple Map"
-
-	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
+	PlayAlertSound 8 300 # maps high
 
 Show # maps - fragments high
 
@@ -465,7 +444,28 @@ Show # maps - fragments high
 	SetBackgroundColor 255 0 0 255 # maps
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
+	PlayAlertSound 8 300 # maps high
+
+Show # maps - undroppable - maps
+
+	Class Maps
+	BaseType Harbinger "Vaal Temple Map"
+
+	SetFontSize 39
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # maps high
+
+Show # maps - undroppable - breachstones
+
+	Class Misc
+
+	SetFontSize 39
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # maps high
 
 Show # maps - maps tier 16+
 
@@ -476,7 +476,7 @@ Show # maps - maps tier 16+
 	SetBackgroundColor 255 0 0 255 # maps
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
+	PlayAlertSound 8 300 # maps high
 
 Show # maps - fragments low
 
@@ -486,7 +486,18 @@ Show # maps - fragments low
 	SetBackgroundColor 255 0 0 255 # maps
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
+	PlayAlertSound 8 300 # maps high
+
+Show # maps - maps shaped
+
+	Class Maps
+	ShapedMap True
+
+	SetFontSize 33
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # maps high
 
 Show # maps - maps tier 11+
 
@@ -497,7 +508,7 @@ Show # maps - maps tier 11+
 	SetBackgroundColor 255 0 0 255 # maps
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
+	PlayAlertSound 8 300 # maps high
 
 Show # maps - maps tier 6+
 
@@ -508,6 +519,7 @@ Show # maps - maps tier 6+
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 0 0 255 # maps
 	SetBorderColor 255 0 0 255 # maps
+	PlayAlertSound 7 300 # maps low
 
 Show # maps - maps tier 1+
 
@@ -516,7 +528,7 @@ Show # maps - maps tier 1+
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 0 0 255 # maps
-	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 7 300 # maps low
 
 #
 #
@@ -654,44 +666,11 @@ Show # rare - ilvl 100
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
-Show # rare - elder
+Show # rare - undroppable - 1h swords
 
 	Rarity Rare
-	ElderItem True
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # rare - shaper
-
-	Rarity Rare
-	ShaperItem True
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # rare - abyss - jewels
-
-	Rarity Rare
-	Class Abyss
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # rare - abyss - belts
-
-	Rarity Rare
-	Class Belts
-	BaseType "Stygian Vise"
+	Class "One Hand Swords"
+	BaseType "Charan's Sword"
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255 # rare
@@ -735,12 +714,47 @@ Show # rare - undroppable - jewels
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # rare - restricted ilvl 84+ - helms
+Show # rare - elder
+
+	Rarity Rare
+	ElderItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # rare - shaper
+
+	Rarity Rare
+	ShaperItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # rare - restricted max mods - chests
+
+	Rarity Rare
+	Class Body
+	BaseType "Sacrificial Garb"
+	ItemLevel 82
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # rare - restricted max mods - helms
 
 	Rarity Rare
 	Class Helmets
 	BaseType "Bone Helmet"
-	ItemLevel > 83
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255 # rare
@@ -748,12 +762,12 @@ Show # rare - restricted ilvl 84+ - helms
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # rare - restricted ilvl 84+ - gloves
+Show # rare - restricted max mods - gloves
 
 	Rarity Rare
 	Class Gloves
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	ItemLevel > 83
+	ItemLevel > 84
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255 # rare
@@ -761,12 +775,12 @@ Show # rare - restricted ilvl 84+ - gloves
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # rare - restricted ilvl 84+ - boots
+Show # rare - restricted max mods - boots
 
 	Rarity Rare
 	Class Boots
 	BaseType "Two-Toned Boots"
-	ItemLevel > 83
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255 # rare
@@ -774,12 +788,12 @@ Show # rare - restricted ilvl 84+ - boots
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # rare - restricted ilvl 84+ - belts
+Show # rare - restricted max mods - belts
 
 	Rarity Rare
 	Class Belts
-	BaseType "Crystal Belt" "Vanguard Belt"
-	ItemLevel > 83
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255 # rare
@@ -787,12 +801,12 @@ Show # rare - restricted ilvl 84+ - belts
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # rare - restricted ilvl 84+ - amulets
+Show # rare - restricted max mods - amulets
 
 	Rarity Rare
 	Class Amulets
 	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	ItemLevel > 83
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255 # rare
@@ -800,11 +814,23 @@ Show # rare - restricted ilvl 84+ - amulets
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # rare - restricted ilvl 84+ - rings
+Show # rare - restricted max mods - rings
 
 	Rarity Rare
 	Class Rings
 	BaseType "Breach Ring" "Opal Ring" "Steel Ring"
+	ItemLevel > 84
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # rare - restricted max mods - abyss jewels
+
+	Rarity Rare
+	Class Abyss
 	ItemLevel > 83
 
 	SetFontSize 39
@@ -876,7 +902,7 @@ Show # rare - restricted - belts
 
 	Rarity Rare
 	Class Belts
-	BaseType "Crystal Belt" "Vanguard Belt"
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
 
 	SetFontSize 33
 	SetBackgroundColor 255 255 0 255 # rare
@@ -901,6 +927,17 @@ Show # rare - restricted - rings
 	Rarity Rare
 	Class Rings
 	BaseType "Breach Ring" "Opal Ring" "Steel Ring"
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+
+Show # rare - restricted - abyss jewels
+
+	Rarity Rare
+	Class Abyss
 
 	SetFontSize 33
 	SetBackgroundColor 255 255 0 255 # rare
@@ -1326,44 +1363,11 @@ Show # magic - ilvl 100
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
-Show # magic - elder
+Show # magic - undroppable - 1h swords
 
 	Rarity Magic
-	ElderItem True
-
-	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # magic - shaper
-
-	Rarity Magic
-	ShaperItem True
-
-	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # magic - abyss - jewels
-
-	Rarity Magic
-	Class Abyss
-
-	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # magic - abyss - belts
-
-	Rarity Magic
-	Class Belts
-	BaseType "Stygian Vise"
+	Class "One Hand Swords"
+	BaseType "Charan's Sword"
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1407,12 +1411,47 @@ Show # magic - undroppable - jewels
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # magic - restricted ilvl 84+ - helms
+Show # magic - elder
+
+	Rarity Magic
+	ElderItem True
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # magic - shaper
+
+	Rarity Magic
+	ShaperItem True
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # magic - restricted max mods - chests
+
+	Rarity Magic
+	Class Body
+	BaseType "Sacrificial Garb"
+	ItemLevel 82
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # magic - restricted max mods - helms
 
 	Rarity Magic
 	Class Helmets
 	BaseType "Bone Helmet"
-	ItemLevel > 83
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1420,12 +1459,12 @@ Show # magic - restricted ilvl 84+ - helms
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # magic - restricted ilvl 84+ - gloves
+Show # magic - restricted max mods - gloves
 
 	Rarity Magic
 	Class Gloves
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	ItemLevel > 83
+	ItemLevel > 84
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1433,12 +1472,12 @@ Show # magic - restricted ilvl 84+ - gloves
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # magic - restricted ilvl 84+ - boots
+Show # magic - restricted max mods - boots
 
 	Rarity Magic
 	Class Boots
 	BaseType "Two-Toned Boots"
-	ItemLevel > 83
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1446,12 +1485,12 @@ Show # magic - restricted ilvl 84+ - boots
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # magic - restricted ilvl 84+ - belts
+Show # magic - restricted max mods - belts
 
 	Rarity Magic
 	Class Belts
-	BaseType "Crystal Belt" "Vanguard Belt"
-	ItemLevel > 83
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1459,12 +1498,12 @@ Show # magic - restricted ilvl 84+ - belts
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # magic - restricted ilvl 84+ - amulets
+Show # magic - restricted max mods - amulets
 
 	Rarity Magic
 	Class Amulets
 	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	ItemLevel > 83
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1472,11 +1511,23 @@ Show # magic - restricted ilvl 84+ - amulets
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # magic - restricted ilvl 84+ - rings
+Show # magic - restricted max mods - rings
 
 	Rarity Magic
 	Class Rings
 	BaseType "Opal Ring" "Steel Ring"
+	ItemLevel > 84
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # magic - restricted max mods - abyss jewels
+
+	Rarity Magic
+	Class Abyss
 	ItemLevel > 83
 
 	SetFontSize 39
@@ -1548,7 +1599,7 @@ Show # magic - restricted - belts
 
 	Rarity Magic
 	Class Belts
-	BaseType "Crystal Belt" "Vanguard Belt"
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
 
 	SetFontSize 33
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1573,6 +1624,17 @@ Show # magic - restricted - rings
 	Rarity Magic
 	Class Rings
 	BaseType "Opal Ring" "Steel Ring"
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+
+Show # magic - restricted - abyss jewels
+
+	Rarity Magic
+	Class Abyss
 
 	SetFontSize 33
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1645,16 +1707,6 @@ Show # magic - sockets rgb linked - width 2
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 127 127 255 255 # magic
 
-Show # magic - flasks - utility
-
-	Rarity Magic
-	Class Utility
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 0 0 0 255 # black
-
 Show # magic - flasks - top life
 
 	Rarity Magic
@@ -1682,6 +1734,16 @@ Show # magic - flasks - top hybrid
 	Rarity Magic
 	Class Hybrid
 	BaseType "Hallowed Hybrid Flask"
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 0 0 0 255 # black
+
+Show # magic - flasks - utility
+
+	Rarity Magic
+	Class Utility
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
@@ -1833,44 +1895,11 @@ Show # normal - ilvl 100
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
-Show # normal - elder
+Show # normal - undroppable - 1h swords
 
 	Rarity Normal
-	ElderItem True
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # normal - shaper
-
-	Rarity Normal
-	ShaperItem True
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # normal - abyss - jewels
-
-	Rarity Normal
-	Class Abyss
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # normal - abyss - belts
-
-	Rarity Normal
-	Class Belts
-	BaseType "Stygian Vise"
+	Class "One Hand Swords"
+	BaseType "Charan's Sword"
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -1906,7 +1935,6 @@ Show # normal - undroppable - jewels
 
 	Rarity Normal
 	Class Jewel
-	BaseType "Prismatic Jewel"
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -1914,12 +1942,47 @@ Show # normal - undroppable - jewels
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # normal - restricted ilvl 84+ - helms
+Show # normal - elder
+
+	Rarity Normal
+	ElderItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # normal - shaper
+
+	Rarity Normal
+	ShaperItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # normal - restricted max mods - chests
+
+	Rarity Normal
+	Class Body
+	BaseType "Sacrificial Garb"
+	ItemLevel 82
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # normal - restricted max mods - helms
 
 	Rarity Normal
 	Class Helmets
 	BaseType "Bone Helmet"
-	ItemLevel > 83
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -1927,12 +1990,12 @@ Show # normal - restricted ilvl 84+ - helms
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # normal - restricted ilvl 84+ - gloves
+Show # normal - restricted max mods - gloves
 
 	Rarity Normal
 	Class Gloves
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	ItemLevel > 83
+	ItemLevel > 84
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -1940,12 +2003,12 @@ Show # normal - restricted ilvl 84+ - gloves
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # normal - restricted ilvl 84+ - boots
+Show # normal - restricted max mods - boots
 
 	Rarity Normal
 	Class Boots
 	BaseType "Two-Toned Boots"
-	ItemLevel > 83
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -1953,12 +2016,12 @@ Show # normal - restricted ilvl 84+ - boots
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # normal - restricted ilvl 84+ - belts
+Show # normal - restricted max mods - belts
 
 	Rarity Normal
 	Class Belts
-	BaseType "Crystal Belt" "Vanguard Belt"
-	ItemLevel > 83
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -1966,12 +2029,12 @@ Show # normal - restricted ilvl 84+ - belts
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # normal - restricted ilvl 84+ - amulets
+Show # normal - restricted max mods - amulets
 
 	Rarity Normal
 	Class Amulets
 	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	ItemLevel > 83
+	ItemLevel > 85
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -1979,12 +2042,12 @@ Show # normal - restricted ilvl 84+ - amulets
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # normal - restricted ilvl 84+ - rings
+Show # normal - restricted max mods - rings
 
 	Rarity Normal
 	Class Rings
 	BaseType "Opal Ring" "Steel Ring"
-	ItemLevel > 83
+	ItemLevel > 84
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -2055,7 +2118,7 @@ Show # normal - restricted - belts
 
 	Rarity Normal
 	Class Belts
-	BaseType "Crystal Belt" "Vanguard Belt"
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
 
 	SetFontSize 33
 	SetBackgroundColor 255 255 255 255 # normal
