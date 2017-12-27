@@ -528,6 +528,7 @@ Show # maps - maps tier 1+
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 0 0 255 # maps
+	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 7 300 # maps low
 
 #
