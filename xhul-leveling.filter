@@ -1,6 +1,6 @@
 # xhul filter
-# version : 3.1.B
-# variant : nohide
+# version : 3.2.A
+# variant : leveling
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 # EnableBlockGroups
 
@@ -9,6 +9,17 @@
 # CURRENCY
 #
 #
+
+Show # currency - imprinted bestiary orb (tier 2)
+
+	Class Stackable
+	BaseType Imprinted
+
+	SetFontSize 39
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # currency - tier 1
 
@@ -24,7 +35,7 @@ Show # currency - tier 1
 Show # currency - tier 2
 
 	Class Stackable
-	BaseType "Ancient Orb" Blessing Delirium Divine "Engineer's Orb" "Exalted Orb" "Harbinger's Orb" Horizons Horror Hysteria Insanity Mirror "Orb of Annulment" "Orb of Binding" Stacked
+	BaseType "Ancient Orb" Bestiary Blessing Deafening Delirium Divine "Engineer's Orb" "Exalted Orb" "Harbinger's Orb" Horizons Horror Hysteria Insanity Mirror "Orb of Annulment" "Orb of Binding" Prophecy Seal Shrieking Stacked Unshaping
 
 	SetFontSize 39
 	SetBackgroundColor 255 191 127 255 # currency
@@ -35,7 +46,7 @@ Show # currency - tier 2
 Show # currency - tier 3
 
 	Class Stackable
-	BaseType Ancient Annulment Binding Blessed Cartographer's "Chaos Orb" Engineer's Essence Exalted Fusing Gemcutter's Harbinger's Horizon "Orb of Alchemy" Perandus Prophecy "Regal Orb" Regret Remnant Scouring Splinter Unshaping Vaal
+	BaseType Ancient Annulment Binding Blessed Cartographer's "Chaos Orb" Engineer's Essence Exalted Fusing Gemcutter's Harbinger's Horizon Net "Orb of Alchemy" Perandus "Regal Orb" Regret Remnant Scouring Splinter Vaal
 
 	SetFontSize 33
 	SetBackgroundColor 255 191 127 255 # currency
@@ -56,8 +67,18 @@ Show # currency - tier 4
 Show # currency - tier 5
 
 	Class Stackable
+	BaseType Alteration Armourer's Blacksmith's Orb
 
 	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 191 127 255 # currency
+	SetBorderColor 0 0 0 255 # black
+
+Show # currency - tier 6
+
+	Class Stackable
+
+	SetFontSize 27
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 191 127 255 # currency
 	SetBorderColor 0 0 0 255 # black
@@ -68,7 +89,7 @@ Show # currency - tier 5
 #
 #
 
-Show # cards - the dragon's heart
+Show # cards - the dragon's heart (tier 2)
 
 	Class Divination
 	BaseType "The Dragon's Heart"
@@ -79,7 +100,7 @@ Show # cards - the dragon's heart
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # cards - the wolf's shadow
+Show # cards - the wolf's shadow (tier 4)
 
 	Class Divination
 	BaseType "The Wolf's Shadow"
@@ -92,7 +113,7 @@ Show # cards - the wolf's shadow
 Show # cards - tier 1
 
 	Class Divination
-	BaseType "House of Mirrors" "Mawr Blaidd" "The Doctor" "The Fiend" "The Vast"
+	BaseType "House of Mirrors" "Mawr Blaidd" "The Doctor" "The Fiend" "The Queen" "The Vast"
 
 	SetFontSize 45
 	SetBackgroundColor 191 255 127 255 # cards
@@ -103,7 +124,7 @@ Show # cards - tier 1
 Show # cards - tier 2
 
 	Class Divination
-	BaseType "Abandoned Wealth" "Call to the First Ones" "Dialla's Subjugation" "Hunter's Reward" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Deck" "Pride Before the Fall" "The Artist" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Cursed King" "The Devastator" "The Formless Sea" "The Hunger" "The Immortal" "The King's Heart" "The Last One Standing" "The Offering" "The Polymath" "The Queen" "The Saint's Treasure" "The Sephirot" "The Soul" "The Spark and the Flame" "The Thaumaturgist" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Wind" "The Wolf" "The Wolven King's Bite" "Time-Lost Relic" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Call to the First Ones" "Dialla's Subjugation" "Hunter's Reward" "Last Hope" "Left to Fate" "Lingering Remnants" "Luck of the Vaal" "Lucky Deck" "Pride Before the Fall" "The Artist" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Cursed King" "The Devastator" "The Dreamer" "The Formless Sea" "The Hunger" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Obscured" "The Offering" "The Polymath" "The Saint's Treasure" "The Sephirot" "The Soul" "The Spark and the Flame" "The Thaumaturgist" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Time-Lost Relic" "Wealth and Power"
 
 	SetFontSize 39
 	SetBackgroundColor 191 255 127 255 # cards
@@ -114,7 +135,7 @@ Show # cards - tier 2
 Show # cards - tier 3
 
 	Class Divination
-	BaseType "Boundless Realms" "Bowyer's Dream" "Chaotic Disposition" "Coveted Possession" "Destined to Crumble" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Her Mask" Heterochromia Humility "Jack in the Box" "Lost Worlds" Loyalty "Luck of the Vaal" "Lucky Connections" "Merciless Armament" "Might is Right" "No Traces" Rats Rebirth "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Calling" "The Cartographer" "The Catalyst" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Doppelganger" "The Encroaching Darkness" "The Enlightened" "The Ethereal" "The Explorer" "The Fletcher" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gladiator" "The Harvester" "The Hoarder" "The Inventor" "The Jester" "The One With All" "The Opulent" "The Penitent" "The Poet" "The Porcupine" "The Realm" "The Risk" "The Road to Power" "The Scavenger" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Throne" "The Trial" "The Tyrant" "The Union" "The Warlord" "The Watcher" "The Wrath" "The Wretched" "Three Faces in the Dark" "Treasure Hunter" "Turn the Other Cheek" "Vinia's Token" "Volatile Power"
+	BaseType "Blessing of God" "Boundless Realms" "Bowyer's Dream" "Chaotic Disposition" "Coveted Possession" "Destined to Crumble" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Her Mask" Heterochromia Hope Humility "Jack in the Box" "Lost Worlds" Loyalty "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Might is Right" Mitts "No Traces" Rats Rebirth "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Breach" "The Calling" "The Cartographer" "The Catalyst" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Deceiver" "The Doppelganger" "The Encroaching Darkness" "The Enlightened" "The Ethereal" "The Explorer" "The Fletcher" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gladiator" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jester" "The One With All" "The Opulent" "The Penitent" "The Poet" "The Porcupine" "The Puzzle" "The Realm" "The Risk" "The Road to Power" "The Scavenger" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Throne" "The Trial" "The Tyrant" "The Union" "The Warlord" "The Watcher" "The Wrath" "The Wretched" "Three Faces in the Dark" "Treasure Hunter" "Turn the Other Cheek" "Vinia's Token" "Volatile Power"
 
 	SetFontSize 33
 	SetBackgroundColor 191 255 127 255 # cards
@@ -125,7 +146,7 @@ Show # cards - tier 3
 Show # cards - tier 4
 
 	Class Divination
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" Death "Doedre's Madness" "Dying Anguish" "Glimmer of Hope" Hope Hubris "Hunter's Resolve" "Light and Truth" "Lysah's Respite" Mitts "Rain of Chaos" "Shard of Fate" "The Battle Born" "The Betrayal" "The Blazing Fire" "The Body" "The Coming Storm" "The Conduit" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Endurance" "The Eye of the Dragon" "The Feast" "The Flora's Gift" "The Garish Power" "The Gentleman" "The Hermit" "The Incantation" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Oath" "The Pack Leader" "The Pact" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Siren" "The Sun" "The Tower" "The Traitor" "The Visionary" "The Warden" "The Wolverine" "Thunderous Skies" Tranquillity
+	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" Death "Doedre's Madness" "Dying Anguish" "Forbidden Power" Hubris "Hunter's Resolve" "Light and Truth" "Rain of Chaos" "Shard of Fate" "The Battle Born" "The Betrayal" "The Blazing Fire" "The Body" "The Coming Storm" "The Conduit" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Endurance" "The Eye of the Dragon" "The Feast" "The Flora's Gift" "The Garish Power" "The Gentleman" "The Hermit" "The Incantation" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Metalsmith's Gift" "The Oath" "The Pack Leader" "The Pact" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Siren" "The Sun" "The Tower" "The Traitor" "The Visionary" "The Warden" "The Wolverine" "Thunderous Skies" Tranquillity
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
@@ -158,7 +179,18 @@ Show # gems - legacy
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
-Show # gems - special max lvl | undroppable
+Show # gems - quality 23+
+
+	Class Skill
+	Quality > 22
+
+	SetFontSize 45
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+
+Show # gems - special | undroppable
 
 	Class Skill
 	BaseType Block Breach Empower Enhance Enlighten Mines Portal
@@ -169,10 +201,10 @@ Show # gems - special max lvl | undroppable
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # gems - quality 21+
+Show # gems - quality 20+
 
 	Class Skill
-	Quality > 20
+	Quality > 19
 
 	SetFontSize 39
 	SetBackgroundColor 0 255 255 255 # gems
@@ -180,21 +212,10 @@ Show # gems - quality 21+
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # gems - restricted
-
-	Class Active
-	BaseType Vaal
-
-	SetFontSize 33
-	SetBackgroundColor 0 255 255 255 # gems
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-
-Show # gems - quality 11+
+Show # gems - quality 10+
 
 	Class Skill
-	Quality > 10
+	Quality > 9
 
 	SetFontSize 33
 	SetBackgroundColor 0 255 255 255 # gems
@@ -226,16 +247,6 @@ Show # gems - rest
 # SPECIAL
 #
 #
-
-Show # special - pieces | leaguestones
-
-	Class Leaguestones Piece
-
-	SetFontSize 45
-	SetBackgroundColor 0 255 0 255 # special
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
 
 Show # special - souls | offerings
 
@@ -390,6 +401,17 @@ Show # unique - legacy - rings
 	Rarity Unique
 	Class Rings
 	BaseType "Golden Hoop"
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+
+Show # unique - legacy - leaguestones
+
+	Rarity Unique
+	Class Leaguestones
 
 	SetFontSize 45
 	SetBackgroundColor 255 127 0 255 # unique
@@ -656,6 +678,17 @@ Show # rare - legacy - rings
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
+Show # rare - legacy - leaguestones
+
+	Rarity Rare
+	Class Leaguestones
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+
 Show # rare - ilvl 100
 
 	Rarity Rare
@@ -708,6 +741,17 @@ Show # rare - undroppable - jewels
 	Rarity Rare
 	Class Jewel
 	BaseType "Prismatic Jewel"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # rare - undroppable - flasks | pieces
+
+	Rarity Rare
+	Class Flasks Piece
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255 # rare
@@ -1219,6 +1263,27 @@ Show # rare - top - boots
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
+Show # rare - sockets 4 linked
+
+	Rarity Rare
+	LinkedSockets 4
+
+	SetFontSize 27
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
+
+Show # rare - sockets 3 linked
+
+	Rarity Rare
+	LinkedSockets 3
+	ItemLevel < 25
+
+	SetFontSize 27
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
+
 Show # rare - rest
 
 	Rarity Rare
@@ -1353,6 +1418,17 @@ Show # magic - legacy - rings
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
+Show # magic - legacy - leaguestones
+
+	Rarity Magic
+	Class Leaguestones
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+
 Show # magic - ilvl 100
 
 	Rarity Magic
@@ -1412,7 +1488,18 @@ Show # magic - undroppable - jewels
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # magic - elder
+Show # magic - undroppable - pieces
+
+	Rarity Magic
+	Class Piece
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # magic - undroppable - elder
 
 	Rarity Magic
 	ElderItem True
@@ -1423,7 +1510,7 @@ Show # magic - elder
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # magic - shaper
+Show # magic - undroppable - shaper
 
 	Rarity Magic
 	ShaperItem True
@@ -1665,10 +1752,9 @@ Show # magic - sockets 5 linked
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
 
-Show # magic - warband
+Show # magic - identified
 
 	Rarity Magic
-	Class Boots Bows Claws Daggers Gloves Hand Helmets Sceptres Staves Wands
 	Identified True
 
 	SetFontSize 33
@@ -1708,48 +1794,36 @@ Show # magic - sockets rgb linked - width 2
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 127 127 255 255 # magic
 
-Show # magic - flasks - top life
+Show # magic - belts | amulets | rings | flasks
 
 	Rarity Magic
-	Class Life
-	BaseType "Divine Life Flask" "Eternal Life Flask" "Hallowed Life Flask"
+	Class Amulets Belts Flasks Rings
 
-	SetFontSize 33
+	SetFontSize 27
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 0 0 0 255 # black
+	SetBorderColor 127 127 255 255 # magic
 
-Show # magic - flasks - top mana
+Show # magic - sockets 4 linked
 
 	Rarity Magic
-	Class Mana
-	BaseType "Eternal Mana Flask" "Sanctified Mana Flask"
+	LinkedSockets 4
 
-	SetFontSize 33
+	SetFontSize 27
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 0 0 0 255 # black
+	SetBorderColor 127 127 255 255 # magic
 
-Show # magic - flasks - top hybrid
+Show # magic - sockets 3 linked
 
 	Rarity Magic
-	Class Hybrid
-	BaseType "Hallowed Hybrid Flask"
+	LinkedSockets 3
+	ItemLevel < 25
 
-	SetFontSize 33
+	SetFontSize 27
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 0 0 0 255 # black
-
-Show # magic - flasks - utility
-
-	Rarity Magic
-	Class Utility
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 0 0 0 255 # black
+	SetBorderColor 127 127 255 255 # magic
 
 Show # magic - rest
 
@@ -1885,6 +1959,17 @@ Show # normal - legacy - rings
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
+Show # normal - legacy - leaguestones
+
+	Rarity Normal
+	Class Leaguestones
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+
 Show # normal - ilvl 100
 
 	Rarity Normal
@@ -1943,7 +2028,18 @@ Show # normal - undroppable - jewels
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # normal - elder
+Show # normal - undroppable - pieces
+
+	Rarity Normal
+	Class Piece
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # normal - undroppable - elder
 
 	Rarity Normal
 	ElderItem True
@@ -1954,7 +2050,7 @@ Show # normal - elder
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # normal - shaper
+Show # normal - undroppable - shaper
 
 	Rarity Normal
 	ShaperItem True
@@ -2207,6 +2303,30 @@ Show # normal - chisel
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 0 0 0 255 # black
 
+Show # normal - chance - shields
+
+	Rarity Normal
+	Class Shields
+	BaseType "Rawhide Tower Shield"
+	Corrupted False
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 0 0 0 255 # black
+
+Show # normal - chance - chests
+
+	Rarity Normal
+	Class Body
+	BaseType "Glorious Plate"
+	Corrupted False
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 0 0 0 255 # black
+
 Show # normal - chance - boots
 
 	Rarity Normal
@@ -2230,6 +2350,48 @@ Show # normal - chance - belts
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 0 0 0 255 # black
+
+Show # normal - chance - flasks
+
+	Rarity Normal
+	Class Flasks
+	BaseType "Sapphire Flask"
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 0 0 0 255 # black
+
+Show # normal - belts | amulets | rings | flasks
+
+	Rarity Normal
+	Class Amulets Belts Flasks Rings
+
+	SetFontSize 27
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 255 255 255 255 # normal
+
+Show # normal - sockets 4 linked
+
+	Rarity Normal
+	LinkedSockets 4
+
+	SetFontSize 27
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 255 255 255 255 # normal
+
+Show # normal - sockets 3 linked
+
+	Rarity Normal
+	LinkedSockets 3
+	ItemLevel < 25
+
+	SetFontSize 27
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 255 255 255 255 # normal
 
 Show # normal - rest
 
