@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.2.A
+# version : 3.2.B
 # variant : leveling
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 # EnableBlockGroups
@@ -248,9 +248,20 @@ Show # gems - rest
 #
 #
 
-Show # special - souls | offerings
+Show # special - souls
 
-	Class "Labyrinth Map Item" Pantheon
+	Class Pantheon
+
+	SetFontSize 39
+	SetBackgroundColor 0 255 0 255 # special
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # special - vessels | offerings
+
+	Class Fragments
+	BaseType Divine Offering
 
 	SetFontSize 39
 	SetBackgroundColor 0 255 0 255 # special
@@ -460,7 +471,7 @@ Show # maps - legacy
 Show # maps - fragments high
 
 	Class Fragments
-	BaseType Divine Fragment Mortal
+	BaseType Fragment Mortal
 
 	SetFontSize 39
 	SetBackgroundColor 255 0 0 255 # maps
@@ -489,6 +500,17 @@ Show # maps - undroppable - breachstones
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
 
+Show # maps - maps shaped
+
+	Class Maps
+	ShapedMap True
+
+	SetFontSize 39
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # maps high
+
 Show # maps - maps tier 16+
 
 	Class Maps
@@ -503,17 +525,6 @@ Show # maps - maps tier 16+
 Show # maps - fragments low
 
 	Class Fragments
-
-	SetFontSize 33
-	SetBackgroundColor 255 0 0 255 # maps
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 8 300 # maps high
-
-Show # maps - maps shaped
-
-	Class Maps
-	ShapedMap True
 
 	SetFontSize 33
 	SetBackgroundColor 255 0 0 255 # maps
