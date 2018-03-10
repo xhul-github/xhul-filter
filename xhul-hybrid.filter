@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.2.B
+# version : 3.2.C
 # variant : hybrid
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 # EnableBlockGroups
@@ -190,10 +190,21 @@ Show # gems - quality 23+
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
-Show # gems - special | undroppable
+Show # gems - special
 
 	Class Skill
-	BaseType Block Breach Empower Enhance Enlighten Mines Portal
+	BaseType Breach Empower Enhance Enlighten Mines Portal
+
+	SetFontSize 39
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # gems - undroppable
+
+	Class Support
+	BaseType Block
 
 	SetFontSize 39
 	SetBackgroundColor 0 255 255 255 # gems
@@ -258,10 +269,10 @@ Show # special - souls
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # special - vessels | offerings
+Show # special - offerings
 
 	Class Fragments
-	BaseType Divine Offering
+	BaseType Offering
 
 	SetFontSize 39
 	SetBackgroundColor 0 255 0 255 # special
@@ -271,7 +282,7 @@ Show # special - vessels | offerings
 
 Show # special - quest | labyrinth
 
-	Class Quest Labyrinth
+	Class Quest "Labyrinth Item" Trinket
 
 	SetFontSize 33
 	SetBackgroundColor 0 255 0 255 # special
@@ -285,9 +296,9 @@ Show # special - quest | labyrinth
 #
 #
 
-Show # misc - doodads | microtransactions | relics
+Show # misc - doodads | microtransactions | relics | unused
 
-	Class Hideout Microtransactions Relics
+	Class Hideout Labyrinth Microtransactions Relics
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
@@ -304,6 +315,17 @@ Show # unique - rods
 
 	Rarity Unique
 	Class Fishing
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+
+Show # unique - legacy - leaguestones
+
+	Rarity Unique
+	Class Leaguestones
 
 	SetFontSize 45
 	SetBackgroundColor 255 127 0 255 # unique
@@ -419,17 +441,6 @@ Show # unique - legacy - rings
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
-Show # unique - legacy - leaguestones
-
-	Rarity Unique
-	Class Leaguestones
-
-	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-
 Show # unique - ilvl 100
 
 	Rarity Unique
@@ -460,7 +471,6 @@ Show # unique - rest
 Show # maps - legacy
 
 	Class Misc
-	BaseType Ancient
 
 	SetFontSize 45
 	SetBackgroundColor 255 0 0 255 # maps
@@ -471,7 +481,7 @@ Show # maps - legacy
 Show # maps - fragments high
 
 	Class Fragments
-	BaseType Fragment Mortal
+	BaseType Divine Fragment Mortal
 
 	SetFontSize 39
 	SetBackgroundColor 255 0 0 255 # maps
@@ -482,7 +492,7 @@ Show # maps - fragments high
 Show # maps - undroppable - maps
 
 	Class Maps
-	BaseType Harbinger "Vaal Temple Map"
+	BaseType Harbinger "Vaal Temple"
 
 	SetFontSize 39
 	SetBackgroundColor 255 0 0 255 # maps
@@ -490,9 +500,21 @@ Show # maps - undroppable - maps
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
 
-Show # maps - undroppable - breachstones
+Show # maps - undroppable - fragments
 
-	Class Misc
+	Class Fragments
+	BaseType Breachstone
+
+	SetFontSize 39
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # maps high
+
+Show # maps - maps elder
+
+	Class Maps
+	ElderMap True
 
 	SetFontSize 39
 	SetBackgroundColor 255 0 0 255 # maps
@@ -574,6 +596,17 @@ Show # rare - rods
 
 	Rarity Rare
 	Class Fishing
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+
+Show # rare - legacy - leaguestones
+
+	Rarity Rare
+	Class Leaguestones
 
 	SetFontSize 45
 	SetBackgroundColor 255 255 0 255 # rare
@@ -689,17 +722,6 @@ Show # rare - legacy - rings
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
-Show # rare - legacy - leaguestones
-
-	Rarity Rare
-	Class Leaguestones
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-
 Show # rare - ilvl 100
 
 	Rarity Rare
@@ -710,6 +732,17 @@ Show # rare - ilvl 100
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+
+Show # rare - undroppable - flasks | pieces
+
+	Rarity Rare
+	Class Flasks Piece
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # rare - undroppable - 1h swords
 
@@ -759,17 +792,6 @@ Show # rare - undroppable - jewels
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # rare - undroppable - flasks | pieces
-
-	Rarity Rare
-	Class Flasks Piece
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
 Show # rare - elder
 
 	Rarity Rare
@@ -785,6 +807,18 @@ Show # rare - shaper
 
 	Rarity Rare
 	ShaperItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # rare - restricted max mods - abyss jewels
+
+	Rarity Rare
+	Class Abyss
+	ItemLevel > 83
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255 # rare
@@ -883,18 +917,6 @@ Show # rare - restricted max mods - rings
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # rare - restricted max mods - abyss jewels
-
-	Rarity Rare
-	Class Abyss
-	ItemLevel > 83
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
 Show # rare - sockets 6 linked
 
 	Rarity Rare
@@ -905,6 +927,17 @@ Show # rare - sockets 6 linked
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+
+Show # rare - restricted - abyss jewels
+
+	Rarity Rare
+	Class Abyss
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # rare - restricted - chests
 
@@ -983,17 +1016,6 @@ Show # rare - restricted - rings
 	Rarity Rare
 	Class Rings
 	BaseType "Breach Ring" "Opal Ring" "Steel Ring"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-
-Show # rare - restricted - abyss jewels
-
-	Rarity Rare
-	Class Abyss
 
 	SetFontSize 33
 	SetBackgroundColor 255 255 0 255 # rare
@@ -1295,6 +1317,17 @@ Show # rare - sockets 3 linked
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 255 255 0 255 # rare
 
+Show # rare - sockets 2 linked
+
+	Rarity Rare
+	LinkedSockets 2
+	ItemLevel 1
+
+	SetFontSize 27
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
+
 Show # rare - rest
 
 	Rarity Rare
@@ -1314,6 +1347,17 @@ Show # magic - rods
 
 	Rarity Magic
 	Class Fishing
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+
+Show # magic - legacy - leaguestones
+
+	Rarity Magic
+	Class Leaguestones
 
 	SetFontSize 45
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1429,17 +1473,6 @@ Show # magic - legacy - rings
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
-Show # magic - legacy - leaguestones
-
-	Rarity Magic
-	Class Leaguestones
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-
 Show # magic - ilvl 100
 
 	Rarity Magic
@@ -1450,6 +1483,17 @@ Show # magic - ilvl 100
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+
+Show # magic - undroppable - pieces
+
+	Rarity Magic
+	Class Piece
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # magic - undroppable - 1h swords
 
@@ -1499,17 +1543,6 @@ Show # magic - undroppable - jewels
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # magic - undroppable - pieces
-
-	Rarity Magic
-	Class Piece
-
-	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
 Show # magic - undroppable - elder
 
 	Rarity Magic
@@ -1525,6 +1558,18 @@ Show # magic - undroppable - shaper
 
 	Rarity Magic
 	ShaperItem True
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+
+Show # magic - restricted max mods - abyss jewels
+
+	Rarity Magic
+	Class Abyss
+	ItemLevel > 83
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1623,18 +1668,6 @@ Show # magic - restricted max mods - rings
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 
-Show # magic - restricted max mods - abyss jewels
-
-	Rarity Magic
-	Class Abyss
-	ItemLevel > 83
-
-	SetFontSize 39
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
 Show # magic - sockets 6 linked
 
 	Rarity Magic
@@ -1645,6 +1678,17 @@ Show # magic - sockets 6 linked
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+
+Show # magic - restricted - abyss jewels
+
+	Rarity Magic
+	Class Abyss
+
+	SetFontSize 33
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
 
 Show # magic - restricted - chests
 
@@ -1723,17 +1767,6 @@ Show # magic - restricted - rings
 	Rarity Magic
 	Class Rings
 	BaseType "Opal Ring" "Steel Ring"
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-
-Show # magic - restricted - abyss jewels
-
-	Rarity Magic
-	Class Abyss
 
 	SetFontSize 33
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1836,6 +1869,17 @@ Show # magic - sockets 3 linked
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 127 127 255 255 # magic
 
+Show # magic - sockets 2 linked
+
+	Rarity Magic
+	LinkedSockets 2
+	ItemLevel 1
+
+	SetFontSize 27
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 127 127 255 255 # magic
+
 Hide # magic - rest
 
 	Rarity Magic
@@ -1855,6 +1899,17 @@ Show # normal - rods
 
 	Rarity Normal
 	Class Fishing
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+
+Show # normal - legacy - leaguestones
+
+	Rarity Normal
+	Class Leaguestones
 
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255 # normal
@@ -1970,17 +2025,6 @@ Show # normal - legacy - rings
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
 
-Show # normal - legacy - leaguestones
-
-	Rarity Normal
-	Class Leaguestones
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-
 Show # normal - ilvl 100
 
 	Rarity Normal
@@ -1991,6 +2035,17 @@ Show # normal - ilvl 100
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+
+Show # normal - undroppable - jewels | abyss jewels | pieces
+
+	Rarity Normal
+	Class Jewel Piece
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
 
 Show # normal - undroppable - 1h swords
 
@@ -2021,28 +2076,6 @@ Show # normal - undroppable - rings
 	Rarity Normal
 	Class Rings
 	BaseType "Breach Ring" "Prismatic Ring"
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # normal - undroppable - jewels
-
-	Rarity Normal
-	Class Jewel
-
-	SetFontSize 39
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-
-Show # normal - undroppable - pieces
-
-	Rarity Normal
-	Class Piece
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -2398,6 +2431,17 @@ Show # normal - sockets 3 linked
 	Rarity Normal
 	LinkedSockets 3
 	ItemLevel < 25
+
+	SetFontSize 27
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 255 255 255 255 # normal
+
+Show # normal - sockets 2 linked
+
+	Rarity Normal
+	LinkedSockets 2
+	ItemLevel 1
 
 	SetFontSize 27
 	SetBackgroundColor 0 0 0 255 # black
