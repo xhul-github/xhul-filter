@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.2.C
+# version : 3.2.D
 # variant : leveling
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 # EnableBlockGroups
@@ -35,7 +35,7 @@ Show # currency - tier 1
 Show # currency - tier 2
 
 	Class Stackable
-	BaseType "Ancient Orb" Bestiary Blessing Deafening Delirium Divine "Engineer's Orb" "Exalted Orb" "Harbinger's Orb" Horizons Horror Hysteria Insanity Mirror "Orb of Annulment" "Orb of Binding" Prophecy Seal Shrieking Stacked Unshaping
+	BaseType "Ancient Orb" Bestiary Blessing Deafening Delirium Divine "Engineer's Orb" "Exalted Orb" "Harbinger's Orb" Horizons Horror Hysteria Insanity Mirror "Orb of Annulment" "Orb of Binding" Prophecy Seal Stacked Unshaping
 
 	SetFontSize 39
 	SetBackgroundColor 255 191 127 255 # currency
@@ -349,7 +349,7 @@ Show # unique - legacy - quivers
 
 	Rarity Unique
 	Class Quivers
-	BaseType "Heavy Quiver"
+	BaseType "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
 
 	SetFontSize 45
 	SetBackgroundColor 255 127 0 255 # unique
