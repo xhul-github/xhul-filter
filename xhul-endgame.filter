@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.2.D
+# version : 3.2.E
 # variant : endgame
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 # EnableBlockGroups
@@ -20,6 +20,7 @@ Show # currency - imprinted bestiary orb (tier 2)
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # currency - tier 1
 
@@ -31,6 +32,7 @@ Show # currency - tier 1
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # currency - tier 2
 
@@ -42,22 +44,24 @@ Show # currency - tier 2
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # currency - tier 3
 
 	Class Stackable
-	BaseType Ancient Annulment Binding Blessed Cartographer's "Chaos Orb" Engineer's Essence Exalted Fusing Gemcutter's Harbinger's Horizon Net "Orb of Alchemy" Perandus "Regal Orb" Regret Remnant Scouring Splinter Vaal
+	BaseType Ancient Annulment Binding Blessed Cartographer's "Chaos Orb" Engineer's Essence Exalted Fusing Gemcutter's Harbinger's Horizon Necromancy "Orb of Alchemy" Perandus "Regal Orb" Regret Remnant Scouring Splinter Thaumaturgical Vaal
 
 	SetFontSize 33
 	SetBackgroundColor 255 191 127 255 # currency
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # currency - tier 4
 
 	Class Stackable
-	BaseType Alchemy Chance Chaos Chromatic Glassblower's Jeweller's "Orb of Alteration" Regal Silver
+	BaseType Alchemy Chance Chaos Chromatic Glassblower's Jeweller's Net "Orb of Alteration" Regal Silver
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
@@ -99,6 +103,7 @@ Show # cards - the dragon's heart (tier 2)
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # cards - the wolf's shadow (tier 4)
 
@@ -120,6 +125,7 @@ Show # cards - tier 1
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # cards - tier 2
 
@@ -131,6 +137,7 @@ Show # cards - tier 2
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # cards - tier 3
 
@@ -142,6 +149,7 @@ Show # cards - tier 3
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # cards - tier 4
 
@@ -178,6 +186,7 @@ Show # gems - legacy
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # gems - quality 23+
 
@@ -189,6 +198,7 @@ Show # gems - quality 23+
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # gems - special
 
@@ -200,6 +210,7 @@ Show # gems - special
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # gems - undroppable
 
@@ -211,6 +222,7 @@ Show # gems - undroppable
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # gems - quality 20+
 
@@ -222,6 +234,7 @@ Show # gems - quality 20+
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # gems - quality 10+
 
@@ -233,6 +246,7 @@ Show # gems - quality 10+
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # gems - quality 1+
 
@@ -268,6 +282,7 @@ Show # special - souls
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # special - offerings
 
@@ -279,6 +294,7 @@ Show # special - offerings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # special - quest | labyrinth
 
@@ -289,6 +305,7 @@ Show # special - quest | labyrinth
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 #
 #
@@ -321,6 +338,7 @@ Show # unique - rods
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - legacy - leaguestones
 
@@ -332,6 +350,7 @@ Show # unique - legacy - leaguestones
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - legacy - shields
 
@@ -344,6 +363,7 @@ Show # unique - legacy - shields
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - legacy - quivers
 
@@ -356,6 +376,7 @@ Show # unique - legacy - quivers
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - legacy - chests
 
@@ -368,6 +389,7 @@ Show # unique - legacy - chests
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - legacy - helms
 
@@ -380,6 +402,7 @@ Show # unique - legacy - helms
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - legacy - gloves
 
@@ -392,6 +415,7 @@ Show # unique - legacy - gloves
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - legacy - boots
 
@@ -404,6 +428,7 @@ Show # unique - legacy - boots
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - legacy - belts
 
@@ -416,6 +441,7 @@ Show # unique - legacy - belts
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - legacy - amulets
 
@@ -428,6 +454,7 @@ Show # unique - legacy - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - legacy - rings
 
@@ -440,6 +467,7 @@ Show # unique - legacy - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - ilvl 100
 
@@ -451,6 +479,7 @@ Show # unique - ilvl 100
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # unique - rest
 
@@ -461,6 +490,7 @@ Show # unique - rest
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 #
 #
@@ -477,6 +507,7 @@ Show # maps - legacy
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
+	DisableDropSound
 
 Show # maps - fragments high
 
@@ -488,6 +519,7 @@ Show # maps - fragments high
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
+	DisableDropSound
 
 Show # maps - undroppable - maps
 
@@ -499,6 +531,7 @@ Show # maps - undroppable - maps
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
+	DisableDropSound
 
 Show # maps - undroppable - fragments
 
@@ -510,6 +543,7 @@ Show # maps - undroppable - fragments
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
+	DisableDropSound
 
 Show # maps - maps elder
 
@@ -521,6 +555,7 @@ Show # maps - maps elder
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
+	DisableDropSound
 
 Show # maps - maps shaped
 
@@ -532,6 +567,7 @@ Show # maps - maps shaped
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
+	DisableDropSound
 
 Show # maps - maps tier 16+
 
@@ -543,6 +579,7 @@ Show # maps - maps tier 16+
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
+	DisableDropSound
 
 Show # maps - fragments low
 
@@ -553,6 +590,7 @@ Show # maps - fragments low
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
+	DisableDropSound
 
 Show # maps - maps tier 11+
 
@@ -564,6 +602,7 @@ Show # maps - maps tier 11+
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps high
+	DisableDropSound
 
 Show # maps - maps tier 6+
 
@@ -575,6 +614,7 @@ Show # maps - maps tier 6+
 	SetTextColor 255 0 0 255 # maps
 	SetBorderColor 255 0 0 255 # maps
 	PlayAlertSound 7 300 # maps low
+	DisableDropSound
 
 Show # maps - maps tier 1+
 
@@ -585,6 +625,7 @@ Show # maps - maps tier 1+
 	SetTextColor 255 0 0 255 # maps
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 7 300 # maps low
+	DisableDropSound
 
 #
 #
@@ -602,6 +643,7 @@ Show # rare - rods
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - legacy - leaguestones
 
@@ -613,6 +655,7 @@ Show # rare - legacy - leaguestones
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - legacy - shields
 
@@ -625,6 +668,7 @@ Show # rare - legacy - shields
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - legacy - quivers
 
@@ -637,6 +681,7 @@ Show # rare - legacy - quivers
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - legacy - chests
 
@@ -649,6 +694,7 @@ Show # rare - legacy - chests
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - legacy - helms
 
@@ -661,6 +707,7 @@ Show # rare - legacy - helms
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - legacy - gloves
 
@@ -673,6 +720,7 @@ Show # rare - legacy - gloves
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - legacy - boots
 
@@ -685,6 +733,7 @@ Show # rare - legacy - boots
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - legacy - belts
 
@@ -697,6 +746,7 @@ Show # rare - legacy - belts
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - legacy - amulets
 
@@ -709,6 +759,7 @@ Show # rare - legacy - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - legacy - rings
 
@@ -721,6 +772,7 @@ Show # rare - legacy - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - ilvl 100
 
@@ -732,6 +784,7 @@ Show # rare - ilvl 100
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # rare - undroppable - flasks | pieces
 
@@ -743,6 +796,7 @@ Show # rare - undroppable - flasks | pieces
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - undroppable - 1h swords
 
@@ -755,6 +809,7 @@ Show # rare - undroppable - 1h swords
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - undroppable - amulets
 
@@ -767,6 +822,7 @@ Show # rare - undroppable - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - undroppable - rings
 
@@ -779,6 +835,7 @@ Show # rare - undroppable - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - undroppable - jewels
 
@@ -791,6 +848,7 @@ Show # rare - undroppable - jewels
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - elder
 
@@ -802,6 +860,7 @@ Show # rare - elder
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - shaper
 
@@ -813,6 +872,7 @@ Show # rare - shaper
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - restricted max mods - abyss jewels
 
@@ -825,6 +885,7 @@ Show # rare - restricted max mods - abyss jewels
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - restricted max mods - chests
 
@@ -838,6 +899,7 @@ Show # rare - restricted max mods - chests
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - restricted max mods - helms
 
@@ -851,6 +913,7 @@ Show # rare - restricted max mods - helms
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - restricted max mods - gloves
 
@@ -864,6 +927,7 @@ Show # rare - restricted max mods - gloves
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - restricted max mods - boots
 
@@ -877,6 +941,7 @@ Show # rare - restricted max mods - boots
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - restricted max mods - belts
 
@@ -890,6 +955,7 @@ Show # rare - restricted max mods - belts
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - restricted max mods - amulets
 
@@ -903,6 +969,7 @@ Show # rare - restricted max mods - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - restricted max mods - rings
 
@@ -916,6 +983,7 @@ Show # rare - restricted max mods - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - sockets 6 linked
 
@@ -927,6 +995,7 @@ Show # rare - sockets 6 linked
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # rare - restricted - abyss jewels
 
@@ -938,6 +1007,7 @@ Show # rare - restricted - abyss jewels
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # rare - restricted - chests
 
@@ -950,6 +1020,7 @@ Show # rare - restricted - chests
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # rare - restricted - helms
 
@@ -962,6 +1033,7 @@ Show # rare - restricted - helms
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # rare - restricted - gloves
 
@@ -974,6 +1046,7 @@ Show # rare - restricted - gloves
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # rare - restricted - boots
 
@@ -986,6 +1059,7 @@ Show # rare - restricted - boots
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # rare - restricted - belts
 
@@ -998,6 +1072,7 @@ Show # rare - restricted - belts
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # rare - restricted - amulets
 
@@ -1010,6 +1085,7 @@ Show # rare - restricted - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # rare - restricted - rings
 
@@ -1022,6 +1098,7 @@ Show # rare - restricted - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # rare - sockets 6
 
@@ -1033,6 +1110,7 @@ Show # rare - sockets 6
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # rare - sockets 5 linked
 
@@ -1044,6 +1122,7 @@ Show # rare - sockets 5 linked
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # rare - corrupted
 
@@ -1353,6 +1432,7 @@ Show # magic - rods
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - legacy - leaguestones
 
@@ -1364,6 +1444,7 @@ Show # magic - legacy - leaguestones
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - legacy - shields
 
@@ -1376,6 +1457,7 @@ Show # magic - legacy - shields
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - legacy - quivers
 
@@ -1388,6 +1470,7 @@ Show # magic - legacy - quivers
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - legacy - chests
 
@@ -1400,6 +1483,7 @@ Show # magic - legacy - chests
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - legacy - helms
 
@@ -1412,6 +1496,7 @@ Show # magic - legacy - helms
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - legacy - gloves
 
@@ -1424,6 +1509,7 @@ Show # magic - legacy - gloves
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - legacy - boots
 
@@ -1436,6 +1522,7 @@ Show # magic - legacy - boots
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - legacy - belts
 
@@ -1448,6 +1535,7 @@ Show # magic - legacy - belts
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - legacy - amulets
 
@@ -1460,6 +1548,7 @@ Show # magic - legacy - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - legacy - rings
 
@@ -1472,6 +1561,7 @@ Show # magic - legacy - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - ilvl 100
 
@@ -1483,6 +1573,7 @@ Show # magic - ilvl 100
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # magic - undroppable - pieces
 
@@ -1494,6 +1585,7 @@ Show # magic - undroppable - pieces
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - undroppable - 1h swords
 
@@ -1506,6 +1598,7 @@ Show # magic - undroppable - 1h swords
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - undroppable - amulets
 
@@ -1518,6 +1611,7 @@ Show # magic - undroppable - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - undroppable - rings
 
@@ -1530,6 +1624,7 @@ Show # magic - undroppable - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - undroppable - jewels
 
@@ -1542,6 +1637,7 @@ Show # magic - undroppable - jewels
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - undroppable - elder
 
@@ -1553,6 +1649,7 @@ Show # magic - undroppable - elder
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - undroppable - shaper
 
@@ -1564,6 +1661,7 @@ Show # magic - undroppable - shaper
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - restricted max mods - abyss jewels
 
@@ -1576,6 +1674,7 @@ Show # magic - restricted max mods - abyss jewels
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - restricted max mods - chests
 
@@ -1589,6 +1688,7 @@ Show # magic - restricted max mods - chests
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - restricted max mods - helms
 
@@ -1602,6 +1702,7 @@ Show # magic - restricted max mods - helms
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - restricted max mods - gloves
 
@@ -1615,6 +1716,7 @@ Show # magic - restricted max mods - gloves
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - restricted max mods - boots
 
@@ -1628,6 +1730,7 @@ Show # magic - restricted max mods - boots
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - restricted max mods - belts
 
@@ -1641,6 +1744,7 @@ Show # magic - restricted max mods - belts
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - restricted max mods - amulets
 
@@ -1654,6 +1758,7 @@ Show # magic - restricted max mods - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - restricted max mods - rings
 
@@ -1667,6 +1772,7 @@ Show # magic - restricted max mods - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - sockets 6 linked
 
@@ -1678,6 +1784,7 @@ Show # magic - sockets 6 linked
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # magic - restricted - abyss jewels
 
@@ -1689,6 +1796,7 @@ Show # magic - restricted - abyss jewels
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # magic - restricted - chests
 
@@ -1701,6 +1809,7 @@ Show # magic - restricted - chests
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # magic - restricted - helms
 
@@ -1713,6 +1822,7 @@ Show # magic - restricted - helms
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # magic - restricted - gloves
 
@@ -1725,6 +1835,7 @@ Show # magic - restricted - gloves
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # magic - restricted - boots
 
@@ -1737,6 +1848,7 @@ Show # magic - restricted - boots
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # magic - restricted - belts
 
@@ -1749,6 +1861,7 @@ Show # magic - restricted - belts
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # magic - restricted - amulets
 
@@ -1761,6 +1874,7 @@ Show # magic - restricted - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # magic - restricted - rings
 
@@ -1773,6 +1887,7 @@ Show # magic - restricted - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # magic - sockets 6
 
@@ -1784,6 +1899,7 @@ Show # magic - sockets 6
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # magic - sockets 5 linked
 
@@ -1795,6 +1911,7 @@ Show # magic - sockets 5 linked
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Hide # magic - identified
 
@@ -1905,6 +2022,7 @@ Show # normal - rods
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - legacy - leaguestones
 
@@ -1916,6 +2034,7 @@ Show # normal - legacy - leaguestones
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - legacy - shields
 
@@ -1928,6 +2047,7 @@ Show # normal - legacy - shields
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - legacy - quivers
 
@@ -1940,6 +2060,7 @@ Show # normal - legacy - quivers
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - legacy - chests
 
@@ -1952,6 +2073,7 @@ Show # normal - legacy - chests
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - legacy - helms
 
@@ -1964,6 +2086,7 @@ Show # normal - legacy - helms
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - legacy - gloves
 
@@ -1976,6 +2099,7 @@ Show # normal - legacy - gloves
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - legacy - boots
 
@@ -1988,6 +2112,7 @@ Show # normal - legacy - boots
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - legacy - belts
 
@@ -2000,6 +2125,7 @@ Show # normal - legacy - belts
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - legacy - amulets
 
@@ -2012,6 +2138,7 @@ Show # normal - legacy - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - legacy - rings
 
@@ -2024,6 +2151,7 @@ Show # normal - legacy - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - ilvl 100
 
@@ -2035,6 +2163,7 @@ Show # normal - ilvl 100
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # normal - undroppable - jewels | abyss jewels | pieces
 
@@ -2046,6 +2175,7 @@ Show # normal - undroppable - jewels | abyss jewels | pieces
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - undroppable - 1h swords
 
@@ -2058,6 +2188,7 @@ Show # normal - undroppable - 1h swords
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - undroppable - amulets
 
@@ -2070,6 +2201,7 @@ Show # normal - undroppable - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - undroppable - rings
 
@@ -2082,6 +2214,7 @@ Show # normal - undroppable - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - undroppable - elder
 
@@ -2093,6 +2226,7 @@ Show # normal - undroppable - elder
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - undroppable - shaper
 
@@ -2104,6 +2238,7 @@ Show # normal - undroppable - shaper
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - restricted max mods - chests
 
@@ -2117,6 +2252,7 @@ Show # normal - restricted max mods - chests
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - restricted max mods - helms
 
@@ -2130,6 +2266,7 @@ Show # normal - restricted max mods - helms
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - restricted max mods - gloves
 
@@ -2143,6 +2280,7 @@ Show # normal - restricted max mods - gloves
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - restricted max mods - boots
 
@@ -2156,6 +2294,7 @@ Show # normal - restricted max mods - boots
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - restricted max mods - belts
 
@@ -2169,6 +2308,7 @@ Show # normal - restricted max mods - belts
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - restricted max mods - amulets
 
@@ -2182,6 +2322,7 @@ Show # normal - restricted max mods - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - restricted max mods - rings
 
@@ -2195,6 +2336,7 @@ Show # normal - restricted max mods - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - sockets 6 linked
 
@@ -2206,6 +2348,7 @@ Show # normal - sockets 6 linked
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
 Show # normal - restricted - chests
 
@@ -2218,6 +2361,7 @@ Show # normal - restricted - chests
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # normal - restricted - helms
 
@@ -2230,6 +2374,7 @@ Show # normal - restricted - helms
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # normal - restricted - gloves
 
@@ -2242,6 +2387,7 @@ Show # normal - restricted - gloves
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # normal - restricted - boots
 
@@ -2254,6 +2400,7 @@ Show # normal - restricted - boots
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # normal - restricted - belts
 
@@ -2266,6 +2413,7 @@ Show # normal - restricted - belts
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # normal - restricted - amulets
 
@@ -2278,6 +2426,7 @@ Show # normal - restricted - amulets
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # normal - restricted - rings
 
@@ -2290,6 +2439,7 @@ Show # normal - restricted - rings
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # normal - sockets 6
 
@@ -2301,6 +2451,7 @@ Show # normal - sockets 6
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # normal - sockets 5 linked
 
@@ -2312,6 +2463,7 @@ Show # normal - sockets 5 linked
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
+	DisableDropSound
 
 Show # normal - sockets rgb linked - width 1
 
@@ -2470,3 +2622,4 @@ Show # unknown - unknown
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
+	DisableDropSound
