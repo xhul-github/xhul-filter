@@ -1,0 +1,59 @@
+Show # one - one
+
+	Class Stackable
+
+	SetFontSize 33
+
+Show # one - two
+
+	Class Stackable
+
+	SetFontSize 33
+
+Show # ~two - one
+
+	Class Stackable
+
+	SetFontSize 33
+
+Show # two - two
+
+	Class Stackable
+
+	SetFontSize 33
+
+Show # three - one
+
+	Class Stackable
+
+	SetFontSize 33
+
+Show # ~three - two
+
+	Class Stackable
+
+	SetFontSize 33
+
+Show # ~four - one
+
+	Class Stackable
+
+	SetFontSize 33
+
+Show # ~four - two
+
+	Class Stackable
+
+	SetFontSize 33
+
+Show # five - ~one
+
+	Class Stackable
+
+	SetFontSize 33
+
+Show # five - two
+
+	Class Stackable
+
+	SetFontSize 33
