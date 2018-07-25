@@ -1,59 +1,647 @@
-Show # one - one
+# xhul filter
+# version : 3.3.B
+# variant : leveling
+# thread : https://www.pathofexile.com/forum/view-thread/1787522
+# EnableBlockGroups
+
+#
+#
+# CURRENCY
+#
+#
+
+Show # currency - special - divine orb (tier 2)
+
+	Class Stackable
+	BaseType Divine
+
+	SetFontSize 39
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound ShDivine 300 # divine
+	DisableDropSound
+
+Show # currency - special - exalted orb (tier 2)
+
+	Class Stackable
+	BaseType "Exalted Orb"
+
+	SetFontSize 39
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound ShExalted 300 # exalted
+	DisableDropSound
+
+Show # currency - special - imprinted bestiary orb (tier 3)
+
+	Class Stackable
+	BaseType Imprinted
+
+	SetFontSize 33
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+	DisableDropSound
+
+Show # currency - special - mirror of kalandra (tier 1)
+
+	Class Stackable
+	BaseType Kalandra
+
+	SetFontSize 45
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound ShMirror 300 # mirror
+	DisableDropSound
+
+Show # currency - tier 1
+
+	Class Stackable
+	BaseType Albino Eternal Imprint
+
+	SetFontSize 45
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # currency - tier 2
+
+	Class Stackable
+	BaseType "Ancient Orb" Blessing Deafening Delirium "Harbinger's Orb" Horror Hysteria Insanity Mirror "Orb of Annulment" Stacked Vial
+
+	SetFontSize 39
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # currency - tier 3
+
+	Class Stackable
+	BaseType Ancient Annulment Bestiary Blessed Cartographer's "Chaos Orb" Chayula "Engineer's Orb" Exalted Fusing Gemcutter's Harbinger's Horizons Necromancy "Orb of Alchemy" "Orb of Binding" Prophecy "Regal Orb" Regret Remnant Scouring Screaming Shrieking Thaumaturgical Unshaping Uul-Netol Vaal
+
+	SetFontSize 33
+	SetBackgroundColor 255 191 127 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+	DisableDropSound
+
+Show # currency - tier 4
+
+	Class Stackable
+	BaseType Alchemy Binding Chance Chaos Chromatic Coin Engineer's Essence Glassblower's Horizon Jeweller's Net "Orb of Alteration" Regal Splinter
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 191 127 255 # currency
+	SetBorderColor 255 191 127 255 # currency
+
+Show # currency - tier 5
 
 	Class Stackable
 
 	SetFontSize 33
+	SetBackgroundColor 0 0 0 127 # half-black
+	SetTextColor 255 191 127 255 # currency
+	SetBorderColor 0 0 0 255 # black
 
-Show # one - two
+#
+#
+# CARDS
+#
+#
 
-	Class Stackable
+Show # cards - special - the dragon's heart (tier 2)
 
-	SetFontSize 33
+	Class Divination
+	BaseType "The Dragon's Heart"
 
-Show # ~two - one
+	SetFontSize 39
+	SetBackgroundColor 191 255 127 255 # cards
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
 
-	Class Stackable
+Show # cards - special - the wolf's shadow (tier 4)
 
-	SetFontSize 33
-
-Show # two - two
-
-	Class Stackable
-
-	SetFontSize 33
-
-Show # three - one
-
-	Class Stackable
-
-	SetFontSize 33
-
-Show # ~three - two
-
-	Class Stackable
+	Class Divination
+	BaseType "The Wolf's Shadow"
 
 	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 191 255 127 255 # cards
+	SetBorderColor 191 255 127 255 # cards
 
-Show # ~four - one
+Show # cards - tier 1
 
-	Class Stackable
+	Class Divination
+	BaseType "House of Mirrors" "Mawr Blaidd" "The Celestial Stone" "The Doctor" "The Fiend" "The Queen" "The Vast"
+
+	SetFontSize 45
+	SetBackgroundColor 191 255 127 255 # cards
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # cards - tier 2
+
+	Class Divination
+	BaseType "Abandoned Wealth" "Call to the First Ones" "Dialla's Subjugation" "Hunter's Reward" "Immortal Resolve" "Last Hope" "Left to Fate" "Lingering Remnants" "Luck of the Vaal" "Lucky Deck" Perfection "Pride Before the Fall" "The Admirer" "The Artist" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Cursed King" "The Devastator" "The Dreamer" "The Fathomless Depths" "The Formless Sea" "The Hunger" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Obscured" "The Offering" "The Polymath" "The Professor" "The Rite of Elements" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Soul" "The Spark and the Flame" "The Sword King's Salute" "The Thaumaturgist" "The Undaunted" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Time-Lost Relic" "Wealth and Power"
+
+	SetFontSize 39
+	SetBackgroundColor 191 255 127 255 # cards
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # cards - tier 3
+
+	Class Divination
+	BaseType "Blessing of God" "Boundless Realms" "Bowyer's Dream" "Chaotic Disposition" "Coveted Possession" "Destined to Crumble" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" "Her Mask" Heterochromia Hope Humility "Jack in the Box" "Lost Worlds" Loyalty "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Might is Right" Mitts "No Traces" Rats Rebirth "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Beast" "The Breach" "The Calling" "The Cartographer" "The Catalyst" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Deceiver" "The Doppelganger" "The Dreamland" "The Encroaching Darkness" "The Enlightened" "The Ethereal" "The Explorer" "The Fletcher" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gladiator" "The Hale Heart" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The One With All" "The Opulent" "The Penitent" "The Poet" "The Porcupine" "The Puzzle" "The Realm" "The Risk" "The Road to Power" "The Scavenger" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Throne" "The Trial" "The Tyrant" "The Undisputed" "The Union" "The Warlord" "The Watcher" "The Witch" "The Wrath" "The Wretched" "Three Faces in the Dark" "Three Voices" "Treasure Hunter" "Turn the Other Cheek" "Vinia's Token" "Volatile Power"
 
 	SetFontSize 33
+	SetBackgroundColor 191 255 127 255 # cards
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+	DisableDropSound
 
-Show # ~four - two
+Show # cards - tier 4
 
-	Class Stackable
-
-	SetFontSize 33
-
-Show # five - ~one
-
-	Class Stackable
-
-	SetFontSize 33
-
-Show # five - ~ two
-
-	Class Stackable
+	Class Divination
+	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Blind Venture" Death "Doedre's Madness" "Dying Anguish" "Forbidden Power" Hubris "Hunter's Resolve" "Light and Truth" "Rain of Chaos" "Shard of Fate" "The Army of Blood" "The Battle Born" "The Betrayal" "The Blazing Fire" "The Body" "The Coming Storm" "The Conduit" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Endurance" "The Eye of the Dragon" "The Feast" "The Flora's Gift" "The Garish Power" "The Gentleman" "The Hermit" "The Incantation" "The Lich" "The Lion" "The Lunaris Priestess" "The Mercenary" "The Metalsmith's Gift" "The Oath" "The Pack Leader" "The Pact" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Siren" "The Sun" "The Tower" "The Traitor" "The Visionary" "The Warden" "The Wolverine" "Thunderous Skies" Tranquillity
 
 	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 191 255 127 255 # cards
+	SetBorderColor 191 255 127 255 # cards
+
+Show # cards - tier 5
+
+	Class Divination
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 191 255 127 255 # cards
+	SetBorderColor 0 0 0 255 # black
+
+#
+#
+# GEMS
+#
+#
+
+Show # gems - legacy | Comment
+
+	Class Skill
+	BaseType Quantity "Vaal Immortal Call" "Vaal Lightning Warp"
+
+	SetFontSize 45
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # gems - lvl 21+ | Comment
+
+	Class Skill
+	GemLevel > 20
+
+	SetFontSize 45
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # gems - qty 23+ | Comment
+
+	Class Skill
+	Quality > 22
+
+	SetFontSize 45
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # gems - special & lvl 4+ | Comment
+
+	Class Support
+	GemLevel > 3
+	BaseType Empower Enhance Enlighten
+
+	SetFontSize 45
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # gems - special | Comment
+
+	Class Skill
+	BaseType Breach Empower Enhance Enlighten Mines Portal
+
+	SetFontSize 39
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # gems - lvl 20 | Comment
+
+	Class Skill
+	GemLevel 20
+
+	SetFontSize 39
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # gems - qty 20>22 | Comment
+
+	Class Skill
+	Quality > 19
+	Quality < 23
+
+	SetFontSize 39
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # gems - restricted | Comment
+
+	Class Skill
+	BaseType Block Vaal
+
+	SetFontSize 33
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+	DisableDropSound
+
+Show # gems - qty 10>19 | Comment
+
+	Class Skill
+	Quality > 9
+	Quality < 20
+
+	SetFontSize 33
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+	DisableDropSound
+
+Show # gems - qty 1>9 | Comment
+
+	Class Skill
+	Quality > 0
+	Quality < 10
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 0 255 255 255 # gems
+	SetBorderColor 0 255 255 255 # gems
+
+Show # gems - rest
+
+	Class Skill
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 0 255 255 255 # gems
+	SetBorderColor 0 0 0 255 # black
+
+#
+#
+# SPECIAL
+#
+#
+
+Show # special - offerings
+
+	Class Fragments
+	BaseType Offering
+
+	SetFontSize 39
+	SetBackgroundColor 0 255 0 255 # special
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # special - ~ incursion , labyrinth , quest , souls
+
+	Class Quest Incursion "Labyrinth Item" Pantheon Trinket
+
+	SetFontSize 33
+	SetBackgroundColor 0 255 0 255 # special
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+	DisableDropSound
+
+#
+#
+# MISC
+#
+#
+
+Show # ~ misc - doodads , empty , microtransactions , relics
+
+	Class Hideout Labyrinth Microtransactions Relics
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 127 # half-black
+	SetTextColor 255 255 255 255 # misc
+	SetBorderColor 0 0 0 255 # black
+
+#
+#
+# UNIQUE
+#
+#
+
+Show # unique - rods | Comment
+
+	Rarity Unique
+	Class Fishing
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - legacy - shields | Comment
+
+	Rarity Unique
+	Class Shields
+	BaseType "Golden Flame"
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - legacy - quivers | Comment
+
+	Rarity Unique
+	Class Quivers
+	BaseType "Heavy Quiver"
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - legacy - chests | Comment
+
+	Rarity Unique
+	Class Body
+	BaseType "Golden Mantle"
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - legacy - helms | Comment
+
+	Rarity Unique
+	Class Helmets
+	BaseType "Golden Wreath"
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - legacy - gloves | Comment
+
+	Rarity Unique
+	Class Gloves
+	BaseType "Golden Bracers"
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - legacy - boots | Comment
+
+	Rarity Unique
+	Class Boots
+	BaseType "Golden Caligae"
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - legacy - belts | Comment
+
+	Rarity Unique
+	Class Belts
+	BaseType "Golden Obi"
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - legacy - amulets | Comment
+
+	Rarity Unique
+	Class Amulets
+	BaseType "Jet Amulet"
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - legacy - rings | Comment
+
+	Rarity Unique
+	Class Rings
+	BaseType "Golden Hoop"
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - ilvl 100 | Comment
+
+	Rarity Unique
+	ItemLevel 100
+
+	SetFontSize 45
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # unique - rest
+
+	Rarity Unique
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+#
+#
+# MAP
+#
+#
+
+Show # map - legacy - maps | Comment
+
+	Class Maps
+	BaseType Harbinger
+
+	SetFontSize 45
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # maps top
+	DisableDropSound
+
+Show # map - legacy - misc
+
+	Class Misc
+
+	SetFontSize 45
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # maps top
+	DisableDropSound
+
+Show # map - fragments 1
+
+	Class Fragments
+	BaseType Chayula's Divine Fragment Key Mortal Uul-Netol's
+
+	SetFontSize 39
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # maps top
+	DisableDropSound
+
+Show # map - shaped | Comment
+
+	Class Maps
+	ShapedMap True
+
+	SetFontSize 39
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # maps top
+	DisableDropSound
+
+Show # map - tier 16+
+
+	Class Maps
+	DropLevel > 82
+
+	SetFontSize 39
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # maps top
+	DisableDropSound
+
+Show # map - fragments 2
+
+	Class Fragments
+
+	SetFontSize 33
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 7 300 # maps high
+	DisableDropSound
+
+Show # map - tier 11>15
+
+	Class Maps
+	DropLevel > 77
+
+	SetFontSize 33
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 7 300 # maps high
+	DisableDropSound
+
+Show # map - tier 6>10
+
+	Class Maps
+	DropLevel > 72
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 0 0 255 # maps
+	SetBorderColor 255 0 0 255 # maps
+	PlayAlertSound 9 300 # maps average
+	DisableDropSound
+
+Show # map - tier 1>5
+
+	Class Maps
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 0 0 255 # maps
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 14 300 # maps low
+	DisableDropSound
