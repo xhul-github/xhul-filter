@@ -368,7 +368,7 @@ Show # special - ~ incursion , labyrinth , quest , souls
 #
 #
 
-Show # ~ misc - doodads , empty , microtransactions , relics
+Show # ~ misc - ~ doodads , empty , microtransactions , relics
 
 	Class Hideout Labyrinth Microtransactions Relics
 
