@@ -52,7 +52,7 @@ Show # five - ~one
 
 	SetFontSize 33
 
-Show # five - two
+Show # five - ~ two
 
 	Class Stackable
 
