@@ -3,6 +3,7 @@
 # variant : leveling
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 # EnableBlockGroups
+SetGlobalDisableDropSoundMode hidden
 
 #
 #
