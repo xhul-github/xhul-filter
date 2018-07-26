@@ -187,7 +187,7 @@ Show # cards - tier 4
 	SetTextColor 191 255 127 255 # cards
 	SetBorderColor 191 255 127 255 # cards
 
-Show # cards - tier 5
+Hide # cards - tier 5
 
 	Class Divination
 
@@ -195,6 +195,7 @@ Show # cards - tier 5
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 191 255 127 255 # cards
 	SetBorderColor 0 0 0 255 # black
+	DisableDropSound
 
 #
 #
