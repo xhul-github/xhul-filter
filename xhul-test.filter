@@ -202,17 +202,19 @@ Show # cards - tier 5
 #
 #
 
-Show # gems - legacy | Comment
-
-	Class Skill
-	BaseType Quantity "Vaal Immortal Call" "Vaal Lightning Warp"
-
-	SetFontSize 45
-	SetBackgroundColor 0 255 255 255 # gems
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
+#Disabled Block Start
+#Show # gems - legacy | Comment
+#
+#	Class Skill
+#	BaseType Quantity "Vaal Immortal Call" "Vaal Lightning Warp"
+#
+#	SetFontSize 45
+#	SetBackgroundColor 0 255 255 255 # gems
+#	SetTextColor 0 0 0 255 # black
+#	SetBorderColor 0 0 0 255 # black
+#	PlayAlertSound 1 300 # unreal
+#	DisableDropSound
+#Disabled Block End
 
 Show # gems - lvl 21+ | Comment
 
