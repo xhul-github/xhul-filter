@@ -2,8 +2,19 @@
 # version : 3.3.B
 # variant : leveling
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
-# EnableBlockGroups
+
+# FILTERBLAST
+# //! SetOption $EmptyLine
+# //! SetOption $Block_switches info
+# //! SetOption $BS1 info [First of all, keep in mind that the order of the switches matches the order of the blocks as they are declared in the actual filter, which are always parsed from top to bottom.] # no title
+# //! SetOption $BS2 info [When a block is unchecked, it can be parsed in 2 different ways :] # no title
+# //! SetOption $BS3 info [Hide - When an item falls in that category, it will be hidden by default, and only visible using the highlight key ("Always Highlight" option turned on), without any sound effect being played.] # no title
+# //! SetOption $BS4 info [Comment - The corresponding block will be totally ignored, meaning that the parser will continue to search the filter for the next matching block.] # no title
+# //! SetOption $EmptyLine
 # //! SetGlobalDisableDropSoundMode hidden
+
+# FILTRATION
+# EnableBlockGroups
 
 #
 #
@@ -188,7 +199,7 @@ Show # cards - tier 4
 	SetTextColor 191 255 127 255 # cards
 	SetBorderColor 191 255 127 255 # cards
 
-Hide # cards - tier 5
+Show # cards - tier 5
 
 	Class Divination
 
@@ -196,7 +207,6 @@ Hide # cards - tier 5
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 191 255 127 255 # cards
 	SetBorderColor 0 0 0 255 # black
-	DisableDropSound
 
 #
 #
@@ -204,19 +214,17 @@ Hide # cards - tier 5
 #
 #
 
-#Disabled Block Start
-#Show # gems - legacy | Comment
-#
-#	Class Skill
-#	BaseType Quantity "Vaal Immortal Call" "Vaal Lightning Warp"
-#
-#	SetFontSize 45
-#	SetBackgroundColor 0 255 255 255 # gems
-#	SetTextColor 0 0 0 255 # black
-#	SetBorderColor 0 0 0 255 # black
-#	PlayAlertSound 1 300 # unreal
-#	DisableDropSound
-#Disabled Block End
+Show # gems - restricted 1 | Comment
+
+	Class Skill
+	BaseType Quantity "Vaal Immortal Call" "Vaal Lightning Warp"
+
+	SetFontSize 45
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
 
 Show # gems - lvl 21+ | Comment
 
@@ -292,7 +300,7 @@ Show # gems - qty 20>22 | Comment
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # gems - restricted | Comment
+Show # gems - restricted 2 | Comment
 
 	Class Skill
 	BaseType Block Vaal
@@ -355,7 +363,7 @@ Show # special - offerings
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # special - ~ incursion , labyrinth , quest , souls
+Show # special - incursion , labyrinth , quest , souls
 
 	Class Quest Incursion "Labyrinth Item" Pantheon Trinket
 
@@ -372,7 +380,7 @@ Show # special - ~ incursion , labyrinth , quest , souls
 #
 #
 
-Show # ~ misc - ~ doodads , empty , microtransactions , relics
+Show # misc - doodads , empty , microtransactions , relics
 
 	Class Hideout Labyrinth Microtransactions Relics
 
@@ -399,7 +407,7 @@ Show # unique - rods | Comment
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # unique - legacy - shields | Comment
+Show # unique - restricted - shields | Comment
 
 	Rarity Unique
 	Class Shields
@@ -412,7 +420,7 @@ Show # unique - legacy - shields | Comment
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # unique - legacy - quivers | Comment
+Show # unique - restricted - quivers | Comment
 
 	Rarity Unique
 	Class Quivers
@@ -425,7 +433,7 @@ Show # unique - legacy - quivers | Comment
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # unique - legacy - chests | Comment
+Show # unique - restricted - chests | Comment
 
 	Rarity Unique
 	Class Body
@@ -438,7 +446,7 @@ Show # unique - legacy - chests | Comment
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # unique - legacy - helms | Comment
+Show # unique - restricted - helms | Comment
 
 	Rarity Unique
 	Class Helmets
@@ -451,7 +459,7 @@ Show # unique - legacy - helms | Comment
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # unique - legacy - gloves | Comment
+Show # unique - restricted - gloves | Comment
 
 	Rarity Unique
 	Class Gloves
@@ -464,7 +472,7 @@ Show # unique - legacy - gloves | Comment
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # unique - legacy - boots | Comment
+Show # unique - restricted - boots | Comment
 
 	Rarity Unique
 	Class Boots
@@ -477,7 +485,7 @@ Show # unique - legacy - boots | Comment
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # unique - legacy - belts | Comment
+Show # unique - restricted - belts | Comment
 
 	Rarity Unique
 	Class Belts
@@ -490,7 +498,7 @@ Show # unique - legacy - belts | Comment
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # unique - legacy - amulets | Comment
+Show # unique - restricted - amulets | Comment
 
 	Rarity Unique
 	Class Amulets
@@ -503,7 +511,7 @@ Show # unique - legacy - amulets | Comment
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # unique - legacy - rings | Comment
+Show # unique - restricted - rings | Comment
 
 	Rarity Unique
 	Class Rings
@@ -545,7 +553,7 @@ Show # unique - rest
 #
 #
 
-Show # map - legacy - maps | Comment
+Show # map - restricted - maps | Comment
 
 	Class Maps
 	BaseType Harbinger
@@ -557,7 +565,7 @@ Show # map - legacy - maps | Comment
 	PlayAlertSound 8 300 # maps top
 	DisableDropSound
 
-Show # map - legacy - misc
+Show # map - restricted - misc
 
 	Class Misc
 
