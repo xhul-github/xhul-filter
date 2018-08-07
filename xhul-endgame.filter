@@ -1,8 +1,30 @@
 # xhul filter
-# version : 3.3.A
+# version : 3.3.B
 # variant : endgame
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
-# EnableBlockGroups
+
+#
+#
+# FILTERBLAST
+#
+#
+
+# //! SetConfig $SmartTabs_Position top
+# //! SetOption $GENERAL_SETTINGS info
+# //! SetOption $Block_switches info
+# //! SetOption $BS1 info [The order of the switches matches the order of the blocks as they are declared in the actual filter, so keep in mind that when an item can fall in multiple categories, the earliest takes precedence.] # no title
+# //! SetOption $BS2 info ["restricted" refers to bases that can only drop in specific contexts, drop level excluded.] # no title
+# //! SetOption $BS3 info [The blocks can be processed in 3 different ways :] # no title
+# //! SetOption $BS4 info [Show - The item is shown by default, assuming you have the "Always Highlight" option turned on. Either the default, or a custom sound effect is played.] # no title
+# //! SetOption $BS5 info [Hide - The item is hidden by default, and only visible using the highlight key, without any sound effect being played.] # no title
+# //! SetOption $BS6 info [Comment - The corresponding block is ignored, so the game will continue to search the filter for the next matching block.] # no title
+# //! SetOption $BS7 info [I have plans to add the possibility to edit bases in the future, but in the mean time, to know precisely which ones are covered in specific blocks, please go here :] # no title
+# //! SetOption $BS8 link [forum thread] [https://www.pathofexile.com/forum/view-thread/1787522] # no title
+# //! SetOption $Color_theme info
+# //! SetOption $CT1 info [Each theme is specific to one category, except for "black" and "half-black", which are shared.] # no title
+# //! SetOption $Sound_theme info
+# //! SetOption $ST1 info [Pretty self-explanatory aswell. The following are used in multiple categories : "common", "legendary", "shy", and "unreal".] # no title
+# //! SetGlobalDisableDropSoundMode hidden
 
 #
 #
@@ -10,13 +32,61 @@
 #
 #
 
+Show # currency - special - divine orb (tier 2)
+
+	Class Stackable
+	BaseType Divine
+
+	SetFontSize 39
+	SetBackgroundColor 0 255 0 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound ShDivine 300 # currency divine
+	DisableDropSound
+
+Show # currency - special - exalted orb (tier 2)
+
+	Class Stackable
+	BaseType "Exalted Orb"
+
+	SetFontSize 39
+	SetBackgroundColor 0 255 0 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound ShExalted 300 # currency exalted
+	DisableDropSound
+
+Show # currency - special - imprinted bestiary orb (tier 3)
+
+	Class Stackable
+	BaseType Imprinted
+
+	SetFontSize 33
+	SetBackgroundColor 0 255 0 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+	DisableDropSound
+
+Show # currency - special - mirror of kalandra (tier 1)
+
+	Class Stackable
+	BaseType Kalandra
+
+	SetFontSize 45
+	SetBackgroundColor 0 255 0 255 # currency
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound ShMirror 300 # currency mirror
+	DisableDropSound
+
 Show # currency - tier 1
 
 	Class Stackable
-	BaseType " Net" Albino Bestiary Eternal Imprint Kalandra
+	BaseType Albino Eternal Imprint
 
 	SetFontSize 45
-	SetBackgroundColor 255 191 127 255 # currency
+	SetBackgroundColor 0 255 0 255 # currency
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
@@ -25,10 +95,10 @@ Show # currency - tier 1
 Show # currency - tier 2
 
 	Class Stackable
-	BaseType "Ancient Orb" Blessing Deafening Delirium Divine "Engineer's Orb" "Exalted Orb" "Harbinger's Orb" Horizons Horror Hysteria Insanity Mirror "Orb of Annulment" "Orb of Binding" Prophecy Seal Stacked Unshaping Vial
+	BaseType "Ancient Orb" Blessing Deafening Delirium "Harbinger's Orb" Horror Hysteria Insanity Mirror "Orb of Annulment" Stacked Vial
 
 	SetFontSize 39
-	SetBackgroundColor 255 191 127 255 # currency
+	SetBackgroundColor 0 255 0 255 # currency
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
@@ -37,10 +107,10 @@ Show # currency - tier 2
 Show # currency - tier 3
 
 	Class Stackable
-	BaseType Ancient Annulment Binding Blessed Cartographer's "Chaos Orb" Engineer's Essence Exalted Fusing Gemcutter's Harbinger's Horizon "Orb of Alchemy" Perandus "Regal Orb" Regret Remnant Scouring Splinter Vaal
+	BaseType Ancient Annulment Bestiary Blessed Cartographer's "Chaos Orb" Chayula "Engineer's Orb" Exalted Fusing Gemcutter's Harbinger's Horizons Necromancy "Orb of Alchemy" "Orb of Binding" Prophecy "Regal Orb" Regret Remnant Scouring Screaming Shrieking Thaumaturgical Unshaping Uul-Netol Vaal
 
 	SetFontSize 33
-	SetBackgroundColor 255 191 127 255 # currency
+	SetBackgroundColor 0 255 0 255 # currency
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
@@ -49,30 +119,20 @@ Show # currency - tier 3
 Show # currency - tier 4
 
 	Class Stackable
-	BaseType Alchemy Chance Chaos Chromatic Glassblower's Jeweller's "Orb of Alteration" Regal Silver
+	BaseType Alchemy Binding Chance Chaos Chromatic Coin Engineer's Essence Glassblower's Horizon Jeweller's Net "Orb of Alteration" Regal Splinter
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 191 127 255 # currency
-	SetBorderColor 255 191 127 255 # currency
+	SetTextColor 0 255 0 255 # currency
+	SetBorderColor 0 255 0 255 # currency
 
 Show # currency - tier 5
 
 	Class Stackable
-	BaseType Alteration Armourer's Blacksmith's Orb
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 191 127 255 # currency
-	SetBorderColor 0 0 0 255 # black
-
-Show # currency - tier 6
-
-	Class Stackable
-
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 191 127 255 # currency
+	SetBackgroundColor 0 0 0 127 # half-black
+	SetTextColor 0 255 0 255 # currency
 	SetBorderColor 0 0 0 255 # black
 
 #
@@ -81,27 +141,27 @@ Show # currency - tier 6
 #
 #
 
-Show # cards - the dragon's heart (tier 2)
+Show # cards - special - the dragon's heart (tier 2)
 
 	Class Divination
 	BaseType "The Dragon's Heart"
 
 	SetFontSize 39
-	SetBackgroundColor 191 255 127 255 # cards
+	SetBackgroundColor 255 0 255 255 # cards
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # cards - the wolf's shadow (tier 4)
+Show # cards - special - the wolf's shadow (tier 4)
 
 	Class Divination
 	BaseType "The Wolf's Shadow"
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 191 255 127 255 # cards
-	SetBorderColor 191 255 127 255 # cards
+	SetTextColor 255 0 255 255 # cards
+	SetBorderColor 255 0 255 255 # cards
 
 Show # cards - tier 1
 
@@ -109,7 +169,7 @@ Show # cards - tier 1
 	BaseType "House of Mirrors" "Mawr Blaidd" "The Celestial Stone" "The Doctor" "The Fiend" "The Queen" "The Vast"
 
 	SetFontSize 45
-	SetBackgroundColor 191 255 127 255 # cards
+	SetBackgroundColor 255 0 255 255 # cards
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 1 300 # unreal
@@ -121,7 +181,7 @@ Show # cards - tier 2
 	BaseType "Abandoned Wealth" "Call to the First Ones" "Dialla's Subjugation" "Hunter's Reward" "Immortal Resolve" "Last Hope" "Left to Fate" "Lingering Remnants" "Luck of the Vaal" "Lucky Deck" Perfection "Pride Before the Fall" "The Admirer" "The Artist" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Cursed King" "The Devastator" "The Dreamer" "The Fathomless Depths" "The Formless Sea" "The Hunger" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Obscured" "The Offering" "The Polymath" "The Professor" "The Rite of Elements" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Soul" "The Spark and the Flame" "The Sword King's Salute" "The Thaumaturgist" "The Undaunted" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Time-Lost Relic" "Wealth and Power"
 
 	SetFontSize 39
-	SetBackgroundColor 191 255 127 255 # cards
+	SetBackgroundColor 255 0 255 255 # cards
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 3 300 # shy
@@ -133,7 +193,7 @@ Show # cards - tier 3
 	BaseType "Blessing of God" "Boundless Realms" "Bowyer's Dream" "Chaotic Disposition" "Coveted Possession" "Destined to Crumble" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" "Her Mask" Heterochromia Hope Humility "Jack in the Box" "Lost Worlds" Loyalty "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Might is Right" Mitts "No Traces" Rats Rebirth "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Beast" "The Breach" "The Calling" "The Cartographer" "The Catalyst" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Deceiver" "The Doppelganger" "The Dreamland" "The Encroaching Darkness" "The Enlightened" "The Ethereal" "The Explorer" "The Fletcher" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gladiator" "The Hale Heart" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The One With All" "The Opulent" "The Penitent" "The Poet" "The Porcupine" "The Puzzle" "The Realm" "The Risk" "The Road to Power" "The Scavenger" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Throne" "The Trial" "The Tyrant" "The Undisputed" "The Union" "The Warlord" "The Watcher" "The Witch" "The Wrath" "The Wretched" "Three Faces in the Dark" "Three Voices" "Treasure Hunter" "Turn the Other Cheek" "Vinia's Token" "Volatile Power"
 
 	SetFontSize 33
-	SetBackgroundColor 191 255 127 255 # cards
+	SetBackgroundColor 255 0 255 255 # cards
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 2 300 # common
@@ -146,16 +206,16 @@ Show # cards - tier 4
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 191 255 127 255 # cards
-	SetBorderColor 191 255 127 255 # cards
+	SetTextColor 255 0 255 255 # cards
+	SetBorderColor 255 0 255 255 # cards
 
 Show # cards - tier 5
 
 	Class Divination
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 191 255 127 255 # cards
+	SetBackgroundColor 0 0 0 127 # half-black
+	SetTextColor 255 0 255 255 # cards
 	SetBorderColor 0 0 0 255 # black
 
 #
@@ -164,23 +224,10 @@ Show # cards - tier 5
 #
 #
 
-Show # gems - legacy
+Show # gems - restricted 1 | Comment
 
-	Class Support
-	BaseType Quantity
-
-	SetFontSize 45
-	SetBackgroundColor 0 255 255 255 # gems
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # gems - special lvl 4+
-
-	Class Support
-	BaseType Empower Enhance Enlighten
-	GemLevel > 3
+	Class Skill
+	BaseType Quantity "Vaal Immortal Call" "Vaal Lightning Warp"
 
 	SetFontSize 45
 	SetBackgroundColor 0 255 255 255 # gems
@@ -189,7 +236,7 @@ Show # gems - special lvl 4+
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # gems - lvl 21+
+Show # gems - lvl 21+ | Comment
 
 	Class Skill
 	GemLevel > 20
@@ -201,7 +248,7 @@ Show # gems - lvl 21+
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # gems - qty 23+
+Show # gems - qty 23+ | Comment
 
 	Class Skill
 	Quality > 22
@@ -213,7 +260,20 @@ Show # gems - qty 23+
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # gems - special
+Show # gems - special & lvl 4+ | Comment
+
+	Class Support
+	GemLevel > 3
+	BaseType Empower Enhance Enlighten
+
+	SetFontSize 45
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # gems - special | Comment
 
 	Class Skill
 	BaseType Breach Empower Enhance Enlighten Mines Portal
@@ -225,19 +285,7 @@ Show # gems - special
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # gems - undroppable
-
-	Class Support
-	BaseType Block
-
-	SetFontSize 39
-	SetBackgroundColor 0 255 255 255 # gems
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-	DisableDropSound
-
-Show # gems - lvl 20
+Show # gems - lvl 20 | Comment
 
 	Class Skill
 	GemLevel 20
@@ -249,10 +297,11 @@ Show # gems - lvl 20
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # gems - qty 20+
+Show # gems - qty 21>22 | Comment
 
 	Class Skill
-	Quality > 19
+	Quality > 20
+	Quality < 23
 
 	SetFontSize 39
 	SetBackgroundColor 0 255 255 255 # gems
@@ -261,10 +310,10 @@ Show # gems - qty 20+
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # gems - qty 10+
+Show # gems - restricted 2 | Comment
 
 	Class Skill
-	Quality > 9
+	BaseType Block Vaal
 
 	SetFontSize 33
 	SetBackgroundColor 0 255 255 255 # gems
@@ -273,10 +322,24 @@ Show # gems - qty 10+
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # gems - qty 1+
+Show # gems - qty 11>20 | Comment
+
+	Class Skill
+	Quality > 10
+	Quality < 21
+
+	SetFontSize 33
+	SetBackgroundColor 0 255 255 255 # gems
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+	DisableDropSound
+
+Show # gems - qty 1>10 | Comment
 
 	Class Skill
 	Quality > 0
+	Quality < 11
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
@@ -288,63 +351,40 @@ Show # gems - rest
 	Class Skill
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
+	SetBackgroundColor 0 0 0 127 # half-black
 	SetTextColor 0 255 255 255 # gems
 	SetBorderColor 0 0 0 255 # black
 
 #
 #
-# SPECIAL
+# UNTRADEABLE
 #
 #
 
-Show # special - souls
+Show # ~ untradeable - ~ incursion | labyrinth | quest | souls
 
-	Class Pantheon
-
-	SetFontSize 39
-	SetBackgroundColor 0 255 0 255 # special
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-	DisableDropSound
-
-Show # special - offerings
-
-	Class Fragments
-	BaseType Offering
-
-	SetFontSize 39
-	SetBackgroundColor 0 255 0 255 # special
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
-	DisableDropSound
-
-Show # special - quest | labyrinth
-
-	Class Quest Incursion "Labyrinth Item" Trinket
+	Class Quest Incursion "Labyrinth Item" Pantheon Trinket
 
 	SetFontSize 33
-	SetBackgroundColor 0 255 0 255 # special
+	SetBackgroundColor 255 191 127 255 # untradeable
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
 #
 #
-# MISC
+# UNOWNABLE
 #
 #
 
-Show # misc - doodads | microtransactions | relics | unused
+Show # ~ unownable - ~ doodads | empty | microtransactions | relics
 
 	Class Hideout Labyrinth Microtransactions Relics
 
 	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 255 255 255 # misc
+	SetBackgroundColor 0 0 0 127 # half-black
+	SetTextColor 255 255 255 255 # unownable
 	SetBorderColor 0 0 0 255 # black
 
 #
@@ -353,7 +393,7 @@ Show # misc - doodads | microtransactions | relics | unused
 #
 #
 
-Show # unique - rods
+Show # unique - rods | Comment
 
 	Rarity Unique
 	Class Fishing
@@ -362,22 +402,10 @@ Show # unique - rods
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
-Show # unique - legacy - leaguestones
-
-	Rarity Unique
-	Class Leaguestones
-
-	SetFontSize 45
-	SetBackgroundColor 255 127 0 255 # unique
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # unique - legacy - shields
+Show # unique - restricted 1 - shields | Comment
 
 	Rarity Unique
 	Class Shields
@@ -387,23 +415,23 @@ Show # unique - legacy - shields
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
-Show # unique - legacy - quivers
+Show # unique - restricted 1 - quivers | Comment
 
 	Rarity Unique
 	Class Quivers
-	BaseType "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
+	BaseType "Heavy Quiver"
 
 	SetFontSize 45
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
-Show # unique - legacy - chests
+Show # unique - restricted 1 - chests | Comment
 
 	Rarity Unique
 	Class Body
@@ -413,10 +441,10 @@ Show # unique - legacy - chests
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
-Show # unique - legacy - helms
+Show # unique - restricted 1 - helms | Comment
 
 	Rarity Unique
 	Class Helmets
@@ -426,10 +454,10 @@ Show # unique - legacy - helms
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
-Show # unique - legacy - gloves
+Show # unique - restricted 1 - gloves | Comment
 
 	Rarity Unique
 	Class Gloves
@@ -439,10 +467,10 @@ Show # unique - legacy - gloves
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
-Show # unique - legacy - boots
+Show # unique - restricted 1 - boots | Comment
 
 	Rarity Unique
 	Class Boots
@@ -452,10 +480,10 @@ Show # unique - legacy - boots
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
-Show # unique - legacy - belts
+Show # unique - restricted 1 - belts | Comment
 
 	Rarity Unique
 	Class Belts
@@ -465,10 +493,10 @@ Show # unique - legacy - belts
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
-Show # unique - legacy - amulets
+Show # unique - restricted 1 - amulets | Comment
 
 	Rarity Unique
 	Class Amulets
@@ -478,10 +506,10 @@ Show # unique - legacy - amulets
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
-Show # unique - legacy - rings
+Show # unique - restricted 1 - rings | Comment
 
 	Rarity Unique
 	Class Rings
@@ -491,10 +519,10 @@ Show # unique - legacy - rings
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
-Show # unique - ilvl 100
+Show # unique - ilvl 100 | Comment
 
 	Rarity Unique
 	ItemLevel 100
@@ -503,153 +531,295 @@ Show # unique - ilvl 100
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	PlayAlertSound 6 300 # legendary
+	DisableDropSound
+
+Show # unique - restricted 2 - 1h swords | Comment
+
+	Rarity Unique
+	Class "One Hand Swords"
+	BaseType "Charan's Sword"
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 6 300 # legendary
+	DisableDropSound
+
+Show # unique - restricted 2 - chests | Comment
+
+	Rarity Unique
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 6 300 # legendary
+	DisableDropSound
+
+Show # unique - restricted 2 - belts | Comment
+
+	Rarity Unique
+	Class Belts
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 6 300 # legendary
+	DisableDropSound
+
+Show # unique - restricted 2 - amulets | Comment
+
+	Rarity Unique
+	Class Amulets
+	BaseType "Black Maw Talisman" "Blue Pearl Amulet" "Clutching Talisman" "Greatwolf Talisman" "Marble Amulet" "Rotfeather Talisman" "Ruby Amulet" "Wereclaw Talisman"
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 6 300 # legendary
+	DisableDropSound
+
+Show # unique - restricted 2 - rings | Comment
+
+	Rarity Unique
+	Class Rings
+	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 6 300 # legendary
+	DisableDropSound
+
+Show # unique - restricted 2 - jewels | Comment
+
+	Rarity Unique
+	Class Jewel
+	BaseType "Prismatic Jewel"
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 6 300 # legendary
+	DisableDropSound
+
+Show # unique - restricted 2 - maps | Comment
+
+	Rarity Unique
+	Class Maps
+	BaseType "Harbinger Map"
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 6 300 # legendary
+	DisableDropSound
+
+Show # unique - elder | Comment
+
+	Rarity Unique
+	ElderItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 6 300 # legendary
+	DisableDropSound
+
+Show # unique - shaper | Comment
+
+	Rarity Unique
+	ShaperItem True
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 6 300 # legendary
+	DisableDropSound
+
+Show # unique - sockets 6 linked | Comment
+
+	Rarity Unique
+	LinkedSockets 6
+
+	SetFontSize 39
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
 Show # unique - rest
 
 	Rarity Unique
 
-	SetFontSize 39
+	SetFontSize 33
 	SetBackgroundColor 255 127 0 255 # unique
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
+	PlayAlertSound 6 300 # legendary
 	DisableDropSound
 
 #
 #
-# MAPS
+# MAP
 #
 #
 
-Show # maps - legacy
+Show # map - restricted - maps | Comment
+
+	Class Maps
+	BaseType Harbinger
+
+	SetFontSize 45
+	SetBackgroundColor 255 0 0 255 # map
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 8 300 # map top
+	DisableDropSound
+
+Show # map - restricted - misc
 
 	Class Misc
 
 	SetFontSize 45
-	SetBackgroundColor 255 0 0 255 # maps
+	SetBackgroundColor 255 0 0 255 # map
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 8 300 # maps high
+	PlayAlertSound 8 300 # map top
 	DisableDropSound
 
-Show # maps - fragments high
+Show # map - fragments 1
 
 	Class Fragments
-	BaseType Divine Fragment Mortal
+	BaseType Chayula's Divine Fragment Key Mortal Offering Uul-Netol's
 
 	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps
+	SetBackgroundColor 255 0 0 255 # map
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 8 300 # maps high
+	PlayAlertSound 8 300 # map top
 	DisableDropSound
 
-Show # maps - undroppable - maps
-
-	Class Maps
-	BaseType Harbinger "Vaal Temple"
-
-	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 8 300 # maps high
-	DisableDropSound
-
-Show # maps - undroppable - fragments
-
-	Class Fragments
-	BaseType Breachstone
-
-	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 8 300 # maps high
-	DisableDropSound
-
-Show # maps - maps elder
+Show # map - elder | Comment
 
 	Class Maps
 	ElderMap True
 
 	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps
+	SetBackgroundColor 255 0 0 255 # map
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 8 300 # maps high
+	PlayAlertSound 8 300 # map top
 	DisableDropSound
 
-Show # maps - maps shaped
+Show # map - shaped | Comment
 
 	Class Maps
 	ShapedMap True
 
 	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps
+	SetBackgroundColor 255 0 0 255 # map
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 8 300 # maps high
+	PlayAlertSound 8 300 # map top
 	DisableDropSound
 
-Show # maps - maps tier 16+
+Show # map - tier 16+
 
 	Class Maps
 	DropLevel > 82
 
 	SetFontSize 39
-	SetBackgroundColor 255 0 0 255 # maps
+	SetBackgroundColor 255 0 0 255 # map
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 8 300 # maps high
+	PlayAlertSound 8 300 # map top
 	DisableDropSound
 
-Show # maps - fragments low
+Show # map - fragments 2
 
 	Class Fragments
 
 	SetFontSize 33
-	SetBackgroundColor 255 0 0 255 # maps
+	SetBackgroundColor 255 0 0 255 # map
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 8 300 # maps high
+	PlayAlertSound 7 300 # map high
 	DisableDropSound
 
-Show # maps - maps tier 11+
+Show # map - normal & qty 11+ | Comment
+
+	Class Maps
+	Quality > 10
+	Rarity Normal
+
+	SetFontSize 33
+	SetBackgroundColor 255 0 0 255 # map
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 7 300 # map high
+	DisableDropSound
+
+Show # map - tier 11>15
 
 	Class Maps
 	DropLevel > 77
 
 	SetFontSize 33
-	SetBackgroundColor 255 0 0 255 # maps
+	SetBackgroundColor 255 0 0 255 # map
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 8 300 # maps high
+	PlayAlertSound 7 300 # map high
 	DisableDropSound
 
-Show # maps - maps tier 6+
+Show # map - normal & qty 1>10 | Comment
+
+	Class Maps
+	Quality > 0
+	Quality < 11
+	Rarity Normal
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 0 0 255 # map
+	SetBorderColor 255 0 0 255 # map
+	PlayAlertSound 9 300 # map average
+	DisableDropSound
+
+Show # map - tier 6>10
 
 	Class Maps
 	DropLevel > 72
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 0 0 255 # maps
-	SetBorderColor 255 0 0 255 # maps
-	PlayAlertSound 7 300 # maps average
+	SetTextColor 255 0 0 255 # map
+	SetBorderColor 255 0 0 255 # map
+	PlayAlertSound 9 300 # map average
 	DisableDropSound
 
-Show # maps - maps tier 1+
+Show # map - tier 1>5
 
 	Class Maps
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 0 0 255 # maps
+	SetTextColor 255 0 0 255 # map
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 9 300 # maps low
+	PlayAlertSound 14 300 # map low
 	DisableDropSound
 
 #
@@ -658,7 +828,7 @@ Show # maps - maps tier 1+
 #
 #
 
-Show # rare - rods
+Show # rare - rods | Comment
 
 	Rarity Rare
 	Class Fishing
@@ -670,19 +840,7 @@ Show # rare - rods
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - legacy - leaguestones
-
-	Rarity Rare
-	Class Leaguestones
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - legacy - shields
+Show # rare - restricted 1 - shields | Comment
 
 	Rarity Rare
 	Class Shields
@@ -695,7 +853,7 @@ Show # rare - legacy - shields
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - legacy - quivers
+Show # rare - restricted 1 - quivers | Comment
 
 	Rarity Rare
 	Class Quivers
@@ -708,7 +866,7 @@ Show # rare - legacy - quivers
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - legacy - chests
+Show # rare - restricted 1 - chests | Comment
 
 	Rarity Rare
 	Class Body
@@ -721,7 +879,7 @@ Show # rare - legacy - chests
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - legacy - helms
+Show # rare - restricted 1 - helms | Comment
 
 	Rarity Rare
 	Class Helmets
@@ -734,7 +892,7 @@ Show # rare - legacy - helms
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - legacy - gloves
+Show # rare - restricted 1 - gloves | Comment
 
 	Rarity Rare
 	Class Gloves
@@ -747,7 +905,7 @@ Show # rare - legacy - gloves
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - legacy - boots
+Show # rare - restricted 1 - boots | Comment
 
 	Rarity Rare
 	Class Boots
@@ -760,7 +918,7 @@ Show # rare - legacy - boots
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - legacy - belts
+Show # rare - restricted 1 - belts | Comment
 
 	Rarity Rare
 	Class Belts
@@ -773,11 +931,11 @@ Show # rare - legacy - belts
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - legacy - amulets
+Show # rare - restricted 1 - amulets | Comment
 
 	Rarity Rare
 	Class Amulets
-	BaseType "Jet Amulet"
+	BaseType "Jet Amulet" "Ruby Amulet"
 
 	SetFontSize 45
 	SetBackgroundColor 255 255 0 255 # rare
@@ -786,7 +944,7 @@ Show # rare - legacy - amulets
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - legacy - rings
+Show # rare - restricted 1 - rings | Comment
 
 	Rarity Rare
 	Class Rings
@@ -799,203 +957,7 @@ Show # rare - legacy - rings
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - restricted elder - chests
-
-	Rarity Rare
-	Class Body
-	BaseType "Sacrificial Garb"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted elder - helms
-
-	Rarity Rare
-	Class Helmets
-	BaseType "Bone Helmet"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted elder - gloves
-
-	Rarity Rare
-	Class Gloves
-	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted elder - boots
-
-	Rarity Rare
-	Class Boots
-	BaseType "Two-Toned Boots"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted elder - belts
-
-	Rarity Rare
-	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted elder - amulets
-
-	Rarity Rare
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted elder - rings
-
-	Rarity Rare
-	Class Rings
-	BaseType "Breach Ring" "Opal Ring" "Steel Ring"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted shaper - chests
-
-	Rarity Rare
-	Class Body
-	BaseType "Sacrificial Garb"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted shaper - helms
-
-	Rarity Rare
-	Class Helmets
-	BaseType "Bone Helmet"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted shaper - gloves
-
-	Rarity Rare
-	Class Gloves
-	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted shaper - boots
-
-	Rarity Rare
-	Class Boots
-	BaseType "Two-Toned Boots"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted shaper - belts
-
-	Rarity Rare
-	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted shaper - amulets
-
-	Rarity Rare
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - restricted shaper - rings
-
-	Rarity Rare
-	Class Rings
-	BaseType "Breach Ring" "Opal Ring" "Steel Ring"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # rare - ilvl 100
+Show # rare - ilvl 100 | Comment
 
 	Rarity Rare
 	ItemLevel 100
@@ -1007,19 +969,366 @@ Show # rare - ilvl 100
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - undroppable - flasks | pieces
+Show # rare - restricted & elder - 1h swords | Comment
 
 	Rarity Rare
-	Class Flasks Piece
+	ElderItem True
+	Class "One Hand Swords"
+	BaseType "Charan's Sword"
 
-	SetFontSize 39
+	SetFontSize 45
 	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
+	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # rare - undroppable - 1h swords
+Show # rare - restricted & elder - chests | Comment
+
+	Rarity Rare
+	ElderItem True
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & elder - helms | Comment
+
+	Rarity Rare
+	ElderItem True
+	Class Helmets
+	BaseType "Bone Helmet"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & elder - gloves | Comment
+
+	Rarity Rare
+	ElderItem True
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & elder - boots | Comment
+
+	Rarity Rare
+	ElderItem True
+	Class Boots
+	BaseType "Two-Toned Boots"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & elder - belts | Comment
+
+	Rarity Rare
+	ElderItem True
+	Class Belts
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & elder - amulets | Comment
+
+	Rarity Rare
+	ElderItem True
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & elder - rings | Comment
+
+	Rarity Rare
+	ElderItem True
+	Class Rings
+	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & shaper - 1h swords | Comment
+
+	Rarity Rare
+	ShaperItem True
+	Class "One Hand Swords"
+	BaseType "Charan's Sword"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & shaper - chests | Comment
+
+	Rarity Rare
+	ShaperItem True
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & shaper - helms | Comment
+
+	Rarity Rare
+	ShaperItem True
+	Class Helmets
+	BaseType "Bone Helmet"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & shaper - gloves | Comment
+
+	Rarity Rare
+	ShaperItem True
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & shaper - boots | Comment
+
+	Rarity Rare
+	ShaperItem True
+	Class Boots
+	BaseType "Two-Toned Boots"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & shaper - belts | Comment
+
+	Rarity Rare
+	ShaperItem True
+	Class Belts
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & shaper - amulets | Comment
+
+	Rarity Rare
+	ShaperItem True
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & shaper - rings | Comment
+
+	Rarity Rare
+	ShaperItem True
+	Class Rings
+	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & incursion - helms | Comment
+
+	Rarity Rare
+	Identified True
+	Class Helmets
+	BaseType "Bone Helmet"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & incursion - gloves | Comment
+
+	Rarity Rare
+	Identified True
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & incursion - boots | Comment
+
+	Rarity Rare
+	Identified True
+	Class Boots
+	BaseType "Two-Toned Boots"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & incursion - belts | Comment
+
+	Rarity Rare
+	Identified True
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & incursion - amulets | Comment
+
+	Rarity Rare
+	Identified True
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & incursion - rings | Comment
+
+	Rarity Rare
+	Identified True
+	Class Rings
+	BaseType "Opal Ring" "Steel Ring"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & warband - helms | Comment
+
+	Rarity Rare
+	Identified True
+	Class Helmets
+	BaseType "Bone Helmet"
+	HasExplicitMod Redblade
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & warband - gloves | Comment
+
+	Rarity Rare
+	Identified True
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	HasExplicitMod Brinerot
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted & warband - boots | Comment
+
+	Rarity Rare
+	Identified True
+	Class Boots
+	BaseType "Two-Toned Boots"
+	HasExplicitMod Mutewind
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # rare - restricted 2 - 1h swords | Comment
 
 	Rarity Rare
 	Class "One Hand Swords"
@@ -1032,11 +1341,37 @@ Show # rare - undroppable - 1h swords
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # rare - undroppable - amulets
+Show # rare - restricted 2 - chests | Comment
+
+	Rarity Rare
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # rare - restricted 2 - belts | Comment
+
+	Rarity Rare
+	Class Belts
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # rare - restricted 2 - amulets | Comment
 
 	Rarity Rare
 	Class Amulets
-	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Ruby Amulet" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
+	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Blue Pearl Amulet" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Marble Amulet" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255 # rare
@@ -1045,11 +1380,11 @@ Show # rare - undroppable - amulets
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # rare - undroppable - rings
+Show # rare - restricted 2 - rings | Comment
 
 	Rarity Rare
 	Class Rings
-	BaseType "Prismatic Ring"
+	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 0 255 # rare
@@ -1058,7 +1393,7 @@ Show # rare - undroppable - rings
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # rare - undroppable - jewels
+Show # rare - restricted 2 - jewels | Comment
 
 	Rarity Rare
 	Class Jewel
@@ -1071,7 +1406,7 @@ Show # rare - undroppable - jewels
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # rare - elder
+Show # rare - elder | Comment
 
 	Rarity Rare
 	ElderItem True
@@ -1083,7 +1418,7 @@ Show # rare - elder
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # rare - shaper
+Show # rare - shaper | Comment
 
 	Rarity Rare
 	ShaperItem True
@@ -1095,9 +1430,10 @@ Show # rare - shaper
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # rare - incursion
+Show # rare - incursion | Comment
 
 	Rarity Rare
+	Identified True
 	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
 
 	SetFontSize 39
@@ -1107,7 +1443,20 @@ Show # rare - incursion
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # rare - sockets 6 linked
+Show # rare - warband | Comment
+
+	Rarity Rare
+	Identified True
+	HasExplicitMod Betrayer's Brinerot Deceiver's Mutewind Redblade Turncoat's
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # rare - sockets 6 linked | Comment
 
 	Rarity Rare
 	LinkedSockets 6
@@ -1119,32 +1468,7 @@ Show # rare - sockets 6 linked
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # rare - restricted - abyss jewels
-
-	Rarity Rare
-	Class Abyss
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-	DisableDropSound
-
-Show # rare - restricted - chests
-
-	Rarity Rare
-	Class Body
-	BaseType "Sacrificial Garb"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-	DisableDropSound
-
-Show # rare - restricted - helms
+Show # rare - restricted 3 - helms | Comment
 
 	Rarity Rare
 	Class Helmets
@@ -1157,7 +1481,7 @@ Show # rare - restricted - helms
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # rare - restricted - gloves
+Show # rare - restricted 3 - gloves | Comment
 
 	Rarity Rare
 	Class Gloves
@@ -1170,7 +1494,7 @@ Show # rare - restricted - gloves
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # rare - restricted - boots
+Show # rare - restricted 3 - boots | Comment
 
 	Rarity Rare
 	Class Boots
@@ -1183,37 +1507,11 @@ Show # rare - restricted - boots
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # rare - restricted - belts
-
-	Rarity Rare
-	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-	DisableDropSound
-
-Show # rare - restricted - amulets
-
-	Rarity Rare
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-	DisableDropSound
-
-Show # rare - restricted - rings
+Show # rare - restricted 3 - rings | Comment
 
 	Rarity Rare
 	Class Rings
-	BaseType "Breach Ring" "Opal Ring" "Steel Ring"
+	BaseType "Breach Ring"
 
 	SetFontSize 33
 	SetBackgroundColor 255 255 0 255 # rare
@@ -1222,7 +1520,33 @@ Show # rare - restricted - rings
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # rare - sockets 6
+Show # rare - restricted 3 - abyss jewels | Comment
+
+	Rarity Rare
+	Class Abyss
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+	DisableDropSound
+
+Show # rare - hammers & qty 20 | Comment
+
+	Rarity Rare
+	Quality 20
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
+
+	SetFontSize 33
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 2 300 # common
+	DisableDropSound
+
+Show # rare - sockets 6 | Comment
 
 	Rarity Rare
 	Sockets 6
@@ -1234,18 +1558,19 @@ Show # rare - sockets 6
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Hide # rare - sockets 5 linked
+#Disabled Block Start
+#Show # rare - sockets 5 linked | Comment
+#	Rarity Rare
+#	LinkedSockets 5
+#	SetFontSize 33
+#	SetBackgroundColor 255 255 0 255 # rare
+#	SetTextColor 0 0 0 255 # black
+#	SetBorderColor 0 0 0 255 # black
+#	PlayAlertSound 2 300 # common
+#	DisableDropSound
+#Disabled Block End
 
-	Rarity Rare
-	LinkedSockets 5
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 0 255 # rare
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	DisableDropSound
-
-Show # rare - corrupted
+Show # rare - corrupted | Comment
 
 	Rarity Rare
 	Corrupted True
@@ -1253,41 +1578,113 @@ Show # rare - corrupted
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 0 255 # rare
-	SetBorderColor 255 0 0 255 # corrupted
+	SetBorderColor 255 0 0 255 # rare corrupted
 
-Show # rare - belts | amulets | rings | jewels
+Show # rare - jewellery - belts | Comment
 
 	Rarity Rare
-	Class Amulets Belts Jewel Rings
+	Class Belts
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 255 255 0 255 # rare
 
-Show # rare - sockets rgb linked - width 1
+Show # rare - jewellery - amulets | Comment
 
 	Rarity Rare
-	SocketGroup RGB
+	Class Amulets
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
+
+Show # rare - jewellery - rings | Comment
+
+	Rarity Rare
+	Class Rings
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
+
+Show # rare - jewels | Comment
+
+	Rarity Rare
+	Class Jewel
+
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
+
+#Disabled Block Start
+#Show # rare - sockets 4 linked | Comment
+#	Rarity Rare
+#	LinkedSockets 4
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 0 255 # rare
+#	SetBorderColor 255 255 0 255 # rare
+#Disabled Block End
+
+#Disabled Block Start
+#Show # rare - sockets 3 linked & ilvl 24- | Comment
+#	Rarity Rare
+#	ItemLevel < 25
+#	LinkedSockets 3
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 0 255 # rare
+#	SetBorderColor 255 255 0 255 # rare
+#Disabled Block End
+
+#Disabled Block Start
+#Show # rare - sockets 2 linked & ilvl 1 | Comment
+#	Rarity Rare
+#	ItemLevel 1
+#	LinkedSockets 2
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 0 255 # rare
+#	SetBorderColor 255 255 0 255 # rare
+#Disabled Block End
+
+#Disabled Block Start
+#Show # rare - sockets rgb linked - all | Comment
+#	Rarity Rare
+#	SocketGroup RGB
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 0 255 # rare
+#	SetBorderColor 255 255 0 255 # rare
+#Disabled Block End
+
+Show # rare - sockets rgb linked - width 1 | Comment
+
+	Rarity Rare
 	Width 1
+	SocketGroup RGB
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 255 255 0 255 # rare
 
-Show # rare - sockets rgb linked - width 2
+Show # rare - sockets rgb linked - height 2 | Comment
 
 	Rarity Rare
-	SocketGroup RGB
 	Height 2
+	SocketGroup RGB
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 255 255 0 255 # rare
 
-Show # rare - top - staves
+Show # rare - top weapons - staves | Comment
 
 	Rarity Rare
 	Class Staves
@@ -1298,7 +1695,7 @@ Show # rare - top - staves
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - 2h axes
+Show # rare - top weapons - 2h axes | Comment
 
 	Rarity Rare
 	Class "Two Hand Axes"
@@ -1309,7 +1706,7 @@ Show # rare - top - 2h axes
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - 2h maces
+Show # rare - top weapons - 2h maces | Comment
 
 	Rarity Rare
 	Class "Two Hand Maces"
@@ -1320,7 +1717,7 @@ Show # rare - top - 2h maces
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - 2h swords
+Show # rare - top weapons - 2h swords | Comment
 
 	Rarity Rare
 	Class "Two Hand Swords"
@@ -1331,7 +1728,7 @@ Show # rare - top - 2h swords
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - claws
+Show # rare - top weapons - claws | Comment
 
 	Rarity Rare
 	Class Claws
@@ -1342,7 +1739,7 @@ Show # rare - top - claws
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - daggers
+Show # rare - top weapons - daggers | Comment
 
 	Rarity Rare
 	Class Daggers
@@ -1353,7 +1750,7 @@ Show # rare - top - daggers
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - sceptres
+Show # rare - top weapons - sceptres | Comment
 
 	Rarity Rare
 	Class Sceptres
@@ -1364,7 +1761,7 @@ Show # rare - top - sceptres
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - wands
+Show # rare - top weapons - wands | Comment
 
 	Rarity Rare
 	Class Wands
@@ -1375,7 +1772,7 @@ Show # rare - top - wands
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - 1h axes
+Show # rare - top weapons - 1h axes | Comment
 
 	Rarity Rare
 	Class "One Hand Axes"
@@ -1386,7 +1783,7 @@ Show # rare - top - 1h axes
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - 1h maces
+Show # rare - top weapons - 1h maces | Comment
 
 	Rarity Rare
 	Class "One Hand Maces"
@@ -1397,7 +1794,7 @@ Show # rare - top - 1h maces
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - 1h swords
+Show # rare - top weapons - 1h swords | Comment
 
 	Rarity Rare
 	Class "One Hand Swords"
@@ -1408,7 +1805,7 @@ Show # rare - top - 1h swords
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - thrusting swords
+Show # rare - top weapons - thrusting swords | Comment
 
 	Rarity Rare
 	Class Thrusting
@@ -1419,7 +1816,7 @@ Show # rare - top - thrusting swords
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - bows
+Show # rare - top weapons - bows | Comment
 
 	Rarity Rare
 	Class Bows
@@ -1430,7 +1827,7 @@ Show # rare - top - bows
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - shields
+Show # rare - top armour - shields | Comment
 
 	Rarity Rare
 	Class Shields
@@ -1441,18 +1838,7 @@ Show # rare - top - shields
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - quivers
-
-	Rarity Rare
-	Class Quivers
-	BaseType "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 255 0 255 # rare
-	SetBorderColor 0 0 0 255 # black
-
-Show # rare - top - chests
+Show # rare - top armour - chests | Comment
 
 	Rarity Rare
 	Class Body
@@ -1463,7 +1849,7 @@ Show # rare - top - chests
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - helms
+Show # rare - top armour - helms | Comment
 
 	Rarity Rare
 	Class Helmets
@@ -1474,7 +1860,7 @@ Show # rare - top - helms
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - gloves
+Show # rare - top armour - gloves | Comment
 
 	Rarity Rare
 	Class Gloves
@@ -1485,7 +1871,7 @@ Show # rare - top - gloves
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Show # rare - top - boots
+Show # rare - top armour - boots | Comment
 
 	Rarity Rare
 	Class Boots
@@ -1496,47 +1882,23 @@ Show # rare - top - boots
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 
-Hide # rare - sockets 4 linked
+Show # rare - top quivers | Comment
 
 	Rarity Rare
-	LinkedSockets 4
+	Class Quivers
+	BaseType "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
 
-	SetFontSize 27
+	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 0 255 # rare
-	SetBorderColor 255 255 0 255 # rare
-	DisableDropSound
-
-Hide # rare - sockets 3 linked
-
-	Rarity Rare
-	LinkedSockets 3
-	ItemLevel < 25
-
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 255 0 255 # rare
-	SetBorderColor 255 255 0 255 # rare
-	DisableDropSound
-
-Hide # rare - sockets 2 linked
-
-	Rarity Rare
-	LinkedSockets 2
-	ItemLevel 1
-
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 255 0 255 # rare
-	SetBorderColor 255 255 0 255 # rare
-	DisableDropSound
+	SetBorderColor 0 0 0 255 # black
 
 Hide # rare - rest
 
 	Rarity Rare
 
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 127 # half-black
 	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # black
 	DisableDropSound
@@ -1547,7 +1909,7 @@ Hide # rare - rest
 #
 #
 
-Show # magic - rods
+Show # magic - rods | Comment
 
 	Rarity Magic
 	Class Fishing
@@ -1559,19 +1921,7 @@ Show # magic - rods
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - legacy - leaguestones
-
-	Rarity Magic
-	Class Leaguestones
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - legacy - shields
+Show # magic - restricted 1 - shields | Comment
 
 	Rarity Magic
 	Class Shields
@@ -1584,7 +1934,7 @@ Show # magic - legacy - shields
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - legacy - quivers
+Show # magic - restricted 1 - quivers | Comment
 
 	Rarity Magic
 	Class Quivers
@@ -1597,7 +1947,7 @@ Show # magic - legacy - quivers
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - legacy - chests
+Show # magic - restricted 1 - chests | Comment
 
 	Rarity Magic
 	Class Body
@@ -1610,7 +1960,7 @@ Show # magic - legacy - chests
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - legacy - helms
+Show # magic - restricted 1 - helms | Comment
 
 	Rarity Magic
 	Class Helmets
@@ -1623,7 +1973,7 @@ Show # magic - legacy - helms
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - legacy - gloves
+Show # magic - restricted 1 - gloves | Comment
 
 	Rarity Magic
 	Class Gloves
@@ -1636,7 +1986,7 @@ Show # magic - legacy - gloves
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - legacy - boots
+Show # magic - restricted 1 - boots | Comment
 
 	Rarity Magic
 	Class Boots
@@ -1649,7 +1999,7 @@ Show # magic - legacy - boots
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - legacy - belts
+Show # magic - restricted 1 - belts | Comment
 
 	Rarity Magic
 	Class Belts
@@ -1662,11 +2012,11 @@ Show # magic - legacy - belts
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - legacy - amulets
+Show # magic - restricted 1 - amulets | Comment
 
 	Rarity Magic
 	Class Amulets
-	BaseType "Jet Amulet"
+	BaseType "Jet Amulet" "Ruby Amulet"
 
 	SetFontSize 45
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1675,7 +2025,7 @@ Show # magic - legacy - amulets
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - legacy - rings
+Show # magic - restricted 1 - rings | Comment
 
 	Rarity Magic
 	Class Rings
@@ -1688,12 +2038,10 @@ Show # magic - legacy - rings
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - restricted elder - chests
+Show # magic - restricted 1 - leaguestones | Comment
 
 	Rarity Magic
-	Class Body
-	BaseType "Sacrificial Garb"
-	ElderItem True
+	Class Leaguestones
 
 	SetFontSize 45
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1702,189 +2050,7 @@ Show # magic - restricted elder - chests
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - restricted elder - helms
-
-	Rarity Magic
-	Class Helmets
-	BaseType "Bone Helmet"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted elder - gloves
-
-	Rarity Magic
-	Class Gloves
-	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted elder - boots
-
-	Rarity Magic
-	Class Boots
-	BaseType "Two-Toned Boots"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted elder - belts
-
-	Rarity Magic
-	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted elder - amulets
-
-	Rarity Magic
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted elder - rings
-
-	Rarity Magic
-	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted shaper - chests
-
-	Rarity Magic
-	Class Body
-	BaseType "Sacrificial Garb"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted shaper - helms
-
-	Rarity Magic
-	Class Helmets
-	BaseType "Bone Helmet"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted shaper - gloves
-
-	Rarity Magic
-	Class Gloves
-	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted shaper - boots
-
-	Rarity Magic
-	Class Boots
-	BaseType "Two-Toned Boots"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted shaper - belts
-
-	Rarity Magic
-	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted shaper - amulets
-
-	Rarity Magic
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - restricted shaper - rings
-
-	Rarity Magic
-	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # magic - ilvl 100
+Show # magic - ilvl 100 | Comment
 
 	Rarity Magic
 	ItemLevel 100
@@ -1896,19 +2062,310 @@ Show # magic - ilvl 100
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - undroppable - pieces
+Show # magic - restricted & elder - helms | Comment
 
 	Rarity Magic
-	Class Piece
+	ElderItem True
+	Class Helmets
+	BaseType "Bone Helmet"
 
-	SetFontSize 39
+	SetFontSize 45
 	SetBackgroundColor 127 127 255 255 # magic
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
+	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # magic - undroppable - 1h swords
+Show # magic - restricted & elder - gloves | Comment
+
+	Rarity Magic
+	ElderItem True
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & elder - boots | Comment
+
+	Rarity Magic
+	ElderItem True
+	Class Boots
+	BaseType "Two-Toned Boots"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & elder - belts | Comment
+
+	Rarity Magic
+	ElderItem True
+	Class Belts
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & elder - amulets | Comment
+
+	Rarity Magic
+	ElderItem True
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & elder - rings | Comment
+
+	Rarity Magic
+	ElderItem True
+	Class Rings
+	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & shaper - helms | Comment
+
+	Rarity Magic
+	ShaperItem True
+	Class Helmets
+	BaseType "Bone Helmet"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & shaper - gloves | Comment
+
+	Rarity Magic
+	ShaperItem True
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & shaper - boots | Comment
+
+	Rarity Magic
+	ShaperItem True
+	Class Boots
+	BaseType "Two-Toned Boots"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & shaper - belts | Comment
+
+	Rarity Magic
+	ShaperItem True
+	Class Belts
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & shaper - amulets | Comment
+
+	Rarity Magic
+	ShaperItem True
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & shaper - rings | Comment
+
+	Rarity Magic
+	ShaperItem True
+	Class Rings
+	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & incursion - helms | Comment
+
+	Rarity Magic
+	Identified True
+	Class Helmets
+	BaseType "Bone Helmet"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & incursion - gloves | Comment
+
+	Rarity Magic
+	Identified True
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & incursion - boots | Comment
+
+	Rarity Magic
+	Identified True
+	Class Boots
+	BaseType "Two-Toned Boots"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & incursion - belts | Comment
+
+	Rarity Magic
+	Identified True
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & incursion - amulets | Comment
+
+	Rarity Magic
+	Identified True
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & incursion - rings | Comment
+
+	Rarity Magic
+	Identified True
+	Class Rings
+	BaseType "Opal Ring" "Steel Ring"
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & warband - helms | Comment
+
+	Rarity Magic
+	Identified True
+	Class Helmets
+	BaseType "Bone Helmet"
+	HasExplicitMod Redblade
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & warband - gloves | Comment
+
+	Rarity Magic
+	Identified True
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	HasExplicitMod Brinerot
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted & warband - boots | Comment
+
+	Rarity Magic
+	Identified True
+	Class Boots
+	BaseType "Two-Toned Boots"
+	HasExplicitMod Mutewind
+
+	SetFontSize 45
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # magic - restricted 2 - 1h swords | Comment
 
 	Rarity Magic
 	Class "One Hand Swords"
@@ -1921,11 +2378,37 @@ Show # magic - undroppable - 1h swords
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # magic - undroppable - amulets
+Show # magic - restricted 2 - chests | Comment
+
+	Rarity Magic
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # magic - restricted 2 - belts | Comment
+
+	Rarity Magic
+	Class Belts
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # magic - restricted 2 - amulets | Comment
 
 	Rarity Magic
 	Class Amulets
-	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Ruby Amulet" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
+	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Blue Pearl Amulet" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Marble Amulet" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1934,11 +2417,11 @@ Show # magic - undroppable - amulets
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # magic - undroppable - rings
+Show # magic - restricted 2 - rings | Comment
 
 	Rarity Magic
 	Class Rings
-	BaseType "Breach Ring" "Prismatic Ring"
+	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1947,7 +2430,7 @@ Show # magic - undroppable - rings
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # magic - undroppable - jewels
+Show # magic - restricted 2 - jewels | Comment
 
 	Rarity Magic
 	Class Jewel
@@ -1960,7 +2443,7 @@ Show # magic - undroppable - jewels
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # magic - undroppable - elder
+Show # magic - elder | Comment
 
 	Rarity Magic
 	ElderItem True
@@ -1972,7 +2455,7 @@ Show # magic - undroppable - elder
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # magic - undroppable - shaper
+Show # magic - shaper | Comment
 
 	Rarity Magic
 	ShaperItem True
@@ -1984,10 +2467,11 @@ Show # magic - undroppable - shaper
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # magic - incursion | warband
+Show # magic - incursion | Comment
 
 	Rarity Magic
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+	Identified True
+	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
 
 	SetFontSize 39
 	SetBackgroundColor 127 127 255 255 # magic
@@ -1996,7 +2480,20 @@ Show # magic - incursion | warband
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # magic - sockets 6 linked
+Show # magic - warband | Comment
+
+	Rarity Magic
+	Identified True
+	HasExplicitMod Betrayer's Brinerot Deceiver's Mutewind Redblade Turncoat's
+
+	SetFontSize 39
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # magic - sockets 6 linked | Comment
 
 	Rarity Magic
 	LinkedSockets 6
@@ -2008,32 +2505,7 @@ Show # magic - sockets 6 linked
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # magic - restricted - abyss jewels
-
-	Rarity Magic
-	Class Abyss
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-	DisableDropSound
-
-Show # magic - restricted - chests
-
-	Rarity Magic
-	Class Body
-	BaseType "Sacrificial Garb"
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-	DisableDropSound
-
-Show # magic - restricted - helms
+Show # magic - restricted 3 - helms | Comment
 
 	Rarity Magic
 	Class Helmets
@@ -2046,7 +2518,7 @@ Show # magic - restricted - helms
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # magic - restricted - gloves
+Show # magic - restricted 3 - gloves | Comment
 
 	Rarity Magic
 	Class Gloves
@@ -2059,7 +2531,7 @@ Show # magic - restricted - gloves
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # magic - restricted - boots
+Show # magic - restricted 3 - boots | Comment
 
 	Rarity Magic
 	Class Boots
@@ -2072,11 +2544,10 @@ Show # magic - restricted - boots
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # magic - restricted - belts
+Show # magic - restricted 3 - abyss jewels | Comment
 
 	Rarity Magic
-	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	Class Abyss
 
 	SetFontSize 33
 	SetBackgroundColor 127 127 255 255 # magic
@@ -2085,11 +2556,12 @@ Show # magic - restricted - belts
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # magic - restricted - amulets
+Show # magic - hammers & qty 20 | Comment
 
 	Rarity Magic
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	Quality 20
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
 
 	SetFontSize 33
 	SetBackgroundColor 127 127 255 255 # magic
@@ -2098,20 +2570,7 @@ Show # magic - restricted - amulets
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # magic - restricted - rings
-
-	Rarity Magic
-	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-	DisableDropSound
-
-Show # magic - sockets 6
+Show # magic - sockets 6 | Comment
 
 	Rarity Magic
 	Sockets 6
@@ -2123,101 +2582,377 @@ Show # magic - sockets 6
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Hide # magic - sockets 5 linked
+#Disabled Block Start
+#Show # magic - sockets 5 linked | Comment
+#	Rarity Magic
+#	LinkedSockets 5
+#	SetFontSize 33
+#	SetBackgroundColor 127 127 255 255 # magic
+#	SetTextColor 0 0 0 255 # black
+#	SetBorderColor 0 0 0 255 # black
+#	PlayAlertSound 2 300 # common
+#	DisableDropSound
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - jewellery - belts | Comment
+#	Rarity Magic
+#	Class Belts
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - jewellery - amulets | Comment
+#	Rarity Magic
+#	Class Amulets
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - jewellery - rings | Comment
+#	Rarity Magic
+#	Class Rings
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - flasks - life | Comment
+#	Rarity Magic
+#	Class Life
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - flasks - mana | Comment
+#	Rarity Magic
+#	Class Mana
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - flasks - hybrid | Comment
+#	Rarity Magic
+#	Class Hybrid
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - flasks - utility | Comment
+#	Rarity Magic
+#	Class Utility
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - jewels | Comment
+#	Rarity Magic
+#	Class Jewel
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - sockets 4 linked | Comment
+#	Rarity Magic
+#	LinkedSockets 4
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - sockets 3 linked & ilvl 24- | Comment
+#	Rarity Magic
+#	ItemLevel < 25
+#	LinkedSockets 3
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - sockets 2 linked & ilvl 1 | Comment
+#	Rarity Magic
+#	ItemLevel 1
+#	LinkedSockets 2
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - sockets rgb linked - all | Comment
+#	Rarity Magic
+#	SocketGroup RGB
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 127 127 255 255 # magic
+#Disabled Block End
+
+Show # magic - sockets rgb linked - width 1 | Comment
 
 	Rarity Magic
-	LinkedSockets 5
-
-	SetFontSize 33
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	DisableDropSound
-
-Show # magic - jewels
-
-	Rarity Magic
-	Class Jewel
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 127 127 255 255 # magic
-
-Show # magic - sockets rgb linked - width 1
-
-	Rarity Magic
-	SocketGroup RGB
 	Width 1
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 127 127 255 255 # magic
-
-Show # magic - sockets rgb linked - width 2
-
-	Rarity Magic
 	SocketGroup RGB
-	Height 2
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 127 127 255 255 # magic
 
-Hide # magic - belts | amulets | rings | flasks
+Show # magic - sockets rgb linked - height 2 | Comment
 
 	Rarity Magic
-	Class Amulets Belts Flasks Rings
+	Height 2
+	SocketGroup RGB
 
-	SetFontSize 27
+	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 127 127 255 255 # magic
-	DisableDropSound
 
-Hide # magic - sockets 4 linked
+#Disabled Block Start
+#Show # magic - top weapons - staves | Comment
+#	Rarity Magic
+#	Class Staves
+#	BaseType "Coiled Staff" "Eclipse Staff" "Imperial Staff" Lathi "Maelström Staff" "Serpentine Staff"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-	Rarity Magic
-	LinkedSockets 4
+#Disabled Block Start
+#Show # magic - top weapons - 2h axes | Comment
+#	Rarity Magic
+#	Class "Two Hand Axes"
+#	BaseType "Ezomyte Axe" Fleshripper "Vaal Axe"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 127 127 255 255 # magic
-	DisableDropSound
+#Disabled Block Start
+#Show # magic - top weapons - 2h maces | Comment
+#	Rarity Magic
+#	Class "Two Hand Maces"
+#	BaseType "Coronal Maul" "Karui Maul" Piledriver
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-Hide # magic - sockets 3 linked
+#Disabled Block Start
+#Show # magic - top weapons - 2h swords | Comment
+#	Rarity Magic
+#	Class "Two Hand Swords"
+#	BaseType "Exquisite Blade" "Lion Sword" "Reaver Sword" "Vaal Greatsword"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-	Rarity Magic
-	LinkedSockets 3
-	ItemLevel < 25
+#Disabled Block Start
+#Show # magic - top weapons - claws | Comment
+#	Rarity Magic
+#	Class Claws
+#	BaseType "Eye Gouger" "Gemini Claw" "Great White Claw" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Vaal Claw"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 127 127 255 255 # magic
-	DisableDropSound
+#Disabled Block Start
+#Show # magic - top weapons - daggers | Comment
+#	Rarity Magic
+#	Class Daggers
+#	BaseType Ambusher "Copper Kris" "Demon Dagger" "Golden Kris" "Gutting Knife" "Platinum Kris" Sai
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-Hide # magic - sockets 2 linked
+#Disabled Block Start
+#Show # magic - top weapons - sceptres | Comment
+#	Rarity Magic
+#	Class Sceptres
+#	BaseType "Carnal Sceptre" "Karui Sceptre" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-	Rarity Magic
-	LinkedSockets 2
-	ItemLevel 1
+#Disabled Block Start
+#Show # magic - top weapons - wands | Comment
+#	Rarity Magic
+#	Class Wands
+#	BaseType "Demon's Horn" "Imbued Wand" "Opal Wand" "Profane Wand" "Prophecy Wand"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 127 127 255 255 # magic
-	DisableDropSound
+#Disabled Block Start
+#Show # magic - top weapons - 1h axes | Comment
+#	Rarity Magic
+#	Class "One Hand Axes"
+#	BaseType "Royal Axe" "Runic Hatchet" "Siege Axe"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - top weapons - 1h maces | Comment
+#	Rarity Magic
+#	Class "One Hand Maces"
+#	BaseType "Auric Mace" "Behemoth Mace" Gavel
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - top weapons - 1h swords | Comment
+#	Rarity Magic
+#	Class "One Hand Swords"
+#	BaseType "Corsair Sword" "Eternal Sword" "Legion Sword" "Tiger Hook"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - top weapons - thrusting swords | Comment
+#	Rarity Magic
+#	Class Thrusting
+#	BaseType "Dragoon Sword" "Harpy Rapier" "Jewelled Foil" "Vaal Rapier"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - top weapons - bows | Comment
+#	Rarity Magic
+#	Class Bows
+#	BaseType "Citadel Bow" "Harbinger Bow" "Imperial Bow" "Maraketh Bow" "Thicket Bow"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - top armour - shields | Comment
+#	Rarity Magic
+#	Class Shields
+#	BaseType "Archon Kite Shield" "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Lacquered Buckler" "Mirrored Spiked Shield" "Shagreen Tower Shield" "Spiny Round Shield" "Supreme Spiked Shield" "Teak Round Shield" "Titanium Spirit Shield" "Vaal Buckler"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - top armour - chests | Comment
+#	Rarity Magic
+#	Class Body
+#	BaseType "Assassin's Garb" "Astral Plate" "Blood Raiment" "Carnal Armour" "Full Dragonscale" "Glorious Plate" "Occultist's Vestment" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Zodiac Leather"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - top armour - helms | Comment
+#	Rarity Magic
+#	Class Helmets
+#	BaseType "Deicide Mask" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Royal Burgonet" "Vaal Mask"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - top armour - gloves | Comment
+#	Rarity Magic
+#	Class Gloves
+#	BaseType "Crusader Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - top armour - boots | Comment
+#	Rarity Magic
+#	Class Boots
+#	BaseType "Assassin's Boots" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # magic - top quivers | Comment
+#	Rarity Magic
+#	Class Quivers
+#	BaseType "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 127 127 255 255 # magic
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
 Hide # magic - rest
 
 	Rarity Magic
 
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 127 # half-black
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 0 0 0 255 # black
 	DisableDropSound
@@ -2228,7 +2963,7 @@ Hide # magic - rest
 #
 #
 
-Show # normal - rods
+Show # normal - rods | Comment
 
 	Rarity Normal
 	Class Fishing
@@ -2240,19 +2975,7 @@ Show # normal - rods
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - legacy - leaguestones
-
-	Rarity Normal
-	Class Leaguestones
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - legacy - shields
+Show # normal - restricted 1 - shields | Comment
 
 	Rarity Normal
 	Class Shields
@@ -2265,7 +2988,7 @@ Show # normal - legacy - shields
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - legacy - quivers
+Show # normal - restricted 1 - quivers | Comment
 
 	Rarity Normal
 	Class Quivers
@@ -2278,7 +3001,7 @@ Show # normal - legacy - quivers
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - legacy - chests
+Show # normal - restricted 1 - chests | Comment
 
 	Rarity Normal
 	Class Body
@@ -2291,7 +3014,7 @@ Show # normal - legacy - chests
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - legacy - helms
+Show # normal - restricted 1 - helms | Comment
 
 	Rarity Normal
 	Class Helmets
@@ -2304,7 +3027,7 @@ Show # normal - legacy - helms
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - legacy - gloves
+Show # normal - restricted 1 - gloves | Comment
 
 	Rarity Normal
 	Class Gloves
@@ -2317,7 +3040,7 @@ Show # normal - legacy - gloves
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - legacy - boots
+Show # normal - restricted 1 - boots | Comment
 
 	Rarity Normal
 	Class Boots
@@ -2330,7 +3053,7 @@ Show # normal - legacy - boots
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - legacy - belts
+Show # normal - restricted 1 - belts | Comment
 
 	Rarity Normal
 	Class Belts
@@ -2343,11 +3066,11 @@ Show # normal - legacy - belts
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - legacy - amulets
+Show # normal - restricted 1 - amulets | Comment
 
 	Rarity Normal
 	Class Amulets
-	BaseType "Jet Amulet"
+	BaseType "Jet Amulet" "Ruby Amulet"
 
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255 # normal
@@ -2356,7 +3079,7 @@ Show # normal - legacy - amulets
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - legacy - rings
+Show # normal - restricted 1 - rings | Comment
 
 	Rarity Normal
 	Class Rings
@@ -2369,12 +3092,10 @@ Show # normal - legacy - rings
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - restricted elder - chests
+Show # normal - restricted 1 - leaguestones | Comment
 
 	Rarity Normal
-	Class Body
-	BaseType "Sacrificial Garb"
-	ElderItem True
+	Class Leaguestones
 
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255 # normal
@@ -2383,189 +3104,7 @@ Show # normal - restricted elder - chests
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - restricted elder - helms
-
-	Rarity Normal
-	Class Helmets
-	BaseType "Bone Helmet"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted elder - gloves
-
-	Rarity Normal
-	Class Gloves
-	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted elder - boots
-
-	Rarity Normal
-	Class Boots
-	BaseType "Two-Toned Boots"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted elder - belts
-
-	Rarity Normal
-	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted elder - amulets
-
-	Rarity Normal
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted elder - rings
-
-	Rarity Normal
-	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
-	ElderItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted shaper - chests
-
-	Rarity Normal
-	Class Body
-	BaseType "Sacrificial Garb"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted shaper - helms
-
-	Rarity Normal
-	Class Helmets
-	BaseType "Bone Helmet"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted shaper - gloves
-
-	Rarity Normal
-	Class Gloves
-	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted shaper - boots
-
-	Rarity Normal
-	Class Boots
-	BaseType "Two-Toned Boots"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted shaper - belts
-
-	Rarity Normal
-	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted shaper - amulets
-
-	Rarity Normal
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - restricted shaper - rings
-
-	Rarity Normal
-	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
-	ShaperItem True
-
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
-	DisableDropSound
-
-Show # normal - ilvl 100
+Show # normal - ilvl 100 | Comment
 
 	Rarity Normal
 	ItemLevel 100
@@ -2577,19 +3116,175 @@ Show # normal - ilvl 100
 	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - undroppable - jewels | abyss jewels | pieces
+Show # normal - restricted & elder - helms | Comment
 
 	Rarity Normal
-	Class Jewel Piece
+	ElderItem True
+	Class Helmets
+	BaseType "Bone Helmet"
 
-	SetFontSize 39
+	SetFontSize 45
 	SetBackgroundColor 255 255 255 255 # normal
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 3 300 # shy
+	PlayAlertSound 1 300 # unreal
 	DisableDropSound
 
-Show # normal - undroppable - 1h swords
+Show # normal - restricted & elder - gloves | Comment
+
+	Rarity Normal
+	ElderItem True
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted & elder - boots | Comment
+
+	Rarity Normal
+	ElderItem True
+	Class Boots
+	BaseType "Two-Toned Boots"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted & elder - belts | Comment
+
+	Rarity Normal
+	ElderItem True
+	Class Belts
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted & elder - amulets | Comment
+
+	Rarity Normal
+	ElderItem True
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted & elder - rings | Comment
+
+	Rarity Normal
+	ElderItem True
+	Class Rings
+	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted & shaper - helms | Comment
+
+	Rarity Normal
+	ShaperItem True
+	Class Helmets
+	BaseType "Bone Helmet"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted & shaper - gloves | Comment
+
+	Rarity Normal
+	ShaperItem True
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted & shaper - boots | Comment
+
+	Rarity Normal
+	ShaperItem True
+	Class Boots
+	BaseType "Two-Toned Boots"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted & shaper - belts | Comment
+
+	Rarity Normal
+	ShaperItem True
+	Class Belts
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted & shaper - amulets | Comment
+
+	Rarity Normal
+	ShaperItem True
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted & shaper - rings | Comment
+
+	Rarity Normal
+	ShaperItem True
+	Class Rings
+	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 1 300 # unreal
+	DisableDropSound
+
+Show # normal - restricted 2 - 1h swords | Comment
 
 	Rarity Normal
 	Class "One Hand Swords"
@@ -2602,11 +3297,37 @@ Show # normal - undroppable - 1h swords
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # normal - undroppable - amulets
+Show # normal - restricted 2 - chests | Comment
+
+	Rarity Normal
+	Class Body
+	BaseType "Sacrificial Garb"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # normal - restricted 2 - belts | Comment
+
+	Rarity Normal
+	Class Belts
+	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # normal - restricted 2 - amulets | Comment
 
 	Rarity Normal
 	Class Amulets
-	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Ruby Amulet" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
+	BaseType "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Blue Pearl Amulet" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Marble Amulet" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -2615,11 +3336,11 @@ Show # normal - undroppable - amulets
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # normal - undroppable - rings
+Show # normal - restricted 2 - rings | Comment
 
 	Rarity Normal
 	Class Rings
-	BaseType "Breach Ring" "Prismatic Ring"
+	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
 
 	SetFontSize 39
 	SetBackgroundColor 255 255 255 255 # normal
@@ -2628,7 +3349,20 @@ Show # normal - undroppable - rings
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # normal - undroppable - elder
+Show # normal - restricted 2 - jewels | Comment
+
+	Rarity Normal
+	Class Jewel
+	BaseType "Prismatic Jewel"
+
+	SetFontSize 39
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 3 300 # shy
+	DisableDropSound
+
+Show # normal - elder | Comment
 
 	Rarity Normal
 	ElderItem True
@@ -2640,7 +3374,7 @@ Show # normal - undroppable - elder
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # normal - undroppable - shaper
+Show # normal - shaper | Comment
 
 	Rarity Normal
 	ShaperItem True
@@ -2652,7 +3386,7 @@ Show # normal - undroppable - shaper
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # normal - sockets 6 linked
+Show # normal - sockets 6 linked | Comment
 
 	Rarity Normal
 	LinkedSockets 6
@@ -2664,20 +3398,7 @@ Show # normal - sockets 6 linked
 	PlayAlertSound 3 300 # shy
 	DisableDropSound
 
-Show # normal - restricted - chests
-
-	Rarity Normal
-	Class Body
-	BaseType "Sacrificial Garb"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-	DisableDropSound
-
-Show # normal - restricted - helms
+Show # normal - restricted 3 - helms | Comment
 
 	Rarity Normal
 	Class Helmets
@@ -2690,7 +3411,7 @@ Show # normal - restricted - helms
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # normal - restricted - gloves
+Show # normal - restricted 3 - gloves | Comment
 
 	Rarity Normal
 	Class Gloves
@@ -2703,7 +3424,7 @@ Show # normal - restricted - gloves
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # normal - restricted - boots
+Show # normal - restricted 3 - boots | Comment
 
 	Rarity Normal
 	Class Boots
@@ -2716,11 +3437,10 @@ Show # normal - restricted - boots
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # normal - restricted - belts
+Show # normal - restricted 3 - abyss jewels | Comment
 
 	Rarity Normal
-	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	Class Abyss
 
 	SetFontSize 33
 	SetBackgroundColor 255 255 255 255 # normal
@@ -2729,11 +3449,12 @@ Show # normal - restricted - belts
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # normal - restricted - amulets
+Show # normal - hammers & qty 20 | Comment
 
 	Rarity Normal
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	Quality 20
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
 
 	SetFontSize 33
 	SetBackgroundColor 255 255 255 255 # normal
@@ -2742,20 +3463,7 @@ Show # normal - restricted - amulets
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Show # normal - restricted - rings
-
-	Rarity Normal
-	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 2 300 # common
-	DisableDropSound
-
-Show # normal - sockets 6
+Show # normal - sockets 6 | Comment
 
 	Rarity Normal
 	Sockets 6
@@ -2767,100 +3475,169 @@ Show # normal - sockets 6
 	PlayAlertSound 2 300 # common
 	DisableDropSound
 
-Hide # normal - sockets 5 linked
+#Disabled Block Start
+#Show # normal - sockets 5 linked | Comment
+#	Rarity Normal
+#	LinkedSockets 5
+#	SetFontSize 33
+#	SetBackgroundColor 255 255 255 255 # normal
+#	SetTextColor 0 0 0 255 # black
+#	SetBorderColor 0 0 0 255 # black
+#	PlayAlertSound 2 300 # common
+#	DisableDropSound
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - jewellery - belts | Comment
+#	Rarity Normal
+#	Class Belts
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - jewellery - amulets | Comment
+#	Rarity Normal
+#	Class Amulets
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - jewellery - rings | Comment
+#	Rarity Normal
+#	Class Rings
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - flasks - life | Comment
+#	Rarity Normal
+#	Class Life
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - flasks - mana | Comment
+#	Rarity Normal
+#	Class Mana
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - flasks - hybrid | Comment
+#	Rarity Normal
+#	Class Hybrid
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - flasks - utility | Comment
+#	Rarity Normal
+#	Class Utility
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - jewels | Comment
+#	Rarity Normal
+#	Class Jewel
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - qty 20 | Comment
+#	Rarity Normal
+#	Quality 20
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+Show # normal - hammers & uncorrupted | Comment
 
 	Rarity Normal
-	LinkedSockets 5
-
-	SetFontSize 33
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	DisableDropSound
-
-Show # normal - sockets rgb linked - width 1
-
-	Rarity Normal
-	SocketGroup RGB
-	Width 1
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 255 255 255 255 # normal
-
-Show # normal - sockets rgb linked - width 2
-
-	Rarity Normal
-	SocketGroup RGB
-	Height 2
-
-	SetFontSize 33
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 255 255 255 255 # normal
-
-Show # normal - chisel
-
-	Rarity Normal
+	Corrupted False
 	Class "One Hand Maces"
 	BaseType Gavel "Rock Breaker" "Stone Hammer"
-	Corrupted False
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 0 0 0 255 # black
+	SetBorderColor 255 255 255 255 # normal
 
-Show # normal - chance - shields
+Show # normal - chance - shields & uncorrupted | Comment
 
 	Rarity Normal
+	Corrupted False
 	Class Shields
 	BaseType "Rawhide Tower Shield"
-	Corrupted False
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 0 0 0 255 # black
+	SetBorderColor 255 255 255 255 # normal
 
-Show # normal - chance - chests
+Show # normal - chance - chests & uncorrupted | Comment
 
 	Rarity Normal
+	Corrupted False
 	Class Body
 	BaseType "Glorious Plate"
-	Corrupted False
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 0 0 0 255 # black
+	SetBorderColor 255 255 255 255 # normal
 
-Show # normal - chance - boots
+Show # normal - chance - boots & uncorrupted | Comment
 
 	Rarity Normal
+	Corrupted False
 	Class Boots
 	BaseType "Sorcerer Boots"
-	Corrupted False
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 0 0 0 255 # black
+	SetBorderColor 255 255 255 255 # normal
 
-Show # normal - chance - belts
+Show # normal - chance - belts & uncorrupted | Comment
 
 	Rarity Normal
+	Corrupted False
 	Class Belts
 	BaseType "Leather Belt"
-	Corrupted False
 
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 0 0 0 255 # black
+	SetBorderColor 255 255 255 255 # normal
 
-Show # normal - chance - flasks
+Show # normal - chance - flasks | Comment
 
 	Rarity Normal
 	Class Flasks
@@ -2869,60 +3646,287 @@ Show # normal - chance - flasks
 	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 0 0 0 255 # black
+	SetBorderColor 255 255 255 255 # normal
 
-Hide # normal - belts | amulets | rings | flasks
+#Disabled Block Start
+#Show # normal - sockets 4 linked | Comment
+#	Rarity Normal
+#	LinkedSockets 4
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - sockets 3 linked & ilvl 24- | Comment
+#	Rarity Normal
+#	ItemLevel < 25
+#	LinkedSockets 3
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - sockets 2 linked & ilvl 1 | Comment
+#	Rarity Normal
+#	ItemLevel 1
+#	LinkedSockets 2
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - sockets rgb linked - all | Comment
+#	Rarity Normal
+#	SocketGroup RGB
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 255 255 255 255 # normal
+#Disabled Block End
+
+Show # normal - sockets rgb linked - width 1 | Comment
 
 	Rarity Normal
-	Class Amulets Belts Flasks Rings
+	Width 1
+	SocketGroup RGB
 
-	SetFontSize 27
+	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 255 255 255 255 # normal
-	DisableDropSound
 
-Hide # normal - sockets 4 linked
+Show # normal - sockets rgb linked - height 2 | Comment
 
 	Rarity Normal
-	LinkedSockets 4
+	Height 2
+	SocketGroup RGB
 
-	SetFontSize 27
+	SetFontSize 33
 	SetBackgroundColor 0 0 0 255 # black
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 255 255 255 255 # normal
-	DisableDropSound
 
-Hide # normal - sockets 3 linked
+#Disabled Block Start
+#Show # normal - top weapons - staves | Comment
+#	Rarity Normal
+#	Class Staves
+#	BaseType "Coiled Staff" "Eclipse Staff" "Imperial Staff" Lathi "Maelström Staff" "Serpentine Staff"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-	Rarity Normal
-	LinkedSockets 3
-	ItemLevel < 25
+#Disabled Block Start
+#Show # normal - top weapons - 2h axes | Comment
+#	Rarity Normal
+#	Class "Two Hand Axes"
+#	BaseType "Ezomyte Axe" Fleshripper "Vaal Axe"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 255 255 255 255 # normal
-	DisableDropSound
+#Disabled Block Start
+#Show # normal - top weapons - 2h maces | Comment
+#	Rarity Normal
+#	Class "Two Hand Maces"
+#	BaseType "Coronal Maul" "Karui Maul" Piledriver
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-Hide # normal - sockets 2 linked
+#Disabled Block Start
+#Show # normal - top weapons - 2h swords | Comment
+#	Rarity Normal
+#	Class "Two Hand Swords"
+#	BaseType "Exquisite Blade" "Lion Sword" "Reaver Sword" "Vaal Greatsword"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-	Rarity Normal
-	LinkedSockets 2
-	ItemLevel 1
+#Disabled Block Start
+#Show # normal - top weapons - claws | Comment
+#	Rarity Normal
+#	Class Claws
+#	BaseType "Eye Gouger" "Gemini Claw" "Great White Claw" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Vaal Claw"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 255 255 255 255 # normal
-	DisableDropSound
+#Disabled Block Start
+#Show # normal - top weapons - daggers | Comment
+#	Rarity Normal
+#	Class Daggers
+#	BaseType Ambusher "Copper Kris" "Demon Dagger" "Golden Kris" "Gutting Knife" "Platinum Kris" Sai
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top weapons - sceptres | Comment
+#	Rarity Normal
+#	Class Sceptres
+#	BaseType "Carnal Sceptre" "Karui Sceptre" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top weapons - wands | Comment
+#	Rarity Normal
+#	Class Wands
+#	BaseType "Demon's Horn" "Imbued Wand" "Opal Wand" "Profane Wand" "Prophecy Wand"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top weapons - 1h axes | Comment
+#	Rarity Normal
+#	Class "One Hand Axes"
+#	BaseType "Royal Axe" "Runic Hatchet" "Siege Axe"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top weapons - 1h maces | Comment
+#	Rarity Normal
+#	Class "One Hand Maces"
+#	BaseType "Auric Mace" "Behemoth Mace" Gavel
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top weapons - 1h swords | Comment
+#	Rarity Normal
+#	Class "One Hand Swords"
+#	BaseType "Corsair Sword" "Eternal Sword" "Legion Sword" "Tiger Hook"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top weapons - thrusting swords | Comment
+#	Rarity Normal
+#	Class Thrusting
+#	BaseType "Dragoon Sword" "Harpy Rapier" "Jewelled Foil" "Vaal Rapier"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top weapons - bows | Comment
+#	Rarity Normal
+#	Class Bows
+#	BaseType "Citadel Bow" "Harbinger Bow" "Imperial Bow" "Maraketh Bow" "Thicket Bow"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top armour - shields | Comment
+#	Rarity Normal
+#	Class Shields
+#	BaseType "Archon Kite Shield" "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Lacquered Buckler" "Mirrored Spiked Shield" "Shagreen Tower Shield" "Spiny Round Shield" "Supreme Spiked Shield" "Teak Round Shield" "Titanium Spirit Shield" "Vaal Buckler"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top armour - chests | Comment
+#	Rarity Normal
+#	Class Body
+#	BaseType "Assassin's Garb" "Astral Plate" "Blood Raiment" "Carnal Armour" "Full Dragonscale" "Glorious Plate" "Occultist's Vestment" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Zodiac Leather"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top armour - helms | Comment
+#	Rarity Normal
+#	Class Helmets
+#	BaseType "Deicide Mask" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Royal Burgonet" "Vaal Mask"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top armour - gloves | Comment
+#	Rarity Normal
+#	Class Gloves
+#	BaseType "Crusader Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top armour - boots | Comment
+#	Rarity Normal
+#	Class Boots
+#	BaseType "Assassin's Boots" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
+
+#Disabled Block Start
+#Show # normal - top quivers | Comment
+#	Rarity Normal
+#	Class Quivers
+#	BaseType "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 0 255 # black
+#	SetTextColor 255 255 255 255 # normal
+#	SetBorderColor 0 0 0 255 # black
+#Disabled Block End
 
 Hide # normal - rest
 
 	Rarity Normal
 
-	SetFontSize 27
-	SetBackgroundColor 0 0 0 255 # black
+	SetFontSize 33
+	SetBackgroundColor 0 0 0 127 # half-black
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 0 0 0 255 # black
 	DisableDropSound
@@ -2933,11 +3937,77 @@ Hide # normal - rest
 #
 #
 
-Show # unknown - unknown
+Show # ~ unknown - ~ unknown
 
 	SetFontSize 45
-	SetBackgroundColor 255 0 255 255 # unknown
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 1 300 # unreal
+	SetBackgroundColor 255 255 255 255 # unknown
+	SetTextColor 255 255 255 255 # unknown
+	SetBorderColor 255 255 255 255 # unknown
+	PlayAlertSound 12 300 # unknown
 	DisableDropSound
+
+#
+#
+# FILTERBLAST
+#
+#
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound 2 300 # common
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound ShDivine 300 # currency divine
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound ShExalted 300 # currency exalted
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound ShMirror 300 # currency mirror
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound 6 300 # legendary
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound 9 300 # map average
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound 7 300 # map high
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound 14 300 # map low
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound 8 300 # map top
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound 3 300 # shy
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound 12 300 # unknown
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#	PlayAlertSound 1 300 # unreal
+#Disabled Block End
