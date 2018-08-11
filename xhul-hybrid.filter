@@ -719,7 +719,7 @@ Show # unique - restricted 2 - pieces | Disable
 
 	Rarity Unique
 	Class Piece
-	BaseType "First Piece of Brutality" "First Piece of Directions" "First Piece of Focus" "First Piece of Storms" "First Piece of Time" "First Piece of the Arcane" "Fourth Piece of Focus" "Second Piece of Brutality" "Second Piece of Directions" "Second Piece of Focus" "Second Piece of Storms" "Second Piece of Time" "Second Piece of the Arcane" "Third Piece of Brutality" "Third Piece of Directions" "Third Piece of Focus" "Third Piece of Storms" "Third Piece of the Arcane"
+	BaseType "Archon Kite Shield Piece" "Blunt Arrow Quiver Piece" "Callous Mask Piece" "Cloth Belt Piece" "Imperial Staff Piece" "Legion Sword Piece"
 
 	SetFontSize 39
 	SetBackgroundColor 255 127 0 255 # unique
