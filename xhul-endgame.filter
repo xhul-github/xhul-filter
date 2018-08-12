@@ -1644,15 +1644,19 @@ Show # rare - sockets 6 | Disable
 	DisableDropSound
 
 #Disabled Block Start
+
 #Show # rare - sockets 5 linked | Disable
+
 #	Rarity Rare
 #	LinkedSockets 5
+
 #	SetFontSize 33
 #	SetBackgroundColor 255 255 0 255 # rare main
 #	SetTextColor 0 0 0 255 # black
 #	SetBorderColor 0 0 0 255 # black
 #	PlayAlertSound 2 300 # common
 #	DisableDropSound
+
 #Disabled Block End
 
 Show # rare - corrupted | Disable
@@ -1710,45 +1714,61 @@ Show # rare - jewels | Disable
 	SetBorderColor 255 255 0 255 # rare main
 
 #Disabled Block Start
+
 #Show # rare - sockets 4 linked | Disable
+
 #	Rarity Rare
 #	LinkedSockets 4
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 0 255 # rare main
 #	SetBorderColor 255 255 0 255 # rare main
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # rare - sockets 3 linked & ilvl 24- | Disable
+
 #	Rarity Rare
 #	ItemLevel < 25
 #	LinkedSockets 3
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 0 255 # rare main
 #	SetBorderColor 255 255 0 255 # rare main
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # rare - sockets 2 linked & ilvl 1 | Disable
+
 #	Rarity Rare
 #	ItemLevel 1
 #	LinkedSockets 2
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 0 255 # rare main
 #	SetBorderColor 255 255 0 255 # rare main
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # rare - sockets rgb linked - any | Disable
+
 #	Rarity Rare
 #	SocketGroup RGB
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 0 255 # rare main
 #	SetBorderColor 255 255 0 255 # rare main
+
 #Disabled Block End
 
 Show # rare - sockets rgb linked - width 1 | Disable
@@ -2663,156 +2683,212 @@ Show # magic - sockets 6 | Disable
 	DisableDropSound
 
 #Disabled Block Start
+
 #Show # magic - sockets 5 linked | Disable
+
 #	Rarity Magic
 #	LinkedSockets 5
+
 #	SetFontSize 33
 #	SetBackgroundColor 127 127 255 255 # magic
 #	SetTextColor 0 0 0 255 # black
 #	SetBorderColor 0 0 0 255 # black
 #	PlayAlertSound 2 300 # common
 #	DisableDropSound
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - jewellery - belts | Disable
+
 #	Rarity Magic
 #	Class Belts
 #	BaseType "Chain Belt" "Cloth Belt" "Heavy Belt" "Leather Belt" "Rustic Sash" "Studded Belt"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - jewellery - amulets | Disable
+
 #	Rarity Magic
 #	Class Amulets
 #	BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Amulet" "Gold Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Paua Amulet" "Turquoise Amulet"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - jewellery - rings | Disable
+
 #	Rarity Magic
 #	Class Rings
 #	BaseType "Amethyst Ring" "Coral Ring" "Diamond Ring" "Gold Ring" "Iron Ring" "Moonstone Ring" "Paua Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - flasks - life | Disable
+
 #	Rarity Magic
 #	Class "Life Flasks"
 #	BaseType "Colossal Life Flask" "Divine Life Flask" "Eternal Life Flask" "Giant Life Flask" "Grand Life Flask" "Greater Life Flask" "Hallowed Life Flask" "Large Life Flask" "Medium Life Flask" "Sacred Life Flask" "Sanctified Life Flask" "Small Life Flask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - flasks - mana | Disable
+
 #	Rarity Magic
 #	Class "Mana Flasks"
 #	BaseType "Colossal Mana Flask" "Divine Mana Flask" "Eternal Mana Flask" "Giant Mana Flask" "Grand Mana Flask" "Greater Mana Flask" "Hallowed Mana Flask" "Large Mana Flask" "Medium Mana Flask" "Sacred Mana Flask" "Sanctified Mana Flask" "Small Mana Flask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - flasks - hybrid | Disable
+
 #	Rarity Magic
 #	Class "Hybrid Flasks"
 #	BaseType "Colossal Hybrid Flask" "Hallowed Hybrid Flask" "Large Hybrid Flask" "Medium Hybrid Flask" "Sacred Hybrid Flask" "Small Hybrid Flask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - flasks - critical | Disable
+
 #	Rarity Magic
 #	Class "Critical Utility Flasks"
 #	BaseType "Diamond Flask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - flasks - utility | Disable
+
 #	Rarity Magic
 #	Class "Utility Flasks"
 #	BaseType "Amethyst Flask" "Aquamarine Flask" "Basalt Flask" "Bismuth Flask" "Granite Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - jewels | Disable
+
 #	Rarity Magic
 #	Class Jewel
 #	BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - sockets 4 linked | Disable
+
 #	Rarity Magic
 #	LinkedSockets 4
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - sockets 3 linked & ilvl 24- | Disable
+
 #	Rarity Magic
 #	ItemLevel < 25
 #	LinkedSockets 3
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - sockets 2 linked & ilvl 1 | Disable
+
 #	Rarity Magic
 #	ItemLevel 1
 #	LinkedSockets 2
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - sockets rgb linked - any | Disable
+
 #	Rarity Magic
 #	SocketGroup RGB
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 Show # magic - sockets rgb linked - width 1 | Disable
@@ -2838,212 +2914,288 @@ Show # magic - sockets rgb linked - height 2 | Disable
 	SetBorderColor 127 127 255 255 # magic
 
 #Disabled Block Start
+
 #Show # magic - top weapons - claws | Disable
+
 #	Rarity Magic
 #	Class Claws
 #	BaseType "Eye Gouger" "Gemini Claw" "Great White Claw" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Vaal Claw"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - daggers | Disable
+
 #	Rarity Magic
 #	Class Daggers
 #	BaseType Ambusher "Copper Kris" "Demon Dagger" "Golden Kris" "Gutting Knife" "Platinum Kris" Sai
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - 1h axes | Disable
+
 #	Rarity Magic
 #	Class "One Hand Axes"
 #	BaseType "Royal Axe" "Runic Hatchet" "Siege Axe"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - 1h maces | Disable
+
 #	Rarity Magic
 #	Class "One Hand Maces"
 #	BaseType "Auric Mace" "Behemoth Mace" Gavel
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - thrusting swords | Disable
+
 #	Rarity Magic
 #	Class "Thrusting One Hand Swords"
 #	BaseType "Dragoon Sword" "Harpy Rapier" "Jewelled Foil" "Vaal Rapier"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - 1h swords | Disable
+
 #	Rarity Magic
 #	Class "One Hand Swords"
 #	BaseType "Corsair Sword" "Eternal Sword" "Legion Sword" "Tiger Hook"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - sceptres | Disable
+
 #	Rarity Magic
 #	Class Sceptres
 #	BaseType "Carnal Sceptre" "Karui Sceptre" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - wands | Disable
+
 #	Rarity Magic
 #	Class Wands
 #	BaseType "Demon's Horn" "Imbued Wand" "Opal Wand" "Profane Wand" "Prophecy Wand"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - bows | Disable
+
 #	Rarity Magic
 #	Class Bows
 #	BaseType "Citadel Bow" "Harbinger Bow" "Imperial Bow" "Maraketh Bow" "Thicket Bow"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - staves | Disable
+
 #	Rarity Magic
 #	Class Staves
 #	BaseType "Coiled Staff" "Eclipse Staff" "Imperial Staff" Lathi "Maelström Staff" "Serpentine Staff"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - 2h axes | Disable
+
 #	Rarity Magic
 #	Class "Two Hand Axes"
 #	BaseType "Ezomyte Axe" Fleshripper "Vaal Axe"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - 2h maces | Disable
+
 #	Rarity Magic
 #	Class "Two Hand Maces"
 #	BaseType "Coronal Maul" "Karui Maul" Piledriver
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top weapons - 2h swords | Disable
+
 #	Rarity Magic
 #	Class "Two Hand Swords"
 #	BaseType "Exquisite Blade" "Lion Sword" "Reaver Sword" "Vaal Greatsword"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top armour - shields | Disable
+
 #	Rarity Magic
 #	Class Shields
 #	BaseType "Archon Kite Shield" "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Lacquered Buckler" "Mirrored Spiked Shield" "Shagreen Tower Shield" "Spiny Round Shield" "Supreme Spiked Shield" "Teak Round Shield" "Titanium Spirit Shield" "Vaal Buckler"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top armour - chests | Disable
+
 #	Rarity Magic
 #	Class "Body Armours"
 #	BaseType "Assassin's Garb" "Astral Plate" "Blood Raiment" "Carnal Armour" "Full Dragonscale" "Glorious Plate" "Occultist's Vestment" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Zodiac Leather"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top armour - helms | Disable
+
 #	Rarity Magic
 #	Class Helmets
 #	BaseType "Deicide Mask" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Royal Burgonet" "Vaal Mask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top armour - gloves | Disable
+
 #	Rarity Magic
 #	Class Gloves
 #	BaseType "Crusader Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top armour - boots | Disable
+
 #	Rarity Magic
 #	Class Boots
 #	BaseType "Assassin's Boots" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - top quivers | Disable
+
 #	Rarity Magic
 #	Class Quivers
 #	BaseType "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 Hide # magic - rest
@@ -3577,124 +3729,168 @@ Show # normal - sockets 6 | Disable
 	DisableDropSound
 
 #Disabled Block Start
+
 #Show # normal - sockets 5 linked | Disable
+
 #	Rarity Normal
 #	LinkedSockets 5
+
 #	SetFontSize 33
 #	SetBackgroundColor 255 255 255 255 # normal
 #	SetTextColor 0 0 0 255 # black
 #	SetBorderColor 0 0 0 255 # black
 #	PlayAlertSound 2 300 # common
 #	DisableDropSound
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - jewellery - belts | Disable
+
 #	Rarity Normal
 #	Class Belts
 #	BaseType "Chain Belt" "Cloth Belt" "Heavy Belt" "Leather Belt" "Rustic Sash" "Studded Belt"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - jewellery - amulets | Disable
+
 #	Rarity Normal
 #	Class Amulets
 #	BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Amulet" "Gold Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Paua Amulet" "Turquoise Amulet"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - jewellery - rings | Disable
+
 #	Rarity Normal
 #	Class Rings
 #	BaseType "Amethyst Ring" "Coral Ring" "Diamond Ring" "Gold Ring" "Iron Ring" "Moonstone Ring" "Paua Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring" "Unset Ring"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - flasks - life | Disable
+
 #	Rarity Normal
 #	Class "Life Flasks"
 #	BaseType "Colossal Life Flask" "Divine Life Flask" "Eternal Life Flask" "Giant Life Flask" "Grand Life Flask" "Greater Life Flask" "Hallowed Life Flask" "Large Life Flask" "Medium Life Flask" "Sacred Life Flask" "Sanctified Life Flask" "Small Life Flask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - flasks - mana | Disable
+
 #	Rarity Normal
 #	Class "Mana Flasks"
 #	BaseType "Colossal Mana Flask" "Divine Mana Flask" "Eternal Mana Flask" "Giant Mana Flask" "Grand Mana Flask" "Greater Mana Flask" "Hallowed Mana Flask" "Large Mana Flask" "Medium Mana Flask" "Sacred Mana Flask" "Sanctified Mana Flask" "Small Mana Flask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - flasks - hybrid | Disable
+
 #	Rarity Normal
 #	Class "Hybrid Flasks"
 #	BaseType "Colossal Hybrid Flask" "Hallowed Hybrid Flask" "Large Hybrid Flask" "Medium Hybrid Flask" "Sacred Hybrid Flask" "Small Hybrid Flask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - flasks - critical | Disable
+
 #	Rarity Normal
 #	Class "Critical Utility Flasks"
 #	BaseType "Diamond Flask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - flasks - utility | Disable
+
 #	Rarity Normal
 #	Class "Utility Flasks"
 #	BaseType "Amethyst Flask" "Aquamarine Flask" "Basalt Flask" "Bismuth Flask" "Granite Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - jewels | Disable
+
 #	Rarity Normal
 #	Class Jewel
 #	BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - qty 20 | Disable
+
 #	Rarity Normal
 #	Quality 20
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 Show # normal - hammers & uncorrupted | Disable
@@ -3721,45 +3917,61 @@ Show # normal - chanceable & uncorrupted | Disable
 	SetBorderColor 255 255 255 255 # normal
 
 #Disabled Block Start
+
 #Show # normal - sockets 4 linked | Disable
+
 #	Rarity Normal
 #	LinkedSockets 4
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - sockets 3 linked & ilvl 24- | Disable
+
 #	Rarity Normal
 #	ItemLevel < 25
 #	LinkedSockets 3
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - sockets 2 linked & ilvl 1 | Disable
+
 #	Rarity Normal
 #	ItemLevel 1
 #	LinkedSockets 2
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - sockets rgb linked - any | Disable
+
 #	Rarity Normal
 #	SocketGroup RGB
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 Show # normal - sockets rgb linked - width 1 | Disable
@@ -3785,212 +3997,288 @@ Show # normal - sockets rgb linked - height 2 | Disable
 	SetBorderColor 255 255 255 255 # normal
 
 #Disabled Block Start
+
 #Show # normal - top weapons - claws | Disable
+
 #	Rarity Normal
 #	Class Claws
 #	BaseType "Eye Gouger" "Gemini Claw" "Great White Claw" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Vaal Claw"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - daggers | Disable
+
 #	Rarity Normal
 #	Class Daggers
 #	BaseType Ambusher "Copper Kris" "Demon Dagger" "Golden Kris" "Gutting Knife" "Platinum Kris" Sai
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - 1h axes | Disable
+
 #	Rarity Normal
 #	Class "One Hand Axes"
 #	BaseType "Royal Axe" "Runic Hatchet" "Siege Axe"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - 1h maces | Disable
+
 #	Rarity Normal
 #	Class "One Hand Maces"
 #	BaseType "Auric Mace" "Behemoth Mace" Gavel
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - thrusting swords | Disable
+
 #	Rarity Normal
 #	Class "Thrusting One Hand Swords"
 #	BaseType "Dragoon Sword" "Harpy Rapier" "Jewelled Foil" "Vaal Rapier"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - 1h swords | Disable
+
 #	Rarity Normal
 #	Class "One Hand Swords"
 #	BaseType "Corsair Sword" "Eternal Sword" "Legion Sword" "Tiger Hook"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - sceptres | Disable
+
 #	Rarity Normal
 #	Class Sceptres
 #	BaseType "Carnal Sceptre" "Karui Sceptre" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - wands | Disable
+
 #	Rarity Normal
 #	Class Wands
 #	BaseType "Demon's Horn" "Imbued Wand" "Opal Wand" "Profane Wand" "Prophecy Wand"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - bows | Disable
+
 #	Rarity Normal
 #	Class Bows
 #	BaseType "Citadel Bow" "Harbinger Bow" "Imperial Bow" "Maraketh Bow" "Thicket Bow"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - staves | Disable
+
 #	Rarity Normal
 #	Class Staves
 #	BaseType "Coiled Staff" "Eclipse Staff" "Imperial Staff" Lathi "Maelström Staff" "Serpentine Staff"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - 2h axes | Disable
+
 #	Rarity Normal
 #	Class "Two Hand Axes"
 #	BaseType "Ezomyte Axe" Fleshripper "Vaal Axe"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - 2h maces | Disable
+
 #	Rarity Normal
 #	Class "Two Hand Maces"
 #	BaseType "Coronal Maul" "Karui Maul" Piledriver
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top weapons - 2h swords | Disable
+
 #	Rarity Normal
 #	Class "Two Hand Swords"
 #	BaseType "Exquisite Blade" "Lion Sword" "Reaver Sword" "Vaal Greatsword"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top armour - shields | Disable
+
 #	Rarity Normal
 #	Class Shields
 #	BaseType "Archon Kite Shield" "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Lacquered Buckler" "Mirrored Spiked Shield" "Shagreen Tower Shield" "Spiny Round Shield" "Supreme Spiked Shield" "Teak Round Shield" "Titanium Spirit Shield" "Vaal Buckler"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top armour - chests | Disable
+
 #	Rarity Normal
 #	Class "Body Armours"
 #	BaseType "Assassin's Garb" "Astral Plate" "Blood Raiment" "Carnal Armour" "Full Dragonscale" "Glorious Plate" "Occultist's Vestment" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Zodiac Leather"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top armour - helms | Disable
+
 #	Rarity Normal
 #	Class Helmets
 #	BaseType "Deicide Mask" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Royal Burgonet" "Vaal Mask"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top armour - gloves | Disable
+
 #	Rarity Normal
 #	Class Gloves
 #	BaseType "Crusader Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top armour - boots | Disable
+
 #	Rarity Normal
 #	Class Boots
 #	BaseType "Assassin's Boots" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - top quivers | Disable
+
 #	Rarity Normal
 #	Class Quivers
 #	BaseType "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 0 0 0 255 # black
+
 #Disabled Block End
 
 Hide # normal - rest
