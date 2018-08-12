@@ -1710,35 +1710,47 @@ Show # rare - jewels | Disable
 	SetBorderColor 255 255 0 255 # rare main
 
 #Disabled Block Start
+
 #Show # rare - sockets 4 linked | Disable
+
 #	Rarity Rare
 #	LinkedSockets 4
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 0 255 # rare main
 #	SetBorderColor 255 255 0 255 # rare main
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # rare - sockets 3 linked & ilvl 24- | Disable
+
 #	Rarity Rare
 #	ItemLevel < 25
 #	LinkedSockets 3
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 0 255 # rare main
 #	SetBorderColor 255 255 0 255 # rare main
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # rare - sockets 2 linked & ilvl 1 | Disable
+
 #	Rarity Rare
 #	ItemLevel 1
 #	LinkedSockets 2
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 0 255 # rare main
 #	SetBorderColor 255 255 0 255 # rare main
+
 #Disabled Block End
 
 Show # rare - sockets rgb linked - any | Disable
@@ -2774,35 +2786,47 @@ Show # magic - jewels | Disable
 	SetBorderColor 127 127 255 255 # magic
 
 #Disabled Block Start
+
 #Show # magic - sockets 4 linked | Disable
+
 #	Rarity Magic
 #	LinkedSockets 4
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - sockets 3 linked & ilvl 24- | Disable
+
 #	Rarity Magic
 #	ItemLevel < 25
 #	LinkedSockets 3
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # magic - sockets 2 linked & ilvl 1 | Disable
+
 #	Rarity Magic
 #	ItemLevel 1
 #	LinkedSockets 2
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 127 127 255 255 # magic
 #	SetBorderColor 127 127 255 255 # magic
+
 #Disabled Block End
 
 Show # magic - sockets rgb linked - any | Disable
@@ -3721,35 +3745,47 @@ Show # normal - chanceable & uncorrupted | Disable
 	SetBorderColor 255 255 255 255 # normal
 
 #Disabled Block Start
+
 #Show # normal - sockets 4 linked | Disable
+
 #	Rarity Normal
 #	LinkedSockets 4
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - sockets 3 linked & ilvl 24- | Disable
+
 #	Rarity Normal
 #	ItemLevel < 25
 #	LinkedSockets 3
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 #Disabled Block Start
+
 #Show # normal - sockets 2 linked & ilvl 1 | Disable
+
 #	Rarity Normal
 #	ItemLevel 1
 #	LinkedSockets 2
+
 #	SetFontSize 33
 #	SetBackgroundColor 0 0 0 255 # black
 #	SetTextColor 255 255 255 255 # normal
 #	SetBorderColor 255 255 255 255 # normal
+
 #Disabled Block End
 
 Show # normal - sockets rgb linked - any | Disable
