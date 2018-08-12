@@ -14,9 +14,9 @@ SetOption $BS5 info [Disable - The corresponding block is ignored, so the game w
 SetOption $BS6 info [To know precisely which base items are covered in specific blocks, please go here :] # no title
 SetOption $BS7 link [forum thread] [https://www.pathofexile.com/forum/view-thread/1787522] # no title
 SetTab [Color theme]
-SetOption $CT1 info [The following are used in multiple categories : "black", "half-black".] # no title
+SetOption $CT1 info [The following are used in multiple categories : black, half-black.] # no title
 SetTab [Sound theme]
-SetOption $ST1 info [The following are used in multiple categories : "common", "shy", "unreal".] # no title
+SetOption $ST1 info [The following are used in multiple categories : common, shy, unreal.] # no title
 SetGlobalDisableDropSoundMode hidden
 
 #
