@@ -2164,11 +2164,10 @@ Show # rare - jewels | Disable
 	SetTextColor 255 255 0 255 # rare main
 	SetBorderColor 255 255 0 255 # rare main
 
-Show # rare - sockets 2 linked & ilvl 1 | Disable
+Show # rare - sockets 4 linked | Disable
 
 	Rarity Rare
-	ItemLevel 1
-	LinkedSockets 2
+	LinkedSockets 4
 
 	SetFontSize $font_size_m
 	SetBackgroundColor 0 0 0 255 # black
@@ -2186,11 +2185,11 @@ Show # rare - sockets 3 linked & ilvl 24- | Disable
 	SetTextColor 255 255 0 255 # rare main
 	SetBorderColor 255 255 0 255 # rare main
 
-Show # rare - sockets 4 linked & ilvl 34- | Disable
+Show # rare - sockets 2 linked & ilvl 1 | Disable
 
 	Rarity Rare
-	ItemLevel < 35
-	LinkedSockets 4
+	ItemLevel 1
+	LinkedSockets 2
 
 	SetFontSize $font_size_m
 	SetBackgroundColor 0 0 0 255 # black
@@ -3186,11 +3185,10 @@ Show # magic - jewels | Disable
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 127 127 255 255 # magic
 
-Show # magic - sockets 2 linked & ilvl 1 | Disable
+Show # magic - sockets 4 linked | Disable
 
 	Rarity Magic
-	ItemLevel 1
-	LinkedSockets 2
+	LinkedSockets 4
 
 	SetFontSize $font_size_m
 	SetBackgroundColor 0 0 0 255 # black
@@ -3208,11 +3206,11 @@ Show # magic - sockets 3 linked & ilvl 24- | Disable
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 127 127 255 255 # magic
 
-Show # magic - sockets 4 linked & ilvl 34- | Disable
+Show # magic - sockets 2 linked & ilvl 1 | Disable
 
 	Rarity Magic
-	ItemLevel < 35
-	LinkedSockets 4
+	ItemLevel 1
+	LinkedSockets 2
 
 	SetFontSize $font_size_m
 	SetBackgroundColor 0 0 0 255 # black
@@ -4102,11 +4100,10 @@ Show # normal - chanceable & uncorrupted | Disable
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 255 255 255 255 # normal
 
-Show # normal - sockets 2 linked & ilvl 1 | Disable
+Show # normal - sockets 4 linked | Disable
 
 	Rarity Normal
-	ItemLevel 1
-	LinkedSockets 2
+	LinkedSockets 4
 
 	SetFontSize $font_size_m
 	SetBackgroundColor 0 0 0 255 # black
@@ -4124,11 +4121,11 @@ Show # normal - sockets 3 linked & ilvl 24- | Disable
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 255 255 255 255 # normal
 
-Show # normal - sockets 4 linked & ilvl 34- | Disable
+Show # normal - sockets 2 linked & ilvl 1 | Disable
 
 	Rarity Normal
-	ItemLevel < 35
-	LinkedSockets 4
+	ItemLevel 1
+	LinkedSockets 2
 
 	SetFontSize $font_size_m
 	SetBackgroundColor 0 0 0 255 # black
