@@ -94,9 +94,8 @@ SetOption $ADVANCED_SETTINGS info
 SetOption $ADV1 info [You can click the bottom right of each input field to enlarge it, for more comfortable viewing|editing.] # no title
 SetOption $ADV2 info [Don't forget to separate bases by a space, and put them between quotes if they include spaces.] # no title
 SetOption $ADV3 info [Missing bases will be hidden by default.] # no title
-SetOption $ADV4 info ["" can be used to specify all bases for the corresponding class, use with caution.] # no title
-SetOption $ADV5 info ["_" alone can be used as an alternate way to disable the corresponding block, use with caution.] # no title
-SetOption $ADV6 info [Leaving a field empty will reload the default bases for that field.] # no title
+SetOption $ADV4 info ["_" alone (quotes included) can be used as an alternate way to disable the corresponding block, use with caution.] # no title
+SetOption $ADV5 info [Leaving a field empty will reload the default bases for that field.] # no title
 # // 
 # // 
 # // 
