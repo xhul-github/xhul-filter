@@ -94,7 +94,9 @@ SetOption $ADVANCED_SETTINGS info
 SetOption $ADV1 info [You can click the bottom right of each input field to enlarge it, for more comfortable viewing|editing.] # no title
 SetOption $ADV2 info [Don't forget to separate bases by a space, and put them between quotes if they include spaces.] # no title
 SetOption $ADV3 info [Missing bases will be hidden by default.] # no title
-SetOption $ADV4 info [Leaving a field empty will reload the default bases for that field.] # no title
+SetOption $ADV4 info ["" can be used to specify all bases for the corresponding class, use with caution.] # no title
+SetOption $ADV5 info ["_" alone can be used as an alternate way to disable the corresponding block, use with caution.] # no title
+SetOption $ADV6 info [Leaving a field empty will reload the default bases for that field.] # no title
 # // 
 # // 
 # // 
@@ -262,8 +264,6 @@ SetOption $mana info
 SetOption $magic_mana_flasks switch [$all] [$none] [$all] [$custom_mana_flasks] # no title
 SetOption $hybrid info
 SetOption $magic_hybrid_flasks switch [$all] [$none] [$all] [$custom_hybrid_flasks] # no title
-SetOption $critical info
-SetOption $magic_critical_flasks switch [$all] [$none] [$all] [$custom_critical_flasks] # no title
 SetOption $utility info
 SetOption $magic_utility_flasks switch [$all] [$none] [$all] [$custom_utility_flasks] # no title
 SetOption $EmptyLine
@@ -336,8 +336,6 @@ SetOption $mana_ info
 SetOption $normal_mana_flasks switch [$all] [$none] [$all] [$custom_mana_flasks] # no title
 SetOption $hybrid_ info
 SetOption $normal_hybrid_flasks switch [$all] [$none] [$all] [$custom_hybrid_flasks] # no title
-SetOption $critical_ info
-SetOption $normal_critical_flasks switch [$all] [$none] [$all] [$custom_critical_flasks] # no title
 SetOption $utility_ info
 SetOption $normal_utility_flasks switch [$all] [$none] [$all] [$custom_utility_flasks] # no title
 SetOption $EmptyLine
@@ -415,10 +413,8 @@ SetOption $mana__ info
 SetOption $custom_mana_flasks textarea ["Eternal Mana Flask" "Sanctified Mana Flask"] # no title
 SetOption $hybrid__ info
 SetOption $custom_hybrid_flasks textarea ["Hallowed Hybrid Flask"] # no title
-SetOption $critical__ info
-SetOption $custom_critical_flasks textarea ["Diamond Flask"] # no title
 SetOption $utility__ info
-SetOption $custom_utility_flasks textarea ["Amethyst Flask" "Aquamarine Flask" "Basalt Flask" "Bismuth Flask" "Granite Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask"] # no title
+SetOption $custom_utility_flasks textarea ["Amethyst Flask" "Aquamarine Flask" "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Topaz Flask"] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $jewels___ info
@@ -3152,21 +3148,10 @@ Show # magic - flasks - hybrid | Disable
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 127 127 255 255 # magic
 
-Show # magic - flasks - critical | Disable
-
-	Rarity Magic
-	Class "Critical Utility Flasks"
-	BaseType $magic_critical_flasks
-
-	SetFontSize $font_size_m
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 127 127 255 255 # magic
-
 Show # magic - flasks - utility | Disable
 
 	Rarity Magic
-	Class "Utility Flasks"
+	Class "Critical Utility Flasks" "Utility Flasks"
 	BaseType $magic_utility_flasks
 
 	SetFontSize $font_size_m
@@ -4034,21 +4019,10 @@ Show # normal - flasks - hybrid | Disable
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 255 255 255 255 # normal
 
-Show # normal - flasks - critical | Disable
-
-	Rarity Normal
-	Class "Critical Utility Flasks"
-	BaseType $normal_critical_flasks
-
-	SetFontSize $font_size_m
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 255 255 255 # normal
-	SetBorderColor 255 255 255 255 # normal
-
 Show # normal - flasks - utility | Disable
 
 	Rarity Normal
-	Class "Utility Flasks"
+	Class "Critical Utility Flasks" "Utility Flasks"
 	BaseType $normal_utility_flasks
 
 	SetFontSize $font_size_m
