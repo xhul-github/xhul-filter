@@ -91,11 +91,12 @@ SetTab [None]
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $ADVANCED_SETTINGS info
-SetOption $ADV1 info [You can click the bottom right of each input field to enlarge it, for more comfortable viewing|editing.] # no title
+SetOption $ADV1 info [You can click the bottom right of each input field to enlarge it, for more comfortable viewing | editing.] # no title
 SetOption $ADV2 info [Don't forget to separate bases by a space, and put them between quotes if they include spaces.] # no title
 SetOption $ADV3 info [Missing bases will be hidden by default.] # no title
 SetOption $ADV4 info [Leaving a field empty will reload the default bases for that field.] # no title
-SetOption $ADV5 info ["_" alone (quotes included) can be used as an alternate way to disable the corresponding block.] # no title
+SetOption $ADV5 info ["" alone will be interpreted as "everything", use with caution.] # no title
+SetOption $ADV6 info ["_" alone (quotes included) will be interpreted as "nothing", use with caution.] # no title
 # // 
 # // 
 # // 
@@ -183,7 +184,7 @@ SetOption $uni textarea ["Glorious Plate" "Rawhide Tower Shield" "Sapphire Flask
 # // 
 # // 
 SetTab [rare]
-SetOption $RAR1 info [This tab only concerns regular bases.] # no title
+SetOption $RAR1 info [This tab doesn't concern restricted bases.] # no title
 SetOption $RAR2 info [Custom bases are defined in the "custom" tab.] # no title
 SetOption $EmptyLine
 SetOption $JEWELLERY info
@@ -245,7 +246,7 @@ SetOption $rare_quivers switch [$all] [$none] [$all] [$custom_quivers] # no titl
 # // 
 # // 
 SetTab [magic]
-SetOption $MAG1 info [This tab only concerns regular bases.] # no title
+SetOption $MAG1 info [This tab doesn't concern restricted bases.] # no title
 SetOption $MAG2 info [Custom bases are defined in the "custom" tab.] # no title
 SetOption $EmptyLine
 SetOption $JEWELLERY_ info
@@ -317,7 +318,7 @@ SetOption $magic_quivers switch [$all] [$none] [$all] [$custom_quivers] # no tit
 # // 
 # // 
 SetTab [normal]
-SetOption $NOR1 info [This tab only concerns regular bases.] # no title
+SetOption $NOR1 info [This tab doesn't concern restricted bases.] # no title
 SetOption $NOR2 info [Custom bases are defined in the "custom" tab.] # no title
 SetOption $EmptyLine
 SetOption $JEWELLERY__ info
@@ -393,8 +394,8 @@ SetOption $normal_chanceable textarea ["Glorious Plate" "Leather Belt" "Rawhide 
 # // 
 # // 
 SetTab [custom]
-SetOption $CUS1 info [This tab only concerns regular bases.] # no title
-SetOption $CUS2 info [The bases specified here will be used if enabled in the "rare" | "magic" | "normal" tabs.] # no title
+SetOption $CUS1 info [This tab doesn't concern restricted bases.] # no title
+SetOption $CUS2 info [The bases specified here will be used only if enabled in the "rare" | "magic" | "normal" tabs.] # no title
 SetOption $CUS3 info [This is the appropriate place to define top bases.] # no title
 SetOption $EmptyLine
 SetOption $JEWELLERY___ info
