@@ -10,12 +10,11 @@ SetOption $GENERAL_SETTINGS info
 # // 
 SetTab [Block switches]
 SetOption $BLO1 info [The order of the switches matches the order of the blocks as they are declared in the actual filter, so keep in mind that when an item can fall in multiple categories, the earliest takes precedence.] # no title
-SetOption $BLO2 info [The blocks can be processed in 3 different ways :] # no title
-SetOption $BLO3 info [Show - The item is shown by default, assuming you have the "Always Highlight" option turned on. Either the default, or a custom sound is played.] # no title
-SetOption $BLO4 info [Hide - The item is hidden by default, so only visible using the highlight key, without any sound being played.] # no title
-SetOption $BLO5 info [Disable - The corresponding block is ignored, so a lower one will be used.] # no title
-SetOption $BLO6 info [To know precisely which base items are covered in specific blocks, please go here :] # no title
-SetOption $BLO7 link [forum thread] [https://www.pathofexile.com/forum/view-thread/1787522] # no title
+SetOption $BLO2 info [The blocks can be processed in 2 different ways :] # no title
+SetOption $BLO3 info [Show - Items compatible with the block are displayed. Either the default, or a custom sound is played.] # no title
+SetOption $BLO4 info [Disable - The corresponding block is ignored, so a lower one is used if compatible, otherwise the item is hidden, without any sound being played.] # no title
+SetOption $BLO5 info [To know precisely which base items are covered in specific blocks, please go here :] # no title
+SetOption $BLO6 link [forum thread] [https://www.pathofexile.com/forum/view-thread/1787522] # no title
 SetOption $EmptyLine
 # // 
 # // 
@@ -172,8 +171,8 @@ SetOption $tier_2__ info
 SetOption $fra_t2 textarea ["Esh's Breachstone" "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Midnight" "Sacrifice at Noon" "Tul's Breachstone" "Xoph's Breachstone"] # no title
 SetOption $EmptyLine
 SetOption $MISC info
-SetOption $misc info
-SetOption $mis textarea ["Ancient Reliquary Key"] # no title
+SetOption $keys info
+SetOption $key textarea ["Ancient Reliquary Key"] # no title
 # // 
 # // 
 # // 
@@ -575,7 +574,7 @@ Show
 #
 #
 
-Show # ~ untradeable - ~ quest | souls
+Show
 
 	Class "Quest Items" "Pantheon Soul"
 
@@ -585,7 +584,7 @@ Show # ~ untradeable - ~ quest | souls
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 10 300 # untradeable
 
-Show # ~ untradeable - ~ temporary
+Show
 
 	Class "Incursion Item" "Labyrinth Item" "Labyrinth Trinket"
 
@@ -724,7 +723,7 @@ Show # currency - other - tier 5 | Disable
 	SetTextColor 0 255 0 255 # currency
 	SetBorderColor 0 0 0 255 # black
 
-Hide # currency - rest
+Hide
 
 	Class "Stackable Currency"
 
@@ -806,7 +805,7 @@ Show # cards - other - tier 5 | Disable
 	SetTextColor 255 0 255 255 # cards
 	SetBorderColor 0 0 0 255 # black
 
-Hide # cards - rest
+Hide
 
 	Class "Divination Card"
 
@@ -843,7 +842,7 @@ Show # fragments - tier 2 | Disable
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 7 300 # fragments low
 
-Hide # fragments - rest
+Hide
 
 	Class "Map Fragments"
 
@@ -858,10 +857,10 @@ Hide # fragments - rest
 #
 #
 
-Show # misc - misc | Disable
+Show # misc - keys | Disable
 
 	Class "Misc Map Items"
-	BaseType $mis
+	BaseType $key
 
 	SetFontSize $font_size_xl
 	SetBackgroundColor 255 0 0 255 # misc
@@ -869,7 +868,7 @@ Show # misc - misc | Disable
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # misc
 
-Hide # misc - rest
+Hide
 
 	Class "Misc Map Items"
 
@@ -1008,11 +1007,20 @@ Show # gems - qty 1>10 | Disable
 	SetTextColor 0 255 255 255 # gems
 	SetBorderColor 0 255 255 255 # gems
 
-Show # gems - rest
+Show # gems - rest | Disable
 
 	Class "Active Skill Gems" "Support Skill Gems"
 
 	SetFontSize $font_size_m
+	SetBackgroundColor 0 0 0 127 # half-black
+	SetTextColor 0 255 255 255 # gems
+	SetBorderColor 0 0 0 255 # black
+
+Hide
+
+	Class "Active Skill Gems" "Support Skill Gems"
+
+	SetFontSize $font_size_s
 	SetBackgroundColor 0 0 0 127 # half-black
 	SetTextColor 0 255 255 255 # gems
 	SetBorderColor 0 0 0 255 # black
@@ -1294,7 +1302,7 @@ Show # unique - sockets 6 linked | Disable
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 6 300 # unique
 
-Show # unique - rest
+Show # unique - rest | Disable
 
 	Rarity Unique
 
@@ -1303,6 +1311,15 @@ Show # unique - rest
 	SetTextColor 0 0 0 255 # black
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 6 300 # unique
+
+Hide
+
+	Rarity Unique
+
+	SetFontSize $font_size_s
+	SetBackgroundColor 0 0 0 127 # half-black
+	SetTextColor 255 127 0 255 # unique
+	SetBorderColor 0 0 0 255 # black
 
 #
 #
@@ -1343,7 +1360,7 @@ Show # maps - elder | Disable
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 8 300 # maps top
 
-Show # maps - tier 16+
+Show # maps - tier 16+ | Disable
 
 	Class Maps
 	DropLevel > 82
@@ -1365,6 +1382,18 @@ Show # maps - shaped | Disable
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 7 300 # maps high
 
+Show # maps - tier 11>15 | Disable
+
+	Class Maps
+	DropLevel > 77
+	DropLevel < 83
+
+	SetFontSize $font_size_m
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # black
+	SetBorderColor 0 0 0 255 # black
+	PlayAlertSound 7 300 # maps high
+
 Show # maps - normal & qty 11+ | Disable
 
 	Class Maps
@@ -1377,16 +1406,17 @@ Show # maps - normal & qty 11+ | Disable
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 7 300 # maps high
 
-Show # maps - tier 11>15
+Show # maps - tier 6>10 | Disable
 
 	Class Maps
-	DropLevel > 77
+	DropLevel > 72
+	DropLevel < 78
 
 	SetFontSize $font_size_m
-	SetBackgroundColor 255 0 0 255 # maps
-	SetTextColor 0 0 0 255 # black
-	SetBorderColor 0 0 0 255 # black
-	PlayAlertSound 7 300 # maps high
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 0 0 255 # maps
+	SetBorderColor 255 0 0 255 # maps
+	PlayAlertSound 9 300 # maps average
 
 Show # maps - normal & qty 1>10 | Disable
 
@@ -1401,26 +1431,25 @@ Show # maps - normal & qty 1>10 | Disable
 	SetBorderColor 255 0 0 255 # maps
 	PlayAlertSound 9 300 # maps average
 
-Show # maps - tier 6>10
+Show # maps - tier 1>5 | Disable
 
 	Class Maps
-	DropLevel > 72
-
-	SetFontSize $font_size_m
-	SetBackgroundColor 0 0 0 255 # black
-	SetTextColor 255 0 0 255 # maps
-	SetBorderColor 255 0 0 255 # maps
-	PlayAlertSound 9 300 # maps average
-
-Show # maps - tier 1>5
-
-	Class Maps
+	DropLevel < 73
 
 	SetFontSize $font_size_m
 	SetBackgroundColor 0 0 0 127 # half-black
 	SetTextColor 255 0 0 255 # maps
 	SetBorderColor 0 0 0 255 # black
 	PlayAlertSound 14 300 # maps low
+
+Hide
+
+	Class Maps
+
+	SetFontSize $font_size_s
+	SetBackgroundColor 0 0 0 127 # half-black
+	SetTextColor 255 0 0 255 # maps
+	SetBorderColor 0 0 0 255 # black
 
 #
 #
@@ -2202,35 +2231,27 @@ Show # rare - sockets rgb linked - any | Disable
 	SetTextColor 255 255 0 255 # rare main
 	SetBorderColor 255 255 0 255 # rare main
 
-#Disabled Block Start
+Show # rare - sockets rgb linked - width 1 | Disable
 
-#Show # rare - sockets rgb linked - width 1 | Disable
+	Rarity Rare
+	Width 1
+	SocketGroup RGB
 
-#	Rarity Rare
-#	Width 1
-#	SocketGroup RGB
+	SetFontSize $font_size_m
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare main
+	SetBorderColor 255 255 0 255 # rare main
 
-#	SetFontSize $font_size_m
-#	SetBackgroundColor 0 0 0 255 # black
-#	SetTextColor 255 255 0 255 # rare main
-#	SetBorderColor 255 255 0 255 # rare main
+Show # rare - sockets rgb linked - height 2 | Disable
 
-#Disabled Block End
+	Rarity Rare
+	Height 2
+	SocketGroup RGB
 
-#Disabled Block Start
-
-#Show # rare - sockets rgb linked - height 2 | Disable
-
-#	Rarity Rare
-#	Height 2
-#	SocketGroup RGB
-
-#	SetFontSize $font_size_m
-#	SetBackgroundColor 0 0 0 255 # black
-#	SetTextColor 255 255 0 255 # rare main
-#	SetBorderColor 255 255 0 255 # rare main
-
-#Disabled Block End
+	SetFontSize $font_size_m
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 0 255 # rare main
+	SetBorderColor 255 255 0 255 # rare main
 
 Show # rare - weapons - claws | Disable
 
@@ -2441,7 +2462,7 @@ Show # rare - quivers | Disable
 	SetTextColor 255 255 0 255 # rare main
 	SetBorderColor 0 0 0 255 # black
 
-Hide # rare - rest
+Hide
 
 	Rarity Rare
 
@@ -3212,35 +3233,27 @@ Show # magic - sockets rgb linked - any | Disable
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 127 127 255 255 # magic
 
-#Disabled Block Start
+Show # magic - sockets rgb linked - width 1 | Disable
 
-#Show # magic - sockets rgb linked - width 1 | Disable
+	Rarity Magic
+	Width 1
+	SocketGroup RGB
 
-#	Rarity Magic
-#	Width 1
-#	SocketGroup RGB
+	SetFontSize $font_size_m
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 127 127 255 255 # magic
 
-#	SetFontSize $font_size_m
-#	SetBackgroundColor 0 0 0 255 # black
-#	SetTextColor 127 127 255 255 # magic
-#	SetBorderColor 127 127 255 255 # magic
+Show # magic - sockets rgb linked - height 2 | Disable
 
-#Disabled Block End
+	Rarity Magic
+	Height 2
+	SocketGroup RGB
 
-#Disabled Block Start
-
-#Show # magic - sockets rgb linked - height 2 | Disable
-
-#	Rarity Magic
-#	Height 2
-#	SocketGroup RGB
-
-#	SetFontSize $font_size_m
-#	SetBackgroundColor 0 0 0 255 # black
-#	SetTextColor 127 127 255 255 # magic
-#	SetBorderColor 127 127 255 255 # magic
-
-#Disabled Block End
+	SetFontSize $font_size_m
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 127 127 255 255 # magic
 
 Show # magic - weapons - claws | Disable
 
@@ -3451,7 +3464,7 @@ Show # magic - quivers | Disable
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 0 0 0 255 # black
 
-Hide # magic - rest
+Hide
 
 	Rarity Magic
 
@@ -4116,35 +4129,27 @@ Show # normal - sockets rgb linked - any | Disable
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 255 255 255 255 # normal
 
-#Disabled Block Start
+Show # normal - sockets rgb linked - width 1 | Disable
 
-#Show # normal - sockets rgb linked - width 1 | Disable
+	Rarity Normal
+	Width 1
+	SocketGroup RGB
 
-#	Rarity Normal
-#	Width 1
-#	SocketGroup RGB
+	SetFontSize $font_size_m
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 255 255 255 255 # normal
 
-#	SetFontSize $font_size_m
-#	SetBackgroundColor 0 0 0 255 # black
-#	SetTextColor 255 255 255 255 # normal
-#	SetBorderColor 255 255 255 255 # normal
+Show # normal - sockets rgb linked - height 2 | Disable
 
-#Disabled Block End
+	Rarity Normal
+	Height 2
+	SocketGroup RGB
 
-#Disabled Block Start
-
-#Show # normal - sockets rgb linked - height 2 | Disable
-
-#	Rarity Normal
-#	Height 2
-#	SocketGroup RGB
-
-#	SetFontSize $font_size_m
-#	SetBackgroundColor 0 0 0 255 # black
-#	SetTextColor 255 255 255 255 # normal
-#	SetBorderColor 255 255 255 255 # normal
-
-#Disabled Block End
+	SetFontSize $font_size_m
+	SetBackgroundColor 0 0 0 255 # black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 255 255 255 255 # normal
 
 Show # normal - weapons - claws | Disable
 
@@ -4355,7 +4360,7 @@ Show # normal - quivers | Disable
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 0 0 0 255 # black
 
-Hide # normal - rest
+Hide
 
 	Rarity Normal
 
