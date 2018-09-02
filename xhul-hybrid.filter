@@ -58,7 +58,7 @@ SetOption $beam_3_color switch [$white] [$blue] [$brown] [$green] [$red] [$white
 # // 
 # // 
 # // 
-SetTab [minimap icons]
+SetTab [map icons]
 SetOption $ico1 info [The lower the tier, the higher the priority.] # no title
 SetOption $EmptyLine
 SetOption $tier_1_ info
