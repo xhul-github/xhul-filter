@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.4.C
+# version : 3.4.D
 # variant : leveling
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -1869,7 +1869,7 @@ Show # maps - T3 qty 11>20 | Disable
 
 	Class Maps
 	Quality > 10
-	Quality > 21
+	Quality < 21
 
 	SetFontSize $text_3
 	SetBackgroundColor 255 0 0 255 # maps
