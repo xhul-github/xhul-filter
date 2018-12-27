@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.5.A
+# version : 3.5.B
 # variant : hybrid
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -327,9 +327,9 @@ SetOption $REST info # Unspecified bases will be hidden.
 SetOption $T1 info
 SetOption $cur_1 textarea ["Albino Rhoa Feather" "Eternal Orb" Imprint] # no title
 SetOption $T2 info
-SetOption $cur_2 textarea ["Ancient Orb" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Bloodstained Fossil" "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal" "Encrusted Fossil" "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Faceted Fossil" "Fractured Fossil" "Gilded Fossil" "Glyphic Fossil" "Harbinger's Orb" "Hollow Fossil" "Mirror Shard" "Orb of Annulment" "Perfect Fossil" "Prime Alchemical Resonator" "Prime Chaotic Resonator" "Sanctified Fossil" "Stacked Deck" "Tangled Fossil" "Vial of Awakening" "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Sacrifice" "Vial of Summoning" "Vial of Transcendence" "Vial of the Ghost" "Vial of the Ritual"] # no title
+SetOption $cur_2 textarea ["Ancient Orb" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Bloodstained Fossil" "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal" "Enchanted Fossil" "Encrusted Fossil" "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Faceted Fossil" "Fractured Fossil" "Gilded Fossil" "Glyphic Fossil" "Harbinger's Orb" "Hollow Fossil" "Mirror Shard" "Orb of Annulment" "Perfect Fossil" "Prime Alchemical Resonator" "Prime Chaotic Resonator" "Sanctified Fossil" "Stacked Deck" "Tangled Fossil" "Vial of Awakening" "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Sacrifice" "Vial of Summoning" "Vial of Transcendence" "Vial of the Ghost" "Vial of the Ritual"] # no title
 SetOption $T3 info
-SetOption $cur_3 textarea ["Aberrant Fossil" "Aetheric Fossil" "Ancient Shard" "Annulment Shard" "Apprentice Cartographer's Seal" "Apprentice Cartographer's Sextant" "Bestiary Orb" "Bound Fossil" "Cartographer's Chisel" "Corroded Fossil" "Dense Fossil" "Enchanted Fossil" "Engineer's Orb" "Exalted Shard" "Frigid Fossil" "Gemcutter's Prism" "Harbinger's Shard" "Jagged Fossil" "Journeyman Cartographer's Seal" "Journeyman Cartographer's Sextant" "Lucent Fossil" "Master Cartographer's Seal" "Master Cartographer's Sextant" "Metallic Fossil" "Necromancy Net" "Orb of Binding" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Prismatic Fossil" "Pristine Fossil" Prophecy "Remnant of Corruption" "Scorched Fossil" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Serrated Fossil" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Shuddering Fossil" "Splinter of Chayula" "Splinter of Xoph" "Thaumaturgical Net" "Unshaping Orb"] # no title
+SetOption $cur_3 textarea ["Aberrant Fossil" "Aetheric Fossil" "Ancient Shard" "Annulment Shard" "Apprentice Cartographer's Seal" "Apprentice Cartographer's Sextant" "Bestiary Orb" "Bound Fossil" "Cartographer's Chisel" "Corroded Fossil" "Dense Fossil" "Engineer's Orb" "Exalted Shard" "Frigid Fossil" "Gemcutter's Prism" "Harbinger's Shard" "Jagged Fossil" "Journeyman Cartographer's Seal" "Journeyman Cartographer's Sextant" "Lucent Fossil" "Master Cartographer's Seal" "Master Cartographer's Sextant" "Metallic Fossil" "Necromancy Net" "Orb of Binding" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Prismatic Fossil" "Pristine Fossil" Prophecy "Remnant of Corruption" "Scorched Fossil" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Serrated Fossil" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Shuddering Fossil" "Splinter of Chayula" "Splinter of Xoph" "Thaumaturgical Net" "Unshaping Orb"] # no title
 SetOption $T4 info
 SetOption $cur_4 textarea ["Alchemy Shard" "Binding Shard" "Chaos Shard" "Chromatic Orb" "Engineer's Shard" "Glassblower's Bauble" "Horizon Shard" "Jeweller's Orb" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe" "Orb of Alteration" "Orb of Chance" "Perandus Coin" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Regal Shard" "Reinforced Iron Net" "Reinforced Rope Net" "Reinforced Steel Net" "Silver Coin" "Simple Iron Net" "Simple Rope Net" "Simple Steel Net" "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Strong Iron Net" "Strong Rope Net" "Strong Steel Net" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal" "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"] # no title
 SetOption $T5 info
@@ -546,7 +546,7 @@ SetOption $nor_jewels switch [$all] [$none] [$all] [$custom________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T4_chanceable_-_uncorrupted info # multiclass block - Bases worth chancing.
-SetOption $nor_chanceable textarea ["Glorious Plate" "Leather Belt" "Rawhide Tower Shield" "Sapphire Flask" "Sorcerer Boots"] # no title
+SetOption $nor_chanceable textarea ["Glorious Plate" "Rawhide Tower Shield" "Sapphire Flask" "Sorcerer Boots"] # no title
 SetOption $EmptyLine
 SetOption $T5_WEAPONS__ info
 SetOption $claws__ info
@@ -1644,17 +1644,6 @@ Show # unique - T1 guarenteed | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_uni_1
 
-Show # unique - T1 ilvl 100 | Disable
-
-	Rarity Unique
-	ItemLevel 100
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 127 0 255 # unique
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_uni_1
-
 Show # unique - T2 restricted 2 - 1h swords | Disable
 
 	Rarity Unique
@@ -1761,6 +1750,17 @@ Show # unique - T2 shaper | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_uni_2
 
+Show # unique - T2 ilvl 100 | Disable
+
+	Rarity Unique
+	ItemLevel 100
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_uni_2
+
 Show # unique - T2 qty 21+ | Disable
 
 	Rarity Unique
@@ -1846,6 +1846,17 @@ Show # maps - T2 elder | Disable
 
 	Class Maps
 	ElderMap True
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_map_2 $icon_map_2 $sound_map_2
+
+Show # maps - T2 vaal | Disable
+
+	Class Maps
+	HasExplicitMod Vaal
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 0 0 255 # maps
@@ -2092,43 +2103,6 @@ Show # rare - T1 restricted 1 - rings | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # rare - T1 ilvl 100 | Disable
-
-	Rarity Rare
-	ItemLevel 100
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted & elder - 1h swords | Disable
-
-	Rarity Rare
-	Class "One Hand Swords"
-	BaseType "Charan's Sword"
-	ElderItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted & elder - chests | Disable
-
-	Rarity Rare
-	Class "Body Armours"
-	BaseType "Sacrificial Garb"
-	ElderItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
 Show # rare - T1 restricted & elder - helms | Disable
 
 	Rarity Rare
@@ -2172,7 +2146,7 @@ Show # rare - T1 restricted & elder - belts | Disable
 
 	Rarity Rare
 	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	BaseType "Crystal Belt" "Vanguard Belt"
 	ElderItem True
 
 	SetFontSize $text_1
@@ -2198,34 +2172,8 @@ Show # rare - T1 restricted & elder - rings | Disable
 
 	Rarity Rare
 	Class Rings
-	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+	BaseType "Opal Ring" "Steel Ring"
 	ElderItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted & shaper - 1h swords | Disable
-
-	Rarity Rare
-	Class "One Hand Swords"
-	BaseType "Charan's Sword"
-	ShaperItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted & shaper - chests | Disable
-
-	Rarity Rare
-	Class "Body Armours"
-	BaseType "Sacrificial Garb"
-	ShaperItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2276,7 +2224,7 @@ Show # rare - T1 restricted & shaper - belts | Disable
 
 	Rarity Rare
 	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	BaseType "Crystal Belt" "Vanguard Belt"
 	ShaperItem True
 
 	SetFontSize $text_1
@@ -2302,8 +2250,86 @@ Show # rare - T1 restricted & shaper - rings | Disable
 
 	Rarity Rare
 	Class Rings
-	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+	BaseType "Opal Ring" "Steel Ring"
 	ShaperItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & veiled - helms | Disable
+
+	Rarity Rare
+	Class Helmets
+	BaseType "Bone Helmet"
+	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & veiled - gloves | Disable
+
+	Rarity Rare
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & veiled - boots | Disable
+
+	Rarity Rare
+	Class Boots
+	BaseType "Two-Toned Boots"
+	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & veiled - belts | Disable
+
+	Rarity Rare
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & veiled - amulets | Disable
+
+	Rarity Rare
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & veiled - rings | Disable
+
+	Rarity Rare
+	Class Rings
+	BaseType "Opal Ring" "Steel Ring"
+	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2442,6 +2468,17 @@ Show # rare - T2 warband | Disable
 
 	Rarity Rare
 	HasExplicitMod Betrayer's Brinerot Deceiver's Mutewind Redblade Turncoat's
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # rare - T2 ilvl 100 | Disable
+
+	Rarity Rare
+	ItemLevel 100
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -3082,17 +3119,6 @@ Show # magic - T1 restricted 1 - leaguestones | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # magic - T1 ilvl 100 | Disable
-
-	Rarity Magic
-	ItemLevel 100
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
 Show # magic - T1 restricted & elder - helms | Disable
 
 	Rarity Magic
@@ -3136,7 +3162,7 @@ Show # magic - T1 restricted & elder - belts | Disable
 
 	Rarity Magic
 	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	BaseType "Crystal Belt" "Vanguard Belt"
 	ElderItem True
 
 	SetFontSize $text_1
@@ -3162,7 +3188,7 @@ Show # magic - T1 restricted & elder - rings | Disable
 
 	Rarity Magic
 	Class Rings
-	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+	BaseType "Opal Ring" "Steel Ring"
 	ElderItem True
 
 	SetFontSize $text_1
@@ -3214,7 +3240,7 @@ Show # magic - T1 restricted & shaper - belts | Disable
 
 	Rarity Magic
 	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	BaseType "Crystal Belt" "Vanguard Belt"
 	ShaperItem True
 
 	SetFontSize $text_1
@@ -3240,7 +3266,7 @@ Show # magic - T1 restricted & shaper - rings | Disable
 
 	Rarity Magic
 	Class Rings
-	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+	BaseType "Opal Ring" "Steel Ring"
 	ShaperItem True
 
 	SetFontSize $text_1
@@ -3343,17 +3369,6 @@ Show # magic - T2 shaper | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # magic - T2 veiled | Disable
-
-	Rarity Magic
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
-
-	SetFontSize $text_2
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_2 $icon_2 $sound_2
-
 Show # magic - T2 delve | Disable
 
 	Rarity Magic
@@ -3380,6 +3395,17 @@ Show # magic - T2 warband | Disable
 
 	Rarity Magic
 	HasExplicitMod Betrayer's Brinerot Deceiver's Mutewind Redblade Turncoat's
+
+	SetFontSize $text_2
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # magic - T2 ilvl 100 | Disable
+
+	Rarity Magic
+	ItemLevel 100
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4057,17 +4083,6 @@ Show # normal - T1 restricted 1 - leaguestones | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # normal - T1 ilvl 100 | Disable
-
-	Rarity Normal
-	ItemLevel 100
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
 Show # normal - T1 restricted & elder - helms | Disable
 
 	Rarity Normal
@@ -4111,7 +4126,7 @@ Show # normal - T1 restricted & elder - belts | Disable
 
 	Rarity Normal
 	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	BaseType "Crystal Belt" "Vanguard Belt"
 	ElderItem True
 
 	SetFontSize $text_1
@@ -4137,7 +4152,7 @@ Show # normal - T1 restricted & elder - rings | Disable
 
 	Rarity Normal
 	Class Rings
-	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+	BaseType "Opal Ring" "Steel Ring"
 	ElderItem True
 
 	SetFontSize $text_1
@@ -4189,7 +4204,7 @@ Show # normal - T1 restricted & shaper - belts | Disable
 
 	Rarity Normal
 	Class Belts
-	BaseType "Crystal Belt" "Stygian Vise" "Vanguard Belt"
+	BaseType "Crystal Belt" "Vanguard Belt"
 	ShaperItem True
 
 	SetFontSize $text_1
@@ -4215,7 +4230,7 @@ Show # normal - T1 restricted & shaper - rings | Disable
 
 	Rarity Normal
 	Class Rings
-	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+	BaseType "Opal Ring" "Steel Ring"
 	ShaperItem True
 
 	SetFontSize $text_1
@@ -4323,6 +4338,17 @@ Show # normal - T2 shaper | Disable
 
 	Rarity Normal
 	ShaperItem True
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # normal - T2 ilvl 100 | Disable
+
+	Rarity Normal
+	ItemLevel 100
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 255 255 # normal
