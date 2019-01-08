@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.5.B
+# version : 3.5.C
 # variant : leveling
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -1853,7 +1853,7 @@ Show # maps - T2 elder | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_map_2 $icon_map_2 $sound_map_2
 
-Show # maps - T2 vaal | Disable
+Show # maps - T2 incursion | Disable
 
 	Class Maps
 	HasExplicitMod Vaal
@@ -2442,6 +2442,17 @@ Show # rare - T2 veiled | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
+Show # rare - T2 bestiary | Disable
+
+	Rarity Rare
+	HasExplicitMod "of Craiceann" "of Farrul" "of Fenumus" "of Saqawal"
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
 Show # rare - T2 delve | Disable
 
 	Rarity Rare
@@ -2464,7 +2475,7 @@ Show # rare - T2 incursion | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # rare - T2 warband | Disable
+Show # rare - T2 warbands | Disable
 
 	Rarity Rare
 	HasExplicitMod Betrayer's Brinerot Deceiver's Mutewind Redblade Turncoat's
@@ -3369,6 +3380,17 @@ Show # magic - T2 shaper | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
+Show # magic - T2 bestiary | Disable
+
+	Rarity Magic
+	HasExplicitMod "of Craiceann" "of Farrul" "of Fenumus" "of Saqawal"
+
+	SetFontSize $text_2
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
 Show # magic - T2 delve | Disable
 
 	Rarity Magic
@@ -3391,7 +3413,7 @@ Show # magic - T2 incursion | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # magic - T2 warband | Disable
+Show # magic - T2 warbands | Disable
 
 	Rarity Magic
 	HasExplicitMod Betrayer's Brinerot Deceiver's Mutewind Redblade Turncoat's
