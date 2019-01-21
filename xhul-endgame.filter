@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.5.C
+# version : 3.5.D
 # variant : endgame
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -34,8 +34,10 @@ SetOption $common_-_T4 info
 SetOption $text_4 slider [33] [17] [45] # no title
 SetOption $common_-_T5 info
 SetOption $text_5 slider [33] [17] [45] # no title
-SetOption $common_-_hidden info
-SetOption $text_6 slider [17] [17] [45] # no title
+SetOption $common_-_filtered_1 info
+SetOption $text_F1 slider [33] [17] [45] # no title
+SetOption $common_-_filtered_2 info
+SetOption $text_F2 slider [17] [17] [45] # no title
 # // 
 # // 
 # // 
@@ -333,7 +335,7 @@ SetOption $cur_3 textarea ["Aberrant Fossil" "Aetheric Fossil" "Ancient Shard" "
 SetOption $T4 info
 SetOption $cur_4 textarea ["Alchemy Shard" "Binding Shard" "Chaos Shard" "Chromatic Orb" "Engineer's Shard" "Glassblower's Bauble" "Horizon Shard" "Jeweller's Orb" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe" "Orb of Alteration" "Orb of Chance" "Perandus Coin" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Regal Shard" "Reinforced Iron Net" "Reinforced Rope Net" "Reinforced Steel Net" "Silver Coin" "Simple Iron Net" "Simple Rope Net" "Simple Steel Net" "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Strong Iron Net" "Strong Rope Net" "Strong Steel Net" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal" "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"] # no title
 SetOption $T5 info
-SetOption $cur_5 textarea ["Alteration Shard" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Portal Scroll" "Scroll Fragment" "Scroll of Wisdom" "Transmutation Shard"] # no title
+SetOption $cur_5 textarea ["Alteration Shard" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation"] # no title
 # // 
 # // 
 # // 
@@ -1104,7 +1106,7 @@ Hide
 
 	Class "Delve Socketable Currency" "Stackable Currency"
 
-	SetFontSize $text_6
+	SetFontSize $text_F1
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 0 255 0 255 # currency
 	SetBorderColor 0 0 0 255 # common - black
@@ -1244,7 +1246,7 @@ Hide
 
 	Class "Divination Card"
 
-	SetFontSize $text_6
+	SetFontSize $text_F1
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 0 255 255 # cards
 	SetBorderColor 0 0 0 255 # common - black
@@ -1304,7 +1306,7 @@ Hide
 
 	Class "Map Fragments" "Misc Map Items"
 
-	SetFontSize $text_6
+	SetFontSize $text_F1
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 0 0 255 # fragments
 	SetBorderColor 0 0 0 255 # common - black
@@ -1490,7 +1492,7 @@ Hide
 
 	Class "Active Skill Gems" "Support Skill Gems"
 
-	SetFontSize $text_6
+	SetFontSize $text_F1
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 0 255 255 255 # gems
 	SetBorderColor 0 0 0 255 # common - black
@@ -1797,7 +1799,7 @@ Hide
 
 	Rarity Unique
 
-	SetFontSize $text_6
+	SetFontSize $text_F1
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 127 0 255 # unique
 	SetBorderColor 0 0 0 255 # common - black
@@ -1960,7 +1962,7 @@ Hide
 
 	Class Maps
 
-	SetFontSize $text_6
+	SetFontSize $text_F1
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 0 0 255 # maps
 	SetBorderColor 0 0 0 255 # common - black
@@ -2975,7 +2977,7 @@ Hide
 
 	Rarity Rare
 
-	SetFontSize $text_6
+	SetFontSize $text_F2
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 255 0 255 # rare - main
 	SetBorderColor 0 0 0 255 # common - black
@@ -3950,7 +3952,7 @@ Hide
 
 	Rarity Magic
 
-	SetFontSize $text_6
+	SetFontSize $text_F2
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 0 0 0 255 # common - black
@@ -4929,7 +4931,7 @@ Hide
 
 	Rarity Normal
 
-	SetFontSize $text_6
+	SetFontSize $text_F2
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 0 0 0 255 # common - black
