@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.5.E
+# version : 3.6.A
 # variant : leveling
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -321,13 +321,13 @@ SetOption $cur_regalorb switch [@T3] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $vaal_orb info
 SetOption $cur_vaalorb switch [@T3] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $EmptyLine
-SetOption $REST info # Unspecified bases will be filtered.
+SetOption $REST info # Unspecified bases will be filtered, except "Prophecy".
 SetOption $T1 info
 SetOption $cur_1 textarea ["Albino Rhoa Feather" "Eternal Orb" Imprint] # no title
 SetOption $T2 info
 SetOption $cur_2 textarea ["Ancient Orb" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Bloodstained Fossil" "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal" "Enchanted Fossil" "Encrusted Fossil" "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Faceted Fossil" "Fractured Fossil" "Gilded Fossil" "Glyphic Fossil" "Harbinger's Orb" "Hollow Fossil" "Mirror Shard" "Orb of Annulment" "Perfect Fossil" "Prime Alchemical Resonator" "Prime Chaotic Resonator" "Sanctified Fossil" "Stacked Deck" "Tangled Fossil" "Vial of Awakening" "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Sacrifice" "Vial of Summoning" "Vial of Transcendence" "Vial of the Ghost" "Vial of the Ritual"] # no title
 SetOption $T3 info
-SetOption $cur_3 textarea ["Aberrant Fossil" "Aetheric Fossil" "Ancient Shard" "Annulment Shard" "Apprentice Cartographer's Seal" "Apprentice Cartographer's Sextant" "Bestiary Orb" "Bound Fossil" "Cartographer's Chisel" "Corroded Fossil" "Dense Fossil" "Engineer's Orb" "Exalted Shard" "Frigid Fossil" "Gemcutter's Prism" "Harbinger's Shard" "Jagged Fossil" "Journeyman Cartographer's Seal" "Journeyman Cartographer's Sextant" "Lucent Fossil" "Master Cartographer's Seal" "Master Cartographer's Sextant" "Metallic Fossil" "Necromancy Net" "Orb of Binding" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Prismatic Fossil" "Pristine Fossil" Prophecy "Remnant of Corruption" "Scorched Fossil" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Serrated Fossil" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Shuddering Fossil" "Splinter of Chayula" "Thaumaturgical Net" "Unshaping Orb"] # no title
+SetOption $cur_3 textarea ["Aberrant Fossil" "Aetheric Fossil" "Ancient Shard" "Annulment Shard" "Apprentice Cartographer's Seal" "Apprentice Cartographer's Sextant" "Bestiary Orb" "Bound Fossil" "Cartographer's Chisel" "Corroded Fossil" "Dense Fossil" "Engineer's Orb" "Exalted Shard" "Frigid Fossil" "Gemcutter's Prism" "Harbinger's Shard" "Jagged Fossil" "Journeyman Cartographer's Seal" "Journeyman Cartographer's Sextant" "Lucent Fossil" "Master Cartographer's Seal" "Master Cartographer's Sextant" "Metallic Fossil" "Necromancy Net" "Orb of Binding" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Prismatic Fossil" "Pristine Fossil" "Remnant of Corruption" "Scorched Fossil" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Serrated Fossil" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Shuddering Fossil" "Splinter of Chayula" "Thaumaturgical Net" "Unshaping Orb"] # no title
 SetOption $T4 info
 SetOption $cur_4 textarea ["Alchemy Shard" "Binding Shard" "Chaos Shard" "Chromatic Orb" "Engineer's Shard" "Glassblower's Bauble" "Horizon Shard" "Jeweller's Orb" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe" "Orb of Alteration" "Orb of Chance" "Perandus Coin" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Regal Shard" "Reinforced Iron Net" "Reinforced Rope Net" "Reinforced Steel Net" "Silver Coin" "Simple Iron Net" "Simple Rope Net" "Simple Steel Net" "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph" "Strong Iron Net" "Strong Rope Net" "Strong Steel Net" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal" "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"] # no title
 SetOption $T5 info
@@ -350,13 +350,13 @@ SetOption $car_thewolfsshadow switch [@T4] [@T1] [@T2] [@T3] [@T4] [@T5] # no ti
 SetOption $EmptyLine
 SetOption $REST_ info # Unspecified bases will be filtered.
 SetOption $T1_ info
-SetOption $car_1 textarea ["House of Mirrors" "Mawr Blaidd" "The Celestial Stone" "The Doctor" "The Fiend" "The Immortal" "The Queen" "The Vast"] # no title
+SetOption $car_1 textarea ["House of Mirrors" "Mawr Blaidd" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Fiend" "The Immortal" "The Queen" "The Vast"] # no title
 SetOption $T2_ info
-SetOption $car_2 textarea ["A Dab of Ink" "Abandoned Wealth" "Boon of the First Ones" "Bowyer's Dream" "Call to the First Ones" "Dialla's Subjugation" "Emperor of Purity" Humility "Hunter's Reward" "Immortal Resolve" "Last Hope" "Left to Fate" "Lingering Remnants" "Luck of the Vaal" "Lucky Deck" Perfection "Pride Before the Fall" Rebirth "The Admirer" "The Artist" "The Avenger" "The Brittle Emperor" "The Cacophony" "The Cataclysm" "The Celestial Justicar" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Devastator" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Fathomless Depths" "The Formless Sea" "The Hoarder" "The Hunger" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Life Thief" "The Master" "The Mayor" "The Nurse" "The Obscured" "The Offering" "The Polymath" "The Porcupine" "The Price of Protection" "The Professor" "The Rite of Elements" "The Sacrifice" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Twilight Moon" "The Undaunted" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Warlord" "The Wilted Rose" "The Wind" "The Wolven King's Bite" "The World Eater" "Time-Lost Relic" "Wealth and Power"] # no title
+SetOption $car_2 textarea ["A Dab of Ink" "Abandoned Wealth" "Alone in the Darkness" "Arrogance of the Vaal" "Boon of the First Ones" "Bowyer's Dream" "Call to the First Ones" "Dialla's Subjugation" "Emperor of Purity" Humility "Hunter's Reward" "Immortal Resolve" "Last Hope" "Left to Fate" "Lingering Remnants" "Luck of the Vaal" "Lucky Deck" Perfection "Pride Before the Fall" Rebirth "Sambodhi's Vow" "The Admirer" "The Artist" "The Avenger" "The Brittle Emperor" "The Cacophony" "The Cataclysm" "The Celestial Justicar" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Devastator" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Fathomless Depths" "The Formless Sea" "The Hoarder" "The Hunger" "The Iron Bard" "The Journey" "The King's Heart" "The Landing" "The Last One Standing" "The Life Thief" "The Mad King" "The Master" "The Mayor" "The Messenger" "The Nurse" "The Obscured" "The Offering" "The Polymath" "The Porcupine" "The Price of Protection" "The Professor" "The Rite of Elements" "The Sacrifice" "The Saint's Treasure" "The Samurai's Eye" "The Seeker" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Twilight Moon" "The Undaunted" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Warlord" "The Wilted Rose" "The Wind" "The Wolven King's Bite" "The World Eater" "Time-Lost Relic" "Wealth and Power"] # no title
 SetOption $T3_ info
-SetOption $car_3 textarea ["Blessing of God" "Blind Venture" "Boundless Realms" "Chaotic Disposition" "Coveted Possession" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" "Her Mask" Heterochromia Hope Hubris "Jack in the Box" "Lost Worlds" Loyalty "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Might is Right" "No Traces" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Beast" "The Breach" "The Calling" "The Cartographer" "The Catalyst" "The Darkest Dream" "The Doppelganger" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Explorer" "The Feast" "The Fletcher" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gladiator" "The Hale Heart" "The Harvester" "The Innocent" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The Lion" "The One With All" "The Opulent" "The Penitent" "The Poet" "The Puzzle" "The Realm" "The Risk" "The Road to Power" "The Scavenger" "The Soul" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Throne" "The Trial" "The Tyrant" "The Union" "The Wolf" "The Wrath" "The Wretched" "Three Faces in the Dark" "Three Voices" "Treasure Hunter" "Vinia's Token" "Volatile Power"] # no title
+SetOption $car_3 textarea ["Blessing of God" "Blind Venture" "Boon of Justice" "Boundless Realms" "Chaotic Disposition" "Coveted Possession" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" "Her Mask" Heterochromia Hope Hubris "Jack in the Box" "Lost Worlds" Loyalty "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Might is Right" Monochrome "No Traces" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Beast" "The Breach" "The Calling" "The Cartographer" "The Catalyst" "The Darkest Dream" "The Doppelganger" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Explorer" "The Feast" "The Fletcher" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gladiator" "The Golden Era" "The Hale Heart" "The Harvester" "The Innocent" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The Lion" "The Lord of Celebration" "The One With All" "The Opulent" "The Penitent" "The Poet" "The Puzzle" "The Realm" "The Risk" "The Road to Power" "The Scavenger" "The Soul" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Throne" "The Trial" "The Tyrant" "The Union" "The Wolf" "The Wrath" "The Wretched" "Three Faces in the Dark" "Three Voices" "Treasure Hunter" "Vinia's Token" "Volatile Power"] # no title
 SetOption $T4_ info
-SetOption $car_4 textarea ["A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" Death "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Forbidden Power" "Hunter's Resolve" "Light and Truth" Mitts Prosperity "Rain of Chaos" "Shard of Fate" "The Army of Blood" "The Battle Born" "The Betrayal" "The Blazing Fire" "The Body" "The Coming Storm" "The Conduit" "The Deceiver" "The Demoness" "The Dragon" "The Endurance" "The Eye of the Dragon" "The Flora's Gift" "The Garish Power" "The Gentleman" "The Hermit" "The Incantation" "The Lich" "The Lord in Black" "The Lunaris Priestess" "The Mercenary" "The Oath" "The Pack Leader" "The Pact" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Sun" "The Tower" "The Traitor" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolverine" "Thunderous Skies" Tranquillity "Turn the Other Cheek"] # no title
+SetOption $car_4 textarea ["A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Dark Temptation" Death "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Forbidden Power" "Hunter's Resolve" "Light and Truth" Mitts Prosperity "Rain of Chaos" "Shard of Fate" "The Army of Blood" "The Battle Born" "The Betrayal" "The Blazing Fire" "The Body" "The Coming Storm" "The Conduit" "The Deceiver" "The Demoness" "The Dragon" "The Endurance" "The Eye of the Dragon" "The Flora's Gift" "The Garish Power" "The Gentleman" "The Hermit" "The Incantation" "The Lich" "The Lord in Black" "The Lunaris Priestess" "The Mercenary" "The Oath" "The Pack Leader" "The Pact" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Sun" "The Tower" "The Traitor" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolverine" "Thunderous Skies" Tranquillity "Turn the Other Cheek"] # no title
 SetOption $T5_ info
 SetOption $car_5 textarea ["Cartographer's Delight" "Lantador's Lost Love" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Inoculated" "The King's Blade" "The Lover" "The Metalsmith's Gift" "The Rabid Rhoa" "The Surgeon"] # no title
 # // 
@@ -369,9 +369,9 @@ SetOption $EmptyLine
 SetOption $T1__ info
 SetOption $fra_1 textarea ["Ancient Reliquary Key" "Timeworn Reliquary Key"] # no title
 SetOption $T2__ info
-SetOption $fra_2 textarea ["Chayula's Breachstone" "Divine Vessel" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur" "Fragment of the Phoenix" "Gilded Ambush Scarab" "Gilded Bestiary Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Gilded Shaper Scarab" "Gilded Sulphite Scarab" "Gilded Torment Scarab" "Mortal Grief" "Mortal Hope" "Mortal Ignorance" "Mortal Rage"] # no title
+SetOption $fra_2 textarea ["Chayula's Breachstone" "Chayula's Charged Breachstone" "Chayula's Enriched Breachstone" "Chayula's Pure Breachstone" "Divine Vessel" "Esh's Pure Breachstone" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur" "Fragment of the Phoenix" "Gilded Ambush Scarab" "Gilded Bestiary Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Gilded Shaper Scarab" "Gilded Sulphite Scarab" "Gilded Torment Scarab" "Mortal Grief" "Mortal Hope" "Mortal Ignorance" "Mortal Rage" "Tul's Pure Breachstone" "Uul-Netol's Enriched Breachstone" "Uul-Netol's Pure Breachstone" "Xoph's Pure Breachstone"] # no title
 SetOption $T3__ info
-SetOption $fra_3 textarea ["Eber's Key" "Esh's Breachstone" "Inya's Key" "Offering to the Goddess" "Polished Ambush Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Elder Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Polished Shaper Scarab" "Polished Sulphite Scarab" "Polished Torment Scarab" "Rusted Ambush Scarab" "Rusted Bestiary Scarab" "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Divination Scarab" "Rusted Elder Scarab" "Rusted Harbinger Scarab" "Rusted Perandus Scarab" "Rusted Reliquary Scarab" "Rusted Shaper Scarab" "Rusted Sulphite Scarab" "Rusted Torment Scarab" "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Midnight" "Sacrifice at Noon" "Tul's Breachstone" "Uul-Netol's Breachstone" "Volkuur's Key" "Xoph's Breachstone" "Yriel's Key"] # no title
+SetOption $fra_3 textarea ["Eber's Key" "Esh's Breachstone" "Esh's Charged Breachstone" "Esh's Enriched Breachstone" "Inya's Key" "Offering to the Goddess" "Polished Ambush Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Elder Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Polished Shaper Scarab" "Polished Sulphite Scarab" "Polished Torment Scarab" "Rusted Ambush Scarab" "Rusted Bestiary Scarab" "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Divination Scarab" "Rusted Elder Scarab" "Rusted Harbinger Scarab" "Rusted Perandus Scarab" "Rusted Reliquary Scarab" "Rusted Shaper Scarab" "Rusted Sulphite Scarab" "Rusted Torment Scarab" "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Midnight" "Sacrifice at Noon" "Tul's Breachstone" "Tul's Charged Breachstone" "Tul's Enriched Breachstone" "Uul-Netol's Breachstone" "Uul-Netol's Charged Breachstone" "Volkuur's Key" "Xoph's Breachstone" "Xoph's Charged Breachstone" "Xoph's Enriched Breachstone" "Yriel's Key"] # no title
 # // 
 # // 
 # // 
@@ -1027,6 +1027,42 @@ Show # currency - specific - vaal orb | Disable
 
 	Tags $cur_vaalorb $sound_vaalorb
 
+Show # currency - prophecies - T1 | Disable
+
+	Class "Delve Socketable Currency" "Stackable Currency"
+	BaseType Prophecy
+	Prophecy "Ancient Rivalries I" "Ancient Rivalries II" "Ancient Rivalries III" "Ancient Rivalries IV" "Fated Connections" "The Blacksmith" "The Emperor's Trove" "The Queen's Sacrifice" "Trash to Treasure"
+
+	SetFontSize $text_1
+	SetBackgroundColor 0 255 0 255 # currency
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # currency - prophecies - T2 | Disable
+
+	Class "Delve Socketable Currency" "Stackable Currency"
+	BaseType Prophecy
+	Prophecy "A Vision of Ice and Fire" "Cleanser of Sins" "Darktongue's Shriek" "Monstrous Treasure" "The King's Path" "The Unbreathing Queen V" "Wind and Thunder"
+
+	SetFontSize $text_2
+	SetBackgroundColor 0 255 0 255 # currency
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # currency - prophecies - T3 | Disable
+
+	Class "Delve Socketable Currency" "Stackable Currency"
+	BaseType Prophecy
+	Prophecy "A Call into the Void" "A Dishonourable Death" "A Firm Foothold" "A Forest of False Idols" "A Master Seeks Help" "A Prodigious Hand" "A Regal Death" "A Rift in Time" "A Valuable Combination" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Agony at Dusk" "An Unseen Peril" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Ancient Doom" "Baptism by Death" "Battle Hardened" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Black Devotion" "Blind Faith" "Blinding Light" "Blood in the Eyes" "Blood of the Betrayed" "Bountiful Traps" "Burning Dread" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Crushing Squall" "Custodians of Silence" "Dance of Steel" "Dark Instincts" "Day of Sacrifice I" "Day of Sacrifice II" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry II" "Deadly Rivalry III" "Deadly Rivalry IV" "Deadly Rivalry V" "Deadly Twins" "Defiled in the Sceptre" "Dying Cry" "Echoes of Witchcraft" "End of the Light" "Ending the Torment" "Erased from Memory" "Erasmus' Gift" "Faith Exhumed" "Fallow At Last" "Fear's Wide Reach" "Fire and Brimstone" "Fire and Ice" "Fire from the Sky" "Fire, Wood and Stone" "Flesh of the Beast" "Forceful Exorcism" "From Death Springs Life" "From The Void" "Gilded Within" "Golden Touch" "Graceful Flames" "Greed's Folly" "Heart of the Fire" "Heavy Blows" "Hidden Reinforcements" "Hidden Vaal Pathways" "Holding the Bridge" "Hunter's Lesson" "Ice from Above" "In the Grasp of Corruption" "Kalandra's Craft" "Last of the Wildmen" "Lasting Impressions" "Lightning Falls" "Living Fires" "Lost in the Pages" "Mouth of Horrors" "Mysterious Invaders" "Nature's Resilience" "Nemesis of Greed" "Notched Flesh" "Overflowing Riches" "Path of Betrayal" "Plague of Frogs" "Plague of Rats" "Pleasure and Pain" "Pools of Wealth" "Possessed Foe" "Power Magnified" Rebirth "Reforged Bonds" "Resistant to Change" "Risen Blood" "Roth's Legacy" "Severed Limbs" "Smothering Tendrils" "Soil, Worms and Blood" "Song of the Sekhema" "Storm on the Horizon" "Storm on the Reef" "Strong as a Bull" "Sun's Punishment" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "Thaumaturgical History IV" "The Alchemist" "The Ambitious Bandit I" "The Ambitious Bandit II" "The Ambitious Bandit III" "The Apex Predator" "The Beautiful Guide" "The Beginning and the End" "The Bishop's Legacy" "The Bloody Flowers Redux" "The Bowstring's Music" "The Brothers of Necromancy" "The Brutal Enforcer" "The Child of Lunaris" "The Corrupt" "The Cursed Choir" "The Dreaded Rhoa" "The Dream Trial" "The Dreamer's Dream" "The Eagle's Cry" "The Fall of an Empire" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Feral Lord V" "The Flayed Man" "The Flow of Energy" "The Forgotten Garrison" "The Forgotten Soldiers" "The Fortune Teller's Collection" "The Four Feral Exiles" "The God of Misfortune" "The Great Leader of the North" "The Great Mind of the North" "The Hardened Armour" "The Hollow Pledge" "The Hungering Swarm" "The Invader" "The Jeweller's Touch" "The Karui Rebellion" "The King and the Brambles" "The Lady in Black" "The Last Watch" "The Lost Maps" "The Lost Undying" "The Malevolent Witch" "The Mentor" "The Misunderstood Queen" "The Mysterious Gift" "The Nest" "The Nightmare Awakens" "The Petrified" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Plaguemaw V" "The Prison Guard" "The Prison Key" "The Queen's Vaults" "The Scout" "The Servant's Heart" "The Sharpened Blade" "The Silverwood" "The Singular Spirit" "The Sinner's Stone" "The Snuffed Flame" "The Soulless Beast" "The Stockkeeper" "The Storm Spire" "The Sword King's Passion" "The Trembling Earth" "The Twins" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "The Undead Brutes" "The Undead Storm" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "The Warmongers I" "The Warmongers II" "The Warmongers III" "The Warmongers IV" "The Watcher's Watcher" "The Wealthy Exile" "Touched by the Wind" "Trapped in the Tower" "Twice Enchanted" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Unbearable Whispers V" "Undead Uprising" "Unnatural Energy" "Vaal Invasion" "Vaal Winds" "Visions of the Drowned" "Vital Transformation" "Waiting in Ambush" "Weeping Death" "Winter's Mournful Melodies"
+
+	SetFontSize $text_3
+	SetBackgroundColor 0 255 0 255 # currency
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_3 $icon_3 $sound_3
+
 Show # currency - rest - T1 | Disable
 
 	Class "Delve Socketable Currency" "Stackable Currency"
@@ -1415,7 +1451,7 @@ Show # gems - T2 qty 21+ | Disable
 Show # gems - T3 special | Disable
 
 	Class "Active Skill Gems" "Support Skill Gems"
-	BaseType "Added Chaos Damage" "Detonate Mines" "Empower Support" "Enhance Support" "Enlighten Support" Portal
+	BaseType "Empower Support" "Enhance Support" "Enlighten Support" Portal
 
 	SetFontSize $text_3
 	SetBackgroundColor 0 255 255 255 # gems
@@ -1736,6 +1772,39 @@ Show # unique - T2 shaper | Disable
 
 	Rarity Unique
 	ShaperItem True
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_uni_2
+
+Show # unique - T2 fractured | Disable
+
+	Rarity Unique
+	FracturedItem True
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_uni_2
+
+Show # unique - T2 synthesised | Disable
+
+	Rarity Unique
+	SynthesisedItem True
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_uni_2
+
+Show # unique - T2 enchanted | Disable
+
+	Rarity Unique
+	AnyEnchantment True
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 127 0 255 # unique
@@ -2263,12 +2332,12 @@ Show # rare - T1 restricted & shaper - rings | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # rare - T1 restricted & veiled - helms | Disable
+Show # rare - T1 restricted & fractured - helms | Disable
 
 	Rarity Rare
 	Class Helmets
 	BaseType "Bone Helmet"
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+	FracturedItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2276,12 +2345,12 @@ Show # rare - T1 restricted & veiled - helms | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # rare - T1 restricted & veiled - gloves | Disable
+Show # rare - T1 restricted & fractured - gloves | Disable
 
 	Rarity Rare
 	Class Gloves
 	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+	FracturedItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2289,12 +2358,12 @@ Show # rare - T1 restricted & veiled - gloves | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # rare - T1 restricted & veiled - boots | Disable
+Show # rare - T1 restricted & fractured - boots | Disable
 
 	Rarity Rare
 	Class Boots
 	BaseType "Two-Toned Boots"
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+	FracturedItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2302,12 +2371,12 @@ Show # rare - T1 restricted & veiled - boots | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # rare - T1 restricted & veiled - belts | Disable
+Show # rare - T1 restricted & fractured - belts | Disable
 
 	Rarity Rare
 	Class Belts
 	BaseType "Crystal Belt" "Vanguard Belt"
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+	FracturedItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2315,12 +2384,12 @@ Show # rare - T1 restricted & veiled - belts | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # rare - T1 restricted & veiled - amulets | Disable
+Show # rare - T1 restricted & fractured - amulets | Disable
 
 	Rarity Rare
 	Class Amulets
 	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+	FracturedItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2328,12 +2397,207 @@ Show # rare - T1 restricted & veiled - amulets | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # rare - T1 restricted & veiled - rings | Disable
+Show # rare - T1 restricted & fractured - rings | Disable
 
 	Rarity Rare
 	Class Rings
 	BaseType "Opal Ring" "Steel Ring"
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & synthesised - helms | Disable
+
+	Rarity Rare
+	Class Helmets
+	BaseType "Bone Helmet"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & synthesised - gloves | Disable
+
+	Rarity Rare
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & synthesised - boots | Disable
+
+	Rarity Rare
+	Class Boots
+	BaseType "Two-Toned Boots"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & synthesised - belts | Disable
+
+	Rarity Rare
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & synthesised - amulets | Disable
+
+	Rarity Rare
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & synthesised - rings | Disable
+
+	Rarity Rare
+	Class Rings
+	BaseType "Opal Ring" "Steel Ring"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & enchanted - helms | Disable
+
+	Rarity Rare
+	Class Helmets
+	BaseType "Bone Helmet"
+	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & enchanted - gloves | Disable
+
+	Rarity Rare
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & enchanted - boots | Disable
+
+	Rarity Rare
+	Class Boots
+	BaseType "Two-Toned Boots"
+	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & league - helms | Disable
+
+	Rarity Rare
+	Class Helmets
+	BaseType "Bone Helmet"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & league - gloves | Disable
+
+	Rarity Rare
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & league - boots | Disable
+
+	Rarity Rare
+	Class Boots
+	BaseType "Two-Toned Boots"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & league - belts | Disable
+
+	Rarity Rare
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & league - amulets | Disable
+
+	Rarity Rare
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted & league - rings | Disable
+
+	Rarity Rare
+	Class Rings
+	BaseType "Opal Ring" "Steel Ring"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2346,6 +2610,18 @@ Show # rare - T2 restricted 2 - 1h swords | Disable
 	Rarity Rare
 	Class "One Hand Swords"
 	BaseType "Charan's Sword"
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # rare - T2 restricted 2 - quivers | Disable
+
+	Rarity Rare
+	Class Quivers
+	BaseType "Ornate Quiver"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2435,10 +2711,10 @@ Show # rare - T2 shaper | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # rare - T2 veiled | Disable
+Show # rare - T2 fractured | Disable
 
 	Rarity Rare
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+	FracturedItem True
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2446,10 +2722,10 @@ Show # rare - T2 veiled | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # rare - T2 bestiary | Disable
+Show # rare - T2 synthesised | Disable
 
 	Rarity Rare
-	HasExplicitMod "of Craiceann" "of Farrul" "of Fenumus" "of Saqawal"
+	SynthesisedItem True
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2457,10 +2733,10 @@ Show # rare - T2 bestiary | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # rare - T2 delve | Disable
+Show # rare - T2 enchanted | Disable
 
 	Rarity Rare
-	HasExplicitMod Subterranean "of Crafting" "of Spellcraft" "of Weaponcraft" "of the Underground"
+	AnyEnchantment True
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2468,33 +2744,10 @@ Show # rare - T2 delve | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # rare - T2 incursion | Disable
+Show # rare - T2 league | Disable
 
 	Rarity Rare
-	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # rare - T2 warbands | Disable
-
-	Rarity Rare
-	HasExplicitMod Betrayer's Brinerot Deceiver's Mutewind Redblade Turncoat's
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # rare - T2 weapons & dictator's | Disable
-
-	Rarity Rare
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Sceptres Staves "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
-	HasExplicitMod Dictator's
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2977,17 +3230,6 @@ Show # rare - T5 quivers | Disable
 Hide
 
 	Rarity Rare
-	Identified True
-
-	SetFontSize $text_1_
-	SetBackgroundColor 0 0 0 127 # common - half-black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 0 0 0 255 # common - black
-	DisableDropSound
-
-Hide
-
-	Rarity Rare
 
 	SetFontSize $text_2_
 	SetBackgroundColor 0 0 0 127 # common - half-black
@@ -3300,11 +3542,296 @@ Show # magic - T1 restricted & shaper - rings | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
+Show # magic - T1 restricted & fractured - helms | Disable
+
+	Rarity Magic
+	Class Helmets
+	BaseType "Bone Helmet"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & fractured - gloves | Disable
+
+	Rarity Magic
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & fractured - boots | Disable
+
+	Rarity Magic
+	Class Boots
+	BaseType "Two-Toned Boots"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & fractured - belts | Disable
+
+	Rarity Magic
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & fractured - amulets | Disable
+
+	Rarity Magic
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & fractured - rings | Disable
+
+	Rarity Magic
+	Class Rings
+	BaseType "Opal Ring" "Steel Ring"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & synthesised - helms | Disable
+
+	Rarity Magic
+	Class Helmets
+	BaseType "Bone Helmet"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & synthesised - gloves | Disable
+
+	Rarity Magic
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & synthesised - boots | Disable
+
+	Rarity Magic
+	Class Boots
+	BaseType "Two-Toned Boots"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & synthesised - belts | Disable
+
+	Rarity Magic
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & synthesised - amulets | Disable
+
+	Rarity Magic
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & synthesised - rings | Disable
+
+	Rarity Magic
+	Class Rings
+	BaseType "Opal Ring" "Steel Ring"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & enchanted - helms | Disable
+
+	Rarity Magic
+	Class Helmets
+	BaseType "Bone Helmet"
+	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & enchanted - gloves | Disable
+
+	Rarity Magic
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & enchanted - boots | Disable
+
+	Rarity Magic
+	Class Boots
+	BaseType "Two-Toned Boots"
+	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & league - helms | Disable
+
+	Rarity Magic
+	Class Helmets
+	BaseType "Bone Helmet"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & league - gloves | Disable
+
+	Rarity Magic
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & league - boots | Disable
+
+	Rarity Magic
+	Class Boots
+	BaseType "Two-Toned Boots"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & league - belts | Disable
+
+	Rarity Magic
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & league - amulets | Disable
+
+	Rarity Magic
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted & league - rings | Disable
+
+	Rarity Magic
+	Class Rings
+	BaseType "Opal Ring" "Steel Ring"
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
 Show # magic - T2 restricted 2 - 1h swords | Disable
 
 	Rarity Magic
 	Class "One Hand Swords"
 	BaseType "Charan's Sword"
+
+	SetFontSize $text_2
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # magic - T2 restricted 2 - quivers | Disable
+
+	Rarity Magic
+	Class Quivers
+	BaseType "Ornate Quiver"
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3394,10 +3921,10 @@ Show # magic - T2 shaper | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # magic - T2 bestiary | Disable
+Show # magic - T2 fractured | Disable
 
 	Rarity Magic
-	HasExplicitMod "of Craiceann" "of Farrul" "of Fenumus" "of Saqawal"
+	FracturedItem True
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3405,10 +3932,10 @@ Show # magic - T2 bestiary | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # magic - T2 delve | Disable
+Show # magic - T2 synthesised | Disable
 
 	Rarity Magic
-	HasExplicitMod Subterranean "of Crafting" "of Spellcraft" "of Weaponcraft" "of the Underground"
+	SynthesisedItem True
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3416,10 +3943,10 @@ Show # magic - T2 delve | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # magic - T2 incursion | Disable
+Show # magic - T2 enchanted | Disable
 
 	Rarity Magic
-	HasExplicitMod Citaqualotl's Guatelitzi's Matatl's Tacati's Topotante's Xopec's "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+	AnyEnchantment True
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3427,22 +3954,10 @@ Show # magic - T2 incursion | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # magic - T2 warbands | Disable
+Show # magic - T2 league | Disable
 
 	Rarity Magic
-	HasExplicitMod Betrayer's Brinerot Deceiver's Mutewind Redblade Turncoat's
-
-	SetFontSize $text_2
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # magic - T2 weapons & dictator's | Disable
-
-	Rarity Magic
-	Class Bows Claws Daggers "One Hand Axes" "One Hand Maces" "One Hand Swords" Sceptres Staves "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" Wands
-	HasExplicitMod Dictator's
+	HasExplicitMod Betrayer's Brinerot "Catarina's Veiled" Citaqualotl's Deceiver's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's "Tora's Veiled" Turncoat's "Vagan's Veiled" Veiled "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3962,17 +4477,6 @@ Show # magic - T5 quivers | Disable
 Hide
 
 	Rarity Magic
-	Identified True
-
-	SetFontSize $text_1_
-	SetBackgroundColor 0 0 0 127 # common - half-black
-	SetTextColor 127 127 255 255 # magic
-	SetBorderColor 0 0 0 255 # common - black
-	DisableDropSound
-
-Hide
-
-	Rarity Magic
 
 	SetFontSize $text_2_
 	SetBackgroundColor 0 0 0 127 # common - half-black
@@ -4285,11 +4789,218 @@ Show # normal - T1 restricted & shaper - rings | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
+Show # normal - T1 restricted & fractured - helms | Disable
+
+	Rarity Normal
+	Class Helmets
+	BaseType "Bone Helmet"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & fractured - gloves | Disable
+
+	Rarity Normal
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & fractured - boots | Disable
+
+	Rarity Normal
+	Class Boots
+	BaseType "Two-Toned Boots"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & fractured - belts | Disable
+
+	Rarity Normal
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & fractured - amulets | Disable
+
+	Rarity Normal
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & fractured - rings | Disable
+
+	Rarity Normal
+	Class Rings
+	BaseType "Opal Ring" "Steel Ring"
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & synthesised - helms | Disable
+
+	Rarity Normal
+	Class Helmets
+	BaseType "Bone Helmet"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & synthesised - gloves | Disable
+
+	Rarity Normal
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & synthesised - boots | Disable
+
+	Rarity Normal
+	Class Boots
+	BaseType "Two-Toned Boots"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & synthesised - belts | Disable
+
+	Rarity Normal
+	Class Belts
+	BaseType "Crystal Belt" "Vanguard Belt"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & synthesised - amulets | Disable
+
+	Rarity Normal
+	Class Amulets
+	BaseType "Blue Pearl Amulet" "Marble Amulet"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & synthesised - rings | Disable
+
+	Rarity Normal
+	Class Rings
+	BaseType "Opal Ring" "Steel Ring"
+	SynthesisedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & enchanted - helms | Disable
+
+	Rarity Normal
+	Class Helmets
+	BaseType "Bone Helmet"
+	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & enchanted - gloves | Disable
+
+	Rarity Normal
+	Class Gloves
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
+	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted & enchanted - boots | Disable
+
+	Rarity Normal
+	Class Boots
+	BaseType "Two-Toned Boots"
+	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
 Show # normal - T2 restricted 2 - 1h swords | Disable
 
 	Rarity Normal
 	Class "One Hand Swords"
 	BaseType "Charan's Sword"
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # normal - T2 restricted 2 - quivers | Disable
+
+	Rarity Normal
+	Class Quivers
+	BaseType "Ornate Quiver"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 255 255 # normal
@@ -4384,6 +5095,39 @@ Show # normal - T2 shaper | Disable
 
 	Rarity Normal
 	ShaperItem True
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # normal - T2 fractured | Disable
+
+	Rarity Normal
+	FracturedItem True
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # normal - T2 synthesised | Disable
+
+	Rarity Normal
+	SynthesisedItem True
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # normal - T2 enchanted | Disable
+
+	Rarity Normal
+	AnyEnchantment True
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 255 255 # normal
