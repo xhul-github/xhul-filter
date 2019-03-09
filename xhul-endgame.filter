@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.6.A
+# version : 3.6.B
 # variant : endgame
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -1031,7 +1031,7 @@ Show # currency - prophecies - T1 | Disable
 
 	Class "Delve Socketable Currency" "Stackable Currency"
 	BaseType Prophecy
-	Prophecy "Ancient Rivalries I" "Ancient Rivalries II" "Ancient Rivalries III" "Ancient Rivalries IV" "Fated Connections" "The Blacksmith" "The Emperor's Trove" "The Queen's Sacrifice" "Trash to Treasure"
+	Prophecy "Ancient Rivalries I" "Ancient Rivalries II" "Ancient Rivalries III" "Ancient Rivalries IV" "Fated Connections" "The Queen's Sacrifice" "Trash to Treasure"
 
 	SetFontSize $text_1
 	SetBackgroundColor 0 255 0 255 # currency
