@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.6.B
+# version : 3.6.C
 # variant : hybrid
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -377,7 +377,7 @@ SetOption $fra_3 textarea ["Eber's Key" "Esh's Breachstone" "Esh's Charged Breac
 # // 
 SetTab [unique]
 SetOption $T1_guarenteed info # multiclass block - Bases that have only one possible and valuable outcome.
-SetOption $uni_guarenteed textarea ["Glorious Plate" "Rawhide Tower Shield" "Sapphire Flask"] # no title
+SetOption $uni_guarenteed textarea ["Glorious Plate" "Ornate Quiver" "Rawhide Tower Shield" "Sapphire Flask"] # no title
 # // 
 # // 
 # // 
@@ -544,7 +544,7 @@ SetOption $nor_jewels switch [$all] [$none] [$all] [$custom________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T4_chanceable info # multiclass block - Bases worth chancing.
-SetOption $nor_chanceable textarea ["Glorious Plate" "Rawhide Tower Shield" "Sapphire Flask" "Sorcerer Boots"] # no title
+SetOption $nor_chanceable textarea ["Glorious Plate" "Leather Belt" "Rawhide Tower Shield" "Sapphire Flask" "Sorcerer Boots"] # no title
 SetOption $EmptyLine
 SetOption $T5_WEAPONS__ info
 SetOption $claws__ info
@@ -4789,84 +4789,6 @@ Show # normal - T1 restricted & shaper - rings | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # normal - T1 restricted & fractured - helms | Disable
-
-	Rarity Normal
-	Class Helmets
-	BaseType "Bone Helmet"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted & fractured - gloves | Disable
-
-	Rarity Normal
-	Class Gloves
-	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted & fractured - boots | Disable
-
-	Rarity Normal
-	Class Boots
-	BaseType "Two-Toned Boots"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted & fractured - belts | Disable
-
-	Rarity Normal
-	Class Belts
-	BaseType "Crystal Belt" "Vanguard Belt"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted & fractured - amulets | Disable
-
-	Rarity Normal
-	Class Amulets
-	BaseType "Blue Pearl Amulet" "Marble Amulet"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted & fractured - rings | Disable
-
-	Rarity Normal
-	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_1 $icon_1 $sound_1
-
 Show # normal - T1 restricted & synthesised - helms | Disable
 
 	Rarity Normal
@@ -5095,17 +5017,6 @@ Show # normal - T2 shaper | Disable
 
 	Rarity Normal
 	ShaperItem True
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # normal - T2 fractured | Disable
-
-	Rarity Normal
-	FracturedItem True
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 255 255 # normal
