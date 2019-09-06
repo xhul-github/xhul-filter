@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.7.B
+# version : 3.8.A
 # variant : endgame
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -34,9 +34,9 @@ SetOption $text_4 slider [33] [17] [45] # no title
 SetOption $common_-_T5 info
 SetOption $text_5 slider [33] [17] [45] # no title
 SetOption $common_-_filtered_1 info
-SetOption $text_1_ slider [33] [17] [45] # no title
+SetOption $text_6 slider [33] [17] [45] # no title
 SetOption $common_-_filtered_2 info
-SetOption $text_2_ slider [17] [17] [45] # no title
+SetOption $text_7 slider [17] [17] [45] # no title
 # // 
 # // 
 # // 
@@ -60,8 +60,6 @@ SetOption $common_-_T4_ info
 SetOption $beam_4 switch [@off] [@off] [@temporary] [@permanent] # no title
 SetOption $common_-_T5_ info
 SetOption $beam_5 switch [@off] [@off] [@temporary] [@permanent] # no title
-SetOption $maps_-_T1 info
-SetOption $beam_map_1 switch [@permanent] [@off] [@temporary] [@permanent] # no title
 SetOption $maps_-_T2 info
 SetOption $beam_map_2 switch [@permanent] [@off] [@temporary] [@permanent] # no title
 SetOption $maps_-_T3 info
@@ -109,8 +107,6 @@ SetOption $common_-_T4__ info
 SetOption $icon_4 switch [@off] [@off] [@small] [@medium] [@large] # no title
 SetOption $common_-_T5__ info
 SetOption $icon_5 switch [@off] [@off] [@small] [@medium] [@large] # no title
-SetOption $maps_-_T1_ info
-SetOption $icon_map_1 switch [@large] [@off] [@small] [@medium] [@large] # no title
 SetOption $maps_-_T2_ info
 SetOption $icon_map_2 switch [@medium] [@off] [@small] [@medium] [@large] # no title
 SetOption $maps_-_T3_ info
@@ -191,24 +187,22 @@ SetOption $fragments_-_T2 info
 SetOption $sound_fra_2 switch [@theme_______________] [@off_] [@default] [@theme_______________] [@custom_______________] # no title
 SetOption $fragments_-_T3 info
 SetOption $sound_fra_3 switch [@theme________________] [@off_] [@default] [@theme________________] [@custom________________] # no title
-SetOption $maps_-_T1__ info
-SetOption $sound_map_1 switch [@theme_________________] [@off_] [@default] [@theme_________________] [@custom_________________] # no title
 SetOption $maps_-_T2__ info
-SetOption $sound_map_2 switch [@theme__________________] [@off_] [@default] [@theme__________________] [@custom__________________] # no title
+SetOption $sound_map_2 switch [@theme_________________] [@off_] [@default] [@theme_________________] [@custom_________________] # no title
 SetOption $maps_-_T3__ info
-SetOption $sound_map_3 switch [@theme___________________] [@off_] [@default] [@theme___________________] [@custom___________________] # no title
+SetOption $sound_map_3 switch [@theme__________________] [@off_] [@default] [@theme__________________] [@custom__________________] # no title
 SetOption $maps_-_T4__ info
-SetOption $sound_map_4 switch [@theme____________________] [@off_] [@default] [@theme____________________] [@custom____________________] # no title
+SetOption $sound_map_4 switch [@theme___________________] [@off_] [@default] [@theme___________________] [@custom___________________] # no title
 SetOption $maps_-_T5__ info
-SetOption $sound_map_5 switch [@theme_____________________] [@off_] [@default] [@theme_____________________] [@custom_____________________] # no title
+SetOption $sound_map_5 switch [@theme____________________] [@off_] [@default] [@theme____________________] [@custom____________________] # no title
 SetOption $special_-_T1 info
-SetOption $sound_spe_1 switch [@theme______________________] [@off_] [@default] [@theme______________________] [@custom______________________] # no title
+SetOption $sound_spe_1 switch [@theme_____________________] [@off_] [@default] [@theme_____________________] [@custom_____________________] # no title
 SetOption $unique_-_T1 info
-SetOption $sound_uni_1 switch [@theme_______________________] [@off_] [@default] [@theme_______________________] [@custom_______________________] # no title
+SetOption $sound_uni_1 switch [@theme______________________] [@off_] [@default] [@theme______________________] [@custom______________________] # no title
 SetOption $unique_-_T2 info
-SetOption $sound_uni_2 switch [@theme________________________] [@off_] [@default] [@theme________________________] [@custom________________________] # no title
+SetOption $sound_uni_2 switch [@theme_______________________] [@off_] [@default] [@theme_______________________] [@custom_______________________] # no title
 SetOption $unique_-_T3 info
-SetOption $sound_uni_3 switch [@theme_________________________] [@off_] [@default] [@theme_________________________] [@custom_________________________] # no title
+SetOption $sound_uni_3 switch [@theme________________________] [@off_] [@default] [@theme________________________] [@custom________________________] # no title
 # // 
 # // 
 # // 
@@ -262,8 +256,6 @@ SetOption $fragments_-_T2_ info
 SetOption $file_fra_2 input ["relative or full file path"] # no title
 SetOption $fragments_-_T3_ info
 SetOption $file_fra_3 input ["relative or full file path"] # no title
-SetOption $maps_-_T1___ info
-SetOption $file_map_1 input ["relative or full file path"] # no title
 SetOption $maps_-_T2___ info
 SetOption $file_map_2 input ["relative or full file path"] # no title
 SetOption $maps_-_T3___ info
@@ -290,13 +282,14 @@ SetOption $ADVANCED_SETTINGS info
 SetOption $adse1 info [These provide additional flexibility for blocks that are set to "Show" in the "Block switches" tab.] # no title
 SetOption $adse2 info [Input fields can be resized, for more comfortable usage.] # no title
 SetOption $adse3 info [Bases must be separated by a space, and quoted if they include spaces.] # no title
-SetOption $adse4 info [Leaving a field empty will reload its default bases.] # no title
+SetOption $adse4 info [Leaving a field empty will reload its default content.] # no title
 SetOption $adse5 info ["_" alone (quotes included) will disable the corresponding block.] # no title
 # // 
 # // 
 # // 
 SetTab [currency]
 SetOption $curr1 info [The lower the tier (T), the higher the priority.] # no title
+SetOption $curr2 info [The following settings don't concern prophecies.] # no title
 SetOption $EmptyLine
 SetOption $SPECIFIC info # These have their own blocks and must be configured separately.
 SetOption $blessed_orb info
@@ -308,7 +301,7 @@ SetOption $cur_divineorb switch [@T2] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $exalted_orb info
 SetOption $cur_exaltedorb switch [@T2] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $imprinted_bestiary_orb info
-SetOption $cur_imprintedbestiaryorb switch [@T3_] [@T1_] [@T2_] [@T3_] [@T4_] [@T5_] # no title
+SetOption $cur_imprintedbestiaryorb switch [@T2_] [@T1_] [@T2_] [@T3_] [@T4_] [@T5_] # no title
 SetOption $mirror_of_kalandra info
 SetOption $cur_mirrorofkalandra switch [@T1] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $orb_of_alchemy info
@@ -322,15 +315,18 @@ SetOption $cur_vaalorb switch [@T3] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $EmptyLine
 SetOption $REST info # Unspecified bases will be filtered.
 SetOption $T1 info
-SetOption $cur_1 textarea ["Albino Rhoa Feather" "Eternal Orb" Imprint] # no title
+SetOption $cur_1 textarea ["Albino Rhoa Feather" "Eternal Orb" "Necromancy Net" "Reinforced Iron Net" "Reinforced Rope Net" "Reinforced Steel Net" "Simple Iron Net" "Simple Rope Net" "Simple Steel Net" "Strong Iron Net" "Strong Rope Net" "Strong Steel Net" "Thaumaturgical Net"] # no title
 SetOption $T2 info
-SetOption $cur_2 textarea ["Ancient Orb" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Bloodstained Fossil" "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal" "Eldritch Incubator" "Enchanted Fossil" "Encrusted Fossil" "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Faceted Fossil" "Foreboding Incubator" "Fractured Fossil" "Geomancer's Incubator" "Gilded Fossil" "Glyphic Fossil" "Harbinger's Orb" "Hollow Fossil" "Mirror Shard" "Orb of Annulment" "Perfect Fossil" "Prime Alchemical Resonator" "Prime Chaotic Resonator" "Sanctified Fossil" "Stacked Deck" "Tangled Fossil" "Thaumaturge's Incubator" "Time-Lost Incubator" "Vial of Awakening" "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Sacrifice" "Vial of Summoning" "Vial of Transcendence" "Vial of the Ghost" "Vial of the Ritual"] # no title
+SetOption $cur_2 textarea ["Ancient Orb" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Bloodstained Fossil" "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal" "Eldritch Incubator" "Enchanted Fossil" "Encrusted Fossil" "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Faceted Fossil" "Fractured Fossil" "Geomancer's Incubator" "Gilded Fossil" "Glyphic Fossil" "Harbinger's Orb" "Hollow Fossil" Imprint "Mirror Shard" "Orb of Annulment" "Perfect Fossil" "Prime Alchemical Resonator" "Prime Chaotic Resonator" "Sanctified Fossil" "Stacked Deck" "Tangled Fossil" "Time-Lost Incubator" "Vial of Awakening" "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Sacrifice" "Vial of Summoning" "Vial of Transcendence" "Vial of the Ghost" "Vial of the Ritual"] # no title
 SetOption $T3 info
-SetOption $cur_3 textarea ["Aberrant Fossil" "Abyssal Incubator" "Aetheric Fossil" "Ancient Shard" "Annulment Shard" "Apprentice Cartographer's Seal" "Apprentice Cartographer's Sextant" "Bestiary Orb" "Bound Fossil" "Cartographer's Chisel" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Corroded Fossil" "Decadent Incubator" "Dense Fossil" "Diviner's Incubator" "Enchanted Incubator" "Engineer's Orb" "Exalted Shard" "Fine Incubator" "Fossilised Incubator" "Fragmented Incubator" "Frigid Fossil" "Gemcutter's Incubator" "Gemcutter's Prism" "Harbinger's Shard" "Infused Incubator" "Jagged Fossil" "Journeyman Cartographer's Seal" "Journeyman Cartographer's Sextant" "Lucent Fossil" "Master Cartographer's Seal" "Master Cartographer's Sextant" "Metallic Fossil" "Mysterious Incubator" "Necromancy Net" "Obscured Incubator" "Orb of Binding" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Ornate Incubator" "Otherworldly Incubator" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Primal Incubator" "Prismatic Fossil" "Pristine Fossil" "Remnant of Corruption" "Scorched Fossil" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Serrated Fossil" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Shuddering Fossil" "Singular Incubator" "Skittering Incubator" "Splinter of Chayula" "Thaumaturgical Net" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Unshaping Orb" "Whispering Incubator"] # no title
+SetOption $cur_3 textarea ["Aberrant Fossil" "Abyssal Incubator" "Aetheric Fossil" "Amber Oil" "Ancient Shard" "Annulment Shard" "Apprentice Cartographer's Seal" "Apprentice Cartographer's Sextant" "Azure Oil" "Bestiary Orb" "Black Oil" "Bound Fossil" "Cartographer's Chisel" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Clear Oil" "Corroded Fossil" "Crimson Oil" "Decadent Incubator" "Dense Fossil" "Diviner's Incubator" "Enchanted Incubator" "Engineer's Orb" "Exalted Shard" "Feral Incubator" "Fine Incubator" "Foreboding Incubator" "Fossilised Incubator" "Fragmented Incubator" "Frigid Fossil" "Gemcutter's Incubator" "Gemcutter's Prism" "Golden Oil" "Harbinger's Shard" "Infused Incubator" "Jagged Fossil" "Journeyman Cartographer's Seal" "Journeyman Cartographer's Sextant" "Lucent Fossil" "Master Cartographer's Seal" "Master Cartographer's Sextant" "Metallic Fossil" "Mysterious Incubator" "Obscured Incubator" "Opalescent Oil" "Orb of Binding" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Ornate Incubator" "Otherworldly Incubator" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Primal Incubator" "Prismatic Fossil" "Pristine Fossil" "Remnant of Corruption" "Scorched Fossil" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Sepia Oil" "Serrated Fossil" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Shuddering Fossil" "Silver Oil" "Singular Incubator" "Skittering Incubator" "Splinter of Chayula" "Splinter of Uul-Netol" "Teal Oil" "Thaumaturge's Incubator" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Unshaping Orb" "Verdant Oil" "Violet Oil" "Whispering Incubator"] # no title
 SetOption $T4 info
-SetOption $cur_4 textarea ["Alchemy Shard" "Binding Shard" "Chaos Shard" "Chromatic Orb" "Engineer's Shard" "Glassblower's Bauble" "Horizon Shard" "Jeweller's Orb" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe" "Orb of Alteration" "Orb of Chance" "Perandus Coin" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Regal Shard" "Reinforced Iron Net" "Reinforced Rope Net" "Reinforced Steel Net" "Silver Coin" "Simple Iron Net" "Simple Rope Net" "Simple Steel Net" "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph" "Strong Iron Net" "Strong Rope Net" "Strong Steel Net" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal" "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"] # no title
+SetOption $cur_4 textarea ["Alchemy Shard" "Binding Shard" "Chaos Shard" "Chromatic Orb" "Engineer's Shard" "Glassblower's Bauble" "Horizon Shard" "Jeweller's Orb" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe" "Orb of Alteration" "Orb of Chance" "Perandus Coin" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Regal Shard" "Silver Coin" "Splinter of Esh" "Splinter of Tul" "Splinter of Xoph" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal" "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"] # no title
 SetOption $T5 info
-SetOption $cur_5 textarea ["Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation"] # no title
+SetOption $cur_5 textarea ["Alteration Shard" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Scroll Fragment" "Transmutation Shard"] # no title
+SetOption $T5_minimum_stack_size info
+SetOption $cur_6 textarea ["Portal Scroll" "Scroll of Wisdom"] # no title
+SetOption $cur_7 slider [2] [1] [40] # no title
 # // 
 # // 
 # // 
@@ -340,22 +336,28 @@ SetOption $EmptyLine
 SetOption $SPECIFIC_ info # These have their own blocks and must be configured separately.
 SetOption $beauty_through_death info
 SetOption $car_beautythroughdeath switch [@T1] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
+SetOption $the_demoness info
+SetOption $car_thedemoness switch [@T4] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $the_dragon-s_heart info
 SetOption $car_thedragonsheart switch [@T2] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $the_master_artisan info
 SetOption $car_themasterartisan switch [@T3] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
+SetOption $the_price_of_loyalty info
+SetOption $car_thepriceofloyalty switch [@T2] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
+SetOption $the_wolf-s_legacy info
+SetOption $car_thewolfslegacy switch [@T3] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $the_wolf-s_shadow info
 SetOption $car_thewolfsshadow switch [@T4] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $EmptyLine
 SetOption $REST_ info # Unspecified bases will be filtered.
 SetOption $T1_ info
-SetOption $car_1 textarea ["House of Mirrors" "Mawr Blaidd" "Pride of the First Ones" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Fiend" "The Immortal" "The Queen" "The Vast"] # no title
+SetOption $car_1 textarea ["Birth of the Three" "Dying Anguish" "House of Mirrors" "Mawr Blaidd" "Pride of the First Ones" "Seven Years Bad Luck" "The Celestial Stone" "The Damned" "The Demon" "The Doctor" "The Fiend" "The Immortal" "The Old Man" "The Queen" "The Vast" "Void of the Elements"] # no title
 SetOption $T2_ info
-SetOption $car_2 textarea ["A Dab of Ink" "Abandoned Wealth" "Alluring Bounty" "Alone in the Darkness" "Arrogance of the Vaal" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Burning Blood" "Call to the First Ones" "Dark Dreams" "Demigod's Wager" "Dialla's Subjugation" "Emperor of Purity" Humility "Hunter's Reward" "Immortal Resolve" "Imperial Legacy" "Last Hope" "Left to Fate" "Lingering Remnants" "Luck of the Vaal" "Lucky Deck" Perfection "Pride Before the Fall" Rebirth "Sambodhi's Vow" "The Admirer" "The Artist" "The Avenger" "The Brittle Emperor" "The Cacophony" "The Cataclysm" "The Celestial Justicar" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Deep Ones" "The Devastator" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Fathomless Depths" "The Formless Sea" "The Hoarder" "The Hunger" "The Iron Bard" "The Journey" "The King's Heart" "The Landing" "The Last One Standing" "The Life Thief" "The Mad King" "The Master" "The Mayor" "The Messenger" "The Nurse" "The Obscured" "The Offering" "The Polymath" "The Porcupine" "The Price of Protection" "The Primordial" "The Professor" "The Rite of Elements" "The Sacrifice" "The Saint's Treasure" "The Samurai's Eye" "The Seeker" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Twilight Moon" "The Undaunted" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Warlord" "The Wilted Rose" "The Wind" "The Wolven King's Bite" "The World Eater" "Time-Lost Relic" Vanity "Wealth and Power"] # no title
+SetOption $car_2 textarea ["A Dab of Ink" "Abandoned Wealth" "Alluring Bounty" "Alone in the Darkness" "Arrogance of the Vaal" "Azyran's Reward" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Burning Blood" "Call to the First Ones" "Dark Dreams" "Demigod's Wager" "Dialla's Subjugation" "Emperor of Purity" Humility "Hunter's Reward" "Immortal Resolve" "Imperial Legacy" "Last Hope" "Left to Fate" "Lingering Remnants" "Luck of the Vaal" "Lucky Deck" "Nook's Crown" Perfection "Pride Before the Fall" Rebirth Remembrance "Sambodhi's Vow" "The Admirer" "The Artist" "The Avenger" "The Bargain" "The Brittle Emperor" "The Cacophony" "The Cataclysm" "The Celestial Justicar" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Deep Ones" "The Devastator" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Eye of Terror" "The Fathomless Depths" "The Formless Sea" "The Hoarder" "The Hunger" "The Iron Bard" "The Journey" "The King's Heart" "The Landing" "The Last One Standing" "The Life Thief" "The Mad King" "The Master" "The Mayor" "The Messenger" "The Nurse" "The Obscured" "The Offering" "The Polymath" "The Porcupine" "The Price of Protection" "The Primordial" "The Professor" "The Rite of Elements" "The Sacrifice" "The Saint's Treasure" "The Samurai's Eye" "The Seeker" "The Sephirot" "The Skeleton" "The Spark and the Flame" "The Thaumaturgist" "The Twilight Moon" "The Undaunted" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Void" "The Warlord" "The Wilted Rose" "The Wind" "The Wolven King's Bite" "The World Eater" "Time-Lost Relic" Vanity "Wealth and Power"] # no title
 SetOption $T3_ info
-SetOption $car_3 textarea ["Blessing of God" "Blind Venture" "Boon of Justice" "Boundless Realms" "Chaotic Disposition" "Coveted Possession" "Earth Drinker" "Echoes of Love" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" "Her Mask" Heterochromia Hope Hubris "Jack in the Box" "Lost Worlds" Loyalty "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Might is Right" Monochrome "No Traces" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Beast" "The Breach" "The Calling" "The Cartographer" "The Catalyst" "The Darkest Dream" "The Doppelganger" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Explorer" "The Feast" "The Fletcher" "The Fool" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gladiator" "The Golden Era" "The Hale Heart" "The Harvester" "The Innocent" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The Lion" "The Lord of Celebration" "The One With All" "The Opulent" "The Penitent" "The Poet" "The Puzzle" "The Realm" "The Risk" "The Road to Power" "The Scavenger" "The Soul" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Throne" "The Trial" "The Tyrant" "The Union" "The Wolf" "The Wrath" "The Wretched" "Three Faces in the Dark" "Three Voices" "Treasure Hunter" "Vinia's Token" "Volatile Power"] # no title
+SetOption $car_3 textarea ["Akil's Prophecy" "Blessing of God" "Blind Venture" "Boon of Justice" "Boundless Realms" "Chaotic Disposition" "Coveted Possession" "Earth Drinker" "Echoes of Love" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" "Her Mask" Heterochromia Hope Hubris "Jack in the Box" "Lost Worlds" Loyalty "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Might is Right" Monochrome "More is Never Enough" "No Traces" Rats "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Beast" "The Breach" "The Calling" "The Cartographer" "The Catalyst" "The Darkest Dream" "The Deal" "The Doppelganger" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Enlightened" "The Explorer" "The Feast" "The Fletcher" "The Fool" "The Forsaken" "The Fox" "The Gambler" "The Gemcutter" "The Gladiator" "The Golden Era" "The Hale Heart" "The Harvester" "The Heroic Shot" "The Innocent" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The Lion" "The Lord of Celebration" "The One With All" "The Opulent" "The Penitent" "The Poet" "The Puzzle" "The Realm" "The Risk" "The Road to Power" "The Scavenger" "The Side Quest" "The Soul" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Sword King's Salute" "The Throne" "The Trial" "The Tyrant" "The Union" "The Wolf" "The Wrath" "The Wretched" "Three Faces in the Dark" "Three Voices" "Treasure Hunter" "Vile Power" "Vinia's Token" "Volatile Power"] # no title
 SetOption $T4_ info
-SetOption $car_4 textarea ["A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Birth of the Three" "Dark Temptation" Death "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Forbidden Power" "Hunter's Resolve" "Light and Truth" Mitts Prosperity "Rain of Chaos" "Shard of Fate" "The Archmage's Right Hand" "The Army of Blood" "The Battle Born" "The Betrayal" "The Blazing Fire" "The Body" "The Coming Storm" "The Conduit" "The Deceiver" "The Demoness" "The Dragon" "The Endurance" "The Eye of the Dragon" "The Flora's Gift" "The Garish Power" "The Gentleman" "The Hermit" "The Incantation" "The Lich" "The Lord in Black" "The Lunaris Priestess" "The Mercenary" "The Oath" "The Pack Leader" "The Pact" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Sun" "The Tower" "The Traitor" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolverine" "Thirst for Knowledge" "Thunderous Skies" Tranquillity "Turn the Other Cheek"] # no title
+SetOption $car_4 textarea ["A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Dark Temptation" Death "Destined to Crumble" "Doedre's Madness" "Forbidden Power" "Hunter's Resolve" "Light and Truth" Mitts Prosperity "Rain of Chaos" "Shard of Fate" "The Archmage's Right Hand" "The Army of Blood" "The Battle Born" "The Betrayal" "The Blazing Fire" "The Body" "The Coming Storm" "The Conduit" "The Deceiver" "The Dragon" "The Endurance" "The Eye of the Dragon" "The Flora's Gift" "The Garish Power" "The Gentleman" "The Hermit" "The Incantation" "The Lich" "The Lord in Black" "The Lunaris Priestess" "The Mercenary" "The Mountain" "The Oath" "The Pack Leader" "The Pact" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Sun" "The Tower" "The Traitor" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolverine" "Thirst for Knowledge" "Thunderous Skies" Tranquillity "Turn the Other Cheek"] # no title
 SetOption $T5_ info
 SetOption $car_5 textarea ["Cartographer's Delight" "Lantador's Lost Love" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Inoculated" "The King's Blade" "The Lover" "The Metalsmith's Gift" "The Rabid Rhoa" "The Surgeon"] # no title
 # // 
@@ -368,15 +370,17 @@ SetOption $EmptyLine
 SetOption $T1__ info
 SetOption $fra_1 textarea ["Ancient Reliquary Key" "Timeworn Reliquary Key"] # no title
 SetOption $T2__ info
-SetOption $fra_2 textarea ["Chayula's Breachstone" "Chayula's Charged Breachstone" "Chayula's Enriched Breachstone" "Chayula's Pure Breachstone" "Divine Vessel" "Esh's Pure Breachstone" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur" "Fragment of the Phoenix" "Gilded Ambush Scarab" "Gilded Bestiary Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Gilded Shaper Scarab" "Gilded Sulphite Scarab" "Gilded Torment Scarab" "Mortal Grief" "Mortal Hope" "Mortal Ignorance" "Mortal Rage" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Tul's Pure Breachstone" "Uul-Netol's Enriched Breachstone" "Uul-Netol's Pure Breachstone" "Xoph's Pure Breachstone"] # no title
+SetOption $fra_2 textarea ["Chayula's Breachstone" "Chayula's Charged Breachstone" "Chayula's Enriched Breachstone" "Chayula's Pure Breachstone" "Divine Vessel" "Esh's Pure Breachstone" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur" "Fragment of the Phoenix" "Gilded Ambush Scarab" "Gilded Bestiary Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Gilded Shaper Scarab" "Gilded Sulphite Scarab" "Gilded Torment Scarab" "Mortal Grief" "Mortal Hope" "Mortal Ignorance" "Mortal Rage" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Tul's Pure Breachstone" "Uul-Netol's Enriched Breachstone" "Uul-Netol's Pure Breachstone" "Xoph's Pure Breachstone"] # no title
 SetOption $T3__ info
-SetOption $fra_3 textarea ["Eber's Key" "Esh's Breachstone" "Esh's Charged Breachstone" "Esh's Enriched Breachstone" "Inya's Key" "Offering to the Goddess" "Polished Ambush Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Elder Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Polished Shaper Scarab" "Polished Sulphite Scarab" "Polished Torment Scarab" "Rusted Ambush Scarab" "Rusted Bestiary Scarab" "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Divination Scarab" "Rusted Elder Scarab" "Rusted Harbinger Scarab" "Rusted Perandus Scarab" "Rusted Reliquary Scarab" "Rusted Shaper Scarab" "Rusted Sulphite Scarab" "Rusted Torment Scarab" "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Midnight" "Sacrifice at Noon" "Timeless Eternal Emblem" "Timeless Karui Emblem" "Timeless Vaal Emblem" "Tul's Breachstone" "Tul's Charged Breachstone" "Tul's Enriched Breachstone" "Uul-Netol's Breachstone" "Uul-Netol's Charged Breachstone" "Volkuur's Key" "Xoph's Breachstone" "Xoph's Charged Breachstone" "Xoph's Enriched Breachstone" "Yriel's Key"] # no title
+SetOption $fra_3 textarea ["Eber's Key" "Esh's Breachstone" "Esh's Charged Breachstone" "Esh's Enriched Breachstone" "Inya's Key" "Offering to the Goddess" "Polished Ambush Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Elder Scarab" "Polished Harbinger Scarab" "Polished Legion Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Polished Shaper Scarab" "Polished Sulphite Scarab" "Polished Torment Scarab" "Rusted Ambush Scarab" "Rusted Bestiary Scarab" "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Divination Scarab" "Rusted Elder Scarab" "Rusted Harbinger Scarab" "Rusted Legion Scarab" "Rusted Perandus Scarab" "Rusted Reliquary Scarab" "Rusted Shaper Scarab" "Rusted Sulphite Scarab" "Rusted Torment Scarab" "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Midnight" "Sacrifice at Noon" "Timeless Eternal Emblem" "Timeless Karui Emblem" "Timeless Vaal Emblem" "Tul's Breachstone" "Tul's Charged Breachstone" "Tul's Enriched Breachstone" "Uul-Netol's Breachstone" "Uul-Netol's Charged Breachstone" "Volkuur's Key" "Xoph's Breachstone" "Xoph's Charged Breachstone" "Xoph's Enriched Breachstone" "Yriel's Key"] # no title
 # // 
 # // 
 # // 
 SetTab [unique]
-SetOption $T1_guarenteed info # multiclass block - Bases that have only one possible and valuable outcome.
-SetOption $uni_guarenteed textarea ["Glorious Plate" "Rawhide Tower Shield" "Sapphire Flask"] # no title
+SetOption $T1_valuable_1 info # multiclass block
+SetOption $uni_1 textarea ["Charan's Sword" "Chateau Map" "Crusader Boots" "Glorious Plate" "Greatwolf Talisman" "Maze Map" "Ornate Quiver" "Prophecy Wand" "Rawhide Boots" "Royal Axe" "Sapphire Flask"] # no title
+SetOption $T2_valuable_2 info # multiclass block
+SetOption $uni_2 textarea ["Ambush Mitts" "Callous Mask" "Carnal Boots" "Courtyard Map" "Gemstone Sword" "Grand Mana Flask" "Jewelled Foil" "Jingling Spirit Shield" "Leather Belt" "Museum Map" "Sanctified Life Flask" "Siege Axe" "Vaal Rapier" "Wyrmscale Doublet"] # no title
 # // 
 # // 
 # // 
@@ -400,44 +404,48 @@ SetOption $claws info
 SetOption $rar_claws switch [$custom_________] [$none] [$all] [$custom_________] # no title
 SetOption $daggers info
 SetOption $rar_daggers switch [$custom__________] [$none] [$all] [$custom__________] # no title
+SetOption $rune_daggers info
+SetOption $rar_rdaggers switch [$custom___________] [$none] [$all] [$custom___________] # no title
 SetOption $1H_axes info
-SetOption $rar_1haxes switch [$custom___________] [$none] [$all] [$custom___________] # no title
+SetOption $rar_1haxes switch [$custom____________] [$none] [$all] [$custom____________] # no title
 SetOption $1H_maces info
-SetOption $rar_1hmaces switch [$custom____________] [$none] [$all] [$custom____________] # no title
+SetOption $rar_1hmaces switch [$custom_____________] [$none] [$all] [$custom_____________] # no title
 SetOption $thrusting_swords info
-SetOption $rar_tswords switch [$custom_____________] [$none] [$all] [$custom_____________] # no title
+SetOption $rar_tswords switch [$custom______________] [$none] [$all] [$custom______________] # no title
 SetOption $1H_swords info
-SetOption $rar_1hswords switch [$custom______________] [$none] [$all] [$custom______________] # no title
+SetOption $rar_1hswords switch [$custom_______________] [$none] [$all] [$custom_______________] # no title
 SetOption $sceptres info
-SetOption $rar_sceptres switch [$custom_______________] [$none] [$all] [$custom_______________] # no title
+SetOption $rar_sceptres switch [$custom________________] [$none] [$all] [$custom________________] # no title
 SetOption $wands info
-SetOption $rar_wands switch [$custom________________] [$none] [$all] [$custom________________] # no title
+SetOption $rar_wands switch [$custom_________________] [$none] [$all] [$custom_________________] # no title
 SetOption $bows info
-SetOption $rar_bows switch [$custom_________________] [$none] [$all] [$custom_________________] # no title
+SetOption $rar_bows switch [$custom__________________] [$none] [$all] [$custom__________________] # no title
 SetOption $staves info
-SetOption $rar_staves switch [$custom__________________] [$none] [$all] [$custom__________________] # no title
+SetOption $rar_staves switch [$custom___________________] [$none] [$all] [$custom___________________] # no title
+SetOption $warstaves info
+SetOption $rar_warstaves switch [$custom____________________] [$none] [$all] [$custom____________________] # no title
 SetOption $2H_axes info
-SetOption $rar_2haxes switch [$custom___________________] [$none] [$all] [$custom___________________] # no title
+SetOption $rar_2haxes switch [$custom_____________________] [$none] [$all] [$custom_____________________] # no title
 SetOption $2H_maces info
-SetOption $rar_2hmaces switch [$custom____________________] [$none] [$all] [$custom____________________] # no title
+SetOption $rar_2hmaces switch [$custom______________________] [$none] [$all] [$custom______________________] # no title
 SetOption $2H_swords info
-SetOption $rar_2hswords switch [$custom_____________________] [$none] [$all] [$custom_____________________] # no title
+SetOption $rar_2hswords switch [$custom_______________________] [$none] [$all] [$custom_______________________] # no title
 SetOption $EmptyLine
 SetOption $T5_ARMOUR info
 SetOption $shields info
-SetOption $rar_shields switch [$custom______________________] [$none] [$all] [$custom______________________] # no title
+SetOption $rar_shields switch [$custom________________________] [$none] [$all] [$custom________________________] # no title
 SetOption $chests info
-SetOption $rar_chests switch [$custom_______________________] [$none] [$all] [$custom_______________________] # no title
+SetOption $rar_chests switch [$custom_________________________] [$none] [$all] [$custom_________________________] # no title
 SetOption $helms info
-SetOption $rar_helms switch [$custom________________________] [$none] [$all] [$custom________________________] # no title
+SetOption $rar_helms switch [$custom__________________________] [$none] [$all] [$custom__________________________] # no title
 SetOption $gloves info
-SetOption $rar_gloves switch [$custom_________________________] [$none] [$all] [$custom_________________________] # no title
+SetOption $rar_gloves switch [$custom___________________________] [$none] [$all] [$custom___________________________] # no title
 SetOption $boots info
-SetOption $rar_boots switch [$custom__________________________] [$none] [$all] [$custom__________________________] # no title
+SetOption $rar_boots switch [$custom____________________________] [$none] [$all] [$custom____________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T5_quivers info
-SetOption $rar_quivers switch [$custom___________________________] [$none] [$all] [$custom___________________________] # no title
+SetOption $rar_quivers switch [$custom_____________________________] [$none] [$all] [$custom_____________________________] # no title
 # // 
 # // 
 # // 
@@ -473,44 +481,48 @@ SetOption $claws_ info
 SetOption $mag_claws switch [$none] [$none] [$all] [$custom_________] # no title
 SetOption $daggers_ info
 SetOption $mag_daggers switch [$none] [$none] [$all] [$custom__________] # no title
+SetOption $rune_daggers_ info
+SetOption $mag_rdaggers switch [$none] [$none] [$all] [$custom___________] # no title
 SetOption $1H_axes_ info
-SetOption $mag_1haxes switch [$none] [$none] [$all] [$custom___________] # no title
+SetOption $mag_1haxes switch [$none] [$none] [$all] [$custom____________] # no title
 SetOption $1H_maces_ info
-SetOption $mag_1hmaces switch [$none] [$none] [$all] [$custom____________] # no title
+SetOption $mag_1hmaces switch [$none] [$none] [$all] [$custom_____________] # no title
 SetOption $thrusting_swords_ info
-SetOption $mag_tswords switch [$none] [$none] [$all] [$custom_____________] # no title
+SetOption $mag_tswords switch [$none] [$none] [$all] [$custom______________] # no title
 SetOption $1H_swords_ info
-SetOption $mag_1hswords switch [$none] [$none] [$all] [$custom______________] # no title
+SetOption $mag_1hswords switch [$none] [$none] [$all] [$custom_______________] # no title
 SetOption $sceptres_ info
-SetOption $mag_sceptres switch [$none] [$none] [$all] [$custom_______________] # no title
+SetOption $mag_sceptres switch [$none] [$none] [$all] [$custom________________] # no title
 SetOption $wands_ info
-SetOption $mag_wands switch [$none] [$none] [$all] [$custom________________] # no title
+SetOption $mag_wands switch [$none] [$none] [$all] [$custom_________________] # no title
 SetOption $bows_ info
-SetOption $mag_bows switch [$none] [$none] [$all] [$custom_________________] # no title
+SetOption $mag_bows switch [$none] [$none] [$all] [$custom__________________] # no title
 SetOption $staves_ info
-SetOption $mag_staves switch [$none] [$none] [$all] [$custom__________________] # no title
+SetOption $mag_staves switch [$none] [$none] [$all] [$custom___________________] # no title
+SetOption $warstaves_ info
+SetOption $mag_warstaves switch [$none] [$none] [$all] [$custom____________________] # no title
 SetOption $2H_axes_ info
-SetOption $mag_2haxes switch [$none] [$none] [$all] [$custom___________________] # no title
+SetOption $mag_2haxes switch [$none] [$none] [$all] [$custom_____________________] # no title
 SetOption $2H_maces_ info
-SetOption $mag_2hmaces switch [$none] [$none] [$all] [$custom____________________] # no title
+SetOption $mag_2hmaces switch [$none] [$none] [$all] [$custom______________________] # no title
 SetOption $2H_swords_ info
-SetOption $mag_2hswords switch [$none] [$none] [$all] [$custom_____________________] # no title
+SetOption $mag_2hswords switch [$none] [$none] [$all] [$custom_______________________] # no title
 SetOption $EmptyLine
 SetOption $T5_ARMOUR_ info
 SetOption $shields_ info
-SetOption $mag_shields switch [$none] [$none] [$all] [$custom______________________] # no title
+SetOption $mag_shields switch [$none] [$none] [$all] [$custom________________________] # no title
 SetOption $chests_ info
-SetOption $mag_chests switch [$none] [$none] [$all] [$custom_______________________] # no title
+SetOption $mag_chests switch [$none] [$none] [$all] [$custom_________________________] # no title
 SetOption $helms_ info
-SetOption $mag_helms switch [$none] [$none] [$all] [$custom________________________] # no title
+SetOption $mag_helms switch [$none] [$none] [$all] [$custom__________________________] # no title
 SetOption $gloves_ info
-SetOption $mag_gloves switch [$none] [$none] [$all] [$custom_________________________] # no title
+SetOption $mag_gloves switch [$none] [$none] [$all] [$custom___________________________] # no title
 SetOption $boots_ info
-SetOption $mag_boots switch [$none] [$none] [$all] [$custom__________________________] # no title
+SetOption $mag_boots switch [$none] [$none] [$all] [$custom____________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T5_quivers_ info
-SetOption $mag_quivers switch [$none] [$none] [$all] [$custom___________________________] # no title
+SetOption $mag_quivers switch [$none] [$none] [$all] [$custom_____________________________] # no title
 # // 
 # // 
 # // 
@@ -542,52 +554,56 @@ SetOption $T4_jewels__ info
 SetOption $nor_jewels switch [$none] [$none] [$all] [$custom________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
-SetOption $T4_chanceable info # multiclass block - Bases worth chancing.
-SetOption $nor_chanceable textarea ["Glorious Plate" "Rawhide Tower Shield" "Sapphire Flask" "Sorcerer Boots"] # no title
+SetOption $T4_chanceable info # multiclass block
+SetOption $nor_chanceable textarea ["Leather Belt"] # no title
 SetOption $EmptyLine
 SetOption $T5_WEAPONS__ info
 SetOption $claws__ info
 SetOption $nor_claws switch [$none] [$none] [$all] [$custom_________] # no title
 SetOption $daggers__ info
 SetOption $nor_daggers switch [$none] [$none] [$all] [$custom__________] # no title
+SetOption $rune_daggers__ info
+SetOption $nor_rdaggers switch [$none] [$none] [$all] [$custom___________] # no title
 SetOption $1H_axes__ info
-SetOption $nor_1haxes switch [$none] [$none] [$all] [$custom___________] # no title
+SetOption $nor_1haxes switch [$none] [$none] [$all] [$custom____________] # no title
 SetOption $1H_maces__ info
-SetOption $nor_1hmaces switch [$none] [$none] [$all] [$custom____________] # no title
+SetOption $nor_1hmaces switch [$none] [$none] [$all] [$custom_____________] # no title
 SetOption $thrusting_swords__ info
-SetOption $nor_tswords switch [$none] [$none] [$all] [$custom_____________] # no title
+SetOption $nor_tswords switch [$none] [$none] [$all] [$custom______________] # no title
 SetOption $1H_swords__ info
-SetOption $nor_1hswords switch [$none] [$none] [$all] [$custom______________] # no title
+SetOption $nor_1hswords switch [$none] [$none] [$all] [$custom_______________] # no title
 SetOption $sceptres__ info
-SetOption $nor_sceptres switch [$none] [$none] [$all] [$custom_______________] # no title
+SetOption $nor_sceptres switch [$none] [$none] [$all] [$custom________________] # no title
 SetOption $wands__ info
-SetOption $nor_wands switch [$none] [$none] [$all] [$custom________________] # no title
+SetOption $nor_wands switch [$none] [$none] [$all] [$custom_________________] # no title
 SetOption $bows__ info
-SetOption $nor_bows switch [$none] [$none] [$all] [$custom_________________] # no title
+SetOption $nor_bows switch [$none] [$none] [$all] [$custom__________________] # no title
 SetOption $staves__ info
-SetOption $nor_staves switch [$none] [$none] [$all] [$custom__________________] # no title
+SetOption $nor_staves switch [$none] [$none] [$all] [$custom___________________] # no title
+SetOption $warstaves__ info
+SetOption $nor_warstaves switch [$none] [$none] [$all] [$custom____________________] # no title
 SetOption $2H_axes__ info
-SetOption $nor_2haxes switch [$none] [$none] [$all] [$custom___________________] # no title
+SetOption $nor_2haxes switch [$none] [$none] [$all] [$custom_____________________] # no title
 SetOption $2H_maces__ info
-SetOption $nor_2hmaces switch [$none] [$none] [$all] [$custom____________________] # no title
+SetOption $nor_2hmaces switch [$none] [$none] [$all] [$custom______________________] # no title
 SetOption $2H_swords__ info
-SetOption $nor_2hswords switch [$none] [$none] [$all] [$custom_____________________] # no title
+SetOption $nor_2hswords switch [$none] [$none] [$all] [$custom_______________________] # no title
 SetOption $EmptyLine
 SetOption $T5_ARMOUR__ info
 SetOption $shields__ info
-SetOption $nor_shields switch [$none] [$none] [$all] [$custom______________________] # no title
+SetOption $nor_shields switch [$none] [$none] [$all] [$custom________________________] # no title
 SetOption $chests__ info
-SetOption $nor_chests switch [$none] [$none] [$all] [$custom_______________________] # no title
+SetOption $nor_chests switch [$none] [$none] [$all] [$custom_________________________] # no title
 SetOption $helms__ info
-SetOption $nor_helms switch [$none] [$none] [$all] [$custom________________________] # no title
+SetOption $nor_helms switch [$none] [$none] [$all] [$custom__________________________] # no title
 SetOption $gloves__ info
-SetOption $nor_gloves switch [$none] [$none] [$all] [$custom_________________________] # no title
+SetOption $nor_gloves switch [$none] [$none] [$all] [$custom___________________________] # no title
 SetOption $boots__ info
-SetOption $nor_boots switch [$none] [$none] [$all] [$custom__________________________] # no title
+SetOption $nor_boots switch [$none] [$none] [$all] [$custom____________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T5_quivers__ info
-SetOption $nor_quivers switch [$none] [$none] [$all] [$custom___________________________] # no title
+SetOption $nor_quivers switch [$none] [$none] [$all] [$custom_____________________________] # no title
 # // 
 # // 
 # // 
@@ -624,45 +640,49 @@ SetOption $WEAPONS info
 SetOption $claws___ info
 SetOption $custom_________ textarea ["Eye Gouger" "Gemini Claw" "Great White Claw" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Vaal Claw"] # no title
 SetOption $daggers___ info
-SetOption $custom__________ textarea [Ambusher "Copper Kris" "Demon Dagger" "Golden Kris" "Gutting Knife" "Platinum Kris" Sai] # no title
+SetOption $custom__________ textarea [Ambusher "Gutting Knife" Sai] # no title
+SetOption $rune_daggers___ info
+SetOption $custom___________ textarea ["Copper Kris" "Demon Dagger" "Golden Kris" "Platinum Kris"] # no title
 SetOption $1H_axes___ info
-SetOption $custom___________ textarea ["Royal Axe" "Runic Hatchet" "Siege Axe"] # no title
+SetOption $custom____________ textarea ["Royal Axe" "Runic Hatchet" "Siege Axe"] # no title
 SetOption $1H_maces___ info
-SetOption $custom____________ textarea ["Auric Mace" "Behemoth Mace" Gavel] # no title
+SetOption $custom_____________ textarea ["Auric Mace" "Behemoth Mace" Gavel] # no title
 SetOption $thrusting_swords___ info
-SetOption $custom_____________ textarea ["Dragoon Sword" "Harpy Rapier" "Jewelled Foil" "Vaal Rapier"] # no title
+SetOption $custom______________ textarea ["Dragoon Sword" "Harpy Rapier" "Jewelled Foil" "Vaal Rapier"] # no title
 SetOption $1H_swords___ info
-SetOption $custom______________ textarea ["Corsair Sword" "Eternal Sword" "Legion Sword" "Tiger Hook"] # no title
+SetOption $custom_______________ textarea ["Corsair Sword" "Eternal Sword" "Legion Sword" "Tiger Hook"] # no title
 SetOption $sceptres___ info
-SetOption $custom_______________ textarea ["Carnal Sceptre" "Karui Sceptre" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre"] # no title
+SetOption $custom________________ textarea ["Carnal Sceptre" "Karui Sceptre" "Opal Sceptre" "Sambar Sceptre" "Void Sceptre"] # no title
 SetOption $wands___ info
-SetOption $custom________________ textarea ["Demon's Horn" "Imbued Wand" "Opal Wand" "Profane Wand" "Prophecy Wand"] # no title
+SetOption $custom_________________ textarea ["Demon's Horn" "Imbued Wand" "Opal Wand" "Profane Wand" "Prophecy Wand"] # no title
 SetOption $bows___ info
-SetOption $custom_________________ textarea ["Citadel Bow" "Harbinger Bow" "Imperial Bow" "Maraketh Bow" "Thicket Bow"] # no title
+SetOption $custom__________________ textarea ["Citadel Bow" "Harbinger Bow" "Imperial Bow" "Maraketh Bow" "Thicket Bow"] # no title
 SetOption $staves___ info
-SetOption $custom__________________ textarea ["Coiled Staff" "Eclipse Staff" "Imperial Staff" Lathi "Maelström Staff" "Serpentine Staff"] # no title
+SetOption $custom___________________ textarea ["Eclipse Staff" "Imperial Staff" Lathi] # no title
+SetOption $warstaves___ info
+SetOption $custom____________________ textarea ["Coiled Staff" "Maelström Staff" "Serpentine Staff"] # no title
 SetOption $2H_axes___ info
-SetOption $custom___________________ textarea ["Ezomyte Axe" Fleshripper "Vaal Axe"] # no title
+SetOption $custom_____________________ textarea ["Ezomyte Axe" Fleshripper "Vaal Axe"] # no title
 SetOption $2H_maces___ info
-SetOption $custom____________________ textarea ["Coronal Maul" "Karui Maul" Piledriver] # no title
+SetOption $custom______________________ textarea ["Coronal Maul" "Karui Maul" Piledriver] # no title
 SetOption $2H_swords___ info
-SetOption $custom_____________________ textarea ["Exquisite Blade" "Lion Sword" "Reaver Sword" "Vaal Greatsword"] # no title
+SetOption $custom_______________________ textarea ["Exquisite Blade" "Lion Sword" "Reaver Sword" "Vaal Greatsword"] # no title
 SetOption $EmptyLine
 SetOption $ARMOUR info
 SetOption $shields___ info
-SetOption $custom______________________ textarea ["Archon Kite Shield" "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Lacquered Buckler" "Mirrored Spiked Shield" "Shagreen Tower Shield" "Spiny Round Shield" "Supreme Spiked Shield" "Teak Round Shield" "Titanium Spirit Shield" "Vaal Buckler"] # no title
+SetOption $custom________________________ textarea ["Archon Kite Shield" "Cardinal Round Shield" "Champion Kite Shield" "Colossal Tower Shield" "Crusader Buckler" "Ezomyte Tower Shield" "Fossilised Spirit Shield" "Lacquered Buckler" "Mirrored Spiked Shield" "Shagreen Tower Shield" "Spiny Round Shield" "Supreme Spiked Shield" "Teak Round Shield" "Titanium Spirit Shield" "Vaal Buckler"] # no title
 SetOption $chests___ info
-SetOption $custom_______________________ textarea ["Assassin's Garb" "Astral Plate" "Blood Raiment" "Carnal Armour" "Full Dragonscale" "Glorious Plate" "Occultist's Vestment" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Zodiac Leather"] # no title
+SetOption $custom_________________________ textarea ["Assassin's Garb" "Astral Plate" "Blood Raiment" "Carnal Armour" "Full Dragonscale" "Glorious Plate" "Occultist's Vestment" "Saint's Hauberk" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Zodiac Leather"] # no title
 SetOption $helms___ info
-SetOption $custom________________________ textarea ["Deicide Mask" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Royal Burgonet" "Vaal Mask"] # no title
+SetOption $custom__________________________ textarea ["Deicide Mask" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Prophet Crown" "Royal Burgonet" "Vaal Mask"] # no title
 SetOption $gloves___ info
-SetOption $custom_________________________ textarea ["Crusader Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets"] # no title
+SetOption $custom___________________________ textarea ["Crusader Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Murder Mitts" "Slink Gloves" "Sorcerer Gloves" "Titan Gauntlets"] # no title
 SetOption $boots___ info
-SetOption $custom__________________________ textarea ["Assassin's Boots" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves"] # no title
+SetOption $custom____________________________ textarea ["Assassin's Boots" "Crusader Boots" "Dragonscale Boots" "Murder Boots" "Slink Boots" "Sorcerer Boots" "Titan Greaves"] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $quivers info
-SetOption $custom___________________________ textarea ["Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"] # no title
+SetOption $custom_____________________________ textarea ["Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"] # no title
 # // 
 # // 
 # // 
@@ -744,29 +764,26 @@ SetTag @theme________________
 	PlayAlertSound 7 300 # fragments - T3
 SetTag @theme_________________
 	DisableDropSound
-	PlayAlertSound 1 300 # maps - T1
+	PlayAlertSound 8 300 # maps - T2
 SetTag @theme__________________
 	DisableDropSound
-	PlayAlertSound 8 300 # maps - T2
+	PlayAlertSound 7 300 # maps - T3
 SetTag @theme___________________
 	DisableDropSound
-	PlayAlertSound 7 300 # maps - T3
+	PlayAlertSound 9 300 # maps - T4
 SetTag @theme____________________
 	DisableDropSound
-	PlayAlertSound 9 300 # maps - T4
+	PlayAlertSound 14 300 # maps - T5
 SetTag @theme_____________________
 	DisableDropSound
-	PlayAlertSound 14 300 # maps - T5
+	PlayAlertSound 10 300 # special - T1
 SetTag @theme______________________
 	DisableDropSound
-	PlayAlertSound 10 300 # special - T1
+	PlayAlertSound 1 300 # unique - T1
 SetTag @theme_______________________
 	DisableDropSound
-	PlayAlertSound 1 300 # unique - T1
-SetTag @theme________________________
-	DisableDropSound
 	PlayAlertSound 3 300 # unique - T2
-SetTag @theme_________________________
+SetTag @theme________________________
 	DisableDropSound
 	PlayAlertSound 6 300 # unique - T3
 SetTag @custom
@@ -822,29 +839,26 @@ SetTag @custom________________
 	CustomAlertSound $file_fra_3
 SetTag @custom_________________
 	DisableDropSound
-	CustomAlertSound $file_map_1
+	CustomAlertSound $file_map_2
 SetTag @custom__________________
 	DisableDropSound
-	CustomAlertSound $file_map_2
+	CustomAlertSound $file_map_3
 SetTag @custom___________________
 	DisableDropSound
-	CustomAlertSound $file_map_3
+	CustomAlertSound $file_map_4
 SetTag @custom____________________
 	DisableDropSound
-	CustomAlertSound $file_map_4
+	CustomAlertSound $file_map_5
 SetTag @custom_____________________
 	DisableDropSound
-	CustomAlertSound $file_map_5
+	CustomAlertSound $file_spe_1
 SetTag @custom______________________
 	DisableDropSound
-	CustomAlertSound $file_spe_1
+	CustomAlertSound $file_uni_1
 SetTag @custom_______________________
 	DisableDropSound
-	CustomAlertSound $file_uni_1
-SetTag @custom________________________
-	DisableDropSound
 	CustomAlertSound $file_uni_2
-SetTag @custom_________________________
+SetTag @custom________________________
 	DisableDropSound
 	CustomAlertSound $file_uni_3
 
@@ -958,63 +972,63 @@ SetTag @T5_
 
 Show # currency - specific - blessed orb | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType "Blessed Orb"
 
 	Tags $cur_blessedorb $sound_blessedorb
 
 Show # currency - specific - chaos orb | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType "Chaos Orb"
 
 	Tags $cur_chaosorb $sound_chaosorb
 
 Show # currency - specific - divine orb | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType "Divine Orb"
 
 	Tags $cur_divineorb $sound_divineorb
 
 Show # currency - specific - exalted orb | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType "Exalted Orb"
 
 	Tags $cur_exaltedorb $sound_exaltedorb
 
 Show # currency - specific - imprinted bestiary orb | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType "Imprinted Bestiary Orb"
 
 	Tags $cur_imprintedbestiaryorb
 
 Show # currency - specific - mirror of kalandra | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType "Mirror of Kalandra"
 
 	Tags $cur_mirrorofkalandra $sound_mirrorofkalandra
 
 Show # currency - specific - orb of alchemy | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType "Orb of Alchemy"
 
 	Tags $cur_orbofalchemy $sound_orbofalchemy
 
 Show # currency - specific - orb of fusing | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType "Orb of Fusing"
 
 	Tags $cur_orboffusing $sound_orboffusing
 
 Show # currency - specific - prophecy - T1 | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType Prophecy
 	Prophecy "Ancient Rivalries I" "Ancient Rivalries II" "Ancient Rivalries III" "Ancient Rivalries IV" "Fated Connections" "The Queen's Sacrifice" "Trash to Treasure"
 
@@ -1026,7 +1040,7 @@ Show # currency - specific - prophecy - T1 | Disable
 
 Show # currency - specific - prophecy - T2 | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType Prophecy
 	Prophecy "A Vision of Ice and Fire" "Cleanser of Sins" "Darktongue's Shriek" "Monstrous Treasure" "The King's Path" "The Unbreathing Queen V" "Wind and Thunder"
 
@@ -1038,7 +1052,7 @@ Show # currency - specific - prophecy - T2 | Disable
 
 Show # currency - specific - prophecy - T3 | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType Prophecy
 	Prophecy "A Call into the Void" "A Dishonourable Death" "A Firm Foothold" "A Forest of False Idols" "A Master Seeks Help" "A Prodigious Hand" "A Regal Death" "A Rift in Time" "A Valuable Combination" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Agony at Dusk" "An Unseen Peril" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Ancient Doom" "Baptism by Death" "Battle Hardened" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Black Devotion" "Blind Faith" "Blinding Light" "Blood in the Eyes" "Blood of the Betrayed" "Bountiful Traps" "Burning Dread" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Crushing Squall" "Custodians of Silence" "Dance of Steel" "Dark Instincts" "Day of Sacrifice I" "Day of Sacrifice II" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry II" "Deadly Rivalry III" "Deadly Rivalry IV" "Deadly Rivalry V" "Deadly Twins" "Defiled in the Sceptre" "Dying Cry" "Echoes of Witchcraft" "End of the Light" "Ending the Torment" "Erased from Memory" "Erasmus' Gift" "Faith Exhumed" "Fallow At Last" "Fear's Wide Reach" "Fire and Brimstone" "Fire and Ice" "Fire from the Sky" "Fire, Wood and Stone" "Flesh of the Beast" "Forceful Exorcism" "From Death Springs Life" "From The Void" "Gilded Within" "Golden Touch" "Graceful Flames" "Greed's Folly" "Heart of the Fire" "Heavy Blows" "Hidden Reinforcements" "Hidden Vaal Pathways" "Holding the Bridge" "Hunter's Lesson" "Ice from Above" "In the Grasp of Corruption" "Kalandra's Craft" "Last of the Wildmen" "Lasting Impressions" "Lightning Falls" "Living Fires" "Lost in the Pages" "Mouth of Horrors" "Mysterious Invaders" "Nature's Resilience" "Nemesis of Greed" "Notched Flesh" "Overflowing Riches" "Path of Betrayal" "Plague of Frogs" "Plague of Rats" "Pleasure and Pain" "Pools of Wealth" "Possessed Foe" "Power Magnified" Rebirth "Reforged Bonds" "Resistant to Change" "Risen Blood" "Roth's Legacy" "Severed Limbs" "Smothering Tendrils" "Soil, Worms and Blood" "Song of the Sekhema" "Storm on the Horizon" "Storm on the Reef" "Strong as a Bull" "Sun's Punishment" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "Thaumaturgical History IV" "The Alchemist" "The Ambitious Bandit I" "The Ambitious Bandit II" "The Ambitious Bandit III" "The Apex Predator" "The Beautiful Guide" "The Beginning and the End" "The Bishop's Legacy" "The Bloody Flowers Redux" "The Bowstring's Music" "The Brothers of Necromancy" "The Brutal Enforcer" "The Child of Lunaris" "The Corrupt" "The Cursed Choir" "The Dreaded Rhoa" "The Dream Trial" "The Dreamer's Dream" "The Eagle's Cry" "The Fall of an Empire" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Feral Lord V" "The Flayed Man" "The Flow of Energy" "The Forgotten Garrison" "The Forgotten Soldiers" "The Fortune Teller's Collection" "The Four Feral Exiles" "The God of Misfortune" "The Great Leader of the North" "The Great Mind of the North" "The Hardened Armour" "The Hollow Pledge" "The Hungering Swarm" "The Invader" "The Jeweller's Touch" "The Karui Rebellion" "The King and the Brambles" "The Lady in Black" "The Last Watch" "The Lost Maps" "The Lost Undying" "The Malevolent Witch" "The Mentor" "The Misunderstood Queen" "The Mysterious Gift" "The Nest" "The Nightmare Awakens" "The Petrified" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Plaguemaw V" "The Prison Guard" "The Prison Key" "The Queen's Vaults" "The Scout" "The Servant's Heart" "The Sharpened Blade" "The Silverwood" "The Singular Spirit" "The Sinner's Stone" "The Snuffed Flame" "The Soulless Beast" "The Stockkeeper" "The Storm Spire" "The Sword King's Passion" "The Trembling Earth" "The Twins" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "The Undead Brutes" "The Undead Storm" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "The Warmongers I" "The Warmongers II" "The Warmongers III" "The Warmongers IV" "The Watcher's Watcher" "The Wealthy Exile" "Touched by the Wind" "Trapped in the Tower" "Twice Enchanted" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Unbearable Whispers V" "Undead Uprising" "Unnatural Energy" "Vaal Invasion" "Vaal Winds" "Visions of the Drowned" "Vital Transformation" "Waiting in Ambush" "Weeping Death" "Winter's Mournful Melodies"
 
@@ -1050,11 +1064,11 @@ Show # currency - specific - prophecy - T3 | Disable
 
 Hide
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType Prophecy
 	Prophecy "A Call into the Void" "A Dishonourable Death" "A Firm Foothold" "A Forest of False Idols" "A Master Seeks Help" "A Prodigious Hand" "A Regal Death" "A Rift in Time" "A Valuable Combination" "A Vision of Ice and Fire" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Agony at Dusk" "An Unseen Peril" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Ancient Doom" "Ancient Rivalries I" "Ancient Rivalries II" "Ancient Rivalries III" "Ancient Rivalries IV" "Baptism by Death" "Battle Hardened" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Black Devotion" "Blind Faith" "Blinding Light" "Blood in the Eyes" "Blood of the Betrayed" "Bountiful Traps" "Burning Dread" "Cleanser of Sins" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Crushing Squall" "Custodians of Silence" "Dance of Steel" "Dark Instincts" "Darktongue's Shriek" "Day of Sacrifice I" "Day of Sacrifice II" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry II" "Deadly Rivalry III" "Deadly Rivalry IV" "Deadly Rivalry V" "Deadly Twins" "Defiled in the Sceptre" "Dying Cry" "Echoes of Witchcraft" "End of the Light" "Ending the Torment" "Erased from Memory" "Erasmus' Gift" "Faith Exhumed" "Fallow At Last" "Fated Connections" "Fear's Wide Reach" "Fire and Brimstone" "Fire and Ice" "Fire from the Sky" "Fire, Wood and Stone" "Flesh of the Beast" "Forceful Exorcism" "From Death Springs Life" "From The Void" "Gilded Within" "Golden Touch" "Graceful Flames" "Greed's Folly" "Heart of the Fire" "Heavy Blows" "Hidden Reinforcements" "Hidden Vaal Pathways" "Holding the Bridge" "Hunter's Lesson" "Ice from Above" "In the Grasp of Corruption" "Kalandra's Craft" "Last of the Wildmen" "Lasting Impressions" "Lightning Falls" "Living Fires" "Lost in the Pages" "Monstrous Treasure" "Mouth of Horrors" "Mysterious Invaders" "Nature's Resilience" "Nemesis of Greed" "Notched Flesh" "Overflowing Riches" "Path of Betrayal" "Plague of Frogs" "Plague of Rats" "Pleasure and Pain" "Pools of Wealth" "Possessed Foe" "Power Magnified" Rebirth "Reforged Bonds" "Resistant to Change" "Risen Blood" "Roth's Legacy" "Severed Limbs" "Smothering Tendrils" "Soil, Worms and Blood" "Song of the Sekhema" "Storm on the Horizon" "Storm on the Reef" "Strong as a Bull" "Sun's Punishment" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "Thaumaturgical History IV" "The Alchemist" "The Ambitious Bandit I" "The Ambitious Bandit II" "The Ambitious Bandit III" "The Apex Predator" "The Beautiful Guide" "The Beginning and the End" "The Bishop's Legacy" "The Bloody Flowers Redux" "The Bowstring's Music" "The Brothers of Necromancy" "The Brutal Enforcer" "The Child of Lunaris" "The Corrupt" "The Cursed Choir" "The Dreaded Rhoa" "The Dream Trial" "The Dreamer's Dream" "The Eagle's Cry" "The Fall of an Empire" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Feral Lord V" "The Flayed Man" "The Flow of Energy" "The Forgotten Garrison" "The Forgotten Soldiers" "The Fortune Teller's Collection" "The Four Feral Exiles" "The God of Misfortune" "The Great Leader of the North" "The Great Mind of the North" "The Hardened Armour" "The Hollow Pledge" "The Hungering Swarm" "The Invader" "The Jeweller's Touch" "The Karui Rebellion" "The King and the Brambles" "The King's Path" "The Lady in Black" "The Last Watch" "The Lost Maps" "The Lost Undying" "The Malevolent Witch" "The Mentor" "The Misunderstood Queen" "The Mysterious Gift" "The Nest" "The Nightmare Awakens" "The Petrified" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Plaguemaw V" "The Prison Guard" "The Prison Key" "The Queen's Sacrifice" "The Queen's Vaults" "The Scout" "The Servant's Heart" "The Sharpened Blade" "The Silverwood" "The Singular Spirit" "The Sinner's Stone" "The Snuffed Flame" "The Soulless Beast" "The Stockkeeper" "The Storm Spire" "The Sword King's Passion" "The Trembling Earth" "The Twins" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "The Unbreathing Queen V" "The Undead Brutes" "The Undead Storm" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "The Warmongers I" "The Warmongers II" "The Warmongers III" "The Warmongers IV" "The Watcher's Watcher" "The Wealthy Exile" "Touched by the Wind" "Trapped in the Tower" "Trash to Treasure" "Twice Enchanted" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Unbearable Whispers V" "Undead Uprising" "Unnatural Energy" "Vaal Invasion" "Vaal Winds" "Visions of the Drowned" "Vital Transformation" "Waiting in Ambush" "Weeping Death" "Wind and Thunder" "Winter's Mournful Melodies"
 
-	SetFontSize $text_1_
+	SetFontSize $text_6
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 0 255 0 255 # currency
 	SetBorderColor 0 0 0 255 # common - black
@@ -1062,7 +1076,7 @@ Hide
 
 Show # currency - specific - prophecy - T1 unparseable | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType Prophecy
 
 	SetFontSize $text_1
@@ -1073,10 +1087,10 @@ Show # currency - specific - prophecy - T1 unparseable | Disable
 
 Hide
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType Prophecy
 
-	SetFontSize $text_1_
+	SetFontSize $text_6
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 0 255 0 255 # currency
 	SetBorderColor 0 0 0 255 # common - black
@@ -1084,21 +1098,21 @@ Hide
 
 Show # currency - specific - regal orb | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType "Regal Orb"
 
 	Tags $cur_regalorb $sound_regalorb
 
 Show # currency - specific - vaal orb | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType "Vaal Orb"
 
 	Tags $cur_vaalorb $sound_vaalorb
 
 Show # currency - rest - T1 | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType $cur_1
 
 	SetFontSize $text_1
@@ -1109,7 +1123,7 @@ Show # currency - rest - T1 | Disable
 
 Show # currency - rest - T2 | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType $cur_2
 
 	SetFontSize $text_2
@@ -1120,7 +1134,7 @@ Show # currency - rest - T2 | Disable
 
 Show # currency - rest - T3 | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType $cur_3
 
 	SetFontSize $text_3
@@ -1131,7 +1145,7 @@ Show # currency - rest - T3 | Disable
 
 Show # currency - rest - T4 | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType $cur_4
 
 	SetFontSize $text_4
@@ -1142,8 +1156,20 @@ Show # currency - rest - T4 | Disable
 
 Show # currency - rest - T5 | Disable
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType $cur_5
+
+	SetFontSize $text_5
+	SetBackgroundColor 0 0 0 127 # common - half-black
+	SetTextColor 0 255 0 255 # currency
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_5 $icon_5 $sound_5
+
+Show # currency - rest - T5 minimum stack size | Disable
+
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
+	BaseType $cur_6
+	StackSize >= $cur_7
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # common - half-black
@@ -1153,9 +1179,9 @@ Show # currency - rest - T5 | Disable
 
 Hide
 
-	Class "Delve Socketable Currency" Incubator "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 
-	SetFontSize $text_1_
+	SetFontSize $text_6
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 0 255 0 255 # currency
 	SetBorderColor 0 0 0 255 # common - black
@@ -1215,6 +1241,13 @@ Show # cards - specific - beauty through death | Disable
 
 	Tags $car_beautythroughdeath
 
+Show # cards - specific - the demoness | Disable
+
+	Class "Divination Card"
+	BaseType "The Demoness"
+
+	Tags $car_thedemoness
+
 Show # cards - specific - the dragon's heart | Disable
 
 	Class "Divination Card"
@@ -1228,6 +1261,20 @@ Show # cards - specific - the master artisan | Disable
 	BaseType "The Master Artisan"
 
 	Tags $car_themasterartisan
+
+Show # cards - specific - the price of loyalty | Disable
+
+	Class "Divination Card"
+	BaseType "The Price of Loyalty"
+
+	Tags $car_thepriceofloyalty
+
+Show # cards - specific - the wolf's legacy | Disable
+
+	Class "Divination Card"
+	BaseType "The Wolf's Legacy"
+
+	Tags $car_thewolfslegacy
 
 Show # cards - specific - the wolf's shadow | Disable
 
@@ -1295,7 +1342,7 @@ Hide
 
 	Class "Divination Card"
 
-	SetFontSize $text_1_
+	SetFontSize $text_6
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 0 255 255 # cards
 	SetBorderColor 0 0 0 255 # common - black
@@ -1355,7 +1402,7 @@ Hide
 
 	Class "Map Fragments" "Misc Map Items"
 
-	SetFontSize $text_1_
+	SetFontSize $text_6
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 0 0 255 # fragments
 	SetBorderColor 0 0 0 255 # common - black
@@ -1552,7 +1599,7 @@ Hide
 
 	Class "Active Skill Gems" "Support Skill Gems"
 
-	SetFontSize $text_1_
+	SetFontSize $text_6
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 0 255 255 255 # gems
 	SetBorderColor 0 0 0 255 # common - black
@@ -1615,7 +1662,7 @@ Show # unique - T1 restricted bases 1 - helms | Disable
 
 	Rarity Unique
 	Class Helmets
-	BaseType "Golden Wreath"
+	BaseType "Golden Visage" "Golden Wreath"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 127 0 255 # unique
@@ -1651,7 +1698,7 @@ Show # unique - T1 restricted bases 1 - quivers | Disable
 
 	Rarity Unique
 	Class Quivers
-	BaseType "Heavy Quiver"
+	BaseType "Cured Quiver" "Heavy Quiver"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 127 0 255 # unique
@@ -1695,10 +1742,10 @@ Show # unique - T1 restricted bases 1 - rings | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_1 $icon_1 $sound_uni_1
 
-Show # unique - T1 guarenteed | Disable
+Show # unique - T1 valuable 1 | Disable
 
 	Rarity Unique
-	BaseType $uni_guarenteed
+	BaseType $uni_1
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 127 0 255 # unique
@@ -1718,11 +1765,11 @@ Show # unique - T2 restricted bases 2 - 1h swords | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_uni_2
 
-Show # unique - T2 restricted bases 2 - quivers | Disable
+Show # unique - T2 restricted bases 2 - chests | Disable
 
 	Rarity Unique
-	Class Quivers
-	BaseType "Ornate Quiver"
+	Class "Body Armours"
+	BaseType "Sacrificial Garb"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 127 0 255 # unique
@@ -1730,11 +1777,11 @@ Show # unique - T2 restricted bases 2 - quivers | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_uni_2
 
-Show # unique - T2 restricted bases 2 - chests | Disable
+Show # unique - T2 restricted bases 2 - quivers | Disable
 
 	Rarity Unique
-	Class "Body Armours"
-	BaseType "Sacrificial Garb"
+	Class Quivers
+	BaseType "Ornate Quiver"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 127 0 255 # unique
@@ -1795,6 +1842,17 @@ Show # unique - T2 restricted bases 2 - maps | Disable
 	Rarity Unique
 	Class Maps
 	BaseType "Harbinger Map"
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_2 $icon_2 $sound_uni_2
+
+Show # unique - T2 valuable 2 | Disable
+
+	Rarity Unique
+	BaseType $uni_2
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 127 0 255 # unique
@@ -1915,7 +1973,7 @@ Hide
 
 	Rarity Unique
 
-	SetFontSize $text_1_
+	SetFontSize $text_6
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 127 0 255 # unique
 	SetBorderColor 0 0 0 255 # common - black
@@ -1937,28 +1995,6 @@ SetTag @medium
 	MinimapIcon 1 $icon_color_map $icon_shape_map
 SetTag @large
 	MinimapIcon 0 $icon_color_map $icon_shape_map
-
-Show # maps - T1 restricted bases 1 | Disable
-
-	Class Maps
-	BaseType "Harbinger Map"
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 0 0 255 # maps
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_map_1 $icon_map_1 $sound_map_1
-
-Show # maps - T2 restricted bases 2 | Disable
-
-	Class Maps
-	BaseType "Vaal Temple Map"
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 0 0 255 # maps
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_map_2 $icon_map_2 $sound_map_2
 
 Show # maps - T2 elder | Disable
 
@@ -2003,6 +2039,17 @@ Show # maps - T2 qty 21+ | Disable
 	SetTextColor 0 0 0 255 # common - black
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_map_2 $icon_map_2 $sound_map_2
+
+Show # maps - T3 blighted | Disable
+
+	Class Maps
+	BlightedMap True
+
+	SetFontSize $text_3
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_map_3 $icon_map_3 $sound_map_3
 
 Show # maps - T3 shaped | Disable
 
@@ -2078,7 +2125,7 @@ Hide
 
 	Class Maps
 
-	SetFontSize $text_1_
+	SetFontSize $text_6
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 0 0 255 # maps
 	SetBorderColor 0 0 0 255 # common - black
@@ -2106,6 +2153,18 @@ Show # rare - T1 restricted bases 1 - rods | Disable
 	Rarity Rare
 	Class "Fishing Rods"
 	BaseType "Fishing Rod"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted bases 1 - 2h swords | Disable
+
+	Rarity Rare
+	Class "Two Hand Swords"
+	BaseType Keyblade
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2141,7 +2200,7 @@ Show # rare - T1 restricted bases 1 - helms | Disable
 
 	Rarity Rare
 	Class Helmets
-	BaseType "Golden Wreath"
+	BaseType "Golden Visage" "Golden Wreath"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2201,7 +2260,7 @@ Show # rare - T1 restricted bases 1 - amulets | Disable
 
 	Rarity Rare
 	Class Amulets
-	BaseType "Jet Amulet" "Ruby Amulet"
+	BaseType "Jet Amulet"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2214,6 +2273,19 @@ Show # rare - T1 restricted bases 1 - rings | Disable
 	Rarity Rare
 	Class Rings
 	BaseType "Golden Hoop"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted bases & elder - wands | Disable
+
+	Rarity Rare
+	Class Wands
+	BaseType "Convoking Wand"
+	ElderItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2290,8 +2362,21 @@ Show # rare - T1 restricted bases & elder - rings | Disable
 
 	Rarity Rare
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	ElderItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted bases & shaper - wands | Disable
+
+	Rarity Rare
+	Class Wands
+	BaseType "Convoking Wand"
+	ShaperItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2368,8 +2453,21 @@ Show # rare - T1 restricted bases & shaper - rings | Disable
 
 	Rarity Rare
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	ShaperItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted bases & fractured - wands | Disable
+
+	Rarity Rare
+	Class Wands
+	BaseType "Convoking Wand"
+	FracturedItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2446,8 +2544,21 @@ Show # rare - T1 restricted bases & fractured - rings | Disable
 
 	Rarity Rare
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted bases & synthesised - wands | Disable
+
+	Rarity Rare
+	Class Wands
+	BaseType "Convoking Wand"
+	SynthesisedItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2524,7 +2635,7 @@ Show # rare - T1 restricted bases & synthesised - rings | Disable
 
 	Rarity Rare
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	SynthesisedItem True
 
 	SetFontSize $text_1
@@ -2565,6 +2676,19 @@ Show # rare - T1 restricted bases & enchanted - boots | Disable
 	Class Boots
 	BaseType "Two-Toned Boots"
 	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # rare - T1 restricted bases & mods - wands | Disable
+
+	Rarity Rare
+	Class Wands
+	BaseType "Convoking Wand"
+	HasExplicitMod Betrayer's Brinerot Catarina's "Catarina's Veiled" Citaqualotl's Deceiver's Elreon's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" Haku's "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" Leo's "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's Tora's "Tora's Veiled" Turncoat's Vagan's "Vagan's Veiled" Veiled Vorici's "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2641,7 +2765,7 @@ Show # rare - T1 restricted bases & mods - rings | Disable
 
 	Rarity Rare
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	HasExplicitMod Betrayer's Brinerot Catarina's "Catarina's Veiled" Citaqualotl's Deceiver's Elreon's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" Haku's "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" Leo's "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's Tora's "Tora's Veiled" Turncoat's Vagan's "Vagan's Veiled" Veiled Vorici's "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
 
 	SetFontSize $text_1
@@ -2662,11 +2786,11 @@ Show # rare - T2 restricted bases 2 - 1h swords | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # rare - T2 restricted bases 2 - quivers | Disable
+Show # rare - T2 restricted bases 2 - chests | Disable
 
 	Rarity Rare
-	Class Quivers
-	BaseType "Ornate Quiver"
+	Class "Body Armours"
+	BaseType "Sacrificial Garb"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2674,11 +2798,11 @@ Show # rare - T2 restricted bases 2 - quivers | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # rare - T2 restricted bases 2 - chests | Disable
+Show # rare - T2 restricted bases 2 - quivers | Disable
 
 	Rarity Rare
-	Class "Body Armours"
-	BaseType "Sacrificial Garb"
+	Class Quivers
+	BaseType "Ornate Quiver"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2714,7 +2838,7 @@ Show # rare - T2 restricted bases 2 - rings | Disable
 
 	Rarity Rare
 	Class Rings
-	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Prismatic Ring" "Steel Ring" "Vermillion Ring"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2832,6 +2956,18 @@ Show # rare - T2 sockets 6 linked | Disable
 	SetTextColor 0 0 0 255 # common - black
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
+
+Show # rare - T3 restricted bases 3 - wands | Disable
+
+	Rarity Rare
+	Class Wands
+	BaseType "Convoking Wand"
+
+	SetFontSize $text_3
+	SetBackgroundColor 255 255 0 255 # rare - main
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_3 $icon_3 $sound_3
 
 Show # rare - T3 restricted bases 3 - helms | Disable
 
@@ -3068,6 +3204,18 @@ Show # rare - T5 weapons - daggers | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_5 $icon_5 $sound_5
 
+Show # rare - T5 weapons - rune daggers | Disable
+
+	Rarity Rare
+	Class "Rune Dagger"
+	BaseType $rar_rdaggers
+
+	SetFontSize $text_5
+	SetBackgroundColor 0 0 0 127 # common - half-black
+	SetTextColor 255 255 0 255 # rare - main
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_5 $icon_5 $sound_5
+
 Show # rare - T5 weapons - 1h axes | Disable
 
 	Rarity Rare
@@ -3157,6 +3305,18 @@ Show # rare - T5 weapons - staves | Disable
 	Rarity Rare
 	Class Staves
 	BaseType $rar_staves
+
+	SetFontSize $text_5
+	SetBackgroundColor 0 0 0 127 # common - half-black
+	SetTextColor 255 255 0 255 # rare - main
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_5 $icon_5 $sound_5
+
+Show # rare - T5 weapons - warstaves | Disable
+
+	Rarity Rare
+	Class Warstaff
+	BaseType $rar_warstaves
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # common - half-black
@@ -3276,7 +3436,7 @@ Hide
 
 	Rarity Rare
 
-	SetFontSize $text_2_
+	SetFontSize $text_7
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 255 0 255 # rare - main
 	SetBorderColor 0 0 0 255 # common - black
@@ -3304,6 +3464,18 @@ Show # magic - T1 restricted bases 1 - rods | Disable
 	Rarity Magic
 	Class "Fishing Rods"
 	BaseType "Fishing Rod"
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted bases 1 - 2h swords | Disable
+
+	Rarity Magic
+	Class "Two Hand Swords"
+	BaseType Keyblade
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3339,7 +3511,7 @@ Show # magic - T1 restricted bases 1 - helms | Disable
 
 	Rarity Magic
 	Class Helmets
-	BaseType "Golden Wreath"
+	BaseType "Golden Visage" "Golden Wreath"
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3399,7 +3571,7 @@ Show # magic - T1 restricted bases 1 - amulets | Disable
 
 	Rarity Magic
 	Class Amulets
-	BaseType "Jet Amulet" "Ruby Amulet"
+	BaseType "Jet Amulet"
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3424,6 +3596,19 @@ Show # magic - T1 restricted bases 1 - leaguestones | Disable
 	Rarity Magic
 	Class Leaguestones
 	BaseType "Ambush Leaguestone" "Anarchy Leaguestone" "Beyond Leaguestone" "Bloodlines Leaguestone" "Breach Leaguestone" "Domination Leaguestone" "Essence Leaguestone" "Invasion Leaguestone" "Nemesis Leaguestone" "Onslaught Leaguestone" "Perandus Leaguestone" "Prophecy Leaguestone" "Rampage Leaguestone" "Talisman Leaguestone" "Tempest Leaguestone" "Torment Leaguestone" "Warbands Leaguestone"
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted bases & elder - wands | Disable
+
+	Rarity Magic
+	Class Wands
+	BaseType "Convoking Wand"
+	ElderItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3500,8 +3685,21 @@ Show # magic - T1 restricted bases & elder - rings | Disable
 
 	Rarity Magic
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	ElderItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted bases & shaper - wands | Disable
+
+	Rarity Magic
+	Class Wands
+	BaseType "Convoking Wand"
+	ShaperItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3578,8 +3776,21 @@ Show # magic - T1 restricted bases & shaper - rings | Disable
 
 	Rarity Magic
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	ShaperItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted bases & fractured - wands | Disable
+
+	Rarity Magic
+	Class Wands
+	BaseType "Convoking Wand"
+	FracturedItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3656,8 +3867,21 @@ Show # magic - T1 restricted bases & fractured - rings | Disable
 
 	Rarity Magic
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted bases & synthesised - wands | Disable
+
+	Rarity Magic
+	Class Wands
+	BaseType "Convoking Wand"
+	SynthesisedItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3734,7 +3958,7 @@ Show # magic - T1 restricted bases & synthesised - rings | Disable
 
 	Rarity Magic
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	SynthesisedItem True
 
 	SetFontSize $text_1
@@ -3775,6 +3999,19 @@ Show # magic - T1 restricted bases & enchanted - boots | Disable
 	Class Boots
 	BaseType "Two-Toned Boots"
 	AnyEnchantment True
+
+	SetFontSize $text_1
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # magic - T1 restricted bases & mods - wands | Disable
+
+	Rarity Magic
+	Class Wands
+	BaseType "Convoking Wand"
+	HasExplicitMod Betrayer's Brinerot Catarina's "Catarina's Veiled" Citaqualotl's Deceiver's Elreon's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" Haku's "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" Leo's "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's Tora's "Tora's Veiled" Turncoat's Vagan's "Vagan's Veiled" Veiled Vorici's "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3851,7 +4088,7 @@ Show # magic - T1 restricted bases & mods - rings | Disable
 
 	Rarity Magic
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	HasExplicitMod Betrayer's Brinerot Catarina's "Catarina's Veiled" Citaqualotl's Deceiver's Elreon's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" Haku's "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" Leo's "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's Tora's "Tora's Veiled" Turncoat's Vagan's "Vagan's Veiled" Veiled Vorici's "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
 
 	SetFontSize $text_1
@@ -3872,11 +4109,11 @@ Show # magic - T2 restricted bases 2 - 1h swords | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # magic - T2 restricted bases 2 - quivers | Disable
+Show # magic - T2 restricted bases 2 - chests | Disable
 
 	Rarity Magic
-	Class Quivers
-	BaseType "Ornate Quiver"
+	Class "Body Armours"
+	BaseType "Sacrificial Garb"
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3884,11 +4121,11 @@ Show # magic - T2 restricted bases 2 - quivers | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # magic - T2 restricted bases 2 - chests | Disable
+Show # magic - T2 restricted bases 2 - quivers | Disable
 
 	Rarity Magic
-	Class "Body Armours"
-	BaseType "Sacrificial Garb"
+	Class Quivers
+	BaseType "Ornate Quiver"
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -3924,7 +4161,7 @@ Show # magic - T2 restricted bases 2 - rings | Disable
 
 	Rarity Magic
 	Class Rings
-	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Prismatic Ring" "Steel Ring" "Vermillion Ring"
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4002,7 +4239,7 @@ Show # magic - T2 enchanted | Disable
 Show # magic - T2 restricted mods | Disable
 
 	Rarity Magic
-	HasExplicitMod Betrayer's Brinerot Catarina's "Catarina's Veiled" Citaqualotl's Deceiver's Elreon's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" Haku's "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" Leo's "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's Tora's "Tora's Veiled" Turncoat's Vagan's "Vagan's Veiled" Veiled Vorici's "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
+	HasExplicitMod Betrayer's Brinerot Catarina's "Catarina's Veiled" Citaqualotl's Deceiver's Elreon's "Elreon's Veiled" "Gravicius' Veiled" Guatelitzi's "Guff's Veiled" Haku's "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" Leo's "Leo's Veiled" Matatl's Mutewind Redblade "Rin's Veiled" Subterranean Tacati's Topotante's Tora's "Tora's Veiled" Turncoat's Vagan's "Vagan's Veiled" Veiled Vorici's "Vorici's Veiled" Xopec's "of Aisling's Veil" "of Cameria's Veil" "of Citaqualotl" "of Crafting" "of Craiceann" "of Craving" "of Farrul" "of Fenumus" "of Gluttony" "of Guatelitzi" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Matatl" "of Puhuarte" "of Riker's Veil" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground" "of the Veil"
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4042,6 +4279,18 @@ Show # magic - T2 sockets 6 linked | Disable
 	SetTextColor 0 0 0 255 # common - black
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
+
+Show # magic - T3 restricted bases 3 - wands | Disable
+
+	Rarity Magic
+	Class Wands
+	BaseType "Convoking Wand"
+
+	SetFontSize $text_3
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_3 $icon_3 $sound_3
 
 Show # magic - T3 restricted bases 3 - helms | Disable
 
@@ -4315,6 +4564,18 @@ Show # magic - T5 weapons - daggers | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_5 $icon_5 $sound_5
 
+Show # magic - T5 weapons - rune daggers | Disable
+
+	Rarity Magic
+	Class "Rune Dagger"
+	BaseType $mag_rdaggers
+
+	SetFontSize $text_5
+	SetBackgroundColor 0 0 0 127 # common - half-black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_5 $icon_5 $sound_5
+
 Show # magic - T5 weapons - 1h axes | Disable
 
 	Rarity Magic
@@ -4404,6 +4665,18 @@ Show # magic - T5 weapons - staves | Disable
 	Rarity Magic
 	Class Staves
 	BaseType $mag_staves
+
+	SetFontSize $text_5
+	SetBackgroundColor 0 0 0 127 # common - half-black
+	SetTextColor 127 127 255 255 # magic
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_5 $icon_5 $sound_5
+
+Show # magic - T5 weapons - warstaves | Disable
+
+	Rarity Magic
+	Class Warstaff
+	BaseType $mag_warstaves
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # common - half-black
@@ -4523,7 +4796,7 @@ Hide
 
 	Rarity Magic
 
-	SetFontSize $text_2_
+	SetFontSize $text_7
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 127 127 255 255 # magic
 	SetBorderColor 0 0 0 255 # common - black
@@ -4551,6 +4824,18 @@ Show # normal - T1 restricted bases 1 - rods | Disable
 	Rarity Normal
 	Class "Fishing Rods"
 	BaseType "Fishing Rod"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted bases 1 - 2h swords | Disable
+
+	Rarity Normal
+	Class "Two Hand Swords"
+	BaseType Keyblade
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 255 255 # normal
@@ -4586,7 +4871,7 @@ Show # normal - T1 restricted bases 1 - helms | Disable
 
 	Rarity Normal
 	Class Helmets
-	BaseType "Golden Wreath"
+	BaseType "Golden Visage" "Golden Wreath"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 255 255 # normal
@@ -4646,7 +4931,7 @@ Show # normal - T1 restricted bases 1 - amulets | Disable
 
 	Rarity Normal
 	Class Amulets
-	BaseType "Jet Amulet" "Ruby Amulet"
+	BaseType "Jet Amulet"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 255 255 # normal
@@ -4671,6 +4956,19 @@ Show # normal - T1 restricted bases 1 - leaguestones | Disable
 	Rarity Normal
 	Class Leaguestones
 	BaseType "Ambush Leaguestone" "Anarchy Leaguestone" "Beyond Leaguestone" "Bloodlines Leaguestone" "Breach Leaguestone" "Domination Leaguestone" "Essence Leaguestone" "Invasion Leaguestone" "Nemesis Leaguestone" "Onslaught Leaguestone" "Perandus Leaguestone" "Prophecy Leaguestone" "Rampage Leaguestone" "Talisman Leaguestone" "Tempest Leaguestone" "Torment Leaguestone" "Warbands Leaguestone"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted bases & elder - wands | Disable
+
+	Rarity Normal
+	Class Wands
+	BaseType "Convoking Wand"
+	ElderItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 255 255 # normal
@@ -4747,8 +5045,21 @@ Show # normal - T1 restricted bases & elder - rings | Disable
 
 	Rarity Normal
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	ElderItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted bases & shaper - wands | Disable
+
+	Rarity Normal
+	Class Wands
+	BaseType "Convoking Wand"
+	ShaperItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 255 255 # normal
@@ -4825,8 +5136,21 @@ Show # normal - T1 restricted bases & shaper - rings | Disable
 
 	Rarity Normal
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	ShaperItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_1 $icon_1 $sound_1
+
+Show # normal - T1 restricted bases & synthesised - wands | Disable
+
+	Rarity Normal
+	Class Wands
+	BaseType "Convoking Wand"
+	SynthesisedItem True
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 255 255 # normal
@@ -4903,7 +5227,7 @@ Show # normal - T1 restricted bases & synthesised - rings | Disable
 
 	Rarity Normal
 	Class Rings
-	BaseType "Opal Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 	SynthesisedItem True
 
 	SetFontSize $text_1
@@ -4963,11 +5287,11 @@ Show # normal - T2 restricted bases 2 - 1h swords | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # normal - T2 restricted bases 2 - quivers | Disable
+Show # normal - T2 restricted bases 2 - chests | Disable
 
 	Rarity Normal
-	Class Quivers
-	BaseType "Ornate Quiver"
+	Class "Body Armours"
+	BaseType "Sacrificial Garb"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 255 255 # normal
@@ -4975,11 +5299,11 @@ Show # normal - T2 restricted bases 2 - quivers | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # normal - T2 restricted bases 2 - chests | Disable
+Show # normal - T2 restricted bases 2 - quivers | Disable
 
 	Rarity Normal
-	Class "Body Armours"
-	BaseType "Sacrificial Garb"
+	Class Quivers
+	BaseType "Ornate Quiver"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 255 255 # normal
@@ -5015,7 +5339,7 @@ Show # normal - T2 restricted bases 2 - rings | Disable
 
 	Rarity Normal
 	Class Rings
-	BaseType "Opal Ring" "Prismatic Ring" "Steel Ring"
+	BaseType "Cerulean Ring" "Opal Ring" "Prismatic Ring" "Steel Ring" "Vermillion Ring"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 255 255 # normal
@@ -5028,18 +5352,6 @@ Show # normal - T2 restricted bases 2 - jewels | Disable
 	Rarity Normal
 	Class Jewel
 	BaseType "Prismatic Jewel" "Timeless Jewel"
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # common - black
-	SetBorderColor 0 0 0 255 # common - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # normal - T2 restricted bases 2 - pieces | Disable
-
-	Rarity Normal
-	Class Piece
-	BaseType "Archon Kite Shield Piece" "Blunt Arrow Quiver Piece" "Callous Mask Piece" "Cloth Belt Piece" "Imperial Staff Piece" "Legion Sword Piece"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 255 255 # normal
@@ -5123,6 +5435,18 @@ Show # normal - T2 sockets 6 linked | Disable
 	SetTextColor 0 0 0 255 # common - black
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_2 $icon_2 $sound_2
+
+Show # normal - T3 restricted bases 3 - wands | Disable
+
+	Rarity Normal
+	Class Wands
+	BaseType "Convoking Wand"
+
+	SetFontSize $text_3
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # common - black
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_3 $icon_3 $sound_3
 
 Show # normal - T3 restricted bases 3 - helms | Disable
 
@@ -5430,6 +5754,18 @@ Show # normal - T5 weapons - daggers | Disable
 	SetBorderColor 0 0 0 255 # common - black
 	Tags $beam_5 $icon_5 $sound_5
 
+Show # normal - T5 weapons - rune daggers | Disable
+
+	Rarity Normal
+	Class "Rune Dagger"
+	BaseType $nor_rdaggers
+
+	SetFontSize $text_5
+	SetBackgroundColor 0 0 0 127 # common - half-black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_5 $icon_5 $sound_5
+
 Show # normal - T5 weapons - 1h axes | Disable
 
 	Rarity Normal
@@ -5519,6 +5855,18 @@ Show # normal - T5 weapons - staves | Disable
 	Rarity Normal
 	Class Staves
 	BaseType $nor_staves
+
+	SetFontSize $text_5
+	SetBackgroundColor 0 0 0 127 # common - half-black
+	SetTextColor 255 255 255 255 # normal
+	SetBorderColor 0 0 0 255 # common - black
+	Tags $beam_5 $icon_5 $sound_5
+
+Show # normal - T5 weapons - warstaves | Disable
+
+	Rarity Normal
+	Class Warstaff
+	BaseType $nor_warstaves
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # common - half-black
@@ -5638,7 +5986,7 @@ Hide
 
 	Rarity Normal
 
-	SetFontSize $text_2_
+	SetFontSize $text_7
 	SetBackgroundColor 0 0 0 127 # common - half-black
 	SetTextColor 255 255 255 255 # normal
 	SetBorderColor 0 0 0 255 # common - black
