@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.8.B
+# version : 3.8.C
 # variant : endgame
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -292,7 +292,7 @@ SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $ADVANCED_SETTINGS info
 SetOption $adse1 info [These provide additional flexibility for blocks that are set to "Show" in the "Block switches" tab.] # no title
-SetOption $adse2 info [Input fields can be resized, for more comfortable usage.] # no title
+SetOption $adse2 info [Input fields can be resized using the bottom-right arrow of each.] # no title
 SetOption $adse3 info [Bases must be separated by a space, and quoted if they include spaces.] # no title
 SetOption $adse4 info [Leaving a field empty will reload its default content.] # no title
 SetOption $adse5 info ["..." alone (quotes included) will disable the corresponding block.] # no title
@@ -301,7 +301,6 @@ SetOption $adse5 info ["..." alone (quotes included) will disable the correspond
 # // 
 SetTab [currency]
 SetOption $curr1 info [The lower the tier (T), the higher the priority.] # no title
-SetOption $curr2 info [The following settings don't concern prophecies.] # no title
 SetOption $EmptyLine
 SetOption $SPECIFIC info # These have their own blocks and must be configured separately.
 SetOption $blessed_orb info
@@ -325,7 +324,7 @@ SetOption $cur_regalorb switch [@T3] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $vaal_orb info
 SetOption $cur_vaalorb switch [@T3] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $EmptyLine
-SetOption $REST info # Unspecified bases will be filtered.
+SetOption $REST info # Covers everything else except prophecies. Unspecified bases will be filtered.
 SetOption $T1 info
 SetOption $cur_1 textarea ["Albino Rhoa Feather" "Eternal Orb" "Necromancy Net" "Reinforced Iron Net" "Reinforced Rope Net" "Reinforced Steel Net" "Simple Iron Net" "Simple Rope Net" "Simple Steel Net" "Strong Iron Net" "Strong Rope Net" "Strong Steel Net" "Thaumaturgical Net"] # no title
 SetOption $T2 info
@@ -336,9 +335,8 @@ SetOption $T4 info
 SetOption $cur_4 textarea ["Alchemy Shard" "Binding Shard" "Chaos Shard" "Chromatic Orb" "Engineer's Shard" "Glassblower's Bauble" "Horizon Shard" "Jeweller's Orb" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe" "Orb of Alteration" "Orb of Chance" "Perandus Coin" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Regal Shard" "Silver Coin" "Splinter of Esh" "Splinter of Tul" "Splinter of Xoph" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal" "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"] # no title
 SetOption $T5 info
 SetOption $cur_5 textarea ["Alteration Shard" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Scroll Fragment" "Transmutation Shard"] # no title
-SetOption $T5_stacks info # These bases will be filtered if below the defined stack size.
+SetOption $T5_stacks info # Lone copies of these bases will be filtered.
 SetOption $cur_6 textarea ["Portal Scroll" "Scroll of Wisdom"] # no title
-SetOption $cur_7 slider [2] [1] [40] # no title
 # // 
 # // 
 # // 
@@ -373,7 +371,7 @@ SetOption $fra_3 textarea ["Eber's Key" "Esh's Breachstone" "Esh's Charged Breac
 # // 
 # // 
 SetTab [gems]
-SetOption $T5_lvl_x info # Bases below this level will be filtered.
+SetOption $T5_lvl_x info # Bases below this level will be filtered. Only applies to regular bases.
 SetOption $gem_1 slider [2] [1] [20] # no title
 # // 
 # // 
@@ -614,7 +612,6 @@ SetOption $nor_quivers switch [@none] [@none] [@all] [@custom___________________
 SetTab [custom bases]
 SetOption $cuba1 info [The following settings don't concern restricted bases.] # no title
 SetOption $cuba2 info [The specified bases will be used only if enabled in the "rare", "magic", or "normal" tabs.] # no title
-SetOption $cuba3 info [This is the appropriate place to define top bases.] # no title
 SetOption $EmptyLine
 SetOption $JEWELLERY info
 SetOption $belts___ info
@@ -1215,7 +1212,7 @@ Show # currency - rest - T5 stacks | Disable
 
 	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == $cur_6
-	StackSize >= $cur_7
+	StackSize > 1
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
@@ -1883,7 +1880,7 @@ Show # unique - T2 enchanted | Disable
 Show # unique - T2 restricted mods | Disable
 
 	Rarity Unique
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
+	HasExplicitMod == "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" Veiled "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil" "of the Veil"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 127 0 255 # unique
@@ -1988,7 +1985,7 @@ Show # maps - T2 elder | Disable
 Show # maps - T2 restricted mods | Disable
 
 	Class Maps
-	HasExplicitMod Vaal Zana's
+	HasExplicitMod == Vaal Zana's
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 0 0 255 # maps
@@ -2659,7 +2656,7 @@ Show # rare - T1 restricted bases & mods - wands | Disable
 	Rarity Rare
 	Class Wands
 	BaseType == "Convoking Wand"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2672,7 +2669,7 @@ Show # rare - T1 restricted bases & mods - helms | Disable
 	Rarity Rare
 	Class Helmets
 	BaseType == "Bone Helmet"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2685,7 +2682,7 @@ Show # rare - T1 restricted bases & mods - gloves | Disable
 	Rarity Rare
 	Class Gloves
 	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2698,7 +2695,7 @@ Show # rare - T1 restricted bases & mods - boots | Disable
 	Rarity Rare
 	Class Boots
 	BaseType == "Two-Toned Boots"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2711,7 +2708,7 @@ Show # rare - T1 restricted bases & mods - belts | Disable
 	Rarity Rare
 	Class Belts
 	BaseType == "Crystal Belt" "Vanguard Belt"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2724,7 +2721,7 @@ Show # rare - T1 restricted bases & mods - amulets | Disable
 	Rarity Rare
 	Class Amulets
 	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2737,7 +2734,7 @@ Show # rare - T1 restricted bases & mods - rings | Disable
 	Rarity Rare
 	Class Rings
 	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2887,7 +2884,7 @@ Show # rare - T2 enchanted | Disable
 Show # rare - T2 restricted mods | Disable
 
 	Rarity Rare
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -2898,7 +2895,7 @@ Show # rare - T2 restricted mods | Disable
 Show # rare - T2 specific veiled mods | Disable
 
 	Rarity Rare
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil"
+	HasExplicitMod == "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -3014,7 +3011,7 @@ Show # rare - T3 restricted bases 3 - abyss jewels | Disable
 Show # rare - T3 generic veiled mods | Disable
 
 	Rarity Rare
-	HasExplicitMod Veiled "of the Veil"
+	HasExplicitMod == Veiled "of the Veil"
 
 	SetFontSize $text_3
 	SetBackgroundColor 255 255 0 255 # rare - main
@@ -4008,7 +4005,7 @@ Show # magic - T1 restricted bases & mods - wands | Disable
 	Rarity Magic
 	Class Wands
 	BaseType == "Convoking Wand"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4021,7 +4018,7 @@ Show # magic - T1 restricted bases & mods - helms | Disable
 	Rarity Magic
 	Class Helmets
 	BaseType == "Bone Helmet"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4034,7 +4031,7 @@ Show # magic - T1 restricted bases & mods - gloves | Disable
 	Rarity Magic
 	Class Gloves
 	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4047,7 +4044,7 @@ Show # magic - T1 restricted bases & mods - boots | Disable
 	Rarity Magic
 	Class Boots
 	BaseType == "Two-Toned Boots"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4060,7 +4057,7 @@ Show # magic - T1 restricted bases & mods - belts | Disable
 	Rarity Magic
 	Class Belts
 	BaseType == "Crystal Belt" "Vanguard Belt"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4073,7 +4070,7 @@ Show # magic - T1 restricted bases & mods - amulets | Disable
 	Rarity Magic
 	Class Amulets
 	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4086,7 +4083,7 @@ Show # magic - T1 restricted bases & mods - rings | Disable
 	Rarity Magic
 	Class Rings
 	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4236,7 +4233,7 @@ Show # magic - T2 enchanted | Disable
 Show # magic - T2 restricted mods | Disable
 
 	Rarity Magic
-	HasExplicitMod Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Craving" "of Farrul" "of Fenumus" "of Gluttony" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Craving" "of Farrul" "of Fenumus" "of Gluttony" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4247,7 +4244,7 @@ Show # magic - T2 restricted mods | Disable
 Show # magic - T2 specific veiled mods | Disable
 
 	Rarity Magic
-	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil"
+	HasExplicitMod == "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil"
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4351,7 +4348,7 @@ Show # magic - T3 restricted bases 3 - abyss jewels | Disable
 Show # magic - T3 generic veiled mods | Disable
 
 	Rarity Magic
-	HasExplicitMod Veiled "of the Veil"
+	HasExplicitMod == Veiled "of the Veil"
 
 	SetFontSize $text_3
 	SetBackgroundColor 127 127 255 255 # magic
