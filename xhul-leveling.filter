@@ -387,7 +387,7 @@ SetOption $uni_2 textarea ["Ambush Mitts" "Callous Mask" "Carnal Boots" "Courtya
 # // 
 # // 
 SetTab [rare]
-SetOption $rare1 info [The following settings don't concern restricted bases.] # no title
+SetOption $rare1 info [The following settings don't apply to restricted bases.] # no title
 SetOption $EmptyLine
 SetOption $T4_JEWELLERY info
 SetOption $belts info
@@ -452,7 +452,7 @@ SetOption $rar_quivers switch [@all] [@none] [@all] [@custom____________________
 # // 
 # // 
 SetTab [magic]
-SetOption $magi1 info [The following settings don't concern restricted bases.] # no title
+SetOption $magi1 info [The following settings don't apply to restricted bases.] # no title
 SetOption $EmptyLine
 SetOption $T4_JEWELLERY_ info
 SetOption $belts_ info
@@ -529,7 +529,7 @@ SetOption $mag_quivers switch [@all] [@none] [@all] [@custom____________________
 # // 
 # // 
 SetTab [normal]
-SetOption $norm1 info [The following settings don't concern restricted bases.] # no title
+SetOption $norm1 info [The following settings don't apply to restricted bases.] # no title
 SetOption $EmptyLine
 SetOption $T4_JEWELLERY__ info
 SetOption $belts__ info
@@ -610,7 +610,7 @@ SetOption $nor_quivers switch [@all] [@none] [@all] [@custom____________________
 # // 
 # // 
 SetTab [custom bases]
-SetOption $cuba1 info [The following settings don't concern restricted bases.] # no title
+SetOption $cuba1 info [The following settings don't apply to restricted bases.] # no title
 SetOption $cuba2 info [The specified bases will be used only if enabled in the "rare", "magic", or "normal" tabs.] # no title
 SetOption $EmptyLine
 SetOption $JEWELLERY info
