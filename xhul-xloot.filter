@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.9.B
+# version : 3.9.C
 # variant : xloot
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -179,50 +179,48 @@ SetOption $currency_-_mirror_of_kalandra info
 SetOption $sound_mirrorofkalandra switch [@theme_______] [@off_] [@default] [@theme_______] [@custom_______] # no title
 SetOption $currency_-_orb_of_alchemy info
 SetOption $sound_orbofalchemy switch [@theme________] [@off_] [@default] [@theme________] [@custom________] # no title
-SetOption $currency_-_orb_of_annulment info
-SetOption $sound_orbofannulment switch [@theme_________] [@off_] [@default] [@theme_________] [@custom_________] # no title
 SetOption $currency_-_orb_of_fusing info
-SetOption $sound_orboffusing switch [@theme__________] [@off_] [@default] [@theme__________] [@custom__________] # no title
+SetOption $sound_orboffusing switch [@theme_________] [@off_] [@default] [@theme_________] [@custom_________] # no title
 SetOption $currency_-_redeemers_exalted_orb info
-SetOption $sound_redeemersexaltedorb switch [@theme___________] [@off_] [@default] [@theme___________] [@custom___________] # no title
+SetOption $sound_redeemersexaltedorb switch [@theme__________] [@off_] [@default] [@theme__________] [@custom__________] # no title
 SetOption $currency_-_regal_orb info
-SetOption $sound_regalorb switch [@theme____________] [@off_] [@default] [@theme____________] [@custom____________] # no title
+SetOption $sound_regalorb switch [@theme___________] [@off_] [@default] [@theme___________] [@custom___________] # no title
 SetOption $currency_-_vaal_orb info
-SetOption $sound_vaalorb switch [@theme_____________] [@off_] [@default] [@theme_____________] [@custom_____________] # no title
+SetOption $sound_vaalorb switch [@theme____________] [@off_] [@default] [@theme____________] [@custom____________] # no title
 SetOption $currency_-_warlords_exalted_orb info
-SetOption $sound_warlordsexaltedorb switch [@theme______________] [@off_] [@default] [@theme______________] [@custom______________] # no title
+SetOption $sound_warlordsexaltedorb switch [@theme_____________] [@off_] [@default] [@theme_____________] [@custom_____________] # no title
 SetOption $fragments_-_T1 info
-SetOption $sound_fra_1 switch [@theme_______________] [@off_] [@default] [@theme_______________] [@custom_______________] # no title
+SetOption $sound_fra_1 switch [@theme______________] [@off_] [@default] [@theme______________] [@custom______________] # no title
 SetOption $fragments_-_T2 info
-SetOption $sound_fra_2 switch [@theme________________] [@off_] [@default] [@theme________________] [@custom________________] # no title
+SetOption $sound_fra_2 switch [@theme_______________] [@off_] [@default] [@theme_______________] [@custom_______________] # no title
 SetOption $fragments_-_T3 info
-SetOption $sound_fra_3 switch [@theme_________________] [@off_] [@default] [@theme_________________] [@custom_________________] # no title
+SetOption $sound_fra_3 switch [@theme________________] [@off_] [@default] [@theme________________] [@custom________________] # no title
 SetOption $general_-_T1___ info
-SetOption $sound_1 switch [@theme__________________] [@off_] [@default] [@theme__________________] [@custom__________________] # no title
+SetOption $sound_1 switch [@theme_________________] [@off_] [@default] [@theme_________________] [@custom_________________] # no title
 SetOption $general_-_T2___ info
-SetOption $sound_2 switch [@theme___________________] [@off_] [@default] [@theme___________________] [@custom___________________] # no title
+SetOption $sound_2 switch [@theme__________________] [@off_] [@default] [@theme__________________] [@custom__________________] # no title
 SetOption $general_-_T3___ info
-SetOption $sound_3 switch [@theme____________________] [@off_] [@default] [@theme____________________] [@custom____________________] # no title
+SetOption $sound_3 switch [@theme___________________] [@off_] [@default] [@theme___________________] [@custom___________________] # no title
 SetOption $general_-_T4___ info
-SetOption $sound_4 switch [@default] [@off_] [@default] [@theme_____________________] [@custom_____________________] # no title
+SetOption $sound_4 switch [@default] [@off_] [@default] [@theme____________________] [@custom____________________] # no title
 SetOption $general_-_T5___ info
-SetOption $sound_5 switch [@default] [@off_] [@default] [@theme______________________] [@custom______________________] # no title
+SetOption $sound_5 switch [@default] [@off_] [@default] [@theme_____________________] [@custom_____________________] # no title
 SetOption $maps_-_T2__ info
-SetOption $sound_map_2 switch [@theme_______________________] [@off_] [@default] [@theme_______________________] [@custom_______________________] # no title
+SetOption $sound_map_2 switch [@theme______________________] [@off_] [@default] [@theme______________________] [@custom______________________] # no title
 SetOption $maps_-_T3__ info
-SetOption $sound_map_3 switch [@theme________________________] [@off_] [@default] [@theme________________________] [@custom________________________] # no title
+SetOption $sound_map_3 switch [@theme_______________________] [@off_] [@default] [@theme_______________________] [@custom_______________________] # no title
 SetOption $maps_-_T4__ info
-SetOption $sound_map_4 switch [@theme_________________________] [@off_] [@default] [@theme_________________________] [@custom_________________________] # no title
+SetOption $sound_map_4 switch [@theme________________________] [@off_] [@default] [@theme________________________] [@custom________________________] # no title
 SetOption $maps_-_T5__ info
-SetOption $sound_map_5 switch [@theme__________________________] [@off_] [@default] [@theme__________________________] [@custom__________________________] # no title
+SetOption $sound_map_5 switch [@theme_________________________] [@off_] [@default] [@theme_________________________] [@custom_________________________] # no title
 SetOption $special_-_T1 info
-SetOption $sound_spe_1 switch [@theme___________________________] [@off_] [@default] [@theme___________________________] [@custom___________________________] # no title
+SetOption $sound_spe_1 switch [@theme__________________________] [@off_] [@default] [@theme__________________________] [@custom__________________________] # no title
 SetOption $unique_-_T1 info
-SetOption $sound_uni_1 switch [@theme____________________________] [@off_] [@default] [@theme____________________________] [@custom____________________________] # no title
+SetOption $sound_uni_1 switch [@theme___________________________] [@off_] [@default] [@theme___________________________] [@custom___________________________] # no title
 SetOption $unique_-_T2 info
-SetOption $sound_uni_2 switch [@theme_____________________________] [@off_] [@default] [@theme_____________________________] [@custom_____________________________] # no title
+SetOption $sound_uni_2 switch [@theme____________________________] [@off_] [@default] [@theme____________________________] [@custom____________________________] # no title
 SetOption $unique_-_T3 info
-SetOption $sound_uni_3 switch [@theme______________________________] [@off_] [@default] [@theme______________________________] [@custom______________________________] # no title
+SetOption $sound_uni_3 switch [@theme_____________________________] [@off_] [@default] [@theme_____________________________] [@custom_____________________________] # no title
 # // 
 # // 
 # // 
@@ -260,8 +258,6 @@ SetOption $currency_-_mirror_of_kalandra_ info
 SetOption $file_mirrorofkalandra input ["relative or full file path"] # no title
 SetOption $currency_-_orb_of_alchemy_ info
 SetOption $file_orbofalchemy input ["relative or full file path"] # no title
-SetOption $currency_-_orb_of_annulment_ info
-SetOption $file_orbofannulment input ["relative or full file path"] # no title
 SetOption $currency_-_orb_of_fusing_ info
 SetOption $file_orboffusing input ["relative or full file path"] # no title
 SetOption $currency_-_redeemers_exalted_orb_ info
@@ -341,8 +337,6 @@ SetOption $mirror_of_kalandra info
 SetOption $cur_mirrorofkalandra switch [@T1] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $orb_of_alchemy info
 SetOption $cur_orbofalchemy switch [@T3] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
-SetOption $orb_of_annulment info
-SetOption $cur_orbofannulment switch [@T2] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $orb_of_fusing info
 SetOption $cur_orboffusing switch [@T3] [@T1] [@T2] [@T3] [@T4] [@T5] # no title
 SetOption $redeemers_exalted_orb info
@@ -356,13 +350,13 @@ SetOption $cur_warlordsexaltedorb switch [@T2] [@T1] [@T2] [@T3] [@T4] [@T5] # n
 SetOption $EmptyLine
 SetOption $REST info # Covers everything else except prophecies. Unspecified bases will be filtered.
 SetOption $T1 info
-SetOption $cur_1 textarea ["Albino Rhoa Feather" "Apprentice Cartographer's Seal" "Eternal Orb" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Necromancy Net" "Reinforced Iron Net" "Reinforced Rope Net" "Reinforced Steel Net" "Simple Iron Net" "Simple Rope Net" "Simple Steel Net" "Strong Iron Net" "Strong Rope Net" "Strong Steel Net" "Thaumaturgical Net" "Unshaping Orb" "Vial of the Ghost"] # no title
+SetOption $cur_1 textarea ["Albino Rhoa Feather" "Apprentice Cartographer's Seal" "Eldritch Incubator" "Eternal Orb" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Necromancy Net" "Reinforced Iron Net" "Reinforced Rope Net" "Reinforced Steel Net" "Simple Iron Net" "Simple Rope Net" "Simple Steel Net" "Strong Iron Net" "Strong Rope Net" "Strong Steel Net" "Thaumaturgical Net" "Unshaping Orb" "Vial of the Ghost"] # no title
 SetOption $T2 info
-SetOption $cur_2 textarea ["Ancient Orb" "Black Oil" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Bloodstained Fossil" "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal" "Diviner's Incubator" "Eldritch Incubator" "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Faceted Fossil" "Foreboding Incubator" "Fractured Fossil" "Geomancer's Incubator" "Glyphic Fossil" "Golden Oil" "Harbinger's Orb" "Hollow Fossil" Imprint "Imprinted Bestiary Orb" "Mirror Shard" "Opalescent Oil" "Prime Alchemical Resonator" "Prime Chaotic Resonator" "Sanctified Fossil" "Silver Oil" "Stacked Deck" "Tangled Fossil" "Thaumaturge's Incubator" "Time-Lost Incubator" "Vial of Awakening" "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Sacrifice" "Vial of Summoning" "Vial of Transcendence" "Vial of the Ritual"] # no title
+SetOption $cur_2 textarea ["Ancient Orb" "Black Oil" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Bloodstained Fossil" "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal" "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Faceted Fossil" "Fractured Fossil" "Geomancer's Incubator" "Glyphic Fossil" "Golden Oil" "Harbinger's Orb" "Hollow Fossil" Imprint "Imprinted Bestiary Orb" "Mirror Shard" "Opalescent Oil" "Orb of Annulment" "Prime Alchemical Resonator" "Prime Chaotic Resonator" "Sanctified Fossil" "Silver Oil" "Stacked Deck" "Tangled Fossil" "Thaumaturge's Incubator" "Time-Lost Incubator" "Vial of Awakening" "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Sacrifice" "Vial of Summoning" "Vial of Transcendence" "Vial of the Ritual"] # no title
 SetOption $T3 info
-SetOption $cur_3 textarea ["Aberrant Fossil" "Abrasive Catalyst" "Abyssal Incubator" "Aetheric Fossil" "Amber Oil" "Ancient Shard" "Annulment Shard" "Awakened Sextant" "Azure Oil" "Bestiary Orb" "Bound Fossil" "Cartographer's Chisel" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Clear Oil" "Corroded Fossil" "Crimson Oil" "Decadent Incubator" "Dense Fossil" "Enchanted Fossil" "Enchanted Incubator" "Encrusted Fossil" "Engineer's Orb" "Exalted Shard" "Feral Incubator" "Fertile Catalyst" "Fine Incubator" "Fossilised Incubator" "Fragmented Incubator" "Frigid Fossil" "Gemcutter's Incubator" "Gemcutter's Prism" "Gilded Fossil" "Harbinger's Shard" "Imbued Catalyst" "Infused Incubator" "Intrinsic Catalyst" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Metamorph Brain" "Metamorph Eye" "Metamorph Heart" "Metamorph Liver" "Metamorph Lung" "Mysterious Incubator" "Obscured Incubator" "Orb of Binding" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Ornate Incubator" "Otherworldly Incubator" "Perfect Fossil" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Primal Incubator" "Prime Sextant" "Prismatic Catalyst" "Prismatic Fossil" "Pristine Fossil" "Remnant of Corruption" "Scorched Fossil" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Sepia Oil" "Serrated Fossil" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Shuddering Fossil" "Simple Sextant" "Singular Incubator" "Skittering Incubator" "Splinter of Chayula" "Splinter of Uul-Netol" "Teal Oil" "Tempering Catalyst" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Turbulent Catalyst" "Verdant Oil" "Violet Oil" "Whispering Incubator"] # no title
+SetOption $cur_3 textarea ["Aberrant Fossil" "Abrasive Catalyst" "Abyssal Incubator" "Aetheric Fossil" "Amber Oil" "Ancient Shard" "Annulment Shard" "Awakened Sextant" "Azure Oil" "Bestiary Orb" "Bound Fossil" "Cartographer's Chisel" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Clear Oil" "Corroded Fossil" "Crimson Oil" "Decadent Incubator" "Dense Fossil" "Diviner's Incubator" "Enchanted Fossil" "Enchanted Incubator" "Encrusted Fossil" "Engineer's Orb" "Exalted Shard" "Feral Incubator" "Fertile Catalyst" "Fine Incubator" "Foreboding Incubator" "Fossilised Incubator" "Fragmented Incubator" "Frigid Fossil" "Gemcutter's Incubator" "Gemcutter's Prism" "Gilded Fossil" "Harbinger's Shard" "Imbued Catalyst" "Infused Incubator" "Intrinsic Catalyst" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Mysterious Incubator" "Obscured Incubator" "Orb of Binding" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Ornate Incubator" "Otherworldly Incubator" "Perfect Fossil" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Primal Incubator" "Prime Sextant" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Prismatic Catalyst" "Prismatic Fossil" "Pristine Fossil" "Remnant of Corruption" "Scorched Fossil" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Sepia Oil" "Serrated Fossil" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Shuddering Fossil" "Simple Sextant" "Singular Incubator" "Skittering Incubator" "Splinter of Chayula" "Splinter of Uul-Netol" "Teal Oil" "Tempering Catalyst" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Turbulent Catalyst" "Verdant Oil" "Violet Oil" "Whispering Incubator"] # no title
 SetOption $T4 info
-SetOption $cur_4 textarea ["Alchemy Shard" "Binding Shard" "Chaos Shard" "Chromatic Orb" "Engineer's Shard" "Glassblower's Bauble" "Horizon Shard" "Jeweller's Orb" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe" "Orb of Alteration" "Orb of Chance" "Perandus Coin" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Regal Shard" "Silver Coin" "Splinter of Esh" "Splinter of Tul" "Splinter of Xoph" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal" "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"] # no title
+SetOption $cur_4 textarea ["Alchemy Shard" "Binding Shard" "Chaos Shard" "Chromatic Orb" "Engineer's Shard" "Glassblower's Bauble" "Horizon Shard" "Jeweller's Orb" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe" "Orb of Alteration" "Orb of Chance" "Perandus Coin" "Regal Shard" "Silver Coin" "Splinter of Esh" "Splinter of Tul" "Splinter of Xoph" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal" "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"] # no title
 SetOption $T5 info
 SetOption $cur_5 textarea ["Alteration Shard" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Scroll Fragment" "Transmutation Shard"] # no title
 SetOption $T5_stacks info # Lone copies of these bases will be filtered.
@@ -410,9 +404,9 @@ SetTab [unique]
 SetOption $uniq1 info [The lower the tier (T), the higher the priority.] # no title
 SetOption $EmptyLine
 SetOption $T1_valuable_1 info # multiclass block
-SetOption $uni_1 textarea ["Charan's Sword" "Chateau Map" "Crusader Boots" "Glorious Plate" "Greatwolf Talisman" "Maze Map" "Occultist's Vestment" "Ornate Quiver" "Prophecy Wand" "Rawhide Boots" "Royal Axe" "Saint's Hauberk" "Sapphire Flask"] # no title
+SetOption $uni_1 textarea ["Charan's Sword" "Chateau Map" "Crusader Boots" "Glorious Plate" "Greatwolf Talisman" "Maze Map" "Occultist's Vestment" "Ornate Quiver" "Prophecy Wand" "Rawhide Boots" "Royal Axe" "Sapphire Flask"] # no title
 SetOption $T2_valuable_2 info # multiclass block
-SetOption $uni_2 textarea ["Ambush Mitts" "Callous Mask" "Carnal Boots" "Courtyard Map" "Gemstone Sword" "Grand Mana Flask" "Jewelled Foil" "Jingling Spirit Shield" "Museum Map" "Sanctified Life Flask" "Siege Axe" "Vaal Rapier" "Wyrmscale Doublet"] # no title
+SetOption $uni_2 textarea ["Ambush Mitts" "Carnal Boots" "Courtyard Map" "Gemstone Sword" "Grand Mana Flask" "Jewelled Foil" "Jingling Spirit Shield" "Museum Map" "Sanctified Life Flask" "Siege Axe" "Vaal Rapier" "Wyrmscale Doublet"] # no title
 # // 
 # // 
 # // 
@@ -421,63 +415,63 @@ SetOption $rare1 info [The following settings don't apply to restricted bases.] 
 SetOption $EmptyLine
 SetOption $T4_JEWELLERY info
 SetOption $belts info
-SetOption $rar_belts switch [@all] [@none] [@all] [@custom_______________________________] # no title
+SetOption $rar_belts switch [@all] [@none] [@all] [@custom______________________________] # no title
 SetOption $amulets info
-SetOption $rar_amulets switch [@all] [@none] [@all] [@custom________________________________] # no title
+SetOption $rar_amulets switch [@all] [@none] [@all] [@custom_______________________________] # no title
 SetOption $rings info
-SetOption $rar_rings switch [@all] [@none] [@all] [@custom_________________________________] # no title
+SetOption $rar_rings switch [@all] [@none] [@all] [@custom________________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T4_jewels info
-SetOption $rar_jewels switch [@all] [@none] [@all] [@custom_______________________________________] # no title
+SetOption $rar_jewels switch [@all] [@none] [@all] [@custom______________________________________] # no title
 SetOption $EmptyLine
 SetOption $T5_WEAPONS info
 SetOption $claws info
-SetOption $rar_claws switch [@custom________________________________________] [@none] [@all] [@custom________________________________________] # no title
+SetOption $rar_claws switch [@custom_______________________________________] [@none] [@all] [@custom_______________________________________] # no title
 SetOption $rune_daggers info
-SetOption $rar_rdaggers switch [@custom_________________________________________] [@none] [@all] [@custom_________________________________________] # no title
+SetOption $rar_rdaggers switch [@custom________________________________________] [@none] [@all] [@custom________________________________________] # no title
 SetOption $daggers info
-SetOption $rar_daggers switch [@custom__________________________________________] [@none] [@all] [@custom__________________________________________] # no title
+SetOption $rar_daggers switch [@custom_________________________________________] [@none] [@all] [@custom_________________________________________] # no title
 SetOption $thrusting_swords info
-SetOption $rar_tswords switch [@custom___________________________________________] [@none] [@all] [@custom___________________________________________] # no title
+SetOption $rar_tswords switch [@custom__________________________________________] [@none] [@all] [@custom__________________________________________] # no title
 SetOption $1H_swords info
-SetOption $rar_1hswords switch [@custom____________________________________________] [@none] [@all] [@custom____________________________________________] # no title
+SetOption $rar_1hswords switch [@custom___________________________________________] [@none] [@all] [@custom___________________________________________] # no title
 SetOption $1H_axes info
-SetOption $rar_1haxes switch [@custom_____________________________________________] [@none] [@all] [@custom_____________________________________________] # no title
+SetOption $rar_1haxes switch [@custom____________________________________________] [@none] [@all] [@custom____________________________________________] # no title
 SetOption $1H_maces info
-SetOption $rar_1hmaces switch [@custom______________________________________________] [@none] [@all] [@custom______________________________________________] # no title
+SetOption $rar_1hmaces switch [@custom_____________________________________________] [@none] [@all] [@custom_____________________________________________] # no title
 SetOption $sceptres info
-SetOption $rar_sceptres switch [@custom_______________________________________________] [@none] [@all] [@custom_______________________________________________] # no title
+SetOption $rar_sceptres switch [@custom______________________________________________] [@none] [@all] [@custom______________________________________________] # no title
 SetOption $2H_swords info
-SetOption $rar_2hswords switch [@custom________________________________________________] [@none] [@all] [@custom________________________________________________] # no title
+SetOption $rar_2hswords switch [@custom_______________________________________________] [@none] [@all] [@custom_______________________________________________] # no title
 SetOption $2H_axes info
-SetOption $rar_2haxes switch [@custom_________________________________________________] [@none] [@all] [@custom_________________________________________________] # no title
+SetOption $rar_2haxes switch [@custom________________________________________________] [@none] [@all] [@custom________________________________________________] # no title
 SetOption $2H_maces info
-SetOption $rar_2hmaces switch [@custom__________________________________________________] [@none] [@all] [@custom__________________________________________________] # no title
+SetOption $rar_2hmaces switch [@custom_________________________________________________] [@none] [@all] [@custom_________________________________________________] # no title
 SetOption $warstaves info
-SetOption $rar_warstaves switch [@custom___________________________________________________] [@none] [@all] [@custom___________________________________________________] # no title
+SetOption $rar_warstaves switch [@custom__________________________________________________] [@none] [@all] [@custom__________________________________________________] # no title
 SetOption $staves info
-SetOption $rar_staves switch [@custom____________________________________________________] [@none] [@all] [@custom____________________________________________________] # no title
+SetOption $rar_staves switch [@custom___________________________________________________] [@none] [@all] [@custom___________________________________________________] # no title
 SetOption $wands info
-SetOption $rar_wands switch [@custom_____________________________________________________] [@none] [@all] [@custom_____________________________________________________] # no title
+SetOption $rar_wands switch [@custom____________________________________________________] [@none] [@all] [@custom____________________________________________________] # no title
 SetOption $bows info
-SetOption $rar_bows switch [@custom______________________________________________________] [@none] [@all] [@custom______________________________________________________] # no title
+SetOption $rar_bows switch [@custom_____________________________________________________] [@none] [@all] [@custom_____________________________________________________] # no title
 SetOption $EmptyLine
 SetOption $T5_ARMOUR info
 SetOption $shields info
-SetOption $rar_shields switch [@custom_______________________________________________________] [@none] [@all] [@custom_______________________________________________________] # no title
+SetOption $rar_shields switch [@custom______________________________________________________] [@none] [@all] [@custom______________________________________________________] # no title
 SetOption $chests info
-SetOption $rar_chests switch [@custom________________________________________________________] [@none] [@all] [@custom________________________________________________________] # no title
+SetOption $rar_chests switch [@custom_______________________________________________________] [@none] [@all] [@custom_______________________________________________________] # no title
 SetOption $helms info
-SetOption $rar_helms switch [@custom_________________________________________________________] [@none] [@all] [@custom_________________________________________________________] # no title
+SetOption $rar_helms switch [@custom________________________________________________________] [@none] [@all] [@custom________________________________________________________] # no title
 SetOption $gloves info
-SetOption $rar_gloves switch [@custom__________________________________________________________] [@none] [@all] [@custom__________________________________________________________] # no title
+SetOption $rar_gloves switch [@custom_________________________________________________________] [@none] [@all] [@custom_________________________________________________________] # no title
 SetOption $boots info
-SetOption $rar_boots switch [@custom___________________________________________________________] [@none] [@all] [@custom___________________________________________________________] # no title
+SetOption $rar_boots switch [@custom__________________________________________________________] [@none] [@all] [@custom__________________________________________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T5_quivers info
-SetOption $rar_quivers switch [@custom____________________________________________________________] [@none] [@all] [@custom____________________________________________________________] # no title
+SetOption $rar_quivers switch [@custom___________________________________________________________] [@none] [@all] [@custom___________________________________________________________] # no title
 # // 
 # // 
 # // 
@@ -486,75 +480,75 @@ SetOption $magi1 info [The following settings don't apply to restricted bases.] 
 SetOption $EmptyLine
 SetOption $T4_JEWELLERY_ info
 SetOption $belts_ info
-SetOption $mag_belts switch [@none] [@none] [@all] [@custom_______________________________] # no title
+SetOption $mag_belts switch [@none] [@none] [@all] [@custom______________________________] # no title
 SetOption $amulets_ info
-SetOption $mag_amulets switch [@none] [@none] [@all] [@custom________________________________] # no title
+SetOption $mag_amulets switch [@none] [@none] [@all] [@custom_______________________________] # no title
 SetOption $rings_ info
-SetOption $mag_rings switch [@none] [@none] [@all] [@custom_________________________________] # no title
+SetOption $mag_rings switch [@none] [@none] [@all] [@custom________________________________] # no title
 SetOption $EmptyLine
 SetOption $T4_FLASKS info
 SetOption $life info
-SetOption $mag_lflasks switch [@none] [@none] [@all] [@custom__________________________________] # no title
+SetOption $mag_lflasks switch [@none] [@none] [@all] [@custom_________________________________] # no title
 SetOption $mana info
-SetOption $mag_mflasks switch [@none] [@none] [@all] [@custom___________________________________] # no title
+SetOption $mag_mflasks switch [@none] [@none] [@all] [@custom__________________________________] # no title
 SetOption $hybrid info
-SetOption $mag_hflasks switch [@none] [@none] [@all] [@custom____________________________________] # no title
+SetOption $mag_hflasks switch [@none] [@none] [@all] [@custom___________________________________] # no title
 SetOption $critical info
-SetOption $mag_cflasks switch [@none] [@none] [@all] [@custom_____________________________________] # no title
+SetOption $mag_cflasks switch [@none] [@none] [@all] [@custom____________________________________] # no title
 SetOption $utility info
-SetOption $mag_uflasks switch [@none] [@none] [@all] [@custom______________________________________] # no title
+SetOption $mag_uflasks switch [@none] [@none] [@all] [@custom_____________________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T4_jewels_ info
-SetOption $mag_jewels switch [@none] [@none] [@all] [@custom_______________________________________] # no title
+SetOption $mag_jewels switch [@none] [@none] [@all] [@custom______________________________________] # no title
 SetOption $EmptyLine
 SetOption $T5_WEAPONS_ info
 SetOption $claws_ info
-SetOption $mag_claws switch [@none] [@none] [@all] [@custom________________________________________] # no title
+SetOption $mag_claws switch [@none] [@none] [@all] [@custom_______________________________________] # no title
 SetOption $rune_daggers_ info
-SetOption $mag_rdaggers switch [@none] [@none] [@all] [@custom_________________________________________] # no title
+SetOption $mag_rdaggers switch [@none] [@none] [@all] [@custom________________________________________] # no title
 SetOption $daggers_ info
-SetOption $mag_daggers switch [@none] [@none] [@all] [@custom__________________________________________] # no title
+SetOption $mag_daggers switch [@none] [@none] [@all] [@custom_________________________________________] # no title
 SetOption $thrusting_swords_ info
-SetOption $mag_tswords switch [@none] [@none] [@all] [@custom___________________________________________] # no title
+SetOption $mag_tswords switch [@none] [@none] [@all] [@custom__________________________________________] # no title
 SetOption $1H_swords_ info
-SetOption $mag_1hswords switch [@none] [@none] [@all] [@custom____________________________________________] # no title
+SetOption $mag_1hswords switch [@none] [@none] [@all] [@custom___________________________________________] # no title
 SetOption $1H_axes_ info
-SetOption $mag_1haxes switch [@none] [@none] [@all] [@custom_____________________________________________] # no title
+SetOption $mag_1haxes switch [@none] [@none] [@all] [@custom____________________________________________] # no title
 SetOption $1H_maces_ info
-SetOption $mag_1hmaces switch [@none] [@none] [@all] [@custom______________________________________________] # no title
+SetOption $mag_1hmaces switch [@none] [@none] [@all] [@custom_____________________________________________] # no title
 SetOption $sceptres_ info
-SetOption $mag_sceptres switch [@none] [@none] [@all] [@custom_______________________________________________] # no title
+SetOption $mag_sceptres switch [@none] [@none] [@all] [@custom______________________________________________] # no title
 SetOption $2H_swords_ info
-SetOption $mag_2hswords switch [@none] [@none] [@all] [@custom________________________________________________] # no title
+SetOption $mag_2hswords switch [@none] [@none] [@all] [@custom_______________________________________________] # no title
 SetOption $2H_axes_ info
-SetOption $mag_2haxes switch [@none] [@none] [@all] [@custom_________________________________________________] # no title
+SetOption $mag_2haxes switch [@none] [@none] [@all] [@custom________________________________________________] # no title
 SetOption $2H_maces_ info
-SetOption $mag_2hmaces switch [@none] [@none] [@all] [@custom__________________________________________________] # no title
+SetOption $mag_2hmaces switch [@none] [@none] [@all] [@custom_________________________________________________] # no title
 SetOption $warstaves_ info
-SetOption $mag_warstaves switch [@none] [@none] [@all] [@custom___________________________________________________] # no title
+SetOption $mag_warstaves switch [@none] [@none] [@all] [@custom__________________________________________________] # no title
 SetOption $staves_ info
-SetOption $mag_staves switch [@none] [@none] [@all] [@custom____________________________________________________] # no title
+SetOption $mag_staves switch [@none] [@none] [@all] [@custom___________________________________________________] # no title
 SetOption $wands_ info
-SetOption $mag_wands switch [@none] [@none] [@all] [@custom_____________________________________________________] # no title
+SetOption $mag_wands switch [@none] [@none] [@all] [@custom____________________________________________________] # no title
 SetOption $bows_ info
-SetOption $mag_bows switch [@none] [@none] [@all] [@custom______________________________________________________] # no title
+SetOption $mag_bows switch [@none] [@none] [@all] [@custom_____________________________________________________] # no title
 SetOption $EmptyLine
 SetOption $T5_ARMOUR_ info
 SetOption $shields_ info
-SetOption $mag_shields switch [@none] [@none] [@all] [@custom_______________________________________________________] # no title
+SetOption $mag_shields switch [@none] [@none] [@all] [@custom______________________________________________________] # no title
 SetOption $chests_ info
-SetOption $mag_chests switch [@none] [@none] [@all] [@custom________________________________________________________] # no title
+SetOption $mag_chests switch [@none] [@none] [@all] [@custom_______________________________________________________] # no title
 SetOption $helms_ info
-SetOption $mag_helms switch [@none] [@none] [@all] [@custom_________________________________________________________] # no title
+SetOption $mag_helms switch [@none] [@none] [@all] [@custom________________________________________________________] # no title
 SetOption $gloves_ info
-SetOption $mag_gloves switch [@none] [@none] [@all] [@custom__________________________________________________________] # no title
+SetOption $mag_gloves switch [@none] [@none] [@all] [@custom_________________________________________________________] # no title
 SetOption $boots_ info
-SetOption $mag_boots switch [@none] [@none] [@all] [@custom___________________________________________________________] # no title
+SetOption $mag_boots switch [@none] [@none] [@all] [@custom__________________________________________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T5_quivers_ info
-SetOption $mag_quivers switch [@none] [@none] [@all] [@custom____________________________________________________________] # no title
+SetOption $mag_quivers switch [@none] [@none] [@all] [@custom___________________________________________________________] # no title
 # // 
 # // 
 # // 
@@ -563,27 +557,27 @@ SetOption $norm1 info [The following settings don't apply to restricted bases.] 
 SetOption $EmptyLine
 SetOption $T4_JEWELLERY__ info
 SetOption $belts__ info
-SetOption $nor_belts switch [@none] [@none] [@all] [@custom_______________________________] # no title
+SetOption $nor_belts switch [@none] [@none] [@all] [@custom______________________________] # no title
 SetOption $amulets__ info
-SetOption $nor_amulets switch [@none] [@none] [@all] [@custom________________________________] # no title
+SetOption $nor_amulets switch [@none] [@none] [@all] [@custom_______________________________] # no title
 SetOption $rings__ info
-SetOption $nor_rings switch [@none] [@none] [@all] [@custom_________________________________] # no title
+SetOption $nor_rings switch [@none] [@none] [@all] [@custom________________________________] # no title
 SetOption $EmptyLine
 SetOption $T4_FLASKS_ info
 SetOption $life_ info
-SetOption $nor_lflasks switch [@none] [@none] [@all] [@custom__________________________________] # no title
+SetOption $nor_lflasks switch [@none] [@none] [@all] [@custom_________________________________] # no title
 SetOption $mana_ info
-SetOption $nor_mflasks switch [@none] [@none] [@all] [@custom___________________________________] # no title
+SetOption $nor_mflasks switch [@none] [@none] [@all] [@custom__________________________________] # no title
 SetOption $hybrid_ info
-SetOption $nor_hflasks switch [@none] [@none] [@all] [@custom____________________________________] # no title
+SetOption $nor_hflasks switch [@none] [@none] [@all] [@custom___________________________________] # no title
 SetOption $critical_ info
-SetOption $nor_cflasks switch [@none] [@none] [@all] [@custom_____________________________________] # no title
+SetOption $nor_cflasks switch [@none] [@none] [@all] [@custom____________________________________] # no title
 SetOption $utility_ info
-SetOption $nor_uflasks switch [@none] [@none] [@all] [@custom______________________________________] # no title
+SetOption $nor_uflasks switch [@none] [@none] [@all] [@custom_____________________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T4_jewels__ info
-SetOption $nor_jewels switch [@none] [@none] [@all] [@custom_______________________________________] # no title
+SetOption $nor_jewels switch [@none] [@none] [@all] [@custom______________________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T4_chanceable info # multiclass block
@@ -591,51 +585,51 @@ SetOption $nor_chanceable textarea ["Leather Belt"] # no title
 SetOption $EmptyLine
 SetOption $T5_WEAPONS__ info
 SetOption $claws__ info
-SetOption $nor_claws switch [@none] [@none] [@all] [@custom________________________________________] # no title
+SetOption $nor_claws switch [@none] [@none] [@all] [@custom_______________________________________] # no title
 SetOption $rune_daggers__ info
-SetOption $nor_rdaggers switch [@none] [@none] [@all] [@custom_________________________________________] # no title
+SetOption $nor_rdaggers switch [@none] [@none] [@all] [@custom________________________________________] # no title
 SetOption $daggers__ info
-SetOption $nor_daggers switch [@none] [@none] [@all] [@custom__________________________________________] # no title
+SetOption $nor_daggers switch [@none] [@none] [@all] [@custom_________________________________________] # no title
 SetOption $thrusting_swords__ info
-SetOption $nor_tswords switch [@none] [@none] [@all] [@custom___________________________________________] # no title
+SetOption $nor_tswords switch [@none] [@none] [@all] [@custom__________________________________________] # no title
 SetOption $1H_swords__ info
-SetOption $nor_1hswords switch [@none] [@none] [@all] [@custom____________________________________________] # no title
+SetOption $nor_1hswords switch [@none] [@none] [@all] [@custom___________________________________________] # no title
 SetOption $1H_axes__ info
-SetOption $nor_1haxes switch [@none] [@none] [@all] [@custom_____________________________________________] # no title
+SetOption $nor_1haxes switch [@none] [@none] [@all] [@custom____________________________________________] # no title
 SetOption $1H_maces__ info
-SetOption $nor_1hmaces switch [@none] [@none] [@all] [@custom______________________________________________] # no title
+SetOption $nor_1hmaces switch [@none] [@none] [@all] [@custom_____________________________________________] # no title
 SetOption $sceptres__ info
-SetOption $nor_sceptres switch [@none] [@none] [@all] [@custom_______________________________________________] # no title
+SetOption $nor_sceptres switch [@none] [@none] [@all] [@custom______________________________________________] # no title
 SetOption $2H_swords__ info
-SetOption $nor_2hswords switch [@none] [@none] [@all] [@custom________________________________________________] # no title
+SetOption $nor_2hswords switch [@none] [@none] [@all] [@custom_______________________________________________] # no title
 SetOption $2H_axes__ info
-SetOption $nor_2haxes switch [@none] [@none] [@all] [@custom_________________________________________________] # no title
+SetOption $nor_2haxes switch [@none] [@none] [@all] [@custom________________________________________________] # no title
 SetOption $2H_maces__ info
-SetOption $nor_2hmaces switch [@none] [@none] [@all] [@custom__________________________________________________] # no title
+SetOption $nor_2hmaces switch [@none] [@none] [@all] [@custom_________________________________________________] # no title
 SetOption $warstaves__ info
-SetOption $nor_warstaves switch [@none] [@none] [@all] [@custom___________________________________________________] # no title
+SetOption $nor_warstaves switch [@none] [@none] [@all] [@custom__________________________________________________] # no title
 SetOption $staves__ info
-SetOption $nor_staves switch [@none] [@none] [@all] [@custom____________________________________________________] # no title
+SetOption $nor_staves switch [@none] [@none] [@all] [@custom___________________________________________________] # no title
 SetOption $wands__ info
-SetOption $nor_wands switch [@none] [@none] [@all] [@custom_____________________________________________________] # no title
+SetOption $nor_wands switch [@none] [@none] [@all] [@custom____________________________________________________] # no title
 SetOption $bows__ info
-SetOption $nor_bows switch [@none] [@none] [@all] [@custom______________________________________________________] # no title
+SetOption $nor_bows switch [@none] [@none] [@all] [@custom_____________________________________________________] # no title
 SetOption $EmptyLine
 SetOption $T5_ARMOUR__ info
 SetOption $shields__ info
-SetOption $nor_shields switch [@none] [@none] [@all] [@custom_______________________________________________________] # no title
+SetOption $nor_shields switch [@none] [@none] [@all] [@custom______________________________________________________] # no title
 SetOption $chests__ info
-SetOption $nor_chests switch [@none] [@none] [@all] [@custom________________________________________________________] # no title
+SetOption $nor_chests switch [@none] [@none] [@all] [@custom_______________________________________________________] # no title
 SetOption $helms__ info
-SetOption $nor_helms switch [@none] [@none] [@all] [@custom_________________________________________________________] # no title
+SetOption $nor_helms switch [@none] [@none] [@all] [@custom________________________________________________________] # no title
 SetOption $gloves__ info
-SetOption $nor_gloves switch [@none] [@none] [@all] [@custom__________________________________________________________] # no title
+SetOption $nor_gloves switch [@none] [@none] [@all] [@custom_________________________________________________________] # no title
 SetOption $boots__ info
-SetOption $nor_boots switch [@none] [@none] [@all] [@custom___________________________________________________________] # no title
+SetOption $nor_boots switch [@none] [@none] [@all] [@custom__________________________________________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
 SetOption $T5_quivers__ info
-SetOption $nor_quivers switch [@none] [@none] [@all] [@custom____________________________________________________________] # no title
+SetOption $nor_quivers switch [@none] [@none] [@all] [@custom___________________________________________________________] # no title
 # // 
 # // 
 # // 
@@ -732,8 +726,6 @@ SetVar $hexagon Hexagon
 SetVar $square Square
 SetVar $star Star
 SetVar $triangle Triangle
-SetVar $none "_"
-SetVar $all ""
 # // 
 # // 
 # // 
@@ -774,68 +766,65 @@ SetTag @theme________
 	PlayAlertSound ShAlchemy 300 # currency - orb of alchemy
 SetTag @theme_________
 	DisableDropSound
-	PlayAlertSound ShGeneral 300 # currency - orb of annulment
+	PlayAlertSound ShFusing 300 # currency - orb of fusing
 SetTag @theme__________
 	DisableDropSound
-	PlayAlertSound ShFusing 300 # currency - orb of fusing
+	PlayAlertSound ShExalted 300 # currency - redeemers exalted orb
 SetTag @theme___________
 	DisableDropSound
-	PlayAlertSound ShExalted 300 # currency - redeemers exalted orb
+	PlayAlertSound ShRegal 300 # currency - regal orb
 SetTag @theme____________
 	DisableDropSound
-	PlayAlertSound ShRegal 300 # currency - regal orb
+	PlayAlertSound ShVaal 300 # currency - vaal orb
 SetTag @theme_____________
 	DisableDropSound
-	PlayAlertSound ShVaal 300 # currency - vaal orb
+	PlayAlertSound ShExalted 300 # currency - warlords exalted orb
 SetTag @theme______________
 	DisableDropSound
-	PlayAlertSound ShExalted 300 # currency - warlords exalted orb
+	PlayAlertSound 1 300 # fragments - T1
 SetTag @theme_______________
 	DisableDropSound
-	PlayAlertSound 1 300 # fragments - T1
+	PlayAlertSound 8 300 # fragments - T2
 SetTag @theme________________
 	DisableDropSound
-	PlayAlertSound 8 300 # fragments - T2
+	PlayAlertSound 7 300 # fragments - T3
 SetTag @theme_________________
 	DisableDropSound
-	PlayAlertSound 7 300 # fragments - T3
+	PlayAlertSound 1 300 # general - T1
 SetTag @theme__________________
 	DisableDropSound
-	PlayAlertSound 1 300 # general - T1
+	PlayAlertSound 3 300 # general - T2
 SetTag @theme___________________
 	DisableDropSound
-	PlayAlertSound 3 300 # general - T2
+	PlayAlertSound 2 300 # general - T3
 SetTag @theme____________________
 	DisableDropSound
-	PlayAlertSound 2 300 # general - T3
+	PlayAlertSound 2 300 # general - T4
 SetTag @theme_____________________
 	DisableDropSound
-	PlayAlertSound 2 300 # general - T4
+	PlayAlertSound 2 300 # general - T5
 SetTag @theme______________________
 	DisableDropSound
-	PlayAlertSound 2 300 # general - T5
+	PlayAlertSound 8 300 # maps - T2
 SetTag @theme_______________________
 	DisableDropSound
-	PlayAlertSound 8 300 # maps - T2
+	PlayAlertSound 7 300 # maps - T3
 SetTag @theme________________________
 	DisableDropSound
-	PlayAlertSound 7 300 # maps - T3
+	PlayAlertSound 9 300 # maps - T4
 SetTag @theme_________________________
 	DisableDropSound
-	PlayAlertSound 9 300 # maps - T4
+	PlayAlertSound 14 300 # maps - T5
 SetTag @theme__________________________
 	DisableDropSound
-	PlayAlertSound 14 300 # maps - T5
+	PlayAlertSound 10 300 # special - T1
 SetTag @theme___________________________
 	DisableDropSound
-	PlayAlertSound 10 300 # special - T1
+	PlayAlertSound 1 300 # unique - T1
 SetTag @theme____________________________
 	DisableDropSound
-	PlayAlertSound 1 300 # unique - T1
-SetTag @theme_____________________________
-	DisableDropSound
 	PlayAlertSound 3 300 # unique - T2
-SetTag @theme______________________________
+SetTag @theme_____________________________
 	DisableDropSound
 	PlayAlertSound 6 300 # unique - T3
 SetTag @custom
@@ -867,132 +856,129 @@ SetTag @custom________
 	CustomAlertSound $file_orbofalchemy
 SetTag @custom_________
 	DisableDropSound
-	CustomAlertSound $file_orbofannulment
+	CustomAlertSound $file_orboffusing
 SetTag @custom__________
 	DisableDropSound
-	CustomAlertSound $file_orboffusing
+	CustomAlertSound $file_redeemersexaltedorb
 SetTag @custom___________
 	DisableDropSound
-	CustomAlertSound $file_redeemersexaltedorb
+	CustomAlertSound $file_regalorb
 SetTag @custom____________
 	DisableDropSound
-	CustomAlertSound $file_regalorb
+	CustomAlertSound $file_vaalorb
 SetTag @custom_____________
 	DisableDropSound
-	CustomAlertSound $file_vaalorb
+	CustomAlertSound $file_warlordsexaltedorb
 SetTag @custom______________
 	DisableDropSound
-	CustomAlertSound $file_warlordsexaltedorb
+	CustomAlertSound $file_fra_1
 SetTag @custom_______________
 	DisableDropSound
-	CustomAlertSound $file_fra_1
+	CustomAlertSound $file_fra_2
 SetTag @custom________________
 	DisableDropSound
-	CustomAlertSound $file_fra_2
+	CustomAlertSound $file_fra_3
 SetTag @custom_________________
 	DisableDropSound
-	CustomAlertSound $file_fra_3
+	CustomAlertSound $file_1
 SetTag @custom__________________
 	DisableDropSound
-	CustomAlertSound $file_1
+	CustomAlertSound $file_2
 SetTag @custom___________________
 	DisableDropSound
-	CustomAlertSound $file_2
+	CustomAlertSound $file_3
 SetTag @custom____________________
 	DisableDropSound
-	CustomAlertSound $file_3
+	CustomAlertSound $file_4
 SetTag @custom_____________________
 	DisableDropSound
-	CustomAlertSound $file_4
+	CustomAlertSound $file_5
 SetTag @custom______________________
 	DisableDropSound
-	CustomAlertSound $file_5
+	CustomAlertSound $file_map_2
 SetTag @custom_______________________
 	DisableDropSound
-	CustomAlertSound $file_map_2
+	CustomAlertSound $file_map_3
 SetTag @custom________________________
 	DisableDropSound
-	CustomAlertSound $file_map_3
+	CustomAlertSound $file_map_4
 SetTag @custom_________________________
 	DisableDropSound
-	CustomAlertSound $file_map_4
+	CustomAlertSound $file_map_5
 SetTag @custom__________________________
 	DisableDropSound
-	CustomAlertSound $file_map_5
+	CustomAlertSound $file_spe_1
 SetTag @custom___________________________
 	DisableDropSound
-	CustomAlertSound $file_spe_1
+	CustomAlertSound $file_uni_1
 SetTag @custom____________________________
 	DisableDropSound
-	CustomAlertSound $file_uni_1
-SetTag @custom_____________________________
-	DisableDropSound
 	CustomAlertSound $file_uni_2
-SetTag @custom______________________________
+SetTag @custom_____________________________
 	DisableDropSound
 	CustomAlertSound $file_uni_3
 SetTag @none
 	BaseType == "..."
 SetTag @all
-SetTag @custom_______________________________
+SetTag @custom______________________________
 	BaseType == $cus_belts
-SetTag @custom________________________________
+SetTag @custom_______________________________
 	BaseType == $cus_amulets
-SetTag @custom_________________________________
+SetTag @custom________________________________
 	BaseType == $cus_rings
-SetTag @custom__________________________________
+SetTag @custom_________________________________
 	BaseType == $cus_lflasks
-SetTag @custom___________________________________
+SetTag @custom__________________________________
 	BaseType == $cus_mflasks
-SetTag @custom____________________________________
+SetTag @custom___________________________________
 	BaseType == $cus_hflasks
-SetTag @custom_____________________________________
+SetTag @custom____________________________________
 	BaseType == $cus_cflasks
-SetTag @custom______________________________________
+SetTag @custom_____________________________________
 	BaseType == $cus_uflasks
-SetTag @custom_______________________________________
+SetTag @custom______________________________________
 	BaseType == $cus_jewels
-SetTag @custom________________________________________
+SetTag @custom_______________________________________
 	BaseType == $cus_claws
-SetTag @custom_________________________________________
+SetTag @custom________________________________________
 	BaseType == $cus_rdaggers
-SetTag @custom__________________________________________
+SetTag @custom_________________________________________
 	BaseType == $cus_daggers
-SetTag @custom___________________________________________
+SetTag @custom__________________________________________
 	BaseType == $cus_tswords
-SetTag @custom____________________________________________
+SetTag @custom___________________________________________
 	BaseType == $cus_1hswords
-SetTag @custom_____________________________________________
+SetTag @custom____________________________________________
 	BaseType == $cus_1haxes
-SetTag @custom______________________________________________
+SetTag @custom_____________________________________________
 	BaseType == $cus_1hmaces
-SetTag @custom_______________________________________________
+SetTag @custom______________________________________________
 	BaseType == $cus_sceptres
-SetTag @custom________________________________________________
+SetTag @custom_______________________________________________
 	BaseType == $cus_2hswords
-SetTag @custom_________________________________________________
+SetTag @custom________________________________________________
 	BaseType == $cus_2haxes
-SetTag @custom__________________________________________________
+SetTag @custom_________________________________________________
 	BaseType == $cus_2hmaces
-SetTag @custom___________________________________________________
+SetTag @custom__________________________________________________
 	BaseType == $cus_warstaves
-SetTag @custom____________________________________________________
+SetTag @custom___________________________________________________
 	BaseType == $cus_staves
-SetTag @custom_____________________________________________________
+SetTag @custom____________________________________________________
 	BaseType == $cus_wands
-SetTag @custom______________________________________________________
+SetTag @custom_____________________________________________________
 	BaseType == $cus_bows
-SetTag @custom_______________________________________________________
+SetTag @custom______________________________________________________
 	BaseType == $cus_shields
-SetTag @custom________________________________________________________
+SetTag @custom_______________________________________________________
 	BaseType == $cus_chests
-SetTag @custom_________________________________________________________
+SetTag @custom________________________________________________________
 	BaseType == $cus_helms
-SetTag @custom__________________________________________________________
+SetTag @custom_________________________________________________________
 	BaseType == $cus_gloves
-SetTag @custom___________________________________________________________
+SetTag @custom__________________________________________________________
 	BaseType == $cus_boots
-SetTag @custom____________________________________________________________
+SetTag @custom___________________________________________________________
 	BaseType == $cus_quivers
 
 #
@@ -1014,7 +1000,18 @@ Show
 
 Show
 
-	Class "Quest Items" "Atlas Region Upgrade Item" "Incursion Item" "Labyrinth Item" "Labyrinth Trinket" "Pantheon Soul"
+	Class "Quest Items" "Incursion Item" "Labyrinth Item" "Labyrinth Trinket" "Pantheon Soul"
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 191 127 255 # special
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_spe_1
+
+Show
+
+	Class "Atlas Region Upgrade Item"
+	BaseType "Cobalt Watchstone" "Crimson Watchstone" "Golden Watchstone" "Viridian Watchstone"
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 191 127 255 # special
@@ -1075,84 +1072,77 @@ SetTag @T5
 
 Show # currency - specific - awakeners orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Awakener's Orb"
 
 	Tags $cur_awakenersorb $sound_awakenersorb
 
 Show # currency - specific - blessed orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Blessed Orb"
 
 	Tags $cur_blessedorb $sound_blessedorb
 
 Show # currency - specific - chaos orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Chaos Orb"
 
 	Tags $cur_chaosorb $sound_chaosorb
 
 Show # currency - specific - crusaders exalted orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Crusader's Exalted Orb"
 
 	Tags $cur_crusadersexaltedorb $sound_crusadersexaltedorb
 
 Show # currency - specific - divine orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Divine Orb"
 
 	Tags $cur_divineorb $sound_divineorb
 
 Show # currency - specific - exalted orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Exalted Orb"
 
 	Tags $cur_exaltedorb $sound_exaltedorb
 
 Show # currency - specific - hunters exalted orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Hunter's Exalted Orb"
 
 	Tags $cur_huntersexaltedorb $sound_huntersexaltedorb
 
 Show # currency - specific - mirror of kalandra | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Mirror of Kalandra"
 
 	Tags $cur_mirrorofkalandra $sound_mirrorofkalandra
 
 Show # currency - specific - orb of alchemy | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Orb of Alchemy"
 
 	Tags $cur_orbofalchemy $sound_orbofalchemy
 
-Show # currency - specific - orb of annulment | Disable
-
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
-	BaseType == "Orb of Annulment"
-
-	Tags $cur_orbofannulment $sound_orbofannulment
-
 Show # currency - specific - orb of fusing | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Orb of Fusing"
 
 	Tags $cur_orboffusing $sound_orboffusing
 
 Show # currency - specific - prophecy - T1 | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == Prophecy
 	Prophecy == "Ancient Rivalries II" "Ancient Rivalries III" "Ancient Rivalries IV" "Fated Connections" "The Queen's Sacrifice" "Trash to Treasure"
 
@@ -1164,7 +1154,7 @@ Show # currency - specific - prophecy - T1 | Disable
 
 Show # currency - specific - prophecy - T2 | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == Prophecy
 	Prophecy == "A Vision of Ice and Fire" "Cleanser of Sins" "Darktongue's Shriek" "Monstrous Treasure" "The King's Path" "The Unbreathing Queen V" "Wind and Thunder"
 
@@ -1176,7 +1166,7 @@ Show # currency - specific - prophecy - T2 | Disable
 
 Show # currency - specific - prophecy - T3 | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == Prophecy
 	Prophecy == "A Call into the Void" "A Dishonourable Death" "A Firm Foothold" "A Forest of False Idols" "A Master Seeks Help" "A Prodigious Hand" "A Regal Death" "A Rift in Time" "A Valuable Combination" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Agony at Dusk" "An Unseen Peril" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Ancient Doom" "Baptism by Death" "Battle Hardened" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Black Devotion" "Blind Faith" "Blinding Light" "Blood in the Eyes" "Blood of the Betrayed" "Bountiful Traps" "Burning Dread" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Crushing Squall" "Custodians of Silence" "Dance of Steel" "Dark Instincts" "Day of Sacrifice I" "Day of Sacrifice II" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry II" "Deadly Rivalry III" "Deadly Rivalry IV" "Deadly Rivalry V" "Deadly Twins" "Defiled in the Sceptre" "Dying Cry" "Echoes of Witchcraft" "End of the Light" "Ending the Torment" "Erased from Memory" "Erasmus' Gift" "Faith Exhumed" "Fallow At Last" "Fear's Wide Reach" "Fire and Brimstone" "Fire and Ice" "Fire from the Sky" "Fire, Wood and Stone" "Flesh of the Beast" "Forceful Exorcism" "From Death Springs Life" "From The Void" "Gilded Within" "Golden Touch" "Graceful Flames" "Greed's Folly" "Heart of the Fire" "Heavy Blows" "Hidden Reinforcements" "Hidden Vaal Pathways" "Holding the Bridge" "Hunter's Lesson" "Ice from Above" "In the Grasp of Corruption" "Kalandra's Craft" "Last of the Wildmen" "Lasting Impressions" "Lightning Falls" "Living Fires" "Lost in the Pages" "Mouth of Horrors" "Mysterious Invaders" "Nature's Resilience" "Nemesis of Greed" "Notched Flesh" "Overflowing Riches" "Path of Betrayal" "Plague of Frogs" "Plague of Rats" "Pleasure and Pain" "Pools of Wealth" "Possessed Foe" "Power Magnified" Rebirth "Reforged Bonds" "Resistant to Change" "Risen Blood" "Roth's Legacy" "Severed Limbs" "Smothering Tendrils" "Soil, Worms and Blood" "Song of the Sekhema" "Storm on the Horizon" "Storm on the Reef" "Strong as a Bull" "Sun's Punishment" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "Thaumaturgical History IV" "The Alchemist" "The Ambitious Bandit I" "The Ambitious Bandit II" "The Ambitious Bandit III" "The Apex Predator" "The Beautiful Guide" "The Beginning and the End" "The Bishop's Legacy" "The Bloody Flowers Redux" "The Bowstring's Music" "The Brothers of Necromancy" "The Brutal Enforcer" "The Child of Lunaris" "The Corrupt" "The Cursed Choir" "The Dreaded Rhoa" "The Dream Trial" "The Dreamer's Dream" "The Eagle's Cry" "The Fall of an Empire" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Feral Lord V" "The Flayed Man" "The Flow of Energy" "The Forgotten Garrison" "The Forgotten Soldiers" "The Fortune Teller's Collection" "The Four Feral Exiles" "The God of Misfortune" "The Great Leader of the North" "The Great Mind of the North" "The Hardened Armour" "The Hollow Pledge" "The Hungering Swarm" "The Invader" "The Jeweller's Touch" "The Karui Rebellion" "The King and the Brambles" "The Lady in Black" "The Last Watch" "The Lost Maps" "The Lost Undying" "The Malevolent Witch" "The Mentor" "The Misunderstood Queen" "The Mysterious Gift" "The Nest" "The Nightmare Awakens" "The Petrified" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Plaguemaw V" "The Prison Guard" "The Prison Key" "The Queen's Vaults" "The Scout" "The Servant's Heart" "The Sharpened Blade" "The Silverwood" "The Singular Spirit" "The Sinner's Stone" "The Snuffed Flame" "The Soulless Beast" "The Stockkeeper" "The Storm Spire" "The Sword King's Passion" "The Trembling Earth" "The Twins" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "The Undead Brutes" "The Undead Storm" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "The Warmongers I" "The Warmongers II" "The Warmongers III" "The Warmongers IV" "The Watcher's Watcher" "The Wealthy Exile" "Touched by the Wind" "Trapped in the Tower" "Twice Enchanted" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Unbearable Whispers V" "Undead Uprising" "Unnatural Energy" "Vaal Invasion" "Vaal Winds" "Visions of the Drowned" "Vital Transformation" "Waiting in Ambush" "Weeping Death" "Winter's Mournful Melodies"
 
@@ -1188,7 +1178,7 @@ Show # currency - specific - prophecy - T3 | Disable
 
 Hide
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == Prophecy
 	Prophecy == "A Call into the Void" "A Dishonourable Death" "A Firm Foothold" "A Forest of False Idols" "A Master Seeks Help" "A Prodigious Hand" "A Regal Death" "A Rift in Time" "A Valuable Combination" "A Vision of Ice and Fire" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Agony at Dusk" "An Unseen Peril" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Ancient Doom" "Ancient Rivalries II" "Ancient Rivalries III" "Ancient Rivalries IV" "Baptism by Death" "Battle Hardened" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Black Devotion" "Blind Faith" "Blinding Light" "Blood in the Eyes" "Blood of the Betrayed" "Bountiful Traps" "Burning Dread" "Cleanser of Sins" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Crushing Squall" "Custodians of Silence" "Dance of Steel" "Dark Instincts" "Darktongue's Shriek" "Day of Sacrifice I" "Day of Sacrifice II" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry II" "Deadly Rivalry III" "Deadly Rivalry IV" "Deadly Rivalry V" "Deadly Twins" "Defiled in the Sceptre" "Dying Cry" "Echoes of Witchcraft" "End of the Light" "Ending the Torment" "Erased from Memory" "Erasmus' Gift" "Faith Exhumed" "Fallow At Last" "Fated Connections" "Fear's Wide Reach" "Fire and Brimstone" "Fire and Ice" "Fire from the Sky" "Fire, Wood and Stone" "Flesh of the Beast" "Forceful Exorcism" "From Death Springs Life" "From The Void" "Gilded Within" "Golden Touch" "Graceful Flames" "Greed's Folly" "Heart of the Fire" "Heavy Blows" "Hidden Reinforcements" "Hidden Vaal Pathways" "Holding the Bridge" "Hunter's Lesson" "Ice from Above" "In the Grasp of Corruption" "Kalandra's Craft" "Last of the Wildmen" "Lasting Impressions" "Lightning Falls" "Living Fires" "Lost in the Pages" "Monstrous Treasure" "Mouth of Horrors" "Mysterious Invaders" "Nature's Resilience" "Nemesis of Greed" "Notched Flesh" "Overflowing Riches" "Path of Betrayal" "Plague of Frogs" "Plague of Rats" "Pleasure and Pain" "Pools of Wealth" "Possessed Foe" "Power Magnified" Rebirth "Reforged Bonds" "Resistant to Change" "Risen Blood" "Roth's Legacy" "Severed Limbs" "Smothering Tendrils" "Soil, Worms and Blood" "Song of the Sekhema" "Storm on the Horizon" "Storm on the Reef" "Strong as a Bull" "Sun's Punishment" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "Thaumaturgical History IV" "The Alchemist" "The Ambitious Bandit I" "The Ambitious Bandit II" "The Ambitious Bandit III" "The Apex Predator" "The Beautiful Guide" "The Beginning and the End" "The Bishop's Legacy" "The Bloody Flowers Redux" "The Bowstring's Music" "The Brothers of Necromancy" "The Brutal Enforcer" "The Child of Lunaris" "The Corrupt" "The Cursed Choir" "The Dreaded Rhoa" "The Dream Trial" "The Dreamer's Dream" "The Eagle's Cry" "The Fall of an Empire" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Feral Lord V" "The Flayed Man" "The Flow of Energy" "The Forgotten Garrison" "The Forgotten Soldiers" "The Fortune Teller's Collection" "The Four Feral Exiles" "The God of Misfortune" "The Great Leader of the North" "The Great Mind of the North" "The Hardened Armour" "The Hollow Pledge" "The Hungering Swarm" "The Invader" "The Jeweller's Touch" "The Karui Rebellion" "The King and the Brambles" "The King's Path" "The Lady in Black" "The Last Watch" "The Lost Maps" "The Lost Undying" "The Malevolent Witch" "The Mentor" "The Misunderstood Queen" "The Mysterious Gift" "The Nest" "The Nightmare Awakens" "The Petrified" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Plaguemaw V" "The Prison Guard" "The Prison Key" "The Queen's Sacrifice" "The Queen's Vaults" "The Scout" "The Servant's Heart" "The Sharpened Blade" "The Silverwood" "The Singular Spirit" "The Sinner's Stone" "The Snuffed Flame" "The Soulless Beast" "The Stockkeeper" "The Storm Spire" "The Sword King's Passion" "The Trembling Earth" "The Twins" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "The Unbreathing Queen V" "The Undead Brutes" "The Undead Storm" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "The Warmongers I" "The Warmongers II" "The Warmongers III" "The Warmongers IV" "The Watcher's Watcher" "The Wealthy Exile" "Touched by the Wind" "Trapped in the Tower" "Trash to Treasure" "Twice Enchanted" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Unbearable Whispers V" "Undead Uprising" "Unnatural Energy" "Vaal Invasion" "Vaal Winds" "Visions of the Drowned" "Vital Transformation" "Waiting in Ambush" "Weeping Death" "Wind and Thunder" "Winter's Mournful Melodies"
 
@@ -1200,7 +1190,7 @@ Hide
 
 Show # currency - specific - prophecy - T1 unparseable | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == Prophecy
 
 	SetFontSize $text_1
@@ -1211,7 +1201,7 @@ Show # currency - specific - prophecy - T1 unparseable | Disable
 
 Hide
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == Prophecy
 
 	SetFontSize $text_6
@@ -1222,35 +1212,35 @@ Hide
 
 Show # currency - specific - redeemers exalted orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Redeemer's Exalted Orb"
 
 	Tags $cur_redeemersexaltedorb $sound_redeemersexaltedorb
 
 Show # currency - specific - regal orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Regal Orb"
 
 	Tags $cur_regalorb $sound_regalorb
 
 Show # currency - specific - vaal orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Vaal Orb"
 
 	Tags $cur_vaalorb $sound_vaalorb
 
 Show # currency - specific - warlords exalted orb | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == "Warlord's Exalted Orb"
 
 	Tags $cur_warlordsexaltedorb $sound_warlordsexaltedorb
 
 Show # currency - rest - T1 | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == $cur_1
 
 	SetFontSize $text_1
@@ -1261,7 +1251,7 @@ Show # currency - rest - T1 | Disable
 
 Show # currency - rest - T2 | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == $cur_2
 
 	SetFontSize $text_2
@@ -1272,7 +1262,7 @@ Show # currency - rest - T2 | Disable
 
 Show # currency - rest - T3 | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == $cur_3
 
 	SetFontSize $text_3
@@ -1283,7 +1273,7 @@ Show # currency - rest - T3 | Disable
 
 Show # currency - rest - T4 | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == $cur_4
 
 	SetFontSize $text_4
@@ -1294,7 +1284,7 @@ Show # currency - rest - T4 | Disable
 
 Disable # currency - rest - T5 | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == $cur_5
 
 	SetFontSize $text_5
@@ -1305,7 +1295,7 @@ Disable # currency - rest - T5 | Disable
 
 Disable # currency - rest - T5 stacks | Disable
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 	BaseType == $cur_6
 	StackSize > 1
 
@@ -1317,7 +1307,7 @@ Disable # currency - rest - T5 stacks | Disable
 
 Hide
 
-	Class "Delve Stackable Socketable Currency" Incubator "Metamorph Sample" "Stackable Currency"
+	Class "Delve Stackable Socketable Currency" Incubator "Stackable Currency"
 
 	SetFontSize $text_6
 	SetBackgroundColor 0 0 0 127 # general - half-black
@@ -1834,6 +1824,171 @@ Show # unique - T1 valuable 1 | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_uni_1
 
+Show # unique - T1 twice influenced - crusader & elder | Disable
+
+	Rarity Unique
+	HasInfluence == Crusader Elder
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - crusader & hunter | Disable
+
+	Rarity Unique
+	HasInfluence == Crusader Hunter
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - crusader & redeemer | Disable
+
+	Rarity Unique
+	HasInfluence == Crusader Redeemer
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - crusader & shaper | Disable
+
+	Rarity Unique
+	HasInfluence == Crusader Shaper
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - crusader & warlord | Disable
+
+	Rarity Unique
+	HasInfluence == Crusader Warlord
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - elder & hunter | Disable
+
+	Rarity Unique
+	HasInfluence == Elder Hunter
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - elder & redeemer | Disable
+
+	Rarity Unique
+	HasInfluence == Elder Redeemer
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - elder & shaper | Disable
+
+	Rarity Unique
+	HasInfluence == Elder Shaper
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - elder & warlord | Disable
+
+	Rarity Unique
+	HasInfluence == Elder Warlord
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - hunter & redeemer | Disable
+
+	Rarity Unique
+	HasInfluence == Hunter Redeemer
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - hunter & shaper | Disable
+
+	Rarity Unique
+	HasInfluence == Hunter Shaper
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - hunter & warlord | Disable
+
+	Rarity Unique
+	HasInfluence == Hunter Warlord
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - redeemer & shaper | Disable
+
+	Rarity Unique
+	HasInfluence == Redeemer Shaper
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - redeemer & warlord | Disable
+
+	Rarity Unique
+	HasInfluence == Redeemer Warlord
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 twice influenced - shaper & warlord | Disable
+
+	Rarity Unique
+	HasInfluence == Shaper Warlord
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
 Show # unique - T2 restricted bases 2 - 1h swords | Disable
 
 	Rarity Unique
@@ -1911,6 +2066,30 @@ Show # unique - T2 restricted bases 2 - pieces | Disable
 	Rarity Unique
 	Class Piece
 	BaseType == "Archon Kite Shield Piece" "Blunt Arrow Quiver Piece" "Callous Mask Piece" "Cloth Belt Piece" "Imperial Staff Piece" "Legion Sword Piece"
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_uni_2
+
+Show # unique - T2 restricted bases 2 - watchstones | Disable
+
+	Rarity Unique
+	Class "Atlas Region Upgrade Item"
+	BaseType == "Ivory Watchstone"
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_uni_2
+
+Show # unique - T2 restricted bases 2 - samples | Disable
+
+	Rarity Unique
+	Class "Metamorph Sample"
+	BaseType == "Metamorph Brain" "Metamorph Eye" "Metamorph Heart" "Metamorph Liver" "Metamorph Lung"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 127 0 255 # unique
