@@ -1,5 +1,5 @@
 # xhul filter
-# version : 3.9.D
+# version : 3.9.E
 # variant : xloot
 # thread : https://www.pathofexile.com/forum/view-thread/1787522
 
@@ -236,70 +236,71 @@ SetOption $EmptyLine
 # // 
 SetTab [custom sounds]
 SetOption $cuso1 info [These sounds will be used only if enabled in the "sound types" tab.] # no title
-SetOption $cuso2 info [Regarding relative paths, the filter location is the reference.] # no title
-SetOption $cuso3 info [Quotes are mandatory.] # no title
-SetOption $cuso4 info [The lower the tier (T), the higher the priority.] # no title
+SetOption $cuso2 info [Relative or full file path can be used.] # no title
+SetOption $cuso3 info [Regarding relative paths, the filter location is the reference.] # no title
+SetOption $cuso4 info [Quotes are mandatory.] # no title
+SetOption $cuso5 info [The lower the tier (T), the higher the priority.] # no title
 SetOption $EmptyLine
 SetOption $currency_-_awakeners_orb_ info
-SetOption $file_awakenersorb input ["relative or full file path"] # no title
+SetOption $file_awakenersorb input ["None"] # no title
 SetOption $currency_-_blessed_orb_ info
-SetOption $file_blessedorb input ["relative or full file path"] # no title
+SetOption $file_blessedorb input ["None"] # no title
 SetOption $currency_-_chaos_orb_ info
-SetOption $file_chaosorb input ["relative or full file path"] # no title
+SetOption $file_chaosorb input ["None"] # no title
 SetOption $currency_-_crusaders_exalted_orb_ info
-SetOption $file_crusadersexaltedorb input ["relative or full file path"] # no title
+SetOption $file_crusadersexaltedorb input ["None"] # no title
 SetOption $currency_-_divine_orb_ info
-SetOption $file_divineorb input ["relative or full file path"] # no title
+SetOption $file_divineorb input ["None"] # no title
 SetOption $currency_-_exalted_orb_ info
-SetOption $file_exaltedorb input ["relative or full file path"] # no title
+SetOption $file_exaltedorb input ["None"] # no title
 SetOption $currency_-_hunters_exalted_orb_ info
-SetOption $file_huntersexaltedorb input ["relative or full file path"] # no title
+SetOption $file_huntersexaltedorb input ["None"] # no title
 SetOption $currency_-_mirror_of_kalandra_ info
-SetOption $file_mirrorofkalandra input ["relative or full file path"] # no title
+SetOption $file_mirrorofkalandra input ["None"] # no title
 SetOption $currency_-_orb_of_alchemy_ info
-SetOption $file_orbofalchemy input ["relative or full file path"] # no title
+SetOption $file_orbofalchemy input ["None"] # no title
 SetOption $currency_-_orb_of_fusing_ info
-SetOption $file_orboffusing input ["relative or full file path"] # no title
+SetOption $file_orboffusing input ["None"] # no title
 SetOption $currency_-_redeemers_exalted_orb_ info
-SetOption $file_redeemersexaltedorb input ["relative or full file path"] # no title
+SetOption $file_redeemersexaltedorb input ["None"] # no title
 SetOption $currency_-_regal_orb_ info
-SetOption $file_regalorb input ["relative or full file path"] # no title
+SetOption $file_regalorb input ["None"] # no title
 SetOption $currency_-_vaal_orb_ info
-SetOption $file_vaalorb input ["relative or full file path"] # no title
+SetOption $file_vaalorb input ["None"] # no title
 SetOption $currency_-_warlords_exalted_orb_ info
-SetOption $file_warlordsexaltedorb input ["relative or full file path"] # no title
+SetOption $file_warlordsexaltedorb input ["None"] # no title
 SetOption $fragments_-_T1_ info
-SetOption $file_fra_1 input ["relative or full file path"] # no title
+SetOption $file_fra_1 input ["None"] # no title
 SetOption $fragments_-_T2_ info
-SetOption $file_fra_2 input ["relative or full file path"] # no title
+SetOption $file_fra_2 input ["None"] # no title
 SetOption $fragments_-_T3_ info
-SetOption $file_fra_3 input ["relative or full file path"] # no title
+SetOption $file_fra_3 input ["None"] # no title
 SetOption $general_-_T1____ info
-SetOption $file_1 input ["relative or full file path"] # no title
+SetOption $file_1 input ["None"] # no title
 SetOption $general_-_T2____ info
-SetOption $file_2 input ["relative or full file path"] # no title
+SetOption $file_2 input ["None"] # no title
 SetOption $general_-_T3____ info
-SetOption $file_3 input ["relative or full file path"] # no title
+SetOption $file_3 input ["None"] # no title
 SetOption $general_-_T4____ info
-SetOption $file_4 input ["relative or full file path"] # no title
+SetOption $file_4 input ["None"] # no title
 SetOption $general_-_T5____ info
-SetOption $file_5 input ["relative or full file path"] # no title
+SetOption $file_5 input ["None"] # no title
 SetOption $maps_-_T2___ info
-SetOption $file_map_2 input ["relative or full file path"] # no title
+SetOption $file_map_2 input ["None"] # no title
 SetOption $maps_-_T3___ info
-SetOption $file_map_3 input ["relative or full file path"] # no title
+SetOption $file_map_3 input ["None"] # no title
 SetOption $maps_-_T4___ info
-SetOption $file_map_4 input ["relative or full file path"] # no title
+SetOption $file_map_4 input ["None"] # no title
 SetOption $maps_-_T5___ info
-SetOption $file_map_5 input ["relative or full file path"] # no title
+SetOption $file_map_5 input ["None"] # no title
 SetOption $special_-_T1_ info
-SetOption $file_spe_1 input ["relative or full file path"] # no title
+SetOption $file_spe_1 input ["None"] # no title
 SetOption $unique_-_T1_ info
-SetOption $file_uni_1 input ["relative or full file path"] # no title
+SetOption $file_uni_1 input ["None"] # no title
 SetOption $unique_-_T2_ info
-SetOption $file_uni_2 input ["relative or full file path"] # no title
+SetOption $file_uni_2 input ["None"] # no title
 SetOption $unique_-_T3_ info
-SetOption $file_uni_3 input ["relative or full file path"] # no title
+SetOption $file_uni_3 input ["None"] # no title
 # // 
 # // 
 # // 
@@ -403,9 +404,9 @@ SetOption $gem_1 slider [2] [1] [20] # no title
 SetTab [unique]
 SetOption $uniq1 info [The lower the tier (T), the higher the priority.] # no title
 SetOption $EmptyLine
-SetOption $T1_valuable_1 info # multiclass block
+SetOption $T1_valuable_bases_1 info # multiclass block
 SetOption $uni_1 textarea ["Charan's Sword" "Chateau Map" "Crusader Boots" "Glorious Plate" "Greatwolf Talisman" "Maze Map" "Occultist's Vestment" "Ornate Quiver" "Prophecy Wand" "Rawhide Boots" "Royal Axe" "Sapphire Flask"] # no title
-SetOption $T2_valuable_2 info # multiclass block
+SetOption $T2_valuable_bases_2 info # multiclass block
 SetOption $uni_2 textarea ["Ambush Mitts" "Carnal Boots" "Courtyard Map" "Gemstone Sword" "Grand Mana Flask" "Jewelled Foil" "Jingling Spirit Shield" "Museum Map" "Sanctified Life Flask" "Siege Axe" "Vaal Rapier" "Wyrmscale Doublet"] # no title
 # // 
 # // 
@@ -580,8 +581,8 @@ SetOption $T4_jewels__ info
 SetOption $nor_jewels switch [@none] [@none] [@all] [@custom______________________________________] # no title
 SetOption $EmptyLine
 SetOption $EmptyLine
-SetOption $T4_chanceable info # multiclass block
-SetOption $nor_chanceable textarea ["Leather Belt"] # no title
+SetOption $T4_chanceable_bases info # uncorrupted & unmirrored - multiclass block
+SetOption $nor_1 textarea ["Leather Belt"] # no title
 SetOption $EmptyLine
 SetOption $T5_WEAPONS__ info
 SetOption $claws__ info
@@ -996,7 +997,7 @@ SetTag @on
 
 Show
 
-	Class "Hideout Doodads" "Labyrinth Map Item" "Large Relics" "Medium Relics" Microtransactions "Small Relics"
+	Class "Delve Socketable Currency" "Hideout Doodads" "Labyrinth Map Item" "Large Relics" "Medium Relics" Microtransactions "Shard Heart" "Small Relics"
 
 Show
 
@@ -1609,7 +1610,7 @@ Show # gems - T2 qty 21+ | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # gems - T3 special | Disable
+Show # gems - T3 special bases | Disable
 
 	Class "Active Skill Gems" "Support Skill Gems"
 	BaseType == "Empower Support" "Enhance Support" "Enlighten Support" Portal
@@ -1813,7 +1814,7 @@ Show # unique - T1 restricted bases 1 - rings | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_uni_1
 
-Show # unique - T1 valuable 1 | Disable
+Show # unique - T1 valuable bases 1 | Disable
 
 	Rarity Unique
 	BaseType == $uni_1
@@ -1989,6 +1990,50 @@ Show # unique - T1 twice influenced - shaper & warlord | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_uni_1
 
+Show # unique - T1 fractured | Disable
+
+	Rarity Unique
+	FracturedItem True
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 corrupted mods 2+ | Disable
+
+	Rarity Unique
+	CorruptedMods > 1
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 sockets wwwww+ | Disable
+
+	Rarity Unique
+	Sockets WWWWW
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
+Show # unique - T1 sockets aa+ | Disable
+
+	Rarity Unique
+	Sockets AA
+
+	SetFontSize $text_1
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_1 $icon_1 $sound_uni_1
+
 Show # unique - T2 restricted bases 2 - 1h swords | Disable
 
 	Rarity Unique
@@ -2109,10 +2154,21 @@ Show # unique - T2 restricted bases 2 - maps | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_uni_2
 
-Show # unique - T2 valuable 2 | Disable
+Show # unique - T2 valuable bases 2 | Disable
 
 	Rarity Unique
 	BaseType == $uni_2
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_uni_2
+
+Show # unique - T2 generic veiled mods | Disable
+
+	Rarity Unique
+	HasExplicitMod == Veiled "of the Veil"
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 127 0 255 # unique
@@ -2124,17 +2180,6 @@ Show # unique - T2 influenced | Disable
 
 	Rarity Unique
 	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 127 0 255 # unique
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_2 $icon_2 $sound_uni_2
-
-Show # unique - T2 fractured | Disable
-
-	Rarity Unique
-	FracturedItem True
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 127 0 255 # unique
@@ -2164,10 +2209,10 @@ Show # unique - T2 enchanted | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_uni_2
 
-Show # unique - T2 restricted mods | Disable
+Show # unique - T2 corrupted mods 1 | Disable
 
 	Rarity Unique
-	HasExplicitMod == Veiled "of the Veil"
+	CorruptedMods 1
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 127 0 255 # unique
@@ -2190,6 +2235,30 @@ Show # unique - T2 qty 21+ | Disable
 
 	Rarity Unique
 	Quality > 20
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_uni_2
+
+Show # unique - T2 sockets www>wwww | Disable
+
+	Rarity Unique
+	Sockets WWW
+	Sockets < WWWWW
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 127 0 255 # unique
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_uni_2
+
+Show # unique - T2 sockets a | Disable
+
+	Rarity Unique
+	Sockets A
+	Sockets < AA
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 127 0 255 # unique
@@ -2247,10 +2316,10 @@ SetTag @on__
 SetTag @on___
 	MinimapIcon $icon_map_size_5 $icon_color_map $icon_map_shape_5
 
-Show # maps - T2 blighted | Disable
+Show # maps - T2 influenced | Disable
 
 	Class Maps
-	BlightedMap True
+	HasInfluence Elder Shaper
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 0 0 255 # maps
@@ -2258,10 +2327,10 @@ Show # maps - T2 blighted | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_map_2 $icon_map_2 $sound_map_2
 
-Show # maps - T2 restricted mods | Disable
+Show # maps - T2 blighted | Disable
 
 	Class Maps
-	HasExplicitMod == Vaal Zana's
+	BlightedMap True
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 0 0 255 # maps
@@ -2290,6 +2359,17 @@ Show # maps - T2 qty 21+ | Disable
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_map_2 $icon_map_2 $sound_map_2
+
+Show # maps - T3 restricted mods | Disable
+
+	Class Maps
+	HasExplicitMod == Vaal Zana's
+
+	SetFontSize $text_3
+	SetBackgroundColor 255 0 0 255 # maps
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_map_3 $icon_map_3 $sound_map_3
 
 Show # maps - T3 tier 11>15 | Disable
 
@@ -2388,7 +2468,7 @@ Show # rare - T1 restricted bases 1 - 2h swords | Disable
 	BaseType == Keyblade
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2400,7 +2480,7 @@ Show # rare - T1 restricted bases 1 - rods | Disable
 	BaseType == "Fishing Rod"
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2412,7 +2492,7 @@ Show # rare - T1 restricted bases 1 - shields | Disable
 	BaseType == "Golden Flame"
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2424,7 +2504,7 @@ Show # rare - T1 restricted bases 1 - chests | Disable
 	BaseType == "Golden Mantle"
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2436,7 +2516,7 @@ Show # rare - T1 restricted bases 1 - helms | Disable
 	BaseType == "Golden Visage" "Golden Wreath"
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2448,7 +2528,7 @@ Show # rare - T1 restricted bases 1 - gloves | Disable
 	BaseType == "Golden Bracers"
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2460,7 +2540,7 @@ Show # rare - T1 restricted bases 1 - boots | Disable
 	BaseType == "Golden Caligae"
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2472,7 +2552,7 @@ Show # rare - T1 restricted bases 1 - quivers | Disable
 	BaseType == "Conductive Quiver" "Cured Quiver" "Heavy Quiver" "Light Quiver" "Rugged Quiver"
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2484,7 +2564,7 @@ Show # rare - T1 restricted bases 1 - belts | Disable
 	BaseType == "Golden Obi"
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2496,7 +2576,7 @@ Show # rare - T1 restricted bases 1 - amulets | Disable
 	BaseType == "Jet Amulet"
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2508,7 +2588,7 @@ Show # rare - T1 restricted bases 1 - rings | Disable
 	BaseType == "Golden Hoop"
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2519,7 +2599,7 @@ Show # rare - T1 twice influenced - crusader & elder | Disable
 	HasInfluence == Crusader Elder
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2530,7 +2610,7 @@ Show # rare - T1 twice influenced - crusader & hunter | Disable
 	HasInfluence == Crusader Hunter
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2541,7 +2621,7 @@ Show # rare - T1 twice influenced - crusader & redeemer | Disable
 	HasInfluence == Crusader Redeemer
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2552,7 +2632,7 @@ Show # rare - T1 twice influenced - crusader & shaper | Disable
 	HasInfluence == Crusader Shaper
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2563,7 +2643,7 @@ Show # rare - T1 twice influenced - crusader & warlord | Disable
 	HasInfluence == Crusader Warlord
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2574,7 +2654,7 @@ Show # rare - T1 twice influenced - elder & hunter | Disable
 	HasInfluence == Elder Hunter
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2585,7 +2665,7 @@ Show # rare - T1 twice influenced - elder & redeemer | Disable
 	HasInfluence == Elder Redeemer
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2596,7 +2676,7 @@ Show # rare - T1 twice influenced - elder & shaper | Disable
 	HasInfluence == Elder Shaper
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2607,7 +2687,7 @@ Show # rare - T1 twice influenced - elder & warlord | Disable
 	HasInfluence == Elder Warlord
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2618,7 +2698,7 @@ Show # rare - T1 twice influenced - hunter & redeemer | Disable
 	HasInfluence == Hunter Redeemer
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2629,7 +2709,7 @@ Show # rare - T1 twice influenced - hunter & shaper | Disable
 	HasInfluence == Hunter Shaper
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2640,7 +2720,7 @@ Show # rare - T1 twice influenced - hunter & warlord | Disable
 	HasInfluence == Hunter Warlord
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2651,7 +2731,7 @@ Show # rare - T1 twice influenced - redeemer & shaper | Disable
 	HasInfluence == Redeemer Shaper
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2662,7 +2742,7 @@ Show # rare - T1 twice influenced - redeemer & warlord | Disable
 	HasInfluence == Redeemer Warlord
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -2673,371 +2753,40 @@ Show # rare - T1 twice influenced - shaper & warlord | Disable
 	HasInfluence == Shaper Warlord
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # rare - T1 restricted bases & influenced - wands | Disable
+Show # rare - T1 fractured | Disable
 
 	Rarity Rare
-	Class Wands
-	BaseType == "Convoking Wand"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & influenced - helms | Disable
-
-	Rarity Rare
-	Class Helmets
-	BaseType == "Bone Helmet"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & influenced - gloves | Disable
-
-	Rarity Rare
-	Class Gloves
-	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & influenced - boots | Disable
-
-	Rarity Rare
-	Class Boots
-	BaseType == "Two-Toned Boots"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & influenced - belts | Disable
-
-	Rarity Rare
-	Class Belts
-	BaseType == "Crystal Belt" "Vanguard Belt"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & influenced - amulets | Disable
-
-	Rarity Rare
-	Class Amulets
-	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & influenced - rings | Disable
-
-	Rarity Rare
-	Class Rings
-	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & fractured - wands | Disable
-
-	Rarity Rare
-	Class Wands
-	BaseType == "Convoking Wand"
 	FracturedItem True
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # rare - T1 restricted bases & fractured - helms | Disable
+Show # rare - T1 synthesised | Disable
 
 	Rarity Rare
-	Class Helmets
-	BaseType == "Bone Helmet"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & fractured - gloves | Disable
-
-	Rarity Rare
-	Class Gloves
-	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & fractured - boots | Disable
-
-	Rarity Rare
-	Class Boots
-	BaseType == "Two-Toned Boots"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & fractured - belts | Disable
-
-	Rarity Rare
-	Class Belts
-	BaseType == "Crystal Belt" "Vanguard Belt"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & fractured - amulets | Disable
-
-	Rarity Rare
-	Class Amulets
-	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & fractured - rings | Disable
-
-	Rarity Rare
-	Class Rings
-	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & synthesised - wands | Disable
-
-	Rarity Rare
-	Class Wands
-	BaseType == "Convoking Wand"
 	SynthesisedItem True
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # rare - T1 restricted bases & synthesised - helms | Disable
+Show # rare - T1 sockets wwwww+ | Disable
 
 	Rarity Rare
-	Class Helmets
-	BaseType == "Bone Helmet"
-	SynthesisedItem True
+	Sockets WWWWW
 
 	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & synthesised - gloves | Disable
-
-	Rarity Rare
-	Class Gloves
-	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & synthesised - boots | Disable
-
-	Rarity Rare
-	Class Boots
-	BaseType == "Two-Toned Boots"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & synthesised - belts | Disable
-
-	Rarity Rare
-	Class Belts
-	BaseType == "Crystal Belt" "Vanguard Belt"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & synthesised - amulets | Disable
-
-	Rarity Rare
-	Class Amulets
-	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & synthesised - rings | Disable
-
-	Rarity Rare
-	Class Rings
-	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & mods - wands | Disable
-
-	Rarity Rare
-	Class Wands
-	BaseType == "Convoking Wand"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & mods - helms | Disable
-
-	Rarity Rare
-	Class Helmets
-	BaseType == "Bone Helmet"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & mods - gloves | Disable
-
-	Rarity Rare
-	Class Gloves
-	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & mods - boots | Disable
-
-	Rarity Rare
-	Class Boots
-	BaseType == "Two-Toned Boots"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & mods - belts | Disable
-
-	Rarity Rare
-	Class Belts
-	BaseType == "Crystal Belt" "Vanguard Belt"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & mods - amulets | Disable
-
-	Rarity Rare
-	Class Amulets
-	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # rare - T1 restricted bases & mods - rings | Disable
-
-	Rarity Rare
-	Class Rings
-	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
@@ -3049,7 +2798,7 @@ Show # rare - T2 restricted bases 2 - 1h swords | Disable
 	BaseType == "Charan's Sword"
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3061,7 +2810,7 @@ Show # rare - T2 restricted bases 2 - chests | Disable
 	BaseType == "Sacrificial Garb"
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3073,7 +2822,7 @@ Show # rare - T2 restricted bases 2 - quivers | Disable
 	BaseType == "Ornate Quiver"
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3085,7 +2834,7 @@ Show # rare - T2 restricted bases 2 - belts | Disable
 	BaseType == "Stygian Vise"
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3097,7 +2846,7 @@ Show # rare - T2 restricted bases 2 - amulets | Disable
 	BaseType == "Ashscale Talisman" "Avian Twins Talisman" "Black Maw Talisman" "Bonespire Talisman" "Breakrib Talisman" "Chrysalis Talisman" "Clutching Talisman" "Deadhand Talisman" "Deep One Talisman" "Fangjaw Talisman" "Greatwolf Talisman" "Hexclaw Talisman" "Horned Talisman" "Lone Antler Talisman" "Longtooth Talisman" "Mandible Talisman" "Monkey Paw Talisman" "Monkey Twins Talisman" "Primal Skull Talisman" "Rot Head Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Splitnewt Talisman" "Three Hands Talisman" "Three Rat Talisman" "Undying Flesh Talisman" "Wereclaw Talisman" "Writhing Talisman"
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3109,7 +2858,7 @@ Show # rare - T2 restricted bases 2 - rings | Disable
 	BaseType == "Prismatic Ring"
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3121,51 +2870,7 @@ Show # rare - T2 restricted bases 2 - jewels | Disable
 	BaseType == "Prismatic Jewel" "Timeless Jewel"
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # rare - T2 influenced | Disable
-
-	Rarity Rare
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # rare - T2 fractured | Disable
-
-	Rarity Rare
-	FracturedItem True
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # rare - T2 synthesised | Disable
-
-	Rarity Rare
-	SynthesisedItem True
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # rare - T2 enchanted | Disable
-
-	Rarity Rare
-	AnyEnchantment True
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3176,7 +2881,7 @@ Show # rare - T2 restricted mods | Disable
 	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3187,7 +2892,40 @@ Show # rare - T2 specific veiled mods | Disable
 	HasExplicitMod == "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil"
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # rare - T2 influenced | Disable
+
+	Rarity Rare
+	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # rare - T2 enchanted | Disable
+
+	Rarity Rare
+	AnyEnchantment True
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # rare - T2 corrupted mods 2+ | Disable
+
+	Rarity Rare
+	CorruptedMods > 1
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3198,7 +2936,7 @@ Show # rare - T2 ilvl 100 | Disable
 	ItemLevel 100
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3209,7 +2947,30 @@ Show # rare - T2 qty 21+ | Disable
 	Quality > 20
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # rare - T2 sockets www>wwww | Disable
+
+	Rarity Rare
+	Sockets WWW
+	Sockets < WWWWW
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # rare - T2 sockets a+ | Disable
+
+	Rarity Rare
+	Sockets A
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3220,7 +2981,7 @@ Show # rare - T2 sockets 6 linked | Disable
 	LinkedSockets 6
 
 	SetFontSize $text_2
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
@@ -3232,7 +2993,7 @@ Show # rare - T3 restricted bases 3 - belts | Disable
 	BaseType == "Crystal Belt" "Vanguard Belt"
 
 	SetFontSize $text_3
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_3 $icon_3 $sound_3
@@ -3244,7 +3005,7 @@ Show # rare - T3 restricted bases 3 - amulets | Disable
 	BaseType == "Blue Pearl Amulet" "Marble Amulet"
 
 	SetFontSize $text_3
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_3 $icon_3 $sound_3
@@ -3256,7 +3017,7 @@ Show # rare - T3 restricted bases 3 - rings | Disable
 	BaseType == "Breach Ring" "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
 
 	SetFontSize $text_3
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_3 $icon_3 $sound_3
@@ -3268,7 +3029,7 @@ Show # rare - T3 restricted bases 3 - abyss jewels | Disable
 	BaseType == "Ghastly Eye Jewel" "Hypnotic Eye Jewel" "Murderous Eye Jewel" "Searching Eye Jewel"
 
 	SetFontSize $text_3
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_3 $icon_3 $sound_3
@@ -3279,7 +3040,18 @@ Show # rare - T3 generic veiled mods | Disable
 	HasExplicitMod == Veiled "of the Veil"
 
 	SetFontSize $text_3
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_3 $icon_3 $sound_3
+
+Show # rare - T3 corrupted mods 1 | Disable
+
+	Rarity Rare
+	CorruptedMods 1
+
+	SetFontSize $text_3
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_3 $icon_3 $sound_3
@@ -3290,7 +3062,7 @@ Show # rare - T3 sockets 6 | Disable
 	Sockets 6
 
 	SetFontSize $text_3
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_3 $icon_3 $sound_3
@@ -3301,21 +3073,10 @@ Disable # rare - T3 sockets 5 linked | Disable
 	LinkedSockets 5
 
 	SetFontSize $text_3
-	SetBackgroundColor 255 255 0 255 # rare - main
+	SetBackgroundColor 255 255 0 255 # rare
 	SetTextColor 0 0 0 255 # general - black
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_3 $icon_3 $sound_3
-
-Show # rare - T4 corrupted | Disable
-
-	Rarity Rare
-	Corrupted True
-
-	SetFontSize $text_4
-	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 0 0 255 # rare - corrupted
-	Tags $beam_4 $icon_4 $sound_4
 
 Show # rare - T4 restricted bases 4 - wands | Disable
 
@@ -3325,8 +3086,8 @@ Show # rare - T4 restricted bases 4 - wands | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Show # rare - T4 restricted bases 4 - helms | Disable
@@ -3337,8 +3098,8 @@ Show # rare - T4 restricted bases 4 - helms | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Show # rare - T4 restricted bases 4 - gloves | Disable
@@ -3349,8 +3110,8 @@ Show # rare - T4 restricted bases 4 - gloves | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Show # rare - T4 restricted bases 4 - boots | Disable
@@ -3361,8 +3122,8 @@ Show # rare - T4 restricted bases 4 - boots | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Show # rare - T4 jewellery - belts | Disable
@@ -3373,8 +3134,8 @@ Show # rare - T4 jewellery - belts | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Show # rare - T4 jewellery - amulets | Disable
@@ -3385,8 +3146,8 @@ Show # rare - T4 jewellery - amulets | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Show # rare - T4 jewellery - rings | Disable
@@ -3397,8 +3158,8 @@ Show # rare - T4 jewellery - rings | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Show # rare - T4 jewels | Disable
@@ -3409,8 +3170,8 @@ Show # rare - T4 jewels | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Disable # rare - T4 sockets 4 linked | Disable
@@ -3420,8 +3181,8 @@ Disable # rare - T4 sockets 4 linked | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Disable # rare - T4 sockets 3 linked & ilvl 24- | Disable
@@ -3432,8 +3193,8 @@ Disable # rare - T4 sockets 3 linked & ilvl 24- | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Disable # rare - T4 sockets 2 linked & ilvl 1 | Disable
@@ -3444,8 +3205,8 @@ Disable # rare - T4 sockets 2 linked & ilvl 1 | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Disable # rare - T4 sockets rgb linked - any | Disable
@@ -3455,8 +3216,8 @@ Disable # rare - T4 sockets rgb linked - any | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Disable # rare - T4 sockets rgb linked - width 1 | Disable
@@ -3467,8 +3228,8 @@ Disable # rare - T4 sockets rgb linked - width 1 | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Disable # rare - T4 sockets rgb linked - height 2 | Disable
@@ -3479,8 +3240,8 @@ Disable # rare - T4 sockets rgb linked - height 2 | Disable
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
-	SetTextColor 255 255 0 255 # rare - main
-	SetBorderColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
+	SetBorderColor 255 255 0 255 # rare
 	Tags $beam_4 $icon_4 $sound_4
 
 Show # rare - T5 weapons - claws | Disable
@@ -3491,7 +3252,7 @@ Show # rare - T5 weapons - claws | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3503,7 +3264,7 @@ Show # rare - T5 weapons - rune daggers | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3515,7 +3276,7 @@ Show # rare - T5 weapons - daggers | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3527,7 +3288,7 @@ Show # rare - T5 weapons - thrusting swords | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3539,7 +3300,7 @@ Show # rare - T5 weapons - 1h swords | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3551,7 +3312,7 @@ Show # rare - T5 weapons - 1h axes | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3563,7 +3324,7 @@ Show # rare - T5 weapons - 1h maces | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3575,7 +3336,7 @@ Show # rare - T5 weapons - sceptres | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3587,7 +3348,7 @@ Show # rare - T5 weapons - 2h swords | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3599,7 +3360,7 @@ Show # rare - T5 weapons - 2h axes | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3611,7 +3372,7 @@ Show # rare - T5 weapons - 2h maces | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3623,7 +3384,7 @@ Show # rare - T5 weapons - warstaves | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3635,7 +3396,7 @@ Show # rare - T5 weapons - staves | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3647,7 +3408,7 @@ Show # rare - T5 weapons - wands | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3659,7 +3420,7 @@ Show # rare - T5 weapons - bows | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3671,7 +3432,7 @@ Show # rare - T5 armour - shields | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3683,7 +3444,7 @@ Show # rare - T5 armour - chests | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3695,7 +3456,7 @@ Show # rare - T5 armour - helms | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3707,7 +3468,7 @@ Show # rare - T5 armour - gloves | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3719,7 +3480,7 @@ Show # rare - T5 armour - boots | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3731,7 +3492,7 @@ Show # rare - T5 quivers | Disable
 
 	SetFontSize $text_5
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_5 $icon_5 $sound_5
 
@@ -3741,7 +3502,7 @@ Hide
 
 	SetFontSize $text_7
 	SetBackgroundColor 0 0 0 127 # general - half-black
-	SetTextColor 255 255 0 255 # rare - main
+	SetTextColor 255 255 0 255 # rare
 	SetBorderColor 0 0 0 255 # general - black
 	DisableDropSound
 
@@ -4075,102 +3836,9 @@ Show # magic - T1 twice influenced - shaper & warlord | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # magic - T1 restricted bases & influenced - wands | Disable
+Show # magic - T1 fractured | Disable
 
 	Rarity Magic
-	Class Wands
-	BaseType == "Convoking Wand"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & influenced - helms | Disable
-
-	Rarity Magic
-	Class Helmets
-	BaseType == "Bone Helmet"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & influenced - gloves | Disable
-
-	Rarity Magic
-	Class Gloves
-	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & influenced - boots | Disable
-
-	Rarity Magic
-	Class Boots
-	BaseType == "Two-Toned Boots"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & influenced - belts | Disable
-
-	Rarity Magic
-	Class Belts
-	BaseType == "Crystal Belt" "Vanguard Belt"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & influenced - amulets | Disable
-
-	Rarity Magic
-	Class Amulets
-	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & influenced - rings | Disable
-
-	Rarity Magic
-	Class Rings
-	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & fractured - wands | Disable
-
-	Rarity Magic
-	Class Wands
-	BaseType == "Convoking Wand"
 	FracturedItem True
 
 	SetFontSize $text_1
@@ -4179,89 +3847,9 @@ Show # magic - T1 restricted bases & fractured - wands | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # magic - T1 restricted bases & fractured - helms | Disable
+Show # magic - T1 synthesised | Disable
 
 	Rarity Magic
-	Class Helmets
-	BaseType == "Bone Helmet"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & fractured - gloves | Disable
-
-	Rarity Magic
-	Class Gloves
-	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & fractured - boots | Disable
-
-	Rarity Magic
-	Class Boots
-	BaseType == "Two-Toned Boots"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & fractured - belts | Disable
-
-	Rarity Magic
-	Class Belts
-	BaseType == "Crystal Belt" "Vanguard Belt"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & fractured - amulets | Disable
-
-	Rarity Magic
-	Class Amulets
-	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & fractured - rings | Disable
-
-	Rarity Magic
-	Class Rings
-	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	FracturedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & synthesised - wands | Disable
-
-	Rarity Magic
-	Class Wands
-	BaseType == "Convoking Wand"
 	SynthesisedItem True
 
 	SetFontSize $text_1
@@ -4270,168 +3858,10 @@ Show # magic - T1 restricted bases & synthesised - wands | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # magic - T1 restricted bases & synthesised - helms | Disable
+Show # magic - T1 sockets wwwww+ | Disable
 
 	Rarity Magic
-	Class Helmets
-	BaseType == "Bone Helmet"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & synthesised - gloves | Disable
-
-	Rarity Magic
-	Class Gloves
-	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & synthesised - boots | Disable
-
-	Rarity Magic
-	Class Boots
-	BaseType == "Two-Toned Boots"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & synthesised - belts | Disable
-
-	Rarity Magic
-	Class Belts
-	BaseType == "Crystal Belt" "Vanguard Belt"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & synthesised - amulets | Disable
-
-	Rarity Magic
-	Class Amulets
-	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & synthesised - rings | Disable
-
-	Rarity Magic
-	Class Rings
-	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & mods - wands | Disable
-
-	Rarity Magic
-	Class Wands
-	BaseType == "Convoking Wand"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & mods - helms | Disable
-
-	Rarity Magic
-	Class Helmets
-	BaseType == "Bone Helmet"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & mods - gloves | Disable
-
-	Rarity Magic
-	Class Gloves
-	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & mods - boots | Disable
-
-	Rarity Magic
-	Class Boots
-	BaseType == "Two-Toned Boots"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & mods - belts | Disable
-
-	Rarity Magic
-	Class Belts
-	BaseType == "Crystal Belt" "Vanguard Belt"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & mods - amulets | Disable
-
-	Rarity Magic
-	Class Amulets
-	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
-
-	SetFontSize $text_1
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # magic - T1 restricted bases & mods - rings | Disable
-
-	Rarity Magic
-	Class Rings
-	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	HasExplicitMod == Betrayer's Brinerot Citaqualotl's Deceiver's Guatelitzi's Matatl's Mutewind Redblade Subterranean Tacati's Topotante's Turncoat's Xopec's "of Citaqualotl" "of Crafting" "of Craiceann" "of Farrul" "of Fenumus" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Saqawal" "of Spellcraft" "of Tacati" "of Weaponcraft" "of the Underground"
+	Sockets WWWWW
 
 	SetFontSize $text_1
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4523,50 +3953,6 @@ Show # magic - T2 restricted bases 2 - jewels | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # magic - T2 influenced | Disable
-
-	Rarity Magic
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_2
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # magic - T2 fractured | Disable
-
-	Rarity Magic
-	FracturedItem True
-
-	SetFontSize $text_2
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # magic - T2 synthesised | Disable
-
-	Rarity Magic
-	SynthesisedItem True
-
-	SetFontSize $text_2
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_2 $icon_2 $sound_2
-
-Show # magic - T2 enchanted | Disable
-
-	Rarity Magic
-	AnyEnchantment True
-
-	SetFontSize $text_2
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_2 $icon_2 $sound_2
-
 Show # magic - T2 restricted mods | Disable
 
 	Rarity Magic
@@ -4578,10 +3964,21 @@ Show # magic - T2 restricted mods | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # magic - T2 specific veiled mods | Disable
+Show # magic - T2 influenced | Disable
 
 	Rarity Magic
-	HasExplicitMod == "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" "Vorici's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "of Riker's Veil"
+	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
+
+	SetFontSize $text_2
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # magic - T2 enchanted | Disable
+
+	Rarity Magic
+	AnyEnchantment True
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4604,6 +4001,29 @@ Show # magic - T2 qty 21+ | Disable
 
 	Rarity Magic
 	Quality > 20
+
+	SetFontSize $text_2
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # magic - T2 sockets www>wwww | Disable
+
+	Rarity Magic
+	Sockets WWW
+	Sockets < WWWWW
+
+	SetFontSize $text_2
+	SetBackgroundColor 127 127 255 255 # magic
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # magic - T2 sockets a+ | Disable
+
+	Rarity Magic
+	Sockets A
 
 	SetFontSize $text_2
 	SetBackgroundColor 127 127 255 255 # magic
@@ -4663,17 +4083,6 @@ Show # magic - T3 restricted bases 3 - abyss jewels | Disable
 	Rarity Magic
 	Class "Abyss Jewel"
 	BaseType == "Ghastly Eye Jewel" "Hypnotic Eye Jewel" "Murderous Eye Jewel" "Searching Eye Jewel"
-
-	SetFontSize $text_3
-	SetBackgroundColor 127 127 255 255 # magic
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_3 $icon_3 $sound_3
-
-Show # magic - T3 generic veiled mods | Disable
-
-	Rarity Magic
-	HasExplicitMod == Veiled "of the Veil"
 
 	SetFontSize $text_3
 	SetBackgroundColor 127 127 255 255 # magic
@@ -5521,102 +4930,9 @@ Show # normal - T1 twice influenced - shaper & warlord | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # normal - T1 restricted bases & influenced - wands | Disable
+Show # normal - T1 synthesised | Disable
 
 	Rarity Normal
-	Class Wands
-	BaseType == "Convoking Wand"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & influenced - helms | Disable
-
-	Rarity Normal
-	Class Helmets
-	BaseType == "Bone Helmet"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & influenced - gloves | Disable
-
-	Rarity Normal
-	Class Gloves
-	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & influenced - boots | Disable
-
-	Rarity Normal
-	Class Boots
-	BaseType == "Two-Toned Boots"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & influenced - belts | Disable
-
-	Rarity Normal
-	Class Belts
-	BaseType == "Crystal Belt" "Vanguard Belt"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & influenced - amulets | Disable
-
-	Rarity Normal
-	Class Amulets
-	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & influenced - rings | Disable
-
-	Rarity Normal
-	Class Rings
-	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & synthesised - wands | Disable
-
-	Rarity Normal
-	Class Wands
-	BaseType == "Convoking Wand"
 	SynthesisedItem True
 
 	SetFontSize $text_1
@@ -5625,77 +4941,10 @@ Show # normal - T1 restricted bases & synthesised - wands | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_1 $icon_1 $sound_1
 
-Show # normal - T1 restricted bases & synthesised - helms | Disable
+Show # normal - T1 sockets wwwww+ | Disable
 
 	Rarity Normal
-	Class Helmets
-	BaseType == "Bone Helmet"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & synthesised - gloves | Disable
-
-	Rarity Normal
-	Class Gloves
-	BaseType == "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & synthesised - boots | Disable
-
-	Rarity Normal
-	Class Boots
-	BaseType == "Two-Toned Boots"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & synthesised - belts | Disable
-
-	Rarity Normal
-	Class Belts
-	BaseType == "Crystal Belt" "Vanguard Belt"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & synthesised - amulets | Disable
-
-	Rarity Normal
-	Class Amulets
-	BaseType == "Blue Pearl Amulet" "Marble Amulet"
-	SynthesisedItem True
-
-	SetFontSize $text_1
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_1 $icon_1 $sound_1
-
-Show # normal - T1 restricted bases & synthesised - rings | Disable
-
-	Rarity Normal
-	Class Rings
-	BaseType == "Cerulean Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
-	SynthesisedItem True
+	Sockets WWWWW
 
 	SetFontSize $text_1
 	SetBackgroundColor 255 255 255 255 # normal
@@ -5798,17 +5047,6 @@ Show # normal - T2 influenced | Disable
 	SetBorderColor 0 0 0 255 # general - black
 	Tags $beam_2 $icon_2 $sound_2
 
-Show # normal - T2 synthesised | Disable
-
-	Rarity Normal
-	SynthesisedItem True
-
-	SetFontSize $text_2
-	SetBackgroundColor 255 255 255 255 # normal
-	SetTextColor 0 0 0 255 # general - black
-	SetBorderColor 0 0 0 255 # general - black
-	Tags $beam_2 $icon_2 $sound_2
-
 Show # normal - T2 enchanted | Disable
 
 	Rarity Normal
@@ -5835,6 +5073,29 @@ Show # normal - T2 qty 21+ | Disable
 
 	Rarity Normal
 	Quality > 20
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # normal - T2 sockets www>wwww | Disable
+
+	Rarity Normal
+	Sockets WWW
+	Sockets < WWWWW
+
+	SetFontSize $text_2
+	SetBackgroundColor 255 255 255 255 # normal
+	SetTextColor 0 0 0 255 # general - black
+	SetBorderColor 0 0 0 255 # general - black
+	Tags $beam_2 $icon_2 $sound_2
+
+Show # normal - T2 sockets a+ | Disable
+
+	Rarity Normal
+	Sockets A
 
 	SetFontSize $text_2
 	SetBackgroundColor 255 255 255 255 # normal
@@ -6091,10 +5352,12 @@ Show # normal - T4 jewels | Disable
 	SetBorderColor 255 255 255 255 # normal
 	Tags $beam_4 $icon_4 $sound_4
 
-Show # normal - T4 chanceable | Disable
+Show # normal - T4 chanceable bases | Disable
 
 	Rarity Normal
-	BaseType == $nor_chanceable
+	BaseType == $nor_1
+	Corrupted False
+	Mirrored False
 
 	SetFontSize $text_4
 	SetBackgroundColor 0 0 0 255 # general - black
