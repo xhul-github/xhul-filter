@@ -51,7 +51,7 @@ I'm actually using that base in filterblast, to have some blocks never match any
 SETFONTSIZE BEHAVIOUR - UNDOCUMENTED
 
 If you want to use some actually accurate SetFontSize arguments, i tested everything from 10 to 50.
-Despite a Reddit post i made a while ago about it, it seems that most people prefer to believe the wiki, at least i tried.
+Despite a Reddit post i made a while ago about it, it seems that most people prefer to stick to the wiki, at least i tried.
 The following numbers are accurate when playing in 1920x1080 resolution or below, i don't own a monitor supporting more than that.
 So, basically:
 17 is the smallest visual you can get.
