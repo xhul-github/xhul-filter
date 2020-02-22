@@ -1,0 +1,84 @@
+QUEST ITEMS - BUG
+
+A block that doesn't include a Class condition with a "Quest Items" argument will never match a quest item.
+For example, a block with just a BaseType "Medicine Chest" condition will never match the corresponding item at all.
+That behaviour actually implies the existence of a separate parser, dedicated to quest items.
+
+UNPARSEABLE PROPHECIES - BUG
+
+Among the legacy prophecies, some (not all of them) can't be referred to at all (filter loading failure).
+You have to use some tricks to actually filter them, here is the full list:
+
+"A Gracious Master"
+"Ancient Rivalries I"
+"Brothers in Arms"
+"Echoes of Lost Love"
+"Echoes of Mutation"
+"The Aesthete's Spirit"
+"The Blacksmith"
+"The Emperor's Trove"
+
+EXACT EQUAL WITH CLASS CONDITIONS - BUG
+
+The == operator works fine with BaseType, HasExplicitMod, and Prophecy conditions.
+However, it behaves the same as = (implicit operator) when used with Class conditions.
+
+CORRUPTEDMODS OPERATORS - UNDOCUMENTED
+
+Conditional operators can be used with CorruptedMods conditions.
+They all work as expected except = & ==, which both behave the same as the implicit operator (exact match).
+
+NON-ITEM CLASSES - MISC
+
+Those don't include any regular item in the game:
+
+"Delve Socketable Currency" - leftover empty class
+"Hideout Doodads"
+"Labyrinth Map Item" - leftover empty class
+"Large Relics" - unknown purpose
+"Medium Relics" - unknown purpose
+Microtransactions
+"Shard Heart" - unknown purpose
+"Small Relics" - unknown purpose
+
+UNKNOWN BASE - UNDOCUMENTED
+
+There is a base called "...", that is properly parsed by the game.
+It's actually its full name (BaseType == ... isn't rejected upon filter loading).
+No idea to which class it belongs.
+I'm actually using that base in filterblast, to have some blocks never match any item.
+
+SETFONTSIZE BEHAVIOUR - UNDOCUMENTED
+
+If you want to use some actually accurate SetFontSize arguments, i tested everything from 10 to 50.
+Despite a Reddit post i made a while ago about it, it seems that most people prefer to believe the wiki, at least i tried.
+The following numbers are accurate when playing in 1920x1080 resolution or below, i don't own a monitor supporting more than that.
+So, basically:
+17 is the smallest visual you can get.
+45 is the biggest visual you can get.
+The default size (no SetFontSize condition in the block), is either 33, or 34.
+I kept the screenshots of those if needed.
+Full list:
+
+SetFontSize	dimensions (pixels)
+
+17 & below	36x19
+18 & 19		37x20
+20		40x21
+21 & 22		41x22
+23		45x23
+24 & 25		46x24
+26		50x25
+27 & 28		52x26
+29		54x27
+30 & 31		57x28
+32		59x29
+33,34,default	62x30
+35		64x31
+36 & 37		66x32
+38		69x33
+39		71x34
+40 & 41		74x35
+42		77x36
+43 & 44		78x37
+45 & above	82x38
