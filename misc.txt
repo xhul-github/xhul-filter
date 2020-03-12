@@ -1,4 +1,4 @@
-CLASS CONDITIONS & == OPERATOR
+CLASS CONDITION & == OPERATOR
 
 The == operator works fine with BaseType, HasExplicitMod, and Prophecy conditions.
 However, it behaves the same as = (implicit operator) when used with Class conditions.
@@ -12,7 +12,7 @@ If the item has 1 socket, it will be considered has having 0 socket.
 Introduced in 3.9.2f.
 Probably fixed in 3.10 (not tested yet).
 
-CUSTOMALERTSOUND & FILE NAMES WITH SPACES
+CUSTOMALERTSOUND SETTING & FILE NAMES WITH SPACES
 
 The site parser returns an error upon validation.
 The ingame parser digests spaces, though.
