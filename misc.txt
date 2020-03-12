@@ -1,10 +1,50 @@
-QUEST ITEMS - BUG
+CLASS CONDITIONS & == OPERATOR
+
+The == operator works fine with BaseType, HasExplicitMod, and Prophecy conditions.
+However, it behaves the same as = (implicit operator) when used with Class conditions.
+Introduced in 3.8.1d.
+Probably fixed in 3.10 (not tested yet).
+
+SOCKETS|SOCKETGROUP CONDITIONS & NON-WEAPON|NON-ARMOUR ITEMS
+
+If the item has no socket, it will never match any Sockets|Socketgroup condition, no matter the argument|operator.
+If the item has 1 socket, it will be considered has having 0 socket.
+Introduced in 3.9.2f.
+Probably fixed in 3.10 (not tested yet).
+
+CUSTOMALERTSOUND & FILE NAMES WITH SPACES
+
+The site parser returns an error upon validation.
+The ingame parser digests spaces, though.
+Probably fixed in 3.10 (not tested yet).
+
+QUEST ITEM SPECIFICITY
 
 A block that doesn't include a Class condition with a "Quest Items" argument will never match a quest item.
 For example, a block with just a BaseType "Medicine Chest" condition will never match the corresponding item at all.
 That behaviour actually implies the existence of a separate parser, dedicated to quest items.
 
-UNPARSEABLE PROPHECIES - BUG
+NON-ITEM CLASSES
+
+Those don't include any regular item in the game:
+
+"Delve Socketable Currency" - leftover empty class
+"Hideout Doodads"
+"Labyrinth Map Item" - leftover empty class
+"Large Relics" - unknown purpose
+"Medium Relics" - unknown purpose
+Microtransactions
+"Shard Heart" - unknown purpose
+"Small Relics" - unknown purpose
+
+UNKNOWN BASE
+
+There is a base called "...", that is properly parsed by the game.
+It's actually its full name (BaseType == ... isn't rejected upon filter loading).
+No idea to which class it belongs.
+I'm actually using that base in filterblast, to have some blocks never match any item.
+
+UNREFERRABLE PROPHECIES
 
 Among the legacy prophecies, some (not all of them) can't be referred to at all (filter loading failure).
 You have to use some tricks to actually filter them, here is the full list:
@@ -18,42 +58,11 @@ You have to use some tricks to actually filter them, here is the full list:
 "The Blacksmith"
 "The Emperor's Trove"
 
-EXACT EQUAL WITH CLASS CONDITIONS - BUG
-
-The == operator works fine with BaseType, HasExplicitMod, and Prophecy conditions.
-However, it behaves the same as = (implicit operator) when used with Class conditions.
-
-CORRUPTEDMODS OPERATORS - UNDOCUMENTED
-
-Conditional operators can be used with CorruptedMods conditions.
-They all work as expected except = & ==, which both behave the same as the implicit operator (exact match).
-
-NON-ITEM CLASSES - MISC
-
-Those don't include any regular item in the game:
-
-"Delve Socketable Currency" - leftover empty class
-"Hideout Doodads"
-"Labyrinth Map Item" - leftover empty class
-"Large Relics" - unknown purpose
-"Medium Relics" - unknown purpose
-Microtransactions
-"Shard Heart" - unknown purpose
-"Small Relics" - unknown purpose
-
-UNKNOWN BASE - UNDOCUMENTED
-
-There is a base called "...", that is properly parsed by the game.
-It's actually its full name (BaseType == ... isn't rejected upon filter loading).
-No idea to which class it belongs.
-I'm actually using that base in filterblast, to have some blocks never match any item.
-
-SETFONTSIZE BEHAVIOUR - UNDOCUMENTED
+SETFONTSIZE ARGUMENTS
 
 If you want to use some actually accurate SetFontSize arguments, i tested everything from 10 to 50.
 Despite a Reddit post i made a while ago about it, it seems that most people prefer to stick to the wiki, at least i tried.
-The following numbers are accurate when playing in 1920x1080 resolution or below, i don't own a monitor supporting more than that.
-So, basically:
+The following numbers are accurate when playing in 1920x1080 resolution, in english language:
 17 is the smallest visual you can get.
 45 is the biggest visual you can get.
 The default size (no SetFontSize condition in the block), is either 33, or 34.
