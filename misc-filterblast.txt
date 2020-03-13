@@ -2,3 +2,7 @@ HASINFLUENCE & == OPERATOR
 
 The parser interprets == as if it was = (implicit operator).
 For example, HasInfluence == Crusader Elder will match items with crusader OR elder influence, whereas ingame, it will only match items with BOTH influences.
+
+SWITCHTO & BLOCK SWITCHES
+
+When a block changes with a SwitchTo command, its status isn't updated on the "Block switches" tab.
