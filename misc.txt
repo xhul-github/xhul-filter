@@ -58,6 +58,12 @@ You have to use some tricks to actually filter them, here is the full list:
 "The Blacksmith"
 "The Emperor's Trove"
 
+DEFAULT COLOURS
+
+SetBackgroundColor 0 0 0 240
+SetTextColor 200 200 200 255
+SetBorderColor 200 200 200 255
+
 SETFONTSIZE ARGUMENTS
 
 If you want to use some actually accurate SetFontSize arguments, i tested everything from 10 to 50.
