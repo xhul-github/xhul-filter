@@ -1,28 +1,13 @@
-CLASS CONDITION & == OPERATOR
-
-The == operator works fine with BaseType, HasExplicitMod, and Prophecy conditions.
-However, it behaves the same as = (implicit operator) when used with Class conditions.
-Introduced in 3.8.1d.
-Probably fixed in 3.10 (not tested yet).
-
-SOCKETS|SOCKETGROUP CONDITIONS & NON-WEAPON|NON-ARMOUR ITEMS
-
-If the item has no socket, it will never match any Sockets|Socketgroup condition, no matter the argument|operator.
-If the item has 1 socket, it will be considered has having 0 socket.
-Introduced in 3.9.2f.
-Probably fixed in 3.10 (not tested yet).
-
-CUSTOMALERTSOUND SETTING & FILE NAMES WITH SPACES
-
-The site parser returns an error upon validation.
-The ingame parser digests spaces, though.
-Probably fixed in 3.10 (not tested yet).
-
 QUEST ITEM SPECIFICITY
 
 A block that doesn't include a Class condition with a "Quest Items" argument will never match a quest item.
 For example, a block with just a BaseType "Medicine Chest" condition will never match the corresponding item at all.
 That behaviour actually implies the existence of a separate parser, dedicated to quest items.
+
+EMPTY STRINGS
+
+As far as BaseType, Class, HasEnchantment, HasExplicitMod, and Prophecy conditions are concerned, "" is interpreted as "any".
+It's a valid argument if used without operator, or after =, but not after ==.
 
 NON-ITEM CLASSES
 
