@@ -1,7 +1,17 @@
+TEXTAREA FIELDS
+
+When left empty in the UI, reparsing will reload the default content.
+
 HASINFLUENCE & == OPERATOR
 
 The parser interprets == as if it was = (implicit operator).
 For example, HasInfluence == Crusader Elder will match items with crusader OR elder influence, whereas ingame, it will only match items with BOTH influences.
+
+BLOCK SWITCHES TAB
+
+When a category checkbox changes upon altering that category's content (subcategories, sub-blocks), it will always be a "partial" status.
+Additionally, once that happens, the checkbox cannot be modified indirectly (parent categories, subcategories, sub-blocks) anymore.
+Those 2 behaviours appear to be visual issues only.
 
 SWITCHTO & BLOCK SWITCHES
 
