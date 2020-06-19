@@ -60,7 +60,7 @@ SetOption $cur_1 textarea ["Albino Rhoa Feather" "Apprentice Cartographer's Seal
 SetOption $T2 info
 SetOption $cur_2 textarea ["Ancient Orb" "Black Oil" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Blighted Delirium Orb" "Bloodstained Fossil" "Deafening Essence of Anger" "Deafening Essence of Anguish" "Deafening Essence of Contempt" "Deafening Essence of Doubt" "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Fear" "Deafening Essence of Greed" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Misery" "Deafening Essence of Rage" "Deafening Essence of Scorn" "Deafening Essence of Sorrow" "Deafening Essence of Spite" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Deafening Essence of Woe" "Deafening Essence of Wrath" "Deafening Essence of Zeal" "Diviner's Delirium Orb" "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Faceted Fossil" "Feral Incubator" "Fertile Catalyst" "Fine Delirium Orb" "Fractured Fossil" "Geomancer's Incubator" "Glyphic Fossil" "Golden Oil" "Harbinger's Orb" "Hollow Fossil" Imprint "Imprinted Bestiary Orb" "Mirror Shard" "Opalescent Oil" "Orb of Annulment" "Primal Blisterfruit" "Prime Alchemical Resonator" "Prime Chaotic Resonator" "Prismatic Catalyst" "Sanctified Fossil" "Silver Oil" "Skittering Delirium Orb" "Stacked Deck" "Tangled Fossil" "Tempering Catalyst" "Thaumaturge's Incubator" "Time-Lost Incubator" "Vial of Sacrifice" "Vial of the Ghost" "Vivid Scalefruit" "Wild Thornfruit"] # no title
 SetOption $T3 info
-SetOption $cur_3 textarea ["Aberrant Fossil" "Abrasive Catalyst" "Abyssal Delirium Orb" "Abyssal Incubator" "Aetheric Fossil" "Amorphous Delirium Orb" "Ancient Shard" "Annulment Shard" "Armoursmith's Delirium Orb" "Awakened Sextant" "Azure Oil" "Bestiary Orb" "Blacksmith's Delirium Orb" "Bound Fossil" "Cartographer's Chisel" "Cartographer's Delirium Orb" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Condenser" "Corroded Fossil" "Crimson Oil" "Decadent Delirium Orb" "Decadent Incubator" "Delirium Orb" "Dense Fossil" "Deregulation Scroll" "Disperser" "Diviner's Incubator" "Electroshock Scroll" "Enchanted Fossil" "Enchanted Incubator" "Encrusted Fossil" "Engineer's Orb" "Exalted Shard" "Facetor's Lens" "Fine Incubator" "Foreboding Delirium Orb" "Foreboding Incubator" "Fossilised Delirium Orb" "Fossilised Incubator" "Fragmentation Scroll" "Fragmented Delirium Orb" "Fragmented Incubator" "Frigid Fossil" "Gemcutter's Incubator" "Gemcutter's Prism" "Gilded Fossil" "Haemocombustion Scroll" "Harbinger's Shard" "Horticrafting Station" "Imbued Catalyst" "Imperial Delirium Orb" "Indigo Oil" "Infused Engineer's Orb" "Infused Incubator" "Intrinsic Catalyst" "Jagged Fossil" "Jeweller's Delirium Orb" "Lucent Fossil" "Metallic Fossil" "Mysterious Incubator" "Obscured Delirium Orb" "Obscured Incubator" "Orb of Binding" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Ornate Incubator" "Otherworldly Incubator" "Perfect Fossil" "Portentous Delirium Orb" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Primal Blisterlord Bulb" "Primal Chimeral Seed" "Primal Cleaveling Grain" "Primal Crushclaw Bulb" "Primal Cystcaller Bulb" "Primal Delirium Orb" "Primal Dustcrab Seed" "Primal Dustspitter Grain" "Primal Feasting Horror Grain" "Primal Incubator" "Primal Lifeforce Collector" "Primal Maw Grain" "Primal Reborn Bulb" "Primal Rhex Matriarch Bulb" "Primal Rhex Seed" "Primal Rhoa Grain" "Primal Scrabbler Seed" "Primal Viper Seed" "Prime Sextant" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Prismatic Fossil" "Pristine Fossil" "Remnant of Corruption" "Scorched Fossil" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Serrated Fossil" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Shuddering Fossil" "Simple Sextant" "Simulacrum Splinter" "Singular Delirium Orb" "Singular Incubator" "Skittering Incubator" "Specularity Scroll" "Splinter of Chayula" "Splinter of Uul-Netol" "Stanchion" "Teal Oil" "Thaumaturge's Delirium Orb" "Time-light Scroll" "Timeless Delirium Orb" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Turbulent Catalyst" "Vial of Awakening" "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Summoning" "Vial of Transcendence" "Vial of the Ritual" "Violet Oil" "Vivid Abberarach Bulb" "Vivid Arachnid Grain" "Vivid Devourer Bulb" "Vivid Leech Grain" "Vivid Lifeforce Collector" "Vivid Nestback Seed" "Vivid Parasite Seed" "Vivid Razorleg Seed" "Vivid Sapsucker Seed" "Vivid Scorpion Grain" "Vivid Striketail Seed" "Vivid Thornweaver Grain" "Vivid Vulture Bulb" "Vivid Watcher Bulb" "Vivid Weta Grain" "Vivid Whipleg Bulb" "Whispering Delirium Orb" "Whispering Incubator" "Wild Ape Grain" "Wild Brambleback Bulb" "Wild Bristlebeast Seed" "Wild Bristle Matron Bulb" "Wild Chieftain Seed" "Wild Hatchling Grain" "Wild Hellion Alpha Bulb" "Wild Hellion Grain" "Wild Homunculus Seed" "Wild Infestation Queen Bulb" "Wild Lifeforce Collector" "Wild Snap Hound Seed" "Wild Spikeback Seed" "Wild Thornmaw Bulb" "Wild Thornwolf Grain" "Wild Ursaling Grain"] # no title
+SetOption $cur_3 textarea ["Aberrant Fossil" "Abrasive Catalyst" "Abyssal Delirium Orb" "Abyssal Incubator" "Aetheric Fossil" "Amorphous Delirium Orb" "Ancient Shard" "Annulment Shard" "Armoursmith's Delirium Orb" "Awakened Sextant" "Azure Oil" "Bestiary Orb" "Blacksmith's Delirium Orb" "Bound Fossil" "Cartographer's Chisel" "Cartographer's Delirium Orb" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Celestial Jeweller's Incubator" "Corroded Fossil" "Crimson Oil" "Decadent Delirium Orb" "Decadent Incubator" "Delirium Orb" "Dense Fossil" "Deregulation Scroll" "Diviner's Incubator" "Electroshock Scroll" "Enchanted Fossil" "Enchanted Incubator" "Encrusted Fossil" "Engineer's Orb" "Exalted Shard" "Facetor's Lens" "Fine Incubator" "Foreboding Delirium Orb" "Foreboding Incubator" "Fossilised Delirium Orb" "Fossilised Incubator" "Fragmentation Scroll" "Fragmented Delirium Orb" "Fragmented Incubator" "Frigid Fossil" "Gemcutter's Incubator" "Gemcutter's Prism" "Gilded Fossil" "Haemocombustion Scroll" "Harbinger's Shard" "Imbued Catalyst" "Imperial Delirium Orb" "Indigo Oil" "Infused Engineer's Orb" "Infused Incubator" "Intrinsic Catalyst" "Jagged Fossil" "Jeweller's Delirium Orb" "Lucent Fossil" "Metallic Fossil" "Mysterious Incubator" "Obscured Delirium Orb" "Obscured Incubator" "Orb of Binding" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Ornate Incubator" "Otherworldly Incubator" "Perfect Fossil" "Portentous Delirium Orb" "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Primal Blisterlord Bulb" "Primal Chimeral Seed" "Primal Cleaveling Grain" "Primal Crushclaw Bulb" "Primal Cystcaller Bulb" "Primal Delirium Orb" "Primal Dustcrab Seed" "Primal Dustspitter Grain" "Primal Feasting Horror Grain" "Primal Incubator" "Primal Maw Grain" "Primal Reborn Bulb" "Primal Rhex Matriarch Bulb" "Primal Rhex Seed" "Primal Rhoa Grain" "Primal Scrabbler Seed" "Primal Viper Seed" "Prime Sextant" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Prismatic Fossil" "Pristine Fossil" "Remnant of Corruption" "Scorched Fossil" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Dread" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Greed" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Serrated Fossil" "Shrieking Essence of Anger" "Shrieking Essence of Anguish" "Shrieking Essence of Contempt" "Shrieking Essence of Doubt" "Shrieking Essence of Dread" "Shrieking Essence of Envy" "Shrieking Essence of Fear" "Shrieking Essence of Greed" "Shrieking Essence of Hatred" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Rage" "Shrieking Essence of Scorn" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Suffering" "Shrieking Essence of Torment" "Shrieking Essence of Woe" "Shrieking Essence of Wrath" "Shrieking Essence of Zeal" "Shuddering Fossil" "Simple Sextant" "Simulacrum Splinter" "Singular Delirium Orb" "Singular Incubator" "Skittering Incubator" "Specularity Scroll" "Splinter of Chayula" "Splinter of Uul-Netol" "Teal Oil" "Thaumaturge's Delirium Orb" "Time-light Scroll" "Timeless Delirium Orb" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Turbulent Catalyst" "Vial of Awakening" "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Summoning" "Vial of Transcendence" "Vial of the Ritual" "Violet Oil" "Vivid Abberarach Bulb" "Vivid Arachnid Grain" "Vivid Devourer Bulb" "Vivid Leech Grain" "Vivid Nestback Seed" "Vivid Parasite Seed" "Vivid Razorleg Seed" "Vivid Sapsucker Seed" "Vivid Scorpion Grain" "Vivid Striketail Seed" "Vivid Thornweaver Grain" "Vivid Vulture Bulb" "Vivid Watcher Bulb" "Vivid Weta Grain" "Vivid Whipleg Bulb" "Whispering Delirium Orb" "Whispering Incubator" "Wild Ape Grain" "Wild Brambleback Bulb" "Wild Bristlebeast Seed" "Wild Bristle Matron Bulb" "Wild Chieftain Seed" "Wild Hatchling Grain" "Wild Hellion Alpha Bulb" "Wild Hellion Grain" "Wild Homunculus Seed" "Wild Infestation Queen Bulb" "Wild Snap Hound Seed" "Wild Spikeback Seed" "Wild Thornmaw Bulb" "Wild Thornwolf Grain" "Wild Ursaling Grain"] # no title
 SetOption $T4 info
 SetOption $cur_4 textarea ["Alchemy Shard" "Amber Oil" "Binding Shard" "Chaos Shard" "Chromatic Orb" "Clear Oil" "Engineer's Shard" "Glassblower's Bauble" "Horizon Shard" "Jeweller's Orb" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Greed" "Muttering Essence of Hatred" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Muttering Essence of Woe" "Orb of Alteration" "Orb of Chance" "Perandus Coin" "Regal Shard" "Sepia Oil" "Silver Coin" "Splinter of Esh" "Splinter of Tul" "Splinter of Xoph" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter" "Verdant Oil" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Suffering" "Wailing Essence of Torment" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Wailing Essence of Zeal" "Weeping Essence of Anger" "Weeping Essence of Contempt" "Weeping Essence of Doubt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Weeping Essence of Woe" "Weeping Essence of Wrath" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred" "Whispering Essence of Woe"] # no title
 SetOption $T5 info
@@ -1045,77 +1045,77 @@ SetTag @T5
 
 Show # currency - specific - awakeners orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Awakener's Orb"
 
 	Tags $cur_awakenersorb $sound_awakenersorb
 
 Show # currency - specific - blessed orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Blessed Orb"
 
 	Tags $cur_blessedorb $sound_blessedorb
 
 Show # currency - specific - chaos orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Chaos Orb"
 
 	Tags $cur_chaosorb $sound_chaosorb
 
 Show # currency - specific - crusaders exalted orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Crusader's Exalted Orb"
 
 	Tags $cur_crusadersexaltedorb $sound_crusadersexaltedorb
 
 Show # currency - specific - divine orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Divine Orb"
 
 	Tags $cur_divineorb $sound_divineorb
 
 Show # currency - specific - exalted orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Exalted Orb"
 
 	Tags $cur_exaltedorb $sound_exaltedorb
 
 Show # currency - specific - hunters exalted orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Hunter's Exalted Orb"
 
 	Tags $cur_huntersexaltedorb $sound_huntersexaltedorb
 
 Show # currency - specific - mirror of kalandra * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Mirror of Kalandra"
 
 	Tags $cur_mirrorofkalandra $sound_mirrorofkalandra
 
 Show # currency - specific - orb of alchemy * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Orb of Alchemy"
 
 	Tags $cur_orbofalchemy $sound_orbofalchemy
 
 Show # currency - specific - orb of fusing * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Orb of Fusing"
 
 	Tags $cur_orboffusing $sound_orboffusing
 
 Show # currency - specific - prophecy - T1 | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == Prophecy
 	Prophecy == "Ancient Rivalries II" "Ancient Rivalries III" "Ancient Rivalries IV" "Fated Connections" "The Queen's Sacrifice" "Trash to Treasure"
 
@@ -1127,7 +1127,7 @@ Show # currency - specific - prophecy - T1 | Disable
 
 Show # currency - specific - prophecy - T2 | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == Prophecy
 	Prophecy == "A Vision of Ice and Fire" "Cleanser of Sins" "Darktongue's Shriek" "Monstrous Treasure" "The King's Path" "The Unbreathing Queen V" "Wind and Thunder"
 
@@ -1139,7 +1139,7 @@ Show # currency - specific - prophecy - T2 | Disable
 
 Show # currency - specific - prophecy - T3 | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == Prophecy
 	Prophecy == "A Call into the Void" "A Dishonourable Death" "A Firm Foothold" "A Forest of False Idols" "A Master Seeks Help" "A Prodigious Hand" "A Regal Death" "A Rift in Time" "A Valuable Combination" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Agony at Dusk" "An Unseen Peril" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Ancient Doom" "Baptism by Death" "Battle Hardened" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Black Devotion" "Blind Faith" "Blinding Light" "Blood in the Eyes" "Blood of the Betrayed" "Bountiful Traps" "Burning Dread" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Crushing Squall" "Custodians of Silence" "Dance of Steel" "Dark Instincts" "Day of Sacrifice I" "Day of Sacrifice II" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry II" "Deadly Rivalry III" "Deadly Rivalry IV" "Deadly Rivalry V" "Deadly Twins" "Defiled in the Sceptre" "Dying Cry" "Echoes of Witchcraft" "End of the Light" "Ending the Torment" "Erased from Memory" "Erasmus' Gift" "Faith Exhumed" "Fallow At Last" "Fear's Wide Reach" "Fire and Brimstone" "Fire and Ice" "Fire from the Sky" "Fire, Wood and Stone" "Flesh of the Beast" "Forceful Exorcism" "From Death Springs Life" "From The Void" "Gilded Within" "Golden Touch" "Graceful Flames" "Greed's Folly" "Heart of the Fire" "Heavy Blows" "Hidden Reinforcements" "Hidden Vaal Pathways" "Holding the Bridge" "Hunter's Lesson" "Ice from Above" "In the Grasp of Corruption" "Kalandra's Craft" "Last of the Wildmen" "Lasting Impressions" "Lightning Falls" "Living Fires" "Lost in the Pages" "Mouth of Horrors" "Mysterious Invaders" "Nature's Resilience" "Nemesis of Greed" "Notched Flesh" "Overflowing Riches" "Path of Betrayal" "Plague of Frogs" "Plague of Rats" "Pleasure and Pain" "Pools of Wealth" "Possessed Foe" "Power Magnified" Rebirth "Reforged Bonds" "Resistant to Change" "Risen Blood" "Roth's Legacy" "Severed Limbs" "Smothering Tendrils" "Soil, Worms and Blood" "Song of the Sekhema" "Storm on the Horizon" "Storm on the Reef" "Strong as a Bull" "Sun's Punishment" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "Thaumaturgical History IV" "The Alchemist" "The Ambitious Bandit I" "The Ambitious Bandit II" "The Ambitious Bandit III" "The Apex Predator" "The Beautiful Guide" "The Beginning and the End" "The Bishop's Legacy" "The Bloody Flowers Redux" "The Bowstring's Music" "The Brothers of Necromancy" "The Brutal Enforcer" "The Child of Lunaris" "The Corrupt" "The Cursed Choir" "The Dreaded Rhoa" "The Dream Trial" "The Dreamer's Dream" "The Eagle's Cry" "The Fall of an Empire" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Feral Lord V" "The Flayed Man" "The Flow of Energy" "The Forgotten Garrison" "The Forgotten Soldiers" "The Fortune Teller's Collection" "The Four Feral Exiles" "The God of Misfortune" "The Great Leader of the North" "The Great Mind of the North" "The Hardened Armour" "The Hollow Pledge" "The Hungering Swarm" "The Invader" "The Jeweller's Touch" "The Karui Rebellion" "The King and the Brambles" "The Lady in Black" "The Last Watch" "The Lost Maps" "The Lost Undying" "The Malevolent Witch" "The Mentor" "The Misunderstood Queen" "The Mysterious Gift" "The Nest" "The Nightmare Awakens" "The Petrified" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Plaguemaw V" "The Prison Guard" "The Prison Key" "The Queen's Vaults" "The Scout" "The Servant's Heart" "The Sharpened Blade" "The Silverwood" "The Singular Spirit" "The Sinner's Stone" "The Snuffed Flame" "The Soulless Beast" "The Stockkeeper" "The Storm Spire" "The Sword King's Passion" "The Trembling Earth" "The Twins" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "The Undead Brutes" "The Undead Storm" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "The Warmongers I" "The Warmongers II" "The Warmongers III" "The Warmongers IV" "The Watcher's Watcher" "The Wealthy Exile" "Touched by the Wind" "Trapped in the Tower" "Twice Enchanted" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Unbearable Whispers V" "Undead Uprising" "Unnatural Energy" "Vaal Invasion" "Vaal Winds" "Visions of the Drowned" "Vital Transformation" "Waiting in Ambush" "Weeping Death" "Winter's Mournful Melodies"
 
@@ -1151,7 +1151,7 @@ Show # currency - specific - prophecy - T3 | Disable
 
 Hide
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == Prophecy
 	Prophecy == "A Call into the Void" "A Dishonourable Death" "A Firm Foothold" "A Forest of False Idols" "A Master Seeks Help" "A Prodigious Hand" "A Regal Death" "A Rift in Time" "A Valuable Combination" "A Vision of Ice and Fire" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Agony at Dusk" "An Unseen Peril" "Anarchy's End I" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Ancient Doom" "Ancient Rivalries II" "Ancient Rivalries III" "Ancient Rivalries IV" "Baptism by Death" "Battle Hardened" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Black Devotion" "Blind Faith" "Blinding Light" "Blood in the Eyes" "Blood of the Betrayed" "Bountiful Traps" "Burning Dread" "Cleanser of Sins" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Crushing Squall" "Custodians of Silence" "Dance of Steel" "Dark Instincts" "Darktongue's Shriek" "Day of Sacrifice I" "Day of Sacrifice II" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry I" "Deadly Rivalry II" "Deadly Rivalry III" "Deadly Rivalry IV" "Deadly Rivalry V" "Deadly Twins" "Defiled in the Sceptre" "Dying Cry" "Echoes of Witchcraft" "End of the Light" "Ending the Torment" "Erased from Memory" "Erasmus' Gift" "Faith Exhumed" "Fallow At Last" "Fated Connections" "Fear's Wide Reach" "Fire and Brimstone" "Fire and Ice" "Fire from the Sky" "Fire, Wood and Stone" "Flesh of the Beast" "Forceful Exorcism" "From Death Springs Life" "From The Void" "Gilded Within" "Golden Touch" "Graceful Flames" "Greed's Folly" "Heart of the Fire" "Heavy Blows" "Hidden Reinforcements" "Hidden Vaal Pathways" "Holding the Bridge" "Hunter's Lesson" "Ice from Above" "In the Grasp of Corruption" "Kalandra's Craft" "Last of the Wildmen" "Lasting Impressions" "Lightning Falls" "Living Fires" "Lost in the Pages" "Monstrous Treasure" "Mouth of Horrors" "Mysterious Invaders" "Nature's Resilience" "Nemesis of Greed" "Notched Flesh" "Overflowing Riches" "Path of Betrayal" "Plague of Frogs" "Plague of Rats" "Pleasure and Pain" "Pools of Wealth" "Possessed Foe" "Power Magnified" Rebirth "Reforged Bonds" "Resistant to Change" "Risen Blood" "Roth's Legacy" "Severed Limbs" "Smothering Tendrils" "Soil, Worms and Blood" "Song of the Sekhema" "Storm on the Horizon" "Storm on the Reef" "Strong as a Bull" "Sun's Punishment" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "Thaumaturgical History IV" "The Alchemist" "The Ambitious Bandit I" "The Ambitious Bandit II" "The Ambitious Bandit III" "The Apex Predator" "The Beautiful Guide" "The Beginning and the End" "The Bishop's Legacy" "The Bloody Flowers Redux" "The Bowstring's Music" "The Brothers of Necromancy" "The Brutal Enforcer" "The Child of Lunaris" "The Corrupt" "The Cursed Choir" "The Dreaded Rhoa" "The Dream Trial" "The Dreamer's Dream" "The Eagle's Cry" "The Fall of an Empire" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Feral Lord V" "The Flayed Man" "The Flow of Energy" "The Forgotten Garrison" "The Forgotten Soldiers" "The Fortune Teller's Collection" "The Four Feral Exiles" "The God of Misfortune" "The Great Leader of the North" "The Great Mind of the North" "The Hardened Armour" "The Hollow Pledge" "The Hungering Swarm" "The Invader" "The Jeweller's Touch" "The Karui Rebellion" "The King and the Brambles" "The King's Path" "The Lady in Black" "The Last Watch" "The Lost Maps" "The Lost Undying" "The Malevolent Witch" "The Mentor" "The Misunderstood Queen" "The Mysterious Gift" "The Nest" "The Nightmare Awakens" "The Petrified" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Plaguemaw V" "The Prison Guard" "The Prison Key" "The Queen's Sacrifice" "The Queen's Vaults" "The Scout" "The Servant's Heart" "The Sharpened Blade" "The Silverwood" "The Singular Spirit" "The Sinner's Stone" "The Snuffed Flame" "The Soulless Beast" "The Stockkeeper" "The Storm Spire" "The Sword King's Passion" "The Trembling Earth" "The Twins" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "The Unbreathing Queen V" "The Undead Brutes" "The Undead Storm" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "The Warmongers I" "The Warmongers II" "The Warmongers III" "The Warmongers IV" "The Watcher's Watcher" "The Wealthy Exile" "Touched by the Wind" "Trapped in the Tower" "Trash to Treasure" "Twice Enchanted" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Unbearable Whispers V" "Undead Uprising" "Unnatural Energy" "Vaal Invasion" "Vaal Winds" "Visions of the Drowned" "Vital Transformation" "Waiting in Ambush" "Weeping Death" "Wind and Thunder" "Winter's Mournful Melodies"
 
@@ -1163,7 +1163,7 @@ Hide
 
 Show # currency - specific - prophecy - T1 unreferrable | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == Prophecy
 #	Prophecy == "A Gracious Master" "Ancient Rivalries I" "Brothers in Arms" "Echoes of Lost Love" "Echoes of Mutation" "The Aesthete's Spirit" "The Blacksmith" "The Emperor's Trove"
 
@@ -1175,35 +1175,35 @@ Show # currency - specific - prophecy - T1 unreferrable | Disable
 
 Show # currency - specific - redeemers exalted orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Redeemer's Exalted Orb"
 
 	Tags $cur_redeemersexaltedorb $sound_redeemersexaltedorb
 
 Show # currency - specific - regal orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Regal Orb"
 
 	Tags $cur_regalorb $sound_regalorb
 
 Show # currency - specific - vaal orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Vaal Orb"
 
 	Tags $cur_vaalorb $sound_vaalorb
 
 Show # currency - specific - warlords exalted orb * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == "Warlord's Exalted Orb"
 
 	Tags $cur_warlordsexaltedorb $sound_warlordsexaltedorb
 
 Show # currency - rest - T1 * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == $cur_1
 
 	SetFontSize $text_1
@@ -1214,7 +1214,7 @@ Show # currency - rest - T1 * | Disable
 
 Show # currency - rest - T2 * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == $cur_2
 
 	SetFontSize $text_2
@@ -1225,7 +1225,7 @@ Show # currency - rest - T2 * | Disable
 
 Show # currency - rest - T3 * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == $cur_3
 
 	SetFontSize $text_3
@@ -1236,7 +1236,7 @@ Show # currency - rest - T3 * | Disable
 
 Show # currency - rest - T4 * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == $cur_4
 
 	SetFontSize $text_4
@@ -1247,7 +1247,7 @@ Show # currency - rest - T4 * | Disable
 
 Show # currency - rest - T5 * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == $cur_5
 
 	SetFontSize $text_5
@@ -1258,7 +1258,7 @@ Show # currency - rest - T5 * | Disable
 
 Show # currency - rest - T5 stacks * | Disable
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 	BaseType == $cur_6
 	StackSize > 1
 
@@ -1270,7 +1270,7 @@ Show # currency - rest - T5 stacks * | Disable
 
 Hide
 
-	Class == "Delve Stackable Socketable Currency" "Harvest Infrastructure" "Harvest Seed" Incubator "Stackable Currency"
+	Class == "Delve Stackable Socketable Currency" "Harvest Seed" Incubator "Stackable Currency"
 
 	SetFontSize $text_6
 	SetBackgroundColor 0 0 0 127 # general - half-black
