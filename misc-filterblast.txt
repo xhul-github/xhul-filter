@@ -9,9 +9,14 @@ For example, HasInfluence == Crusader Elder will match items with crusader OR el
 
 BLOCK SWITCHES TAB
 
+Category|block labels including only digits are incorrectly displayed (incremented value).
+
 When a category checkbox changes upon altering that category's content (subcategories, sub-blocks), it will always be a "partial" status.
 Additionally, once that happens, the checkbox cannot be modified indirectly (parent categories, subcategories, sub-blocks) anymore.
 Those 2 behaviours appear to be visual issues only.
+
+The expand|collapse indicator doesn't change according to the actual category status (expanded|collapsed) as it should.
+Instead, it simply changes when clicked on.
 
 SWITCHTO & BLOCK SWITCHES
 
