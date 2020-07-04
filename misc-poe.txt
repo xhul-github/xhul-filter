@@ -9,9 +9,9 @@ EMPTY STRINGS
 As far as BaseType, Class, HasEnchantment, HasExplicitMod, and Prophecy conditions are concerned, "" is interpreted as "any".
 It's a valid argument if used without operator, or after =, but not after ==.
 
-NON-ITEM CLASSES
+EMPTY CLASSES
 
-Those don't include any regular item in the game:
+Those don't include any regular item in the game :
 
 "Delve Socketable Currency" - leftover empty class
 "Hideout Doodads"
@@ -21,6 +21,13 @@ Those don't include any regular item in the game:
 Microtransactions
 "Shard Heart" - unknown purpose
 "Small Relics" - unknown purpose
+
+EMPTY BASES
+
+Thoses don't refer to any existing item :
+
+"Delirium Orb" - never implemented
+"Keyblade" - removed after beta
 
 UNKNOWN BASE
 
@@ -32,7 +39,7 @@ I'm actually using that base in filterblast, to have some blocks never match any
 UNREFERRABLE PROPHECIES
 
 Among the legacy prophecies, some (not all of them) can't be referred to at all (filter loading failure).
-You have to use some tricks to actually filter them, here is the full list:
+You have to use some tricks to actually filter them, here is the full list :
 
 "A Gracious Master"
 "Ancient Rivalries I"
@@ -53,12 +60,12 @@ SETFONTSIZE ARGUMENTS
 
 If you want to use some actually accurate SetFontSize arguments, i tested everything from 10 to 50.
 Despite a Reddit post i made a while ago about it, it seems that most people prefer to stick to the wiki, at least i tried.
-The following numbers are accurate when playing in 1920x1080 resolution, in english language:
+The following numbers are accurate when playing in 1920x1080 resolution, in english language :
 17 is the smallest visual you can get.
 45 is the biggest visual you can get.
 The default size (no SetFontSize condition in the block), is either 33, or 34.
 I kept the screenshots of those if needed.
-Full list:
+Full list :
 
 SetFontSize	dimensions (pixels)
 
