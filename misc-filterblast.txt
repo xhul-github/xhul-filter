@@ -21,3 +21,9 @@ Instead, it simply changes when clicked on.
 SWITCHTO & BLOCK SWITCHES
 
 When a block changes with a SwitchTo command, its status isn't updated on the "Block switches" tab.
+
+EMPTY BASES
+
+Thoses don't refer to any existing item :
+
+"Delirium Orb" - never implemented
